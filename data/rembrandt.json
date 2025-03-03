@@ -1,0 +1,141 @@
+{
+  "artworkData": {
+    "title": "Rembrandt, Philosopher in Comtemplation (1632)",
+    "imageUrl": "assets/rembrandt.jpg",
+    "description": "<p>Rembrandt’s Philosopher in Comtemplation was painted in 1632 and spent its first hundred years in private collections in Flanders and the Netherlands. But in the 18th century, it moved to Paris, where it has remained ever since.</p><p>Current Location: <a href='https://collections.louvre.fr/ark:/53355/cl010062022'>Musée du Louvre</a></p>"
+  },
+  "placeData": {
+    "Amsterdam": {
+      "name": "Amsterdam",
+      "coords": [
+        52.3676,
+        4.9041
+      ]
+    },
+    "Paris": {
+      "name": "Paris",
+      "coords": [
+        48.8566,
+        2.3522
+      ]
+    }
+  },
+  "provenanceEvents": [
+    {
+      "id": 0,
+      "title": "1. The Parisian taste for Dutch Painting",
+      "from": "Amsterdam",
+      "to": "Paris",
+      "eventType": "moves from",
+      "text": "<p>Rembrandt’s Philosopher in Comtemplation was painted in 1632 and spent its first hundred years in private collections in Flanders and the Netherlands. But in the 18th century, it moved to Paris, where it has remained ever since.<br><br>Its first Parisian owner, in 1748, was the marquis d’Argenson (1722-82), an ambassador, war minister, and art collector. When he bought it (along with 16 other Dutch pictures), the Paris art market was witnessing a new fashion for Dutch “golden age” art. D’Argenson paired it with another Dutch painting of a philosopher, at the time also attributed to Rembrandt (now to Salomon de Koninck), and the two circulated as pendants from then on.</p>",
+      "participants": [
+        { "name": "Amsterdam", "type": "place" },
+        { "name": "Paris", "type": "place" }
+      ],
+      "networkPairs": [
+        { "source": "Amsterdam", "target": "Paris", "label": "moves from" }
+      ],
+      "changedLocation": true,
+      "imageSource": "<p>Joan Blaeu, <em>Map of Amsterdam</em>, 1649. Biblioteca Nacional de Espana. Image in the public domain.</p>"
+    },
+    {
+      "id": 1,
+      "title": "2. Entering the Choiseul Collection",
+      "from": "Marquis d’Argenson",
+      "to": "Duc de Choiseul",
+      "eventType": "bought by",
+      "text": "<p>The Philosopher in Comtemplation and its pendant became famous in Parisian art circles, and engravings of both paintings were shown at the Salons of 1753 and 1755. In 1762, the marquis d’Argenson sold the Philosopher in Comtemplation to the duc de Choiseul (1719-85), who already owned its pendant, for 3000 livres. D’Argenson hoped to curry favor with Choiseul, another big art collector and one of the most powerful men in France. During the 1760s he served as foreign minister and directed French colonial policy. <br><br>Choiseul’s family had deep colonial and slaveholding ties in the Americas. His grandfather had been the colonial governor of Saint-Domingue (Haiti), and much of his wealth derived from his wife, Louise Honorine Crozat, whose grandfather, the financier Antoine Crozat (c. 1655-1738), was heavily involved in French colonization and the slave trade. Choiseul and his wife lived in a lavish Parisian hôtel originally built for Crozat’s brother, another major art collector, and the family fortune fueled Choiseul’s art buying. <br><br>Choiseul was especially fond of 17th C. Dutch and Flemish art and owned several Rembrandts that he displayed in his hôtel. The Philosopher in Comtemplation was hung in the first room (premier cabinet) according to the famous Choiseul snuffbox, a gold tobacco box decorated with miniatures of the duc’s collection, now one of the national treasures of the Louvre . </p>",
+      "participants": [
+        { "name": "Marquis d’Argenson", "type": "person" },
+        { "name": "Duc de Choiseul", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Marquis d’Argenson", "target": "Duc de Choiseul", "label": "bought by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p><a href=\"https://collections.louvre.fr/ark:/53355/cl010501761\">Louis Roucel and Louis Nicolas Van Blarenberghe, Choiseul snuffbox</a>, 1770-71. Gold with gouache miniatures on vellum, 3.7 x 7.8 x 6 cm. © 2024 GrandPalaisRmn (musée du Louvre) / Hervé Lewandowski.</p>"
+    },
+    {
+      "id": 2,
+      "title": "3. Sold to the king by plantation owner Vaudreuil",
+      "from": "Comte de Vaudreuil",
+      "to": "Louis XVI",
+      "eventType": "sold to",
+      "text": "<p>The comte de Vaudreuil (1740-1817), another high-profile Parisian art collector whose family had strong ties to Saint-Domingue/Haiti (his father had been the colonial governor, and his wealth derived from his family’s extensive sugar plantations), acquired the Philosopher in Comtemplation in the late 1770s—exactly the same time that he inherited these plantations and sold one of them to his friend the duc de Chartres. In 1784, Vaudreuil sold the painting and its pendant to Louis XVI for 13,000 livres—an amount that is distressingly close to the 13,500 livres that he would pay a few years later to acquire six men and four women to serve as enslaved laborers on one of his plantations, according to a slave ship manifest. </p>",
+      "participants": [
+        { "name": "Comte de Vaudreuil", "type": "greenperson" },
+        { "name": "Louis XVI", "type": "person" }
+      ],
+      "networkPairs": [
+        { "source": "Comte de Vaudreuil", "target": "Louis XVI", "label": "sold to" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>List of sale prices: This document has not been made available online yet. “Prices of paintings from the sale of Mr. de Vaudreuil on the 24 and 25th of November, 1784” (n. 28). Fondation Custodia, Collection Frits Lugt, Paris, 9185Ab.</p>"
+    },
+    {
+      "id": 3,
+      "title": "4. A foundational object in the revolutionary Louvre",
+      "from": "Louis XVI",
+      "to": "Musée du Louvre",
+      "eventType": "accessioned by",
+      "text": "<p>Louis XVI (1753-94) and his arts administrator, the comte d’Angiviller, acquired the Philosopher in Comtemplation and other artworks from Vaudreuil’s collection in 1784 to hang in the Grand Gallery of the planned royal museum at the Louvre. D’Angiviller’s vision for the museum, housed in a palace that was also the headquarters of the French Academy, was to glorify the Crown’s peerless collections and arts patronage. However, it would be the new Revolutionary government that would open the Louvre to the public in 1793, the same year Louis XVI was executed. Hubert Robert’s painting of the Grand Gallery presents a utopian, aspirational view of its civic potential, but in another painting he envisioned the same space in ruins—as if to acknowledge that France, like other powerful empires of the past, could readily topple. </p>",
+      "participants": [
+        { "name": "Louis XVI", "type": "person" },
+        { "name": "French State", "type": "institution" },
+        { "name": "Musée du Louvre", "type": "museum" }
+      ],
+      "networkPairs": [
+        { "source": "Louis XVI", "target": "French State", "label": "nationalized by" },
+        { "source": "French State", "target": "Musée du Louvre", "label": "accessioned by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p><a href=\"https://collections.louvre.fr/ark:/53355/cl010065360\">Hubert Robert</a>, <em>Project for the Transformation of the Grand Gallery of the Louvre</em>, 1796. Oil on canvas, 115 x 145 cm. Musée du Louvre. © 2024 GrandPalaisRmn (musée du Louvre) / Jean-Gilles Berizzi.</p>"
+    }
+  ],
+  "socialNetwork": {
+    "nodes": [
+      {
+        "id": "Marquis d’Argenson",
+        "type": "person",
+        "bio": "Ambassador, war minister, and art collector influential in 18th‑century art circles. Known for his role in both art patronage and political alliances at Versailles."
+      },
+      {
+        "id": "Duc de Choiseul",
+        "type": "greenperson",
+        "bio": "A prominent French statesman and art collector with close ties to the aristocracy. His influence at court extended into both cultural and political realms."
+      },
+      {
+        "id": "Comte de Vaudreuil",
+        "type": "greenperson",
+        "bio": "A high-profile courtier and collector with deep colonial connections, particularly through his family’s sugar plantations in Saint-Domingue. Historically, he was also noted for his volatile temperament and rumored romantic liaisons."
+      },
+      {
+        "id": "Louis XVI",
+        "type": "person",
+        "bio": "The last king of France before the Revolution, whose reign was marked by significant social and economic upheavals."
+      },
+      {
+        "id": "Gabrielle de Polignac",
+        "type": "person",
+        "bio": "An influential courtier and close confidante of Marie Antoinette. Although her official role was that of a governess to the royal children, she was also known for her significant social clout and the longstanding, albeit controversial, rumors linking her romantically to Comte de Vaudreuil."
+      }
+    ],
+    "edges": [
+      {
+        "source": "Marquis d’Argenson",
+        "target": "Duc de Choiseul",
+        "relationship": "political ally"
+      },
+      {
+        "source": "Comte de Vaudreuil",
+        "target": "Louis XVI",
+        "relationship": "served as a royal officer"
+      },
+      {
+        "source": "Comte de Vaudreuil",
+        "target": "Gabrielle de Polignac",
+        "relationship": "rumored lover"
+      }
+    ]
+  }
+}

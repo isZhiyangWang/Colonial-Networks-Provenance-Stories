@@ -1,0 +1,259 @@
+{
+  "artworkData": {
+    "title": "Perseus and Andromeda (1554-6)",
+    "imageUrl": "assets/titian.jpg",
+    "description": "<p><strong>Artist:</strong> Titian</p><p>Titian’s Perseus and Andromeda was originally painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion. Titian was one of the king’s favorite painters and continued to be one of the most sought-after \"Old Masters\" by Europe’s elite art collectors. This particular canvas is in fact associated with two other \"Old Masters\" who may have owned it: the Italian sculptor Leone Leoni, who was famously a galley slave, and the Flemish painter Anthony Van Dyck, who acquired it in 1623. Both artists were based in Milan at this time.</p><br><p>Current Location: <a href='https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64901&viewType=detailView' target='_blank'>Wallace Collection</a></p>",
+    "currentMuseum": "Wallace Collection, London"
+  },
+  "placeData": {
+    "Madrid": {
+      "name": "Madrid",
+      "coords": [
+        40.4168,
+        -3.7038
+      ]
+    },
+    "Milan": {
+      "name": "Milan",
+      "coords": [
+        45.4642,
+        9.19
+      ]
+    },
+    "Paris": {
+      "name": "Paris",
+      "coords": [
+        48.8566,
+        2.3522
+      ]
+    },
+    "London": {
+      "name": "London",
+      "coords": [
+        51.5074,
+        -0.1278
+      ]
+    }
+  },
+  "provenanceEvents": [
+    {
+      "id": 0,
+      "title": "1. A painting owned by kings and artists",
+      "from": "Madrid",
+      "to": "Paris",
+      "eventType": "moves from",
+      "text": "<p>Titian’s Perseus and Andromeda was originally painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion.</p><p>Titian was one of the king’s favorite painters and continued to be one of the most sought-after \"Old Masters\" by Europe’s elite art collectors.</p><p>This particular canvas is in fact associated with two other \"Old Masters\" who may have owned it: the Italian sculptor Leone Leoni, who was famously a galley slave, and the Flemish painter Anthony Van Dyck, who acquired it in 1623. Both artists were based in Milan at this time.</p><p>It wasn’t long after that Titian’s Perseus and Andromeda arrived in Paris, after it was purchased, around 1655, by Louis Phélypeaux, seigneur de La Vrillière (1598–1681).</p><p>It was likely displayed in the celebrated “Galerie Dorée” of the Hôtel de la Vrillière, a sumptuous Parisian hôtel that Phélypeaux built to house his art collection (it is now the headquarters of the Banque de France).</p><p>Phélypeaux’s art buying was fueled by the fortune of his father-in-law, Michel Émery, who oversaw France’s finances during the 1640s, a time when the monarchy was aggressively trying to expand France’s colonies in the Americas.</p><p>Phélypeaux’s descendants would continue to play active roles in developing France’s colonial empire in the New World.</p>",
+      "participants": [
+        { "name": "King Philip II", "type": "person" },
+        { "name": "Leone Leoni", "type": "person" },
+        { "name": "Anthony Van Dyck", "type": "person" },
+        { "name": "Louis Phélypeaux", "type": "person" },
+        { "name": "Madrid", "type": "place" },
+        { "name": "Milan", "type": "place" },
+        { "name": "Paris", "type": "place" }
+      ],
+      "networkPairs": [
+        {
+          "source": "Madrid",
+          "target": "Milan",
+          "label": "moves from"
+        },
+        {
+          "source": "Milan",
+          "target": "Paris",
+          "label": "moves from"
+        }
+      ],
+      "changedLocation": true
+    },
+    {
+      "id": 1,
+      "title": "2. Part of the (in)famous Orléans Collection",
+      "from": "Comte de Toulouse",
+      "to": "Philippe Egalité",
+      "eventType": "inherited by",
+      "text": "<p>By 1723, after passing through the hands of several other French collectors, Titian’s painting had joined the Orléans Collection, recognized as perhaps the most significant private collection of Western art.</p><p>Assembled in large part by Philippe II, duc d’Orléans (1674-1723), who served as Regent of France from 1715-23—during a period when he and his cronies gained and lost fortunes through colonial speculation—the collection was displayed in the lavish Palais-Royal in Paris.</p><p>It was hung alongside other Titian paintings that were collectively known as the artist’s poesie, a series of meditations on Ovid’s Metamorphoses, including this tale of Perseus rescuing the Ethiopian princess Andromeda.</p><p>In 1785, the Orléans collection was inherited by the Regent’s great-grandson Louis-Philippe-Joseph, duc de Chartres, who became the duc d’Orléans upon the death of his father that year.</p><p>This latest heir to the Orléans art collection was a plantation owner who would later become the pro-Revolution noble known as Philippe Egalité.</p>",
+      "participants": [
+        { "name": "Comte de Toulouse", "type": "person" },
+        { "name": "Philippe II, duc d’Orléans", "type": "person" },
+        { "name": "Philippe Egalité", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        {
+          "source": "Comte de Toulouse",
+          "target": "Philippe II, duc d’Orléans",
+          "label": "bought by"
+        },
+        {
+          "source": "Philippe II, duc d’Orléans",
+          "target": "Philippe Egalité",
+          "label": "inherited by"
+        }
+      ],
+      "changedLocation": false
+    },
+    {
+      "id": 2,
+      "title": "3. Titian comes to London: Laborde’s purchase",
+      "from": "Duc d’Orléans, Philippe Egalité",
+      "to": "London",
+      "eventType": "bought by",
+      "text": "<p>In 1792, Louis Philippe d’Orléans (1787-93), known then as Philippe Egalité, sold part of the Orléans collection to the Brussels banker Édouard de Walckiers.</p><p>A close friend of the comte de Vaudreuil (from whom he acquired a sugar plantation in Saint-Domingue/Haiti), Philippe Egalité had dissipated the family fortune through gambling and made a huge profit off the sale.</p><p>Very soon after, Walckiers’s cousin, François Laborde de Méréville, who had spent a few years in Saint-Domingue managing his own family’s extensive sugar plantations, bought the collection for nearly a million francs and brought it to London.</p><p>He too made a fortune by selling the paintings to Michael Bryan in 1798 for £43,500, the equivalent of 7 million dollars today.</p>",
+      "participants": [
+        { "name": "Duc d’Orléans, Philippe Egalité", "type": "greenperson" },
+        { "name": "Édouard de Walckiers", "type": "person" },
+        { "name": "François Laborde de Méréville", "type": "greenperson" },
+        { "name": "Paris", "type": "place" },
+        { "name": "London", "type": "place" },
+        { "name": "Michael Bryan", "type": "person" }
+      ],
+      "networkPairs": [
+        {
+          "source": "Duc d’Orléans, Philippe Egalité",
+          "target": "Édouard de Walckiers",
+          "label": "bought by"
+        },
+        {
+          "source": "Édouard de Walckiers",
+          "target": "François Laborde de Méréville",
+          "label": "bought by"
+        },
+        {
+          "source": "François Laborde de Méréville",
+          "target": "Paris",
+          "label": "brief stop"
+        },
+        {
+          "source": "Paris",
+          "target": "London",
+          "label": "transported to"
+        },
+        {
+          "source": "London",
+          "target": "Michael Bryan",
+          "label": "bought by"
+        }
+      ],
+      "changedLocation": true
+    },
+    {
+      "id": 3,
+      "title": "4. On the London art market",
+      "from": "Michael Bryan",
+      "to": "Wallace Collection",
+      "eventType": "accessioned by",
+      "text": "<p>Together with Jeremiah Harman, a director of the Bank of England and an important art collector, Bryan formed a syndicate to sell the paintings, which the British Royal Academy had tried to acquire but couldn’t afford.</p><p>More than 300 French, Spanish, and Italian works were publicly exhibited in 1798 in two London venues—Pall Mall and the Lyceum in the Strand—and some were bought by John Angerstein, a major benefactor to London’s National Gallery.</p><p>Titian’s painting, however, was sold a few years later and, after passing through various hands on the London art market, it was acquired by the 3rd Marquess of Hertford (1777-1842) for £362.10.</p><p>His collection forms part of the Wallace Collection in London, which opened as a museum in 1897.</p>",
+      "participants": [
+        { "name": "Michael Bryan", "type": "person" },
+        { "name": "Jeremiah Harman", "type": "person" },
+        { "name": "3rd Marquess of Hertford", "type": "person" },
+        { "name": "Wallace Collection", "type": "museum" },
+        { "name": "London", "type": "place" }
+      ],
+      "networkPairs": [
+        {
+          "source": "Michael Bryan",
+          "target": "Jeremiah Harman",
+          "label": "collaborated with"
+        },
+        {
+          "source": "Jeremiah Harman",
+          "target": "3rd Marquess of Hertford",
+          "label": "helped acquire"
+        },
+        {
+          "source": "3rd Marquess of Hertford",
+          "target": "Wallace Collection",
+          "label": "accessioned by"
+        }
+      ],
+      "changedLocation": false
+    }
+  ],
+  "socialNetwork": {
+    "nodes": [
+      {
+        "id": "King Philip II",
+        "type": "person",
+        "bio": "King of Spain (1527–1598). A major patron of Titian's works during the so-called 'Golden Age' of Spanish art and imperial expansion."
+      },
+      {
+        "id": "Leone Leoni",
+        "type": "person",
+        "bio": "Italian sculptor, famously a galley slave, and one of the potential owners of Titian’s Perseus and Andromeda. Based in Milan."
+      },
+      {
+        "id": "Anthony Van Dyck",
+        "type": "person",
+        "bio": "Flemish painter who acquired the painting in 1623. Also based in Milan around that time."
+      },
+      {
+        "id": "Louis Phélypeaux",
+        "type": "person",
+        "bio": "Seigneur de La Vrillière (1598–1681), who purchased the painting around 1655 and displayed it in his 'Galerie Dorée' in Paris."
+      },
+      {
+        "id": "Comte de Toulouse",
+        "type": "person",
+        "bio": "A French noble and collector. The painting later became part of the Orléans Collection after passing through various hands."
+      },
+      {
+        "id": "Philippe II, duc d’Orléans",
+        "type": "person",
+        "bio": "Regent of France (1715–23). Assembled the Orléans Collection, noted for large-scale art patronage and colonial speculation."
+      },
+      {
+        "id": "Philippe Egalité",
+        "type": "greenperson",
+        "bio": "Louis-Philippe-Joseph, duc d’Orléans. A plantation owner and pro-Revolution noble who inherited the Orléans Collection in 1785."
+      },
+      {
+        "id": "Édouard de Walckiers",
+        "type": "person",
+        "bio": "A Brussels banker who acquired part of the Orléans Collection from Philippe Egalité in 1792."
+      },
+      {
+        "id": "François Laborde de Méréville",
+        "type": "greenperson",
+        "bio": "Cousin of Édouard de Walckiers; managed sugar plantations in Saint-Domingue and brought the Orléans Collection to London."
+      },
+      {
+        "id": "Michael Bryan",
+        "type": "person",
+        "bio": "An art dealer who purchased the collection from François Laborde de Méréville and formed a syndicate to sell it in London."
+      },
+      {
+        "id": "Jeremiah Harman",
+        "type": "person",
+        "bio": "Director of the Bank of England and a key art collector. Collaborated with Michael Bryan to sell the Orléans Collection."
+      },
+      {
+        "id": "3rd Marquess of Hertford",
+        "type": "person",
+        "bio": "Acquired Titian's painting for £362.10. His collection later became part of the Wallace Collection in London."
+      },
+      {
+        "id": "Wallace Collection",
+        "type": "museum",
+        "bio": "A major art museum in London, opened in 1897. Houses the Hertford family's art collections, including Titian’s Perseus and Andromeda."
+      }
+    ],
+    "edges": [
+      {
+        "source": "Philippe II, duc d’Orléans",
+        "target": "Philippe Egalité",
+        "relationship": "great-grandfather → great-grandson"
+      },
+      {
+        "source": "Édouard de Walckiers",
+        "target": "François Laborde de Méréville",
+        "relationship": "cousins"
+      },
+      {
+        "source": "Michael Bryan",
+        "target": "Jeremiah Harman",
+        "relationship": "formed a syndicate"
+      }
+    ]
+  }
+}
