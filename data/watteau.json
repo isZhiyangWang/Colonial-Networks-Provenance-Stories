@@ -41,7 +41,9 @@
           "label": "painted by"
         }
       ],
-      "changedLocation": false
+      "changedLocation": false,
+      "imageSource": "<p>Antoine Watteau, <em>Three Studies of a Young Man</em>, c. 1715-16. Gray wash with red and black chalk on paper, 24.3 x 27 cm. Musée du Louvre. © GrandPalaisRmn (musée du Louvre) / Michel Urtado.</p>",
+      "imageAlt": "<p>Antoine Watteau, <em>Three Studies of a Young Man</em>, c. 1715-16. Musée du Louvre.</p>"
     },
     {
       "id": 1,
@@ -71,7 +73,9 @@
           "label": "supported by"
         }
       ],
-      "changedLocation": false
+      "changedLocation": false,
+      "imageSource": "<p>Nicolas Lancret, <em>Concert in the Oval Salon of Pierre Crozat’s Château at Montmorency</em>, c. 1719-20. Oil on canvas, 35.56 x 44.45 cm. Dallas Art Museum, Lent by the Michael L. Rosenberg Foundation.</p>",
+      "imageAlt": "<p>Nicolas Lancret, <em>Concert in the Oval Salon of Pierre Crozat’s Château at Montmorency</em>, c. 1719-20. Dallas Art Museum.</p>"
     },
     {
       "id": 2,
@@ -101,7 +105,9 @@
           "label": "bought by"
         }
       ],
-      "changedLocation": true
+      "changedLocation": true,
+      "imageSource": "<p>Photograph of the Quai Voltaire, Paris with the Glucq family hôtel at the far right. Image source: Wikimedia.</p>",
+      "imageAlt": "<p>Photograph of the Quai Voltaire, Paris.</p>"
     },
     {
       "id": 3,
@@ -141,7 +147,9 @@
           "label": "bought by"
         }
       ],
-      "changedLocation": false
+      "changedLocation": false,
+      "imageSource": "<p>French School, <em>Catalogue des tableaux de Mr. de Julienne</em> (compiled by Montullé), 18th Century, detail of p. 50. Pen and black ink, gray wash, and watercolor on paper, 19.6 x 26 cm. The Morgan Library and Museum, New York City.</p>",
+      "imageAlt": "<p>French School, <em>Catalogue des tableaux de Mr. de Julienne</em>, 18th Century. The Morgan Library and Museum, New York City.</p>"
     }
   ],
   "socialNetwork": {
