@@ -37,7 +37,9 @@
             "label": "moves from"
           }
         ],
-        "changedLocation": true
+        "changedLocation": true, 
+        "imageSource": "<p> Exposition au Salon du Louvre en 1787 Pietro Antonio Martini Italian After Johann Heinrich Ramberg German 1787 </p>",
+        "imageAlt": "Exposition au Salon du Louvre en 1787 Pietro Antonio Martini Italian After Johann Heinrich Ramberg German 1787"
       },
       {
         "id": 1,
@@ -56,7 +58,9 @@
             "target": "Jean-Joseph de Laborde",
             "label": "bought by"
           }
-        ]
+        ], 
+        "imageSource": "<p>Jacques-Louis David, <em>The Oath of the Tennis Court</em>, 1791. Pen, ink, and wash on paper, 66 x 101.2 cm. Musée du Louvre, on deposit at the Musée National des Châteaux de Versailles et de Trianon. © GrandPalaisRmn (Château de Versailles).</p>",
+        "imageAlt": "<p>Jacques-Louis David, <em>The Oath of the Tennis Court</em>, 1791. Musée du Louvre, on deposit at the Musée National des Châteaux de Versailles et de Trianon.</p>"
       },
       {
         "id": 2,
@@ -81,8 +85,9 @@
             "target": "Rosalie de Nettine de Laborde",
             "label": "returned to"
           }
-        ]
-      },
+        ],"imageSource": "<p>Jean-Jacques Champin, <em>Hôtel of the Laborde family (later known as the Hôtel Lafitte)</em>, 19th Century. Lithograph, 17.9 x 22 cm. Musée Carnavalet, Paris (CC0 1.0).</p>",
+      "imageAlt": "<p>Jean-Jacques Champin, <em>Hôtel of the Laborde family (later known as the Hôtel Lafitte)</em>, 19th Century. Musée Carnavalet, Paris.</p>"
+    },
       {
         "id": 3,
         "title": "4. Back in the Vernet Family (1822)",
@@ -100,7 +105,9 @@
             "target": "Horace Vernet",
             "label": "bought by"
           }
-        ]
+        ],
+        "imageSource": "<p>Horace Vernet, <em>Self-Portrait with a Pipe</em>, c. 1835. Oil on canvas, 47 x 39 cm. Hermitage Museum, Saint Petersburg, Russia. Image source: WikiArt.</p>",
+        "imageAlt": "<p>Horace Vernet, <em>Self-Portrait with a Pipe</em>, c. 1835. Hermitage Museum, Saint Petersburg.</p>"
       },
       {
         "id": 4,
@@ -126,8 +133,10 @@
             "label": "gifted to"
           }
         ],
-        "changedLocation": true
-      }
+        "changedLocation": true,
+        "imageSource": "<p>Photograph of the ballroom of Heber R. Bishop’s mansion at 881 Fifth Avenue, New York City, late 19th Century. Image in the public domain.</p>",
+       "imageAlt": "<p>Photograph of the ballroom of Heber R. Bishop’s mansion, late 19th Century.</p>"
+    }
     ],
     "socialNetwork": {
       "nodes": [
