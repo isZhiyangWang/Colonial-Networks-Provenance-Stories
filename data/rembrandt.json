@@ -36,7 +36,9 @@
         { "source": "Amsterdam", "target": "Paris", "label": "moves from" }
       ],
       "changedLocation": true,
-      "imageSource": "<p>Joan Blaeu, <em>Map of Amsterdam</em>, 1649. Biblioteca Nacional de Espana. Image in the public domain.</p>"
+      "imageSource": "<p>Joan Blaeu, <em>Map of Amsterdam</em>, 1649. Biblioteca Nacional de Espana. Image in the public domain.</p>",
+      "imageAlt": "<p>Joan Blaeu, <em>Map of Amsterdam 1649. Biblioteca Nacional de Espana. Image in the public domain.</p>"
+
     },
     {
       "id": 1,
@@ -70,7 +72,8 @@
         { "source": "Comte de Vaudreuil", "target": "Louis XVI", "label": "sold to" }
       ],
       "changedLocation": false,
-      "imageSource": "<p>List of sale prices: This document has not been made available online yet. “Prices of paintings from the sale of Mr. de Vaudreuil on the 24 and 25th of November, 1784” (n. 28). Fondation Custodia, Collection Frits Lugt, Paris, 9185Ab.</p>"
+      "imageSource": "<p>List of sale prices: This document has not been made available online yet. “Prices of paintings from the sale of Mr. de Vaudreuil on the 24 and 25th of November, 1784” (n. 28). Fondation Custodia, Collection Frits Lugt, Paris, 9185Ab.</p>",
+      "imageAlt": "<p>List of sale prices: This document has not been made available online yet. “Prices of paintings from the sale of Mr. de Vaudreuil on the 24 and 25th of November, 1784” (n. 28). Fondation Custodia, Collection Frits Lugt, Paris, 9185Ab.</p>"
     },
     {
       "id": 3,
@@ -89,7 +92,9 @@
         { "source": "French State", "target": "Musée du Louvre", "label": "accessioned by" }
       ],
       "changedLocation": false,
-      "imageSource": "<p><a href=\"https://collections.louvre.fr/ark:/53355/cl010065360\">Hubert Robert</a>, <em>Project for the Transformation of the Grand Gallery of the Louvre</em>, 1796. Oil on canvas, 115 x 145 cm. Musée du Louvre. © 2024 GrandPalaisRmn (musée du Louvre) / Jean-Gilles Berizzi.</p>"
+      "imageSource": "<p><a href=\"https://collections.louvre.fr/ark:/53355/cl010065360\">Hubert Robert</a>, <em>Project for the Transformation of the Grand Gallery of the Louvre</em>, 1796. Oil on canvas, 115 x 145 cm. Musée du Louvre. © 2024 GrandPalaisRmn (musée du Louvre) / Jean-Gilles Berizzi.</p>",
+      "imageAlt": "<p><a href=\"https://collections.louvre.fr/ark:/53355/cl010065360\">Hubert Robert</a>, <em>Project for the Transformation of the Grand Gallery of the Louvre</em>, 1796. Oil on canvas, 115 x 145 cm. Musée du Louvre. © 2024 GrandPalaisRmn (musée du Louvre) / Jean-Gilles Berizzi.</p>"
+
     }
   ],
   "socialNetwork": {
