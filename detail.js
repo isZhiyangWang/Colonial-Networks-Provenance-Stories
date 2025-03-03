@@ -228,7 +228,7 @@ async function initProvenance(json) {
 
     // event image
     const sanitizedBase = getFilenameBase(artworkData.imageUrl);
-    const eventImgUrl = `blob/main/assets/${sanitizedBase}-${ev.id}.jpg`;
+    const eventImgUrl = `assets/${sanitizedBase}-${ev.id}.jpg`;
 
     eventThumbEl.style.display = "block";
     eventThumbEl.onerror = () => {
