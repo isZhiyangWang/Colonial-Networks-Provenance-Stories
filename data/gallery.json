@@ -2,24 +2,24 @@
   {
     "id": "rembrandt",
     "title": "Rembrandt, Philosopher in Contemplation",
-    "image_url": "assets/rembrandt.jpg",
+    "image_url": "blob/main/assets/rembrandt.jpg",
     "excerpt": "Rembrandt’s Philosopher in Comtemplation was painted in 1632 and spent its first hundred years in private collections in Flanders and the Netherlands."
   },
   {
     "id": "watteau",
     "title": "Jean-Antoine Watteau, Pleasures of the Ball (c. 1715-17)",
-    "image_url": "assets/watteau.png",
+    "image_url": "blob/main/assets/watteau.png",
     "excerpt": "Painted in 1632, famously relocated to Paris in the 18th century."
   },{
     "id": "titian",
     "title": "Perseus and Andromeda (1554-6)",
-    "image_url": "assets/titian.jpg",
+    "image_url": "blob/main/assets/titian.jpg",
     "excerpt": "Painted in 1632, famously relocated to Paris in the 18th century."
   },
   {
     "id": "vernet",
     "title": "Triumph of Aemilius Paulus (1789)",
-    "image_url": "assets/vernet.jpg",
+    "image_url": "blob/main/assets/vernet.jpg",
     "excerpt": "Painted in 1632, famously relocated to Paris in the 18th century."
   }
   
