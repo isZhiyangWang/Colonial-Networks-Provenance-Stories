@@ -211,6 +211,7 @@ header {
 .hidden {
   display: none !important;
 }
+
 #overlay-content {
   background-color: #fff;
   width: 85%;
@@ -219,14 +220,15 @@ header {
   max-height: 90%;
   border-radius: 8px;
   padding: 1rem;
-  position: relative;
-
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1.8fr; /* left, mid, right columns */
+  grid-template-rows: 90% 5%; 
+  grid-template-columns: 1fr 1.2fr 1.8fr; 
   gap: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
+
+
 #overlay-event-text {
   max-height: 100%;
   overflow-y: auto;
@@ -234,7 +236,10 @@ header {
 }
 #overlay-close{
   color: black !important;
-  z-index: 1000;
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  z-index: 100000;
 }
 .close {
   position: absolute;
@@ -253,7 +258,9 @@ header {
   border-radius: 4px;
   padding: 1rem;
   overflow-y: auto;
+  height: 100%;
 }
+
 .overlay-col::-webkit-scrollbar {
   width: 6px;
 }
@@ -261,6 +268,13 @@ header {
   background: #ccc;
   border-radius: 4px;
 }
+.col-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* Constrain the event thumb image in left col */
 .col-left img {
   max-width: 100%;
@@ -271,10 +285,12 @@ header {
 /* nav buttons */
 .overlay-nav {
   grid-column: 1 / 4;
+  height: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 0.5rem; 
 }
 .overlay-nav button {
   cursor: pointer;

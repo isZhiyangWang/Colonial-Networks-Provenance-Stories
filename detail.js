@@ -9,6 +9,7 @@ async function initProvenance(json) {
   document.getElementById("artwork-title").textContent = artworkData.title;
   const artImg = document.getElementById("artwork-image");
   artImg.src = artworkData.imageUrl;
+  artImg.alt = artworkData.description || "Art Image";
   document.getElementById("artwork-description").innerHTML =
     artworkData.description;
 
@@ -203,7 +204,7 @@ async function initProvenance(json) {
   const eventTitleEl = document.getElementById("overlay-event-title");
   const eventThumbEl = document.getElementById("overlay-artwork-thumb");
   const eventTextEl = document.getElementById("overlay-event-text");
-  const eventNameEl = document.getElementById("overlay-artwork-name");
+  // const eventNameEl = document.getElementById("overlay-artwork-name");
   const sourceDiv = document.getElementById("overlay-image-source") || null;
 
   const prevBtn = document.getElementById("prev-event");
@@ -224,13 +225,15 @@ async function initProvenance(json) {
 
     eventTitleEl.textContent = ev.title;
     eventTextEl.innerHTML = `<p>${ev.text}</p>`;
-    eventNameEl.textContent = artworkData.title;
+    // eventNameEl.textContent = artworkData.title;
 
     // event image
     const sanitizedBase = getFilenameBase(artworkData.imageUrl);
     const eventImgUrl = `assets/${sanitizedBase}-${ev.id}.jpg`;
 
     eventThumbEl.style.display = "block";
+    const altText = ev.imageAlt || "Event Image";
+    eventThumbEl.alt = altText;
     eventThumbEl.onerror = () => {
       eventThumbEl.style.display = "none";
     };
@@ -280,10 +283,17 @@ async function initProvenance(json) {
    * drawNetworkForEvent (small local)
    ************************************/
   function drawNetworkForEvent(ev) {
-    const w = 400,
-      h = 300;
     const container = d3.select("#overlay-network");
     container.selectAll("svg").remove();
+
+    const parent = document.querySelector(".col-middle");
+    if (!parent) {
+        console.error("Parent container `.col-middle` not found!");
+        return;
+    }
+
+    const w = parent.clientWidth-32;
+    const h = parent.clientHeight-32;
 
     const svg = container
       .append("svg")
@@ -291,10 +301,14 @@ async function initProvenance(json) {
       .attr("height", h)
       .style("background", "#fff")
       .style("border", "1px solid #ccc")
-      .style("border-radius", "4px");
+      .style("border-radius", "4px")
+      .style("display", "block")  
+      .style("margin", "auto");  
 
+    
     renderLocalNetwork(svg, w, h, ev);
-  }
+}
+
 
   function renderLocalNetwork(svg, w, h, ev) {
     const defs = svg.append("defs");
