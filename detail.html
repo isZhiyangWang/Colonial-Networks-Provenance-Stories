@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Artwork Detail</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+
+    <!-- Shared CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="detail-page">
+    <div class="page-container">
+      <header>
+        <h1 id="artwork-title"></h1>
+        <div id="artwork-info">
+          <img id="artwork-image" alt="Artwork Image" />
+          <div id="artwork-description"></div>
+        </div>
+      </header>
+
+      <!-- Map container -->
+      <div id="map-container">
+        <div id="map"></div>
+
+        <!-- Show Full Network button -->
+        <button id="show-full-network" class="overlay-btn">
+          Show Full Network
+        </button>
+        <!-- Show Social Network button -->
+        <button id="show-social-network" class="overlay-btn" style="top: 50px;">
+          Show Social Network
+        </button>
+
+        <!-- Single Event Modal -->
+        <div id="map-overlay" class="hidden">
+          <div id="overlay-content">
+            <span id="overlay-close" class="close">&times;</span>
+            <!-- LEFT COL: event title, image, name -->
+            <div class="overlay-col col-left">
+              <h3 id="overlay-event-title"></h3>
+
+              <!-- Event image (hide if fails) -->
+              <img id="overlay-artwork-thumb" alt="Event Artwork" />
+
+              <!-- Source info for event image -->
+              <div id="overlay-image-source" style="display:none;"></div>
+
+              <p>
+                <strong>Artwork:</strong>
+                <span id="overlay-artwork-name"></span>
+              </p>
+            </div>
+
+       
+            <!-- RIGHT COL: local D3 network -->
+            <div class="overlay-col col-right" style="position: relative;">
+              <div id="overlay-network" style="width: 100%; height: 100%;">
+                <!-- A four-arrow enlarge icon in bottom-right corner -->
+                <button
+                  id="magnify-event-network"
+                  style="
+                    position: absolute;
+                    bottom: 5px;
+                    right: 5px;
+                    z-index: 99;
+                    font-size: 1rem;
+                    padding: 0.3rem 0.6rem;
+                    cursor: pointer;
+                    border: 1px solid #888;
+                    border-radius: 4px;
+                    background: #fafafa;
+                  "
+                >
+                  ⤢
+                </button>
+              </div>
+            </div>
+            
+                 <!-- MIDDLE COL: event text -->
+                 <div class="overlay-col col-middle">
+                  <div id="overlay-event-text"></div>
+                </div>
+    
+            <div class="overlay-nav">
+              <button id="prev-event">&#8592;</button>
+              <button id="next-event">&#8594;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back to Gallery button -->
+      <button id="back-to-gallery" class="back-btn">
+        ← Back to Gallery
+      </button>
+    </div>
+
+    <!-- Full Network overlay -->
+    <div id="full-network-overlay" class="hidden">
+      <div id="full-network-content">
+        <span id="full-network-close" class="close">&times;</span>
+        <h2>Full Provenance Network</h2>
+        <div id="full-network-diagram"></div>
+      </div>
+    </div>
+
+    <!-- Social Network overlay -->
+    <div id="social-network-overlay" class="hidden">
+      <div id="social-network-content">
+        <span id="social-network-close" class="close">&times;</span>
+        <h2>Social Network Diagram</h2>
+        <div id="social-network-diagram"></div>
+      </div>
+    </div>
+
+    <!-- Lightbox for event image (vertical layout, centered) -->
+    <div id="image-lightbox" class="hidden">
+      <span id="lightbox-close" class="close">&times;</span>
+      <!-- Center the image + text in a flex column -->
+      <div class="lightbox-content">
+        <img id="lightbox-img" alt="Full size event image" />
+        <!-- Text info with white background -->
+        <div id="lightbox-text"></div>
+      </div>
+    </div>
+    
+
+    <!-- Enlarge local event network in a similar "lightbox" style -->
+    <div id="event-network-lightbox" class="hidden">
+      <span id="event-network-close" class="close">&times;</span>
+      <div class="lightbox-content">
+        <h3 id="event-network-title" style="margin-bottom: 0.5rem;">
+          Event Network (Enlarged)
+        </h3>
+        <div
+          id="event-network-zoomed-container"
+          style="
+            width: 80vw;
+            height: 70vh;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          "
+        ></div>
+      </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+
+    <!-- D3 v7 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- detail.js with new features -->
+    <script src="detail.js"></script>
+  </body>
+</html>

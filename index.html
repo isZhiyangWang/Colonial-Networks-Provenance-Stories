@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Artworks Gallery</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- Add class="landing-page" so CSS can specifically target this page -->
+  <body class="landing-page">
+
+    <!-- This alert only appears on mobile screens (see style.css media query) -->
+    <div class="mobile-alert">
+      <p>Please use a laptop or a larger screen to view this content.</p>
+    </div>
+
+    <!-- Left side (fixed) -->
+    <div class="landing-left">
+      <div class="landing-left-content">
+        <h2></h2>
+        <p style="margin-top: 1rem;">
+          Click on an artwork to find out its story as an object.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right side (scrollable) -->
+    <div class="landing-right">
+      <h1>Colonial Networks: Provenance Stories</h1>
+      <div id="gallery-container" class="landing-grid"></div>
+    </div>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>

@@ -1,0 +1,485 @@
+/* GLOBAL RESET / BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* 
+   We ONLY apply the fixed/overflow logic for .landing-page.
+   The detail page (class="detail-page") scrolls normally.
+*/
+
+/* For the landing page specifically: 
+   - fixed-left, scrollable-right 
+*/
+body.landing-page {
+  /* We do NOT set overflow hidden on the entire body anymore
+     Instead, we handle that with a container approach. */
+  height: 100vh; 
+  overflow: hidden; /* So the left is fixed & right is scrolled internally */
+}
+
+body.detail-page {
+  /* The detail page should scroll normally if content is long */
+  height: auto; 
+  overflow: visible; 
+}
+
+/* =======================================
+   LANDING PAGE LAYOUT
+======================================= */
+
+/* This alert is hidden by default, 
+   but becomes visible in the media query 
+   for small screens. */
+.mobile-alert {
+  display: none !important; 
+  position: fixed; 
+  top: 0; left: 0; 
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+  /* Center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* The "normal" landing layout for bigger screens */
+.landing-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px; 
+  height: 100vh; 
+  background: #ffffff;
+  border-right: 1px solid #ccc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-left-content {
+  max-width: 200px;
+  text-align: center;
+}
+.landing-right {
+  margin-left: 320px; 
+  height: 100vh;
+  overflow-y: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.landing-right h1 {
+  margin-bottom: 1rem;
+}
+.landing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.landing-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* modern approach for squares */
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+.landing-grid img:hover {
+  transform: scale(1.02);
+}
+.gallery-item {
+  cursor: pointer;
+}
+
+/* MEDIA QUERY: On small screens, show .mobile-alert and hide normal layout */
+@media (max-width: 700px) {
+  /* Hide the fixed left and the right side */
+  .landing-left,
+  .landing-right {
+    display: none;
+  }
+  /* Show the mobile alert panel */
+  .mobile-alert {
+    display: flex !important;
+  }
+}
+
+/* =======================================
+   DETAIL PAGE LAYOUT
+======================================= */
+.page-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+header {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+#artwork-info {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+#artwork-info img {
+  width: 260px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#artwork-description {
+  flex: 1;
+}
+#map-container {
+  position: relative;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background-color: #eee;
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+.map-label {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  width: auto !important;
+  height: auto !important;
+}
+.map-badge {
+  background: #e74c3c;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 0.8rem;
+}
+/* Overlay buttons on map container */
+.overlay-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  outline: none;
+}
+.overlay-btn:hover {
+  background-color: #eee;
+}
+
+/* Single Event Modal (map-overlay) */
+#map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  display: none !important;
+}
+#overlay-content {
+  background-color: #fff;
+  width: 85%;
+  max-width: 1200px;
+  height: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.8fr; /* left, mid, right columns */
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+#overlay-event-text {
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 10px;
+}
+#overlay-close{
+  color: black !important;
+  z-index: 1000;
+}
+.close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: red;
+}
+.overlay-col {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.overlay-col::-webkit-scrollbar {
+  width: 6px;
+}
+.overlay-col::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+/* Constrain the event thumb image in left col */
+.col-left img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* nav buttons */
+.overlay-nav {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.overlay-nav button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #eee;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* Full Network Overlay */
+#full-network-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#full-network-content {
+  background-color: #fff;
+  width: 80%;
+  max-width: 1200px;
+  min-height: 50%;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+#full-network-content h2 {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+#full-network-diagram {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+#full-network-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#full-network-close:hover {
+  color: red;
+}
+.link-label {
+  fill: #666;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+/* Social Network Overlay */
+#social-network-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#social-network-content {
+  background-color: #fff;
+  width: 80%;
+  max-width: 1200px;
+  min-height: 80%;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+#social-network-content h2 {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+#social-network-diagram {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* 1) Lightbox overlay for enlarged event images */
+
+#event-network-lightbox{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 2000; /* above everything else */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#event-network-close{
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+#image-lightbox.hidden {
+  display: none;
+}
+
+
+
+/* close button at top-right corner of the lightbox */
+#lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* 2) A style for "Back to Gallery" button */
+.back-btn {
+  margin:  0;
+  padding: 0.5rem 1rem;
+  background: #eee;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.back-btn:hover {
+  background: #ddd;
+}
+/* 1) Lightbox overlay for enlarged event images */
+#image-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 2000; /* above everything else */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lightbox content container */
+.lightbox-content {
+  display: flex;
+  flex-direction: column; /* 图片和文字上下排列 */
+  align-items: center; /* 水平居中 */
+  justify-content: center; /* 垂直居中 */
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+/* The big image */
+#lightbox-img {
+  max-width: 100%; /* 避免超过 lightbox-content */
+  max-height: 70vh; /* 让出一些空间给文字 */
+  object-fit: contain;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+/* Text box with white background */
+#lightbox-text {
+  display: block; /* 确保显示 */
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 4px;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Close button at the top-right corner */
+#lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
