@@ -1,8 +1,8 @@
 {
   "artworkData": {
-    "title": "Jean-Antoine Watteau, Pleasures of the Ball (c. 1715-17)",
+    "title": "Watteau, Pleasures of the Ball",
     "imageUrl": "assets/watteau.png",
-    "description": "<p>Watteau painted the Pleasures of the Ball around 1715-17. He is best known for inventing the fête galante, a genre representing elegant elites entertaining each other in an idyllic outdoor setting. This same period coincided with the inclusion of Black figures in Watteau’s paintings and drawings, some of which appear to have been modeled from life.</p><br><p>Current Location: <a href='https://www.dulwichpicturegallery.org.uk/explore-the-collection/151-200/the-pleasures-of-the-ball/' target='_blank'>Dulwich Picture Gallery</a></p>"
+    "description": "<p>Watteau’s Pleasures of the Ball depicts a group of elegantly dressed French elites dancing, making music, and enjoying each other’s company on an outdoor terrace. But the inclusion of two apparently enslaved Black figures in the picture raises the question of whose pleasure we are seeing, and at what cost.</p><br><p>Current Location: <a href='https://www.dulwichpicturegallery.org.uk/explore-the-collection/151-200/the-pleasures-of-the-ball/' target='_blank'>Dulwich Picture Gallery</a></p>"
   },
   "placeData": {
     "Paris": {
@@ -27,7 +27,7 @@
       "from": "Paris",
       "to": "Paris",
       "eventType": "painted by",
-      "text": "<p>Watteau painted the Pleasures of the Ball around 1715-17. He is best known for inventing the fête galante, a genre representing elegant elites entertaining each other in an idyllic outdoor setting. This same period coincided with the inclusion of Black figures in Watteau’s paintings and drawings, some of which appear to have been modeled from life.<br><br>Watteau’s Pleasures is one of several fêtes galantes that includes a Black figure: a young boy who stands on a balcony at the far right and looks down at the dancers. He wears a turban and possibly (though it is less clear) a metal collar, which would denote his enslavement. The presence of enslaved African and Afro-descended individuals—most of whom were trafficked from France’s Caribbean colonies to serve as domestic laborers in the metropole—was increasing in Paris at this moment, and the inclusion of this Black figure makes us wonder: What was the artist’s own opinion about this practice? What does it mean that he seems to have made the Black boy a surrogate spectator? How does this change our understanding of the painting and the fête galante genre as being preoccupied with pleasure? “Pleasure” at whose cost ? </p>",
+      "text": "<p>Watteau painted the Pleasures of the Ball around 1715-17. He is best known for inventing the fête galante, a genre representing elegant elites entertaining each other in an idyllic outdoor setting. This same period coincided with the inclusion of Black figures in Watteau’s paintings and drawings, some of whom appear to have been modeled from life.<br><br>Watteau’s Pleasures is one of several fêtes galantes that includes Black figures: a young boy in the crowd and another who stands on a balcony at the far right and looks down at the dancers. He wears a turban and possibly (though it is less clear) a metal collar, which would denote his enslavement. The presence of enslaved African and Afro-descended individuals—most of whom were trafficked from France’s Caribbean colonies to serve as domestic laborers in the metropole—was increasing in Paris at this moment, and the inclusion of these Black figures makes us wonder: What was the artist’s own opinion about this practice? What does it mean that he seems to have made the boy on the balcony a surrogate spectator? How does this change our understanding of the painting and the fête galante genre as being preoccupied with pleasure? “Pleasure” at whose cost?</p>",
       "participants": [
         {
           "name": "Jean-Antoine Watteau",

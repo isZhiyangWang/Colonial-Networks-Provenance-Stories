@@ -1,8 +1,8 @@
 {
   "artworkData": {
-    "title": "Perseus and Andromeda (1554-6)",
+    "title": "Titian, Perseus and Andromeda",
     "imageUrl": "assets/titian.jpg",
-    "description": "<p><strong>Artist:</strong> Titian</p><p>Titian’s Perseus and Andromeda was originally painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion. Titian was one of the king’s favorite painters and continued to be one of the most sought-after \"Old Masters\" by Europe’s elite art collectors. This particular canvas is in fact associated with two other \"Old Masters\" who may have owned it: the Italian sculptor Leone Leoni, who was famously a galley slave, and the Flemish painter Anthony Van Dyck, who acquired it in 1623. Both artists were based in Milan at this time.</p><br><p>Current Location: <a href='https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64901&viewType=detailView' target='_blank'>Wallace Collection</a></p>",
+    "description": "<p>Titian’s painting depicts the Greek hero Perseus dramatically diving towards a ferocious sea monster in order to liberate Andromeda, a chained African princess (shown here with gleaming white skin). This painting was much sought after on Europe’s early modern art markets, where it passed through the hands of numerous collectors who profited from enslavement, but also from buying and flipping artworks like this.</p><br><p>Current Location: <a href='https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64901&viewType=detailView' target='_blank'>Wallace Collection</a></p>",
     "currentMuseum": "Wallace Collection, London"
   },
   "placeData": {
@@ -42,7 +42,7 @@
       "from": "Madrid",
       "to": "Paris",
       "eventType": "moves from",
-      "text": "<p>Titian’s Perseus and Andromeda was originally painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion.</p><p>Titian was one of the king’s favorite painters and continued to be one of the most sought-after \"Old Masters\" by Europe’s elite art collectors.</p><p>This particular canvas is in fact associated with two other \"Old Masters\" who may have owned it: the Italian sculptor Leone Leoni, who was famously a galley slave, and the Flemish painter Anthony Van Dyck, who acquired it in 1623. Both artists were based in Milan at this time.</p><p>It wasn’t long after that Titian’s Perseus and Andromeda arrived in Paris, after it was purchased, around 1655, by Louis Phélypeaux, seigneur de La Vrillière (1598–1681).</p><p>It was likely displayed in the celebrated “Galerie Dorée” of the Hôtel de la Vrillière, a sumptuous Parisian hôtel that Phélypeaux built to house his art collection (it is now the headquarters of the Banque de France).</p><p>Phélypeaux’s art buying was fueled by the fortune of his father-in-law, Michel Émery, who oversaw France’s finances during the 1640s, a time when the monarchy was aggressively trying to expand France’s colonies in the Americas.</p><p>Phélypeaux’s descendants would continue to play active roles in developing France’s colonial empire in the New World.</p>",
+      "text": "<p> Titian’s Perseus and Andromeda was painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion. This myth of a bound and captive Ethiopian princess (described as <a href=”https://www.jstor.org/stable/pdf/751417.pdf”>Black<a/> in some ancient accounts) rescued by a Greek hero resonated strongly with early modern European collectors and artists. Two such artists likely owned this work: the Italian sculptor Leone Leoni, who was himself <a href='https://www.frick.org/interact/miniseries/cocktails_curator/leoni_medal_andrea_doria'>imprisoned</a> on the papal galleys, and the Flemish painter Anthony Van Dyck, who acquired it in 1623.</p>",
       "participants": [
         { "name": "King Philip II", "type": "person" },
         { "name": "Leone Leoni", "type": "person" },
@@ -64,7 +64,9 @@
           "label": "moves from"
         }
       ],
-      "changedLocation": true
+      "changedLocation": true,
+      "imageSource": "<p>Titian, Perseus and Andromeda, 1554-6. Oil on canvas, 183.3 x 199.3 cm. Wallace Collection, London (CC-BY-NC-ND 4.0).</p>",
+      "imageAlt": "<p>Titian, Perseus and Andromeda, 1554-6. Oil on canvas, 183.3 x 199.3 cm. Wallace Collection, London (CC-BY-NC-ND 4.0).</p>"
     },
     {
       "id": 1,
@@ -94,11 +96,11 @@
     },
     {
       "id": 2,
-      "title": "3. Titian comes to London: Laborde’s purchase",
+      "title": "3. Laborde de Méréville’s purchase and sale of the Orléans collection",
       "from": "Duc d’Orléans, Philippe Egalité",
       "to": "London",
       "eventType": "bought by",
-      "text": "<p>In 1792, Louis Philippe d’Orléans (1787-93), known then as Philippe Egalité, sold part of the Orléans collection to the Brussels banker Édouard de Walckiers.</p><p>A close friend of the comte de Vaudreuil (from whom he acquired a sugar plantation in Saint-Domingue/Haiti), Philippe Egalité had dissipated the family fortune through gambling and made a huge profit off the sale.</p><p>Very soon after, Walckiers’s cousin, François Laborde de Méréville, who had spent a few years in Saint-Domingue managing his own family’s extensive sugar plantations, bought the collection for nearly a million francs and brought it to London.</p><p>He too made a fortune by selling the paintings to Michael Bryan in 1798 for £43,500, the equivalent of 7 million dollars today.</p>",
+      "text": "<p>In 1792, Louis Philippe d’Orléans (1787-93), known then as Philippe Egalité, sold part of the Orléans collection to the Brussels banker Édouard de Walckiers.</p><p>A close friend of the comte de Vaudreuil (from whom he acquired a sugar plantation in Saint-Domingue/Haiti), Philippe Egalité had dissipated the family fortune through gambling and made a huge profit off the sale.</p><p>Very soon after, Walckiers’s cousin, François Laborde de Méréville, who had spent a few years in Saint-Domingue managing his own family’s extensive sugar plantations, bought the collection for nearly a million francs and brought it to London (a move that contributed to his father’s arrest and subsequent execution by guillotine).</p><p>He too made a fortune by selling the paintings to Michael Bryan in 1798 for £43,500, the equivalent of 7 million dollars today.</p>",
       "participants": [
         { "name": "Duc d’Orléans, Philippe Egalité", "type": "greenperson" },
         { "name": "Édouard de Walckiers", "type": "person" },
