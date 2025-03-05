@@ -47,7 +47,7 @@
         "from": "Paris",
         "to": "Paris",
         "eventType": "bought by",
-        "text": "The possible proslavery subtext of Vernet’s painting is supported by the fact that it was bought by Jean-Joseph de Laborde (1724-94), an extremely wealthy financier who was one of the largest landowners in Saint-Domingue, and who had personally overseen the trafficking of more than 10,000 enslaved Africans to the colony. Laborde acquired the painting in 1791, as he and other slave traders, despite the Revolution, were continuing to prosper. His son, François Laborde de Méréville (1761-1801), became a deputy for the new Revolutionary government (he appears near the center of David’s Oath of the Tennis Court) and was a member of the proslavery lobby that argued for the need to maintain slavery in the colonies. The story behind this painting suggests that scholars should rethink Neoclassicism as a style associated mainly with liberty and reform and acknowledge how some Neoclassical artworks endorsed a vision of slavery in the ancient world, one that 18th C. colonial patrons used to model and justify their own practices.",
+        "text": "The possible proslavery subtext of Vernet’s painting is supported by the fact that it was bought by Jean-Joseph de Laborde (1724-94), an extremely wealthy financier who was one of the largest landowners in Saint-Domingue (Haiti), and who had personally overseen the trafficking of more than 10,000 enslaved Africans to the colony. Laborde acquired the painting in 1791, as he and other slave traders, despite the Revolution, were continuing to prosper. His son, François Laborde de Méréville (1761-1801), became a deputy for the new Revolutionary government (he appears near the center of David’s Oath of the Tennis Court) and was a member of the proslavery lobby that argued for the need to maintain slavery in the colonies. The story behind this painting suggests that scholars should rethink Neoclassicism as a style associated mainly with liberty and reform and acknowledge how some Neoclassical artworks endorsed a vision of slavery in the ancient world, one that 18th C. colonial patrons used to model and justify their own practices.",
         "participants": [
           { "name": "Carle Vernet", "type": "person" },
           { "name": "Jean-Joseph de Laborde", "type": "person" }
@@ -148,7 +148,7 @@
         {
           "id": "Jean-Joseph de Laborde",
           "type": "greenperson",
-          "bio": "Extremely wealthy financier and major landowner in Saint-Domingue. Oversaw the trafficking of 10,000+ enslaved Africans."
+          "bio": "Extremely wealthy financier and major landowner in Saint-Domingue (Haiti). Oversaw the trafficking of 10,000+ enslaved Africans."
         },
         {
           "id": "François Laborde de Méréville",
