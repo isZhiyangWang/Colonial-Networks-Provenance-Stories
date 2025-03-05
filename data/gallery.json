@@ -1,7 +1,7 @@
 [
   {
     "id": "rembrandt",
-    "title": "Rembrandt, Philosopher in Contemplation",
+    "title": "Rembrandt’s Philosopher in Contemplation",
     "image_url": "assets/rembrandt.jpg",
     "excerpt": "Rembrandt’s Philosopher in Comtemplation was painted in 1632 and spent its first hundred years in private collections in Flanders and the Netherlands."
   },
@@ -19,7 +19,7 @@
   {
     "id": "vernet",
     "title": "Triumph of Aemilius Paulus (1789)",
-    "image_url": "assets/vernet.jpg",
+    "image_url": "assets/vernet-thumbnail.png",
     "excerpt": "Painted in 1632, famously relocated to Paris in the 18th century."
   }
   

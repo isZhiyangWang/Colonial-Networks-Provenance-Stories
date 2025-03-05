@@ -137,10 +137,13 @@ header {
   margin-top: 1rem;
 }
 #artwork-info img {
-  width: 260px;
+  max-width: 35%;
+  width: 100%;
   height: auto;
+  aspect-ratio: attr(width) / attr(height);
   border: 1px solid #ccc;
   border-radius: 4px;
+  object-fit: cover;
 }
 #artwork-description {
   flex: 1;
