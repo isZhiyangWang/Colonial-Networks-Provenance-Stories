@@ -1021,3 +1021,25 @@ document
     alert("Error loading artwork data. Check console for details.");
   }
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+  // The modal and close button
+  const instructionsModal = document.getElementById("instructions-modal");
+  const instructionsClose = document.getElementById("instructions-close");
+
+  // The floating icon in bottom-right
+  const instructionsIcon = document.getElementById("instructions-icon");
+
+  // 1) Show the Instructions modal automatically on page load
+  instructionsModal.classList.remove("hidden");
+
+  // 2) If user clicks the close [x] inside the modal
+  instructionsClose.addEventListener("click", () => {
+    instructionsModal.classList.add("hidden");
+  });
+
+  // 3) The user can always re-open instructions by clicking the icon
+  instructionsIcon.addEventListener("click", () => {
+    instructionsModal.classList.remove("hidden");
+  });
+});

@@ -19,8 +19,7 @@ body {
    - fixed-left, scrollable-right 
 */
 body.landing-page {
-  /* We do NOT set overflow hidden on the entire body anymore
-     Instead, we handle that with a container approach. */
+
   height: 100vh; 
   overflow: hidden; /* So the left is fixed & right is scrolled internally */
 }
@@ -466,17 +465,17 @@ header {
 /* Lightbox content container */
 .lightbox-content {
   display: flex;
-  flex-direction: column; /* 图片和文字上下排列 */
-  align-items: center; /* 水平居中 */
-  justify-content: center; /* 垂直居中 */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
   max-width: 90vw;
   max-height: 90vh;
 }
 
 /* The big image */
 #lightbox-img {
-  max-width: 100%; /* 避免超过 lightbox-content */
-  max-height: 70vh; /* 让出一些空间给文字 */
+  max-width: 100%; 
+  max-height: 70vh; 
   object-fit: contain;
   border: 2px solid #fff;
   border-radius: 4px;
@@ -484,7 +483,7 @@ header {
 
 /* Text box with white background */
 #lightbox-text {
-  display: block; /* 确保显示 */
+  display: block;
   margin-top: 0.5rem;
   padding: 0.5rem;
   background: #fff;
@@ -501,4 +500,256 @@ header {
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
+}
+
+/* ===============================
+   INSTRUCTIONS MODAL
+================================= */
+#instructions-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions-modal-content {
+    background: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.instructions-modal-content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.instructions-modal-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.instructions-modal-content ul {
+    padding-left: 20px;
+}
+
+.instructions-modal-content li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Close Button */
+.instructions-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.instructions-close:hover {
+    color: #e74c3c;
+}
+
+/* ===============================
+   FLOATING HELP ICON (BOTTOM-RIGHT)
+================================= */
+#instructions-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #f39c12;
+    color: #fff;
+    cursor: pointer;
+    z-index: 3001;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 0 10px rgba(243, 156, 18, 0.6);
+}
+
+#instructions-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Tooltip-like text that appears on hover */
+#instructions-text {
+    display: none;
+    position: absolute;
+    bottom: 50%;
+    right: 110%;
+    transform: translateY(50%);
+    background: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+#instructions-icon:hover #instructions-text {
+    display: block;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.instructions-modal-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ===============================
+   INSTRUCTIONS MODAL
+================================= */
+#instructions-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  z-index: 3000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions-modal-content {
+  background: #ffffff;
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.instructions-modal-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.instructions-modal-content p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.instructions-modal-content ul {
+  padding-left: 20px;
+}
+
+.instructions-modal-content li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Close Button */
+.instructions-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.instructions-close:hover {
+  color: #e74c3c;
+}
+
+/* ===============================
+ FLOATING HELP ICON (BOTTOM-RIGHT)
+================================= */
+#instructions-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #f39c12;
+  color: #fff;
+  cursor: pointer;
+  z-index: 3001;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.6);
+}
+
+#instructions-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip-like text that appears on hover */
+#instructions-text {
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  right: 110%;
+  transform: translateY(50%);
+  background: #333;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+#instructions-icon:hover #instructions-text {
+  display: block;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.instructions-modal-content {
+  animation: fadeIn 0.3s ease-in-out;
 }
