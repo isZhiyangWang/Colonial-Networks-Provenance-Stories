@@ -717,8 +717,20 @@ header {
 
 #instructions-icon:hover {
   transform: scale(1.1);
+  width: 150px;
+  height: 45px;
+  font-size: 1.2rem;
+  border-radius: 25px;
 }
 
+#instructions-icon:hover span {
+  display: none
+}
+
+#instructions-icon:hover:before {
+  content: "Instructions!";
+
+}
 /* Tooltip-like text that appears on hover */
 #instructions-text {
   display: none;
@@ -753,3 +765,5 @@ header {
 .instructions-modal-content {
   animation: fadeIn 0.3s ease-in-out;
 }
+
+

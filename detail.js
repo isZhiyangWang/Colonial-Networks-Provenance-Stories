@@ -1031,15 +1031,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const instructionsIcon = document.getElementById("instructions-icon");
 
   // 1) Show the Instructions modal automatically on page load
+  instructionsIcon.classList.add("hidden");
   instructionsModal.classList.remove("hidden");
 
   // 2) If user clicks the close [x] inside the modal
   instructionsClose.addEventListener("click", () => {
+    instructionsIcon.classList.remove("hidden");
     instructionsModal.classList.add("hidden");
+
   });
 
   // 3) The user can always re-open instructions by clicking the icon
   instructionsIcon.addEventListener("click", () => {
     instructionsModal.classList.remove("hidden");
+    instructionsIcon.classList.add("hidden");
+  });
+  instructionsIcon.addEventListener("hover",()=>{
+    instructionsIcon.innerText("hello");
+
   });
 });
