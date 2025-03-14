@@ -274,8 +274,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 !important;
 }
-
+.col-middle svg{
+  border: 0 !important;
+}
 
 /* Constrain the event thumb image in left col */
 .col-left img {

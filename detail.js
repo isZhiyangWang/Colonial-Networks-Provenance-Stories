@@ -243,6 +243,7 @@ async function initProvenance(json) {
     if (sourceDiv && ev.imageSource) {
       sourceDiv.innerHTML = ev.imageSource;
       sourceDiv.style.display = "block";
+      sourceDiv.style.fontSize = "12px";
     } else if (sourceDiv) {
       sourceDiv.style.display = "none";
     }
@@ -292,8 +293,8 @@ async function initProvenance(json) {
         return;
     }
 
-    const w = parent.clientWidth-32;
-    const h = parent.clientHeight-32;
+    const w = parent.clientWidth;
+    const h = parent.clientHeight;
 
     const svg = container
       .append("svg")
