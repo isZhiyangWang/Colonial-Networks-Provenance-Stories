@@ -728,7 +728,7 @@ header {
 }
 
 #instructions-icon:hover:before {
-  content: "Instructions!";
+  content: "Instructions";
 
 }
 /* Tooltip-like text that appears on hover */
