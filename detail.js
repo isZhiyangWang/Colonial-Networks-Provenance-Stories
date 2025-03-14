@@ -1046,6 +1046,4 @@ document.addEventListener("DOMContentLoaded", () => {
     instructionsModal.classList.remove("hidden");
     instructionsIcon.classList.add("hidden");
   });
-  instructionsIcon.addEventListener("hover",()=>{
-
 });
