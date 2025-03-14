@@ -779,11 +779,12 @@ async function initProvenance(json) {
     const socialOverlay = document.getElementById("social-network-overlay");
     const socialClose = document.getElementById("social-network-close");
     const socialDiagram = d3.select("#social-network-diagram");
-
+    const socialTitle = document.getElementById("social-network-title");
     showSocialBtn.addEventListener("click", () => {
       socialOverlay.classList.remove("hidden");
       const w = socialDiagram.node().clientWidth || 400;
       const h = socialDiagram.node().clientHeight || 300;
+      socialTitle.textContent = `Social Network Diagram for ${artworkData.title}`;
       drawSocialNetwork(w, h);
     });
 
