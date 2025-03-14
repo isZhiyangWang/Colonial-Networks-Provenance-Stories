@@ -613,11 +613,13 @@ async function initProvenance(json) {
     const fullOverlay = document.getElementById("full-network-overlay");
     const fullClose = document.getElementById("full-network-close");
     const fullDiagram = d3.select("#full-network-diagram");
+    const fullTitle = document.getElementById("full-network-title");
 
     showFullBtn.addEventListener("click", () => {
       fullOverlay.classList.remove("hidden");
       const w = fullDiagram.node().clientWidth;
       const h = fullDiagram.node().clientHeight;
+      fullTitle.textContent = `Full Provenance Network for ${artworkData.title}`;
       drawFullNetwork(w, h);
     });
 
