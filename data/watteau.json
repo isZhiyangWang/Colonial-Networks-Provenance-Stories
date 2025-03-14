@@ -1,4 +1,4 @@
-{
+ly{
   "artworkData": {
     "title": "Watteau, Pleasures of the Ball",
     "imageUrl": "assets/watteau.png",
@@ -83,7 +83,7 @@
       "from": "Paris",
       "to": "Massy",
       "eventType": "bought by",
-      "text": "<p>The first owner of Pleasures of the Ball was Claude Glucq (1676-1742), a celebrated Watteau collector who also briefly owned The Shopsign of Gersaint. Claude’s father Jean had made his fortune as a master thread dyer (he specialized in scarlet textiles made with cochineal) and was one of the largest shareholders in the Mississippi Company, which took over the monopoly on France’s North American and West Indian colonies from Antoine Crozat. <br><br>In 1715, Jean acquired a massive property along Paris’s Quai Voltaire for his family, and Claude may have displayed Pleasures there, although he himself also bought a château in Massy near Paris that he named “Virginie.” However, Claude’s own colonial speculations bankrupted him before he could embellish the property, and he ended up having to sell most of his art collection.</p>",
+      "text": "<p>An early owner of Pleasures of the Ball was Claude Glucq (1676-1742), a celebrated Watteau collector who also briefly owned The Shopsign of Gersaint. Claude’s father Jean had made his fortune as a master thread dyer (he specialized in scarlet textiles made with cochineal) and was one of the largest shareholders in the Mississippi Company, which took over the monopoly on France’s North American and West Indian colonies from Antoine Crozat. <br><br>In 1715, Jean acquired a massive property along Paris’s Quai Voltaire for his family, and Claude may have displayed Pleasures there, although he himself also bought a château in Massy near Paris that he named “Virginie.” However, Claude’s own colonial speculations bankrupted him before he could embellish the property, and he ended up having to sell most of his art collection.</p>",
       "participants": [
         {
           "name": "Claude Glucq",
