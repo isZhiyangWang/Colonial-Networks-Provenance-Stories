@@ -114,6 +114,41 @@ body.detail-page {
     display: flex !important;
   }
 }
+/* Gallery item wrapper */
+.gallery-item {
+  position: relative; /* So we can absolutely position the caption */
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Ensure the image doesn’t stretch oddly */
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The hover caption: hidden by default, and positioned absolutely */
+.image-caption {
+  display: none;               /* hidden by default */
+  position: absolute;
+  bottom: 0;                   /* can also do 'top: 0' if preferred */
+  left: 0;
+  background-color: #000;      /* solid black for maximum contrast */
+  color: #fff;                 /* white text */
+  opacity: 0.9;                /* slight transparency if you like, 
+                                  but fully solid (1.0) is more consistent */
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  pointer-events: none;        /* let clicks pass through to the wrapper */
+  white-space: pre-line;       /* so \n is respected in the text */
+}
+
+/* Show the caption on hover */
+.gallery-item:hover .image-caption {
+  display: block;
+}
 
 /* =======================================
    DETAIL PAGE LAYOUT

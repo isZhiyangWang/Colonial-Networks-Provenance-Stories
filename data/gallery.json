@@ -1,26 +1,38 @@
 [
   {
     "id": "rembrandt",
-    "title": "Rembrandt’s Philosopher in Contemplation",
+    "artist": "Rembrandt van Rijn",
+    "title": "Philosopher in Contemplation",
+    "date": "1632",
+    "museum": "Musée du Louvre",
     "image_url": "assets/rembrandt.jpg",
-    "excerpt": "Rembrandt’s Philosopher in Comtemplation was painted in 1632 and spent its first hundred years in private collections in Flanders and the Netherlands."
+    "excerpt": "Rembrandt’s Philosopher in Contemplation was painted in 1632 and spent its first hundred years in private collections in Flanders and the Netherlands."
   },
   {
     "id": "watteau",
-    "title": "Jean-Antoine Watteau, Pleasures of the Ball (c. 1715-17)",
+    "artist": "Jean-Antoine Watteau",
+    "title": "Pleasures of the Ball",
+    "date": "c. 1715–1717",
+    "museum": "Louvre Museum",
     "image_url": "assets/watteau.png",
     "excerpt": "Painted in 1632, famously relocated to Paris in the 18th century."
-  },{
+  },
+  {
     "id": "titian",
-    "title": "Perseus and Andromeda (1554-6)",
+    "artist": "Titian",
+    "title": "Perseus and Andromeda",
+    "date": "1554–1556",
+    "museum": "Wallace Collection",
     "image_url": "assets/titian.jpg",
     "excerpt": "Painted in 1632, famously relocated to Paris in the 18th century."
   },
   {
     "id": "vernet",
-    "title": "Triumph of Aemilius Paulus (1789)",
+    "artist": "Carle Vernet",
+    "title": "Triumph of Aemilius Paulus",
+    "date": "1789",
+    "museum": "National Gallery",
     "image_url": "assets/vernet-thumbnail.png",
     "excerpt": "Painted in 1632, famously relocated to Paris in the 18th century."
   }
-  
 ]
