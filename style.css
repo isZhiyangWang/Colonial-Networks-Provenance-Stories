@@ -424,6 +424,9 @@ header {
   gap: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
+#social-network-content svg{
+  border: none !important;
+}
 #social-network-content h2 {
   margin: 0.5rem 0;
   text-align: center;
@@ -805,3 +808,10 @@ header {
 }
 
 
+.network-footer {
+  position: absolute;
+  left: 15=8px;
+  bottom: 3px;
+  font-size: 10px; 
+  color: #666; 
+}
