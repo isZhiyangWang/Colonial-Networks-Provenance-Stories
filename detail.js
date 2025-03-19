@@ -6,31 +6,36 @@ async function initProvenance(json) {
   const socialNetworkData = json.socialNetwork || null;
 
   // 2. Top info
- // 1) Artist name:
-document.getElementById("artist-name").textContent = artworkData.artistName;
+  // 1) Artist name:
+  document.getElementById("artist-name").textContent = artworkData.artistName;
 
-// 2) Combine location + year, e.g. “Paris, 1717”
-document.getElementById("location-year").textContent =
-  artworkData.location + ", " + artworkData.creationYear;
+  // 2) Combine location + year, e.g. “Paris, 1717”
+  document.getElementById("location-year").textContent =
+    artworkData.location + ", " + artworkData.creationYear;
 
-// 3) Artwork name + year
-document.getElementById("artwork-name-year").textContent =
-  artworkData.artworkName + " (" + artworkData.artworkYear + ")";
+  // 3) Artwork name + year
+  document.getElementById("artwork-name-year").textContent =
+    artworkData.artworkName + " (" + artworkData.artworkYear + ")";
 
-// 4) Medium
-document.getElementById("artwork-medium").textContent = artworkData.medium;
+  // 4) Medium
+  document.getElementById("artwork-medium").textContent = artworkData.medium;
 
-// 5) Intro text
-document.getElementById("intro-text").textContent = artworkData.intro;
+  // 5) Intro text
+  document.getElementById("intro-text").textContent = artworkData.intro;
 
-// 6) Museum hyperlink
-document.getElementById("current-museum").innerHTML =
-  `Current Museum: <a href="${artworkData.museumUrl}" target="_blank">${artworkData.museumName}</a>`;
+  // 6) Museum hyperlink
+  document.getElementById("current-museum").innerHTML =
+    `Current Museum: <a href="${artworkData.museumUrl}" target="_blank">${artworkData.museumName}</a>`;
 
-// Finally, the image
-const artImg = document.getElementById("artwork-image");
-artImg.src = artworkData.imageUrl;
-artImg.alt = artworkData.artworkName || "Art Image";
+  // Finally, the image
+  const artImg = document.getElementById("artwork-image");
+  const artImgCol = document.getElementById("image-col");
+  const wallLabel = document.querySelector(".wall-label");
+  //  set the height of the image column to mathc the wall label height
+  artImgCol.style.height = wallLabel.clientHeight + "px";
+
+  artImg.src = artworkData.imageUrl;
+  artImg.alt = artworkData.artworkName || "Art Image";
 
   // 3. Leaflet map, no fixed center
   const map = L.map("map");

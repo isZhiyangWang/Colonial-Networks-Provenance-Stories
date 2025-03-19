@@ -829,15 +829,16 @@ header {
 }
 
 /* Left side: narrower column for image */
-.image-col {
+#image-col {
   flex: 0 0 30%; /* 30% width, adjust as needed */
   display: flex;
   justify-content: center;  /* center image horizontally */
   align-items: center;      /* center image vertically */
+  height: 100%;
 }
 
 /* The image itself */
-.image-col img {
+#image-col img {
   max-width: 100%;
   height: auto;
   border: 1px solid #ccc;
