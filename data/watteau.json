@@ -1,8 +1,15 @@
 {
   "artworkData": {
-    "title": "Watteau, Pleasures of the Ball",
-    "imageUrl": "assets/watteau.png",
-    "description": "<p>Watteau’s Pleasures of the Ball depicts a group of elegantly dressed French elites dancing, making music, and enjoying each other’s company on an outdoor terrace. But the inclusion of two apparently enslaved Black figures in the picture raises the question of whose pleasure we are seeing, and at what cost.</p><br><p>Current Location: <a href='https://www.dulwichpicturegallery.org.uk/explore-the-collection/151-200/the-pleasures-of-the-ball/' target='_blank'>Dulwich Picture Gallery</a></p>"
+    "artistName": "Jean-Antoine Watteau",
+    "location": "Paris",
+    "creationYear": "1684 - 1721",
+    "artworkName": "Pleasures of the Ball",
+    "artworkYear": "1717",
+    "medium": "Oil on canvas",
+    "intro": "Watteau’s Pleasures of the Ball depicts a group of elegantly dressed French elites dancing, making music, and enjoying each other’s company on an outdoor terrace. But the inclusion of two apparently enslaved Black figures in the picture raises the question of whose pleasure we are seeing, and at what cost.",
+    "museumUrl": "https://www.dulwichpicturegallery.org.uk/explore-the-collection/151-200/the-pleasures-of-the-ball/",
+    "museumName": "Dulwich Picture Gallery",
+    "imageUrl": "assets/watteau.png"
   },
   "placeData": {
     "Paris": {

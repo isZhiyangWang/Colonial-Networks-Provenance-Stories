@@ -1,9 +1,16 @@
 {
   "artworkData": {
-    "title": "Rembrandt’s Philosopher in Contemplation",
-    "imageUrl": "assets/rembrandt.jpg",
-    "description": "<p>Rembrandt’s Philosopher in Contemplation depicts two figures—a pensive man and an old woman tending a fire—in a somber, cramped interior dominated by a spiral staircase. The enigmatic painting, which some scholars have suggested represents the forces of light and dark, vision and blindness, was beloved by many “enlightened” French collectors of the eighteenth century who also profited from the transatlantic slave trade.  </p><p>Current Location: <a href='https://collections.louvre.fr/ark:/53355/cl010062022'>Musée du Louvre</a></p>"
-  },
+    "artistName": "Rembrandt Harmenszoon van Rijn",
+    "location": "Dutch",
+    "creationYear": "1606 - 1669",
+    "artworkName": "Philosopher in Contemplation",
+    "artworkYear": "1632",
+    "medium": "Oil on canvas",
+    "intro": "Rembrandt’s Philosopher in Contemplation depicts two figures—a pensive man and an old woman tending a fire—in a somber, cramped interior dominated by a spiral staircase. The enigmatic painting, which some scholars have suggested represents the forces of light and dark, vision and blindness, was beloved by many “enlightened” French collectors of the eighteenth century who also profited from the transatlantic slave trade.",
+    "museumUrl": "https://collections.louvre.fr/ark:/53355/cl010062022",
+    "museumName": "Musée du Louvre",
+    "imageUrl": "assets/rembrandt.jpg"
+    },
   "placeData": {
     "Amsterdam": {
       "name": "Amsterdam",

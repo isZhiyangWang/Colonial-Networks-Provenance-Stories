@@ -1,9 +1,15 @@
 {
   "artworkData": {
-    "title": "Titian, Perseus and Andromeda",
-    "imageUrl": "assets/titian.jpg",
-    "description": "<p>Titian’s painting depicts the Greek hero Perseus dramatically diving towards a ferocious sea monster in order to liberate Andromeda, a chained African princess (shown here with gleaming white skin). This painting was much sought after on Europe’s early modern art markets, where it passed through the hands of numerous collectors who profited from enslavement, but also from buying and flipping artworks like this.</p><br><p>Current Location: <a href='https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64901&viewType=detailView' target='_blank'>Wallace Collection</a></p>",
-    "currentMuseum": "Wallace Collection, London"
+    "artistName": "Titian (Tiziano Vecellio)",
+    "location": "Pieve di Cadore",
+    "creationYear": "1488/1490 - 1576",
+    "artworkName": "Perseus and Andromeda",
+    "artworkYear": "1554",
+    "medium": "Oil on canvas",
+    "intro": "Titian’s painting depicts the Greek hero Perseus dramatically diving towards a ferocious sea monster in order to liberate Andromeda, a chained African princess (shown here with gleaming white skin). This painting was much sought after on Europe’s early modern art markets, where it passed through the hands of numerous collectors who profited from enslavement, but also from buying and flipping artworks like this.",
+    "museumUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64901&viewType=detailView",
+    "museumName": "Wallace Collection",
+    "imageUrl": "assets/titian.jpg"
   },
   "placeData": {
     "Madrid": {

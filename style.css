@@ -815,3 +815,83 @@ header {
   font-size: 10px; 
   color: #666; 
 }
+
+/* Container with 2 columns: smaller image-col (left) + bigger text col (right) */
+.object-header {
+  display: flex;
+  align-items: flex-start; /* top-align them both */
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+/* Left side: narrower column for image */
+.image-col {
+  flex: 0 0 30%; /* 30% width, adjust as needed */
+  display: flex;
+  justify-content: center;  /* center image horizontally */
+  align-items: center;      /* center image vertically */
+}
+
+/* The image itself */
+.image-col img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Right side: bigger column for text */
+.wall-label {
+  flex: 1;  /* take remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Larger text for the “big” lines */
+.wall-label h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Slightly smaller text for sublines (e.g. “Paris, 1717”) */
+.wall-label h3 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+/* Medium text (Oil on canvas) */
+.paint-medium {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Intro and museum link can be normal size */
+#intro-text, 
+#current-museum {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Smaller spacer between lines */
+.label-spacer {
+  margin: 0.5rem 0; /* smaller than 1rem */
+}
+
+
+@media (max-width: 700px) {
+  .object-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .image-col, 
+  .wall-label {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}

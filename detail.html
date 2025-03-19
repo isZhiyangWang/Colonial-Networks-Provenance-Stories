@@ -26,13 +26,44 @@
 
   <body class="detail-page">
     <div class="page-container">
-      <header>
-        <h1 id="artwork-title"></h1>
-        <div id="artwork-info">
+      <header class="object-header">
+
+        <!-- LEFT: Artwork Image -->
+        <div class="image-col">
           <img id="artwork-image" alt="Artwork Image" />
-          <div id="artwork-description"></div>
+        </div>
+      
+        <!-- RIGHT: All the text (wall label) -->
+        <div class="wall-label">
+          <!-- 1) Artist Name (Bigger) -->
+          <h2 id="artist-name"></h2>
+      
+          <!-- 2) Location, Year (smaller) -->
+          <h3 id="location-year"></h3>
+      
+          <!-- SMALLER spacer line -->
+          <div class="label-spacer"></div>
+      
+          <!-- 3) Artwork Name, Year (Bigger) -->
+          <h2 id="artwork-name-year"></h2>
+      
+          <!-- 4) Paint Medium  -->
+          <div id="artwork-medium" class="paint-medium"></div>
+      
+          <!-- SMALLER spacer line -->
+          <div class="label-spacer"></div>
+      
+          <!-- 5) Intro Text -->
+          <div id="intro-text"></div>
+      
+          <!-- SMALLER spacer line -->
+          <div class="label-spacer"></div>
+      
+          <!-- 6) Current Museum (hyperlinked) -->
+          <div id="current-museum"></div>
         </div>
       </header>
+      
 
       <!-- Map container -->
       <div id="map-container">

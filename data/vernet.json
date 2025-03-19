@@ -1,9 +1,16 @@
 {
     "artworkData": {
-      "title": "Vernet, Triumph of Aemilius Paulus",
-      "imageUrl": "assets/vernet.jpg",
-      "description": "<p>Vernet’s painting, which depicts a ruler of ancient Rome proudly parading enslaved captives and other spoils of war through the city streets, exemplifies the popularity of Neoclassicism during the era of the French Revolution. It also suggests how Neoclassicism may have been linked to proslavery and pro-colonial ideas held by its owners, among them the wealthy financier Jean-Joseph de Laborde.</p><br><p>Current Location: <a href='https://www.metmuseum.org/art/collection/search/437885' target='_blank'>The Met</a></p>"
-    },
+    "artistName": "Carle Vernet",
+    "location": "Bordeaux",
+    "creationYear": "1758 - 1836",
+    "artworkName": "Triumph of Aemilius Paulus",
+    "artworkYear": "c. 1789",
+    "medium": "Oil on canvas",
+    "intro": "Vernet’s painting, which depicts a ruler of ancient Rome proudly parading enslaved captives and other spoils of war through the city streets, exemplifies the popularity of Neoclassicism during the era of the French Revolution. It also suggests how Neoclassicism may have been linked to proslavery and pro-colonial ideas held by its owners, among them the wealthy financier Jean-Joseph de Laborde.",
+    "museumUrl": "https://www.metmuseum.org/art/collection/search/437885",
+    "museumName": "The Met",
+    "imageUrl": "assets/vernet.jpg"    
+  },
     "placeData": {
       "Rome": {
         "name": "Rome",
