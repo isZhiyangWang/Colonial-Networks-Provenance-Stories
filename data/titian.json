@@ -98,7 +98,9 @@
           "label": "inherited by"
         }
       ],
-      "changedLocation": false
+      "changedLocation": false,
+      "imageSource":"<p>Interior of the Galerie Dorée (now the Banque de France), Paris. Photo by Laura C. Jenkins</p>",
+      "imageAlt": "<p>Interior of the Galerie Dorée (now the Banque de France), Paris. Photo by Laura C. Jenkins</p>"
     },
     {
       "id": 2,
@@ -142,7 +144,9 @@
           "label": "bought by"
         }
       ],
-      "changedLocation": true
+      "changedLocation": true,
+      "imageSource":"<p>Louis-Joseph Mondhare, <em>Perspective view of the garden façade of the Palais Royal</em>, 1760. Engraving, 27 x 46 cm. Image source: gallica.bnf.fr / Bibliothèque nationale de France.</p>",
+      "imageAlt": "<p>Louis-Joseph Mondhare, <em>Perspective view of the garden façade of the Palais Royal</em>, 1760. Engraving, 27 x 46 cm. Image source: gallica.bnf.fr / Bibliothèque nationale de France.</p>"
     },
     {
       "id": 3,
@@ -175,7 +179,9 @@
           "label": "accessioned by"
         }
       ],
-      "changedLocation": false
+      "changedLocation": false,
+      "imageSource":"<p>Joseph Farington, Diagram the Orléans collection displayed at the Lyceum in London in 1799. Getty Research Institute, Los Angeles, 880391.</p>",
+      "imageAlt": "<p>Joseph Farington, Diagram the Orléans collection displayed at the Lyceum in London in 1799. Getty Research Institute, Los Angeles, 880391.</p>"
     }
   ],
   "socialNetwork": {
