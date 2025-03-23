@@ -253,7 +253,7 @@ async function initProvenance(json) {
 
     // event image
     const sanitizedBase = getFilenameBase(artworkData.imageUrl);
-    const eventImgUrl = `assets/${sanitizedBase}-${ev.id}.jpg`;
+    const eventImgUrl = `https://raw.githubusercontent.com/isZhiyangWang/Colonial-Networks-Provenance-Stories/refs/heads/main/assets/${sanitizedBase}-${ev.id}.jpg`;
 
     eventThumbEl.style.display = "block";
     const altText = ev.imageAlt || "Event Image";
