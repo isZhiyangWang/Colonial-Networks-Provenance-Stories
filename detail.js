@@ -809,7 +809,7 @@ async function initProvenance(json) {
       socialOverlay.classList.remove("hidden");
       const w = socialDiagram.node().clientWidth || 400;
       const h = socialDiagram.node().clientHeight || 300;
-      socialTitle.textContent = `Social Network Diagram for ${artworkData.title}`;
+      socialTitle.textContent = `Social Network Diagram for ${artworkData.artworkName}`;
       drawSocialNetwork(w, h);
     });
 
