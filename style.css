@@ -809,12 +809,12 @@ header {
 
 
 .network-footer {
-  position: absolute;
-  left: 15=8px;
-  bottom: 3px;
-  font-size: 10px; 
-  color: #666; 
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-top: -0.5rem;
 }
+
 
 /* Container with 2 columns: smaller image-col (left) + bigger text col (right) */
 .object-header {
