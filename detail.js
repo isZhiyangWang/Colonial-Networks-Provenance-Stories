@@ -644,7 +644,7 @@ async function initProvenance(json) {
       fullOverlay.classList.remove("hidden");
       const w = fullDiagram.node().clientWidth;
       const h = fullDiagram.node().clientHeight;
-      fullTitle.textContent = `Full Provenance Network for ${artworkData.title}`;
+      fullTitle.textContent = `Full Provenance Network for ${artworkData.artworkName}`;
       drawFullNetwork(w, h);
     });
 
