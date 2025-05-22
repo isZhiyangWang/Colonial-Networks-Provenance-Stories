@@ -48,7 +48,7 @@
       "from": "Madrid",
       "to": "Paris",
       "eventType": "moves from",
-      "text": "<p> Titian’s Perseus and Andromeda was painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion. This myth of a bound and captive Ethiopian princess (described as <a href=”https://www.jstor.org/stable/pdf/751417.pdf”>Black<a/> in some ancient accounts) rescued by a Greek hero resonated strongly with early modern European collectors and artists. Two such artists likely owned this work: the Italian sculptor Leone Leoni, who was himself <a href='https://www.frick.org/interact/miniseries/cocktails_curator/leoni_medal_andrea_doria'>imprisoned</a> on the papal galleys, and the Flemish painter Anthony Van Dyck, who acquired it in 1623.</p>",
+      "text": "<p> Titian’s Perseus and Andromeda was painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion. This myth of a bound and captive Ethiopian princess (described as <a href='https://www.jstor.org/stable/751417' target='_blank'>Black<a/> in some ancient accounts) rescued by a Greek hero resonated strongly with early modern European collectors and artists. Two such artists likely owned this work: the Italian sculptor Leone Leoni, who was himself <a href='https://www.frick.org/interact/miniseries/cocktails_curator/leoni_medal_andrea_doria'>imprisoned</a> on the papal galleys, and the Flemish painter Anthony Van Dyck, who acquired it in 1623.</p>",
       "participants": [
         { "name": "King Philip II", "type": "person" },
         { "name": "Leone Leoni", "type": "person" },
