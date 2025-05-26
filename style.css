@@ -59,7 +59,7 @@ body.detail-page {
   position: fixed;
   top: 0;
   left: 0;
-  width: 320px; 
+  width: 330px; 
   height: 100vh; 
   background: #ffffff;
   border-right: 1px solid #ccc;
@@ -72,6 +72,36 @@ body.detail-page {
   max-width: 200px;
   text-align: center;
 }
+
+.landing-left-content {
+  max-width: 350px;      
+  padding: 1.5rem;      
+  text-align: left;    
+  color: #333;         
+}
+
+
+.landing-left-content .intro-text {
+  margin: 1rem 0;        
+  font-size: 0.95rem;    
+  line-height: 1.6;      
+}
+
+
+/* .landing-left-content .intro-text + .intro-text {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+} */
+
+
+.landing-left-content .click-text {
+  margin-top: 2rem;      
+  font-size: 1.1rem;    
+  font-weight: 600;      
+  color: #222;           
+  text-align: center;    
+}
+
 .landing-right {
   margin-left: 320px; 
   height: 100vh;
