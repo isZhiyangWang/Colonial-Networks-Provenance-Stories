@@ -27,7 +27,7 @@ async function initProvenance(json) {
   document.getElementById("current-museum").innerHTML =
     `Current Museum: <a href="${artworkData.museumUrl}" target="_blank">${artworkData.museumName}</a>`;
 
-  // Finally, the image
+  // 7) The image
   const artImg = document.getElementById("artwork-image");
   const artImgCol = document.getElementById("image-col");
   const wallLabel = document.querySelector(".wall-label");
