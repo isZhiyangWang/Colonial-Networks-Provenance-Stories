@@ -219,5 +219,140 @@
         "relationship": "commercial associate"
       }
     ]
+  },
+  "provenanceTimeline": {
+    "entries": [
+      {
+        "id": "prov-0",
+        "owner": "Claude Glucq",
+        "location": "Paris",
+        "details": "Conseiller du Parlement; early owner by 1731.",
+        "fullText": "Claude Glucq, Conseiller du Parlement (who had bought Watteau's Enseigne de Gersaint a few weeks after the artist's death) by 1731;"
+      },
+      {
+        "id": "prov-1",
+        "owner": "Louis Pasquier",
+        "location": null,
+        "details": "Owner by 1752; bequeathed to V. de Gournay in 1754.",
+        "fullText": "Louis Pasquier by 1752, and bequethed by him to V. de Gournay in 1754;"
+      },
+      {
+        "id": "prov-2",
+        "owner": "Jean de Jullienne",
+        "location": "Paris",
+        "details": "Owner before 1756.",
+        "fullText": "Jean de Jullienne bef. 1756;"
+      },
+      {
+        "id": "prov-3",
+        "owner": "Montullé sale",
+        "location": "Paris",
+        "details": "Posthumous sale 22 Dec. 1783, lot 55.",
+        "fullText": "Paris, Montullé sale, 22 Dec. 1783, lot 55;"
+      },
+      {
+        "id": "prov-4",
+        "owner": "Comte de Vaudreuil",
+        "location": "Paris",
+        "details": "Vaudreuil sale 26 Nov. 1787, lot 60; then sold privately.",
+        "fullText": "Paris, Vaudreuil sale, 26 Nov. 1787, lot 60. Sold privately;"
+      },
+      {
+        "id": "prov-5",
+        "owner": "Montesquiou",
+        "location": "Paris",
+        "details": "Owner in 1788.",
+        "fullText": "Montesquiou in 1788;"
+      },
+      {
+        "id": "prov-6",
+        "owner": "Lebrun sale",
+        "location": "Paris",
+        "details": "Lebrun sale (probably J.-B.-P. Lebrun), 11ff. Apr. 1791, lot 197.",
+        "fullText": "Paris, (either J.-A. or J.B.P., but probably the latter) Lebrun sale, 11ff. Apr. 1791, lot 197;"
+      },
+      {
+        "id": "prov-7",
+        "owner": "Lebrun sale",
+        "location": "Paris",
+        "details": "Lebrun sale (probably J.-B.-P. Lebrun), 15ff. Nov. 1791, lot 94; unsold.",
+        "fullText": "Paris, (either J.-A. or J.B.P., but probably the latter) Lebrun sale, 15ff. Nov. 1791, lot 94;"
+      },
+      {
+        "id": "prov-8",
+        "owner": "Noel Desenfans",
+        "location": null,
+        "details": "Unsold and passed to London; Desenfans dealer ownership.",
+        "fullText": "Unsold and passed to London, Noel Desenfans;"
+      },
+      {
+        "id": "prov-9",
+        "owner": "Sir Abraham Hume",
+        "location": null,
+        "details": "Owner in 1792; exchanged with Desenfans for another picture.",
+        "fullText": "Sir Abraham Hume in 1792, who exchanged it with Desenfans for another picture;"
+      },
+      {
+        "id": "prov-10",
+        "owner": "Sir Abraham Hume & Noel Desenfans",
+        "location": null,
+        "details": "Again exchanged with Hume, 1797; Desenfans ownership 1797–1807.",
+        "fullText": "again exchanged with Hume, 1797; London, Noel Desenfans, 1797-1807:"
+      },
+      {
+        "id": "prov-11",
+        "owner": "Skinner and Dyke (Desenfans sale)",
+        "location": null,
+        "details": "18 Mar. 1802, lot 173; Descriptive Catalogue no. 68.",
+        "fullText": "London, Skinner and Dyke, Desenfans sale, 18 Mar. 1802, lot 173 ('Watteaux-Le Bal Champetre'. Descriptive Catalogue no. 68)."
+      },
+      {
+        "id": "prov-12",
+        "owner": "Elliott",
+        "location": null,
+        "details": "Bought for £65.2 (bt in).",
+        "fullText": "Handwritten note in copy of catalogue at The Hague, RKD: '21 1/2' [i.e. 2 x 1 1/2]. Bt Elliott for £65.2 (bt in);"
+      },
+      {
+        "id": "prov-13",
+        "owner": "Insurance List",
+        "location": null,
+        "details": "1804 Insurance List, no. 46 ('A Ball', £200).",
+        "fullText": "1804 Insurance List, no. 46 ('A Ball'. £200);"
+      },
+      {
+        "id": "prov-14",
+        "owner": "Sir Francis Bourgeois",
+        "location": null,
+        "details": "Owner 1807–1811.",
+        "fullText": "London, Sir Francis Bourgeois, 1807-1811;"
+      },
+      {
+        "id": "prov-15",
+        "owner": "Bourgeois Bequest",
+        "location": null,
+        "details": "Bequest in 1811 (to Dulwich Picture Gallery).",
+        "fullText": "Bourgeois Bequest, 1811."
+      }
+    ],
+    "events": [
+      { "date": "by 1731", "event": "Claude Glucq, Conseiller du Parlement (who had bought Watteau's Enseigne de Gersaint a few weeks after the artist's death) by 1731;", "storyId": 2, "entryId": "prov-0" },
+      { "date": "1752–1754", "event": "Louis Pasquier by 1752, and bequethed by him to V. de Gournay in 1754;", "storyId": 3, "entryId": "prov-1" },
+      { "date": "bef. 1756", "event": "Jean de Jullienne bef. 1756;", "storyId": 3, "entryId": "prov-2" },
+      { "date": "22 Dec. 1783", "event": "Paris, Montullé sale, 22 Dec. 1783, lot 55;", "storyId": 3, "entryId": "prov-3" },
+      { "date": "26 Nov. 1787", "event": "Paris, Vaudreuil sale, 26 Nov. 1787, lot 60. Sold privately;", "storyId": 3, "entryId": "prov-4" },
+      { "date": "1788", "event": "Montesquiou in 1788;", "storyId": 3, "entryId": "prov-5" },
+      { "date": "11ff. Apr. 1791", "event": "Paris, (either J.-A. or J.B.P., but probably the latter) Lebrun sale, 11ff. Apr. 1791, lot 197;", "storyId": 3, "entryId": "prov-6" },
+      { "date": "15ff. Nov. 1791", "event": "Paris, (either J.-A. or J.B.P., but probably the latter) Lebrun sale, 15ff. Nov. 1791, lot 94;", "storyId": 3, "entryId": "prov-7" },
+      { "date": "1791–1792", "event": "Unsold and passed to London, Noel Desenfans;", "storyId": 3, "entryId": "prov-8" },
+      { "date": "1792", "event": "Sir Abraham Hume in 1792, who exchanged it with Desenfans for another picture;", "storyId": 3, "entryId": "prov-9" },
+      { "date": "1797–1807", "event": "again exchanged with Hume, 1797; London, Noel Desenfans, 1797-1807:", "storyId": 3, "entryId": "prov-10" },
+      { "date": "18 Mar. 1802", "event": "London, Skinner and Dyke, Desenfans sale, 18 Mar. 1802, lot 173 ('Watteaux-Le Bal Champetre'. Descriptive Catalogue no. 68).", "storyId": 3, "entryId": "prov-11" },
+      { "date": "1802", "event": "Handwritten note in copy of catalogue at The Hague, RKD: '21 1/2' [i.e. 2 x 1 1/2]. Bt Elliott for £65.2 (bt in);", "storyId": 3, "entryId": "prov-12" },
+      { "date": "1804", "event": "1804 Insurance List, no. 46 ('A Ball'. £200);", "storyId": 3, "entryId": "prov-13" },
+      { "date": "1807–1811", "event": "London, Sir Francis Bourgeois, 1807-1811;", "storyId": 3, "entryId": "prov-14" },
+      { "date": "1811", "event": "Bourgeois Bequest, 1811.", "storyId": 3, "entryId": "prov-15" }
+    ]
   }
+
 }

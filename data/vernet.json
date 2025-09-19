@@ -215,6 +215,128 @@
           "relationship": "passed to in-law"
         }
       ]
-    }
+    },
+"provenanceTimeline": {
+    "entries": [
+      {
+        "id": "prov-0",
+        "owner": "Jean-Joseph de Laborde de Méréville",
+        "location": "Paris",
+        "details": "Owner from ca. 1791 until his death and the subsequent confiscation of his property in 1794.",
+        "fullText": "Jean-Joseph de Laborde de Méréville, Paris (until d. 1794;"
+      },     
+      {
+        "id": "prov-1",
+        "owner": "Jean-Joseph de Laborde de Méréville",
+        "location": "Paris",
+        "details": "Owner from ca. 1791 until his death and the subsequent confiscation of his property in 1794.",
+        "fullText": "confiscated by revolutionary forces);"
+      },
+      {
+        "id": "prov-2",
+        "owner": "Nettine de Laborde",
+        "location": null,
+        "details": "Widow of Jean-Joseph de Laborde; the painting was restituted to her by the state in 1797.",
+        "fullText": "his widow, Nettine de Laborde (from 1797; restituted by the state);"
+      },
+      {
+        "id": "prov-3",
+        "owner": "Émile-Jean-Horace Vernet",
+        "location": "Paris",
+        "details": "Son of the artist, Carle Vernet; owner in 1822.",
+        "fullText": "Émile-Jean-Horace Vernet, Paris (in 1822);"
+      },
+      {
+        "id": "prov-4",
+        "owner": "Jean-Baptiste Claude Odiot",
+        "location": "Paris",
+        "details": "Owner by 1845; offered the painting in his sales of 1845 and 1847.",
+        "fullText": "Jean-Baptiste Claude Odiot, Paris (by 1845–at least 1847; his sale, Paillet, Paris, March 3–6, 1845, no. 66; his sale, Ridel, Paris, Feb. 20, 1847, no. 61);"
+      },
+      {
+        "id": "prov-5",
+        "owner": "Baron François Delessert",
+        "location": "Paris",
+        "details": "Owner until his sale in 1869.",
+        "fullText": "Baron François Delessert, Paris (until 1869; his sale, Pillet, Paris, March 15–18, 1869, no. 206, for Fr 8100);"
+      },
+      {
+        "id": "prov-6",
+        "owner": "Heber R. Bishop",
+        "location": "New York",
+        "details": "Owner by 1891 until his death in 1902. The painting was sold from his estate in 1906.",
+        "fullText": "Heber R. Bishop, New York (by 1891–d. 1902; his estate sale, American Art Association, New York, January 19, 1906, no. 86, for $4,200 to Mills);"
+      },
+      {
+        "id": "prov-7",
+        "owner": "Darius Ogden Mills",
+        "location": "New York",
+        "details": "Acquired the painting in 1906 and gifted it to the museum in the same year.",
+        "fullText": "Darius Ogden Mills, New York (1906)"
+      }
+    ],
+    "events": [
+      {
+        "date": "1789",
+        "event": "Painted by Carle Vernet in Rome. Exhibited at the Paris Salon de 1789 ",
+        "storyId": 0,
+        "entryId": null
+      },
+      {
+        "date": "(1791)",
+        "event": "Jean-Joseph de Laborde de Méréville, Paris (until d. 1794; ",
+        "storyId": 1,
+        "entryId": "prov-0" 
+      },
+      {
+        "date": "1794",
+        "event": "confiscated by revolutionary forces);",
+        "storyId": 2,
+        "entryId": "prov-1" 
+      },
+      {
+        "date": "1797",
+        "event": "his widow, Nettine de Laborde (from 1797; restituted by the state);",
+        "storyId": 2,
+        "entryId": "prov-2"
+      },
+      {
+        "date": "1822",
+        "event": "Émile-Jean-Horace Vernet, Paris (in 1822);",
+        "storyId": 3,
+        "entryId": "prov-3"
+      },
+      {
+        "date": "1845",
+        "event": "Jean-Baptiste Claude Odiot, Paris (by 1845–at least 1847; his sale, Paillet, Paris, March 3–6, 1845, no. 66; his sale, Ridel, Paris, Feb. 20, 1847, no. 61);",
+        "storyId": null,
+        "entryId": "prov-4"
+      },
+      {
+        "date": "1847",
+        "event": "Baron François Delessert, Paris (until 1869; his sale, Pillet, Paris, March 15–18, 1869, no. 206, for Fr 8100);",
+        "storyId": null,
+        "entryId": "prov-5"
+      },
+      {
+        "date": "1891",
+        "event": "Heber R. Bishop, New York (by 1891–d. 1902; his estate sale, American Art Association, New York, January 19, 1906, no. 86, for $4,200 to Mills);",
+        "storyId": 4,
+        "entryId": "prov-6"
+      },
+      {
+        "date": "1906",
+        "event": "Darius Ogden Mills, New York (1906)",
+        "storyId": 4,
+        "entryId": "prov-7"
+      },
+      {
+        "date": "1906",
+        "event": "Accessioned into the collection of the Metropolitan Museum of Art – gift of Darius Ogden Mills.",
+        "storyId": 4,
+        "entryId": null
+      }
+    ]
+  }
   }
   

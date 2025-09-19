@@ -149,5 +149,183 @@
         "relationship": "rumored lover"
       }
     ]
+  },
+  "provenanceTimeline": {
+    "entries": [
+      {
+        "id": "prov-0",
+        "owner": "P. Wouters",
+        "location": null,
+        "details": "Marchand d’Anvers (Antwerp art dealer).",
+        "fullText": "? P. Wouters, marchand d’Anvers (inventaire après décès, 23 VIII 1673 : escalier à vis avec vieil homme assis)."
+      },
+      {
+        "id": "prov-1",
+        "owner": "Catharina Deyl",
+        "location": "Amsterdam",
+        "details": "Veuve du peintre N. Rosendael d’Amsterdam.",
+        "fullText": "– ? Catharina Deyl, veuve du peintre N. Rosendael d’Amsterdam (inventaire après décès, 7 III 1687 : Rembrandt, escalier à vis)."
+      },
+      {
+        "id": "prov-2",
+        "owner": "Comte de Fraula",
+        "location": null,
+        "details": "Collection à Bruxelles.",
+        "fullText": "– collection du comte de Fraula à Bruxelles, 1738 (Lugt 488), lot n°136 (Hoet I, 530, no. 135)"
+      },
+      {
+        "id": "prov-3",
+        "owner": "W. Lormier (1682–1758)",
+        "location": null,
+        "details": "La Haye (The Hague).",
+        "fullText": "– W. Lormier (1682-1758), La Haye (cf. son cat. manuscrit cité par Korthals Altes) ;"
+      },
+      {
+        "id": "prov-4",
+        "owner": "Marquis d’Argenson (Marc-René de Voyer, 1722–1782)",
+        "location": "Paris",
+        "details": "Acheté en 1748 avec 16 autres tableaux hollandais.",
+        "fullText": "vendu en 1748 avec 16 autres tableaux hollandais à Marc-René de Voyer, marquis d’Argenson (1722-1782), fils et neveu des deux d’Argenson ministres de Louis XV ;"
+      },
+      {
+        "id": "prov-5",
+        "owner": "Marquis d’Argenson",
+        "location": "Paris",
+        "details": "Mise en pendant avec un autre « Philosophe ».",
+        "fullText": "sans doute mis en pendant par lui avec un autre Philosophe de « Rembrandt » (voir Koninck, INV. 1741) ;"
+      },
+      {
+        "id": "prov-6",
+        "owner": "Comte de Vence (Claude-Alexandre de Villeneuve, 1702–1759)",
+        "location": null,
+        "details": "Cédé vers 1751 avec le pendant.",
+        "fullText": "cédé par Voyer avec son pendant à Claude-Alexandre de Villeneuve, comte de Vence (1702-1759), vers 1751, les deux Philosophe étant déjà cités chez Vence par Dezallier d’Argenville (1752) et Descamps (1754) ;"
+      },
+      {
+        "id": "prov-7",
+        "owner": "Comte de Vence",
+        "location": "Paris",
+        "details": "Gravé par L. Surugue en 1754 (pendant en 1753).",
+        "fullText": "gravé en 1754 par L. Surugue comme Philosophe en contemplation, le pendant l’ayant été en 1753 ;"
+      },
+      {
+        "id": "prov-8",
+        "owner": "Comte de Vence",
+        "location": "Paris",
+        "details": "Vente après décès, 9–16 II 1761, n° 39.",
+        "fullText": "vente après décès du comte de Vence, Paris, 9-16 II 1761, n° 39 (en pendant au n° 38, avec notice commune pour les deux tableaux à vendre séparément) ;"
+      },
+      {
+        "id": "prov-9",
+        "owner": "Marquis d’Argenson",
+        "location": "Paris",
+        "details": "Non vendu; repris par Voyer au titre du legs.",
+        "fullText": "non vendu, car choisi par Voyer dans le legs de deux tableaux de cette vente que lui avait fait Vence ;"
+      },
+      {
+        "id": "prov-10",
+        "owner": "Duc de Choiseul (Étienne-François, comte de Stainville, 1719–1785)",
+        "location": "Paris",
+        "details": "Cédé peu après; réuni à son pendant.",
+        "fullText": "cédé par Voyer, sans doute peu après, à Étienne-François, comte de Stainville, duc de Choiseul (1719-1785), ministre de Louis XV pour être bientôt réuni à son pendant (Koninck, INV. 1741) ;"
+      },
+      {
+        "id": "prov-11",
+        "owner": "Duc de Choiseul",
+        "location": "Paris",
+        "details": "Gravé avec le pendant par Baillie en 1771 (Cabinet Choiseul).",
+        "fullText": "gravé avec ce dernier par Baillie en 1771 dans le Cabinet Choiseul ;"
+      },
+      {
+        "id": "prov-12",
+        "owner": "Duc de Choiseul",
+        "location": "Paris",
+        "details": "Vente Choiseul, 6–10 IV 1772, n° 7 ou 8.",
+        "fullText": "vente Choiseul, Paris, 6-10 IV 1772, n° 7 ou 8 (pendants indifférenciés : « deux petits tableaux connus sous le nom de philosophes ») ;"
+      },
+      {
+        "id": "prov-13",
+        "owner": "Donjeux",
+        "location": "Paris",
+        "details": "Marchand d’art à Paris.",
+        "fullText": "Donjeux, marchand d’art à Paris."
+      },
+      {
+        "id": "prov-14",
+        "owner": "P. P. L. Randon de Boisset (1709–1776)",
+        "location": "Paris",
+        "details": "Collection parisienne.",
+        "fullText": "– P. P. L. Randon de Boisset (1709-1776), Paris ;"
+      },
+      {
+        "id": "prov-15",
+        "owner": "P. P. L. Randon de Boisset",
+        "location": "Paris",
+        "details": "Vente après décès, 27 II–25 III 1777, n° 49.",
+        "fullText": "sa vente après décès, Paris, 27 II-25 III 1777, n° 49 (pendants sous le même numéro) ;"
+      },
+      {
+        "id": "prov-16",
+        "owner": "Millon d’Ailly",
+        "location": null,
+        "details": "Acheté par Perrin pour Millon d’Ailly (neveu de Randon de Boisset).",
+        "fullText": "Perrin pour Millon d’Ailly, neveu de Randon de Boisset ;"
+      },
+      {
+        "id": "prov-17",
+        "owner": "Comte de Vaudreuil (J. H. Fr. de Paule de Rigaud)",
+        "location": "Paris",
+        "details": "Collection parisienne.",
+        "fullText": "J. H. Fr. de Paule de Rigaud, comte de Vaudreuil, Paris ;"
+      },
+      {
+        "id": "prov-18",
+        "owner": "Comte de Vaudreuil",
+        "location": "Paris",
+        "details": "Vente, Paris, 24 XI 1784, n° 28.",
+        "fullText": "sa vente, Paris, 24 XI 1784, n° 28 (pendants sous le même numéro) ;"
+      },
+      {
+        "id": "prov-19",
+        "owner": "Louis XVI",
+        "location": "Paris",
+        "details": "Acheté à la vente via A. J. Paillet, marchand d’art à Paris.",
+        "fullText": "acquis à cette vente (avec le pendant) par A. J. Paillet, marchand d’art à Paris, pour Louis XVI ;"
+      },
+      {
+        "id": "prov-20",
+        "owner": "Musée du Louvre",
+        "location": "Paris",
+        "details": "Exposé à l’ouverture du Muséum en 1793, cat. n° 60.",
+        "fullText": "exposé à l’ouverture du Muséum (Louvre) en 1793, cat. n° 60, Un philosophe en méditation (cf. Dubreuil)."
+      }
+    ],
+    "events": [
+      { "date": "23 VIII 1673", "event": "? P. Wouters, marchand d’Anvers (inventaire après décès, 23 VIII 1673 : escalier à vis avec vieil homme assis).", "storyId": 0, "entryId": "prov-0" },
+      { "date": "7 III 1687", "event": "– ? Catharina Deyl, veuve du peintre N. Rosendael d’Amsterdam (inventaire après décès, 7 III 1687 : Rembrandt, escalier à vis).", "storyId": 0, "entryId": "prov-1" },
+      { "date": "1738", "event": "– collection du comte de Fraula à Bruxelles, 1738 (Lugt 488), lot n°136 (Hoet I, 530, no. 135)", "storyId": 0, "entryId": "prov-2" },
+      { "date": "", "event": "– W. Lormier (1682-1758), La Haye (cf. son cat. manuscrit cité par Korthals Altes) ;", "storyId": 0, "entryId": "prov-3" },
+      { "date": "1748", "event": "vendu en 1748 avec 16 autres tableaux hollandais à Marc-René de Voyer, marquis d’Argenson (1722-1782), fils et neveu des deux d’Argenson ministres de Louis XV ;", "storyId": 0, "entryId": "prov-4" },
+      { "date": "", "event": "sans doute mis en pendant par lui avec un autre Philosophe de « Rembrandt » (voir Koninck, INV. 1741) ;", "storyId": 0, "entryId": "prov-5" },
+
+      { "date": "vers 1751", "event": "cédé par Voyer avec son pendant à Claude-Alexandre de Villeneuve, comte de Vence (1702-1759), vers 1751, les deux Philosophe étant déjà cités chez Vence par Dezallier d’Argenville (1752) et Descamps (1754) ;", "storyId": 1, "entryId": "prov-6" },
+      { "date": "1754", "event": "gravé en 1754 par L. Surugue comme Philosophe en contemplation, le pendant l’ayant été en 1753 ;", "storyId": 1, "entryId": "prov-7" },
+      { "date": "9–16 II 1761", "event": "vente après décès du comte de Vence, Paris, 9-16 II 1761, n° 39 (en pendant au n° 38, avec notice commune pour les deux tableaux à vendre séparément) ;", "storyId": 1, "entryId": "prov-8" },
+      { "date": "1761", "event": "non vendu, car choisi par Voyer dans le legs de deux tableaux de cette vente que lui avait fait Vence ;", "storyId": 1, "entryId": "prov-9" },
+      { "date": "", "event": "cédé par Voyer, sans doute peu après, à Étienne-François, comte de Stainville, duc de Choiseul (1719-1785), ministre de Louis XV pour être bientôt réuni à son pendant (Koninck, INV. 1741) ;", "storyId": 1, "entryId": "prov-10" },
+      { "date": "1771", "event": "gravé avec ce dernier par Baillie en 1771 dans le Cabinet Choiseul ;", "storyId": 1, "entryId": "prov-11" },
+      { "date": "6–10 IV 1772", "event": "vente Choiseul, Paris, 6-10 IV 1772, n° 7 ou 8 (pendants indifférenciés : « deux petits tableaux connus sous le nom de philosophes ») ;", "storyId": 1, "entryId": "prov-12" },
+      { "date": "", "event": "Donjeux, marchand d’art à Paris.", "storyId": 1, "entryId": "prov-13" },
+
+      { "date": "", "event": "– P. P. L. Randon de Boisset (1709-1776), Paris ;", "storyId": 2, "entryId": "prov-14" },
+      { "date": "27 II–25 III 1777", "event": "sa vente après décès, Paris, 27 II-25 III 1777, n° 49 (pendants sous le même numéro) ;", "storyId": 2, "entryId": "prov-15" },
+      { "date": "1777", "event": "Perrin pour Millon d’Ailly, neveu de Randon de Boisset ;", "storyId": 2, "entryId": "prov-16" },
+      { "date": "", "event": "J. H. Fr. de Paule de Rigaud, comte de Vaudreuil, Paris ;", "storyId": 2, "entryId": "prov-17" },
+      { "date": "24 XI 1784", "event": "sa vente, Paris, 24 XI 1784, n° 28 (pendants sous le même numéro) ;", "storyId": 2, "entryId": "prov-18" },
+      { "date": "1784", "event": "acquis à cette vente (avec le pendant) par A. J. Paillet, marchand d’art à Paris, pour Louis XVI ;", "storyId": 2, "entryId": "prov-19" },
+
+      { "date": "1793", "event": "exposé à l’ouverture du Muséum (Louvre) en 1793, cat. n° 60, Un philosophe en méditation (cf. Dubreuil).", "storyId": 3, "entryId": "prov-20" }
+    ]
   }
+
 }

@@ -1,4 +1,4 @@
-/* GLOBAL RESET / BASE */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,33 +10,18 @@ body {
   color: #333;
 }
 
-/* 
-   We ONLY apply the fixed/overflow logic for .landing-page.
-   The detail page (class="detail-page") scrolls normally.
-*/
-
-/* For the landing page specifically: 
-   - fixed-left, scrollable-right 
-*/
 body.landing-page {
 
   height: 100vh; 
-  overflow: hidden; /* So the left is fixed & right is scrolled internally */
+  overflow: hidden; 
 }
 
 body.detail-page {
-  /* The detail page should scroll normally if content is long */
   height: auto; 
   overflow: visible; 
 }
 
-/* =======================================
-   LANDING PAGE LAYOUT
-======================================= */
 
-/* This alert is hidden by default, 
-   but becomes visible in the media query 
-   for small screens. */
 .mobile-alert {
   display: none !important; 
   position: fixed; 
@@ -267,20 +252,7 @@ header {
   background-color: #eee;
 }
 
-/* Single Event Modal (map-overlay) */
-#map-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .hidden {
   display: none !important;
 }
@@ -335,11 +307,11 @@ header {
 }
 
 .overlay-col::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
 }
 .overlay-col::-webkit-scrollbar-thumb {
   background: #ccc;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 .col-middle {
   display: flex;
@@ -514,16 +486,79 @@ header {
 }
 
 /* 2) A style for "Back to Gallery" button */
+/* =======================================
+   统一设计感 - 常规按钮 (.back-btn)
+======================================== */
 .back-btn {
-  margin:  0;
-  padding: 0.5rem 1rem;
-  background: #eee;
-  border: 1px solid #aaa;
-  border-radius: 4px;
+  /* 1. 基础样式 & 默认状态克制 */
+  background: none; /* 移除背景 */
+  border: 1px solid #ddd; /* 使用更柔和的边框色 */
+  border-radius: 6px; /* 稍微圆润一点的圆角 */
+  color: #555; /* 与导航按钮统一的默认文字颜色 */
+  
+  /* 2. 慷慨的响应区域 */
+  font-size: 0.9rem; /* 字体可以比主导航稍小一点 */
+  padding: 0.75rem 1.5rem; /* 内边距，确保点击舒适 */
   cursor: pointer;
+  
+  /* 3. 流畅的过渡效果 */
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1), 
+              box-shadow 0.3s cubic-bezier(0.19, 1, 0.22, 1), 
+              background-color 0.3s ease,
+              color 0.3s ease;
 }
+
+/* 4. 精致的悬停效果 */
 .back-btn:hover {
-  background: #ddd;
+  color: #111; /* 文字变深，提供清晰反馈 */
+  background-color: #fff; /* 背景变为纯白，而不是灰色 */
+  transform: translateY(-3px); /* 向上“浮起”3像素 */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* 增加一个精致的阴影，强化“浮起”感 */
+}
+
+/* 为了更好地控制箭头和文字的间距，建议在HTML中稍作调整 */
+.back-btn .arrow {
+  margin-right: 0.5em;
+}
+/* =======================================
+   统一设计感 - 图标按钮 (.icon-btn)
+======================================== */
+.icon-btn {
+  /* 1. 移除内联样式，统一管理 */
+  position: absolute;
+  bottom: 10px; /* 增加一点与底部的距离 */
+  right: 10px;  /* 增加一点与右侧的距离 */
+  z-index: 99;
+
+  /* 2. 基础样式 & 形状 */
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 50%; /* 设计成完美的圆形 */
+  color: #555;
+  
+  /* 3. 尺寸与对齐 (关键) */
+  width: 40px;   /* 定义固定宽高 */
+  height: 40px;
+  padding: 0;    /* 移除内边距，因为我们用flex来居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem; /* 稍微放大图标 */
+  cursor: pointer;
+
+  /* 4. 流畅的过渡效果 */
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1), 
+              box-shadow 0.3s cubic-bezier(0.19, 1, 0.22, 1),
+              background-color 0.3s ease,
+              color 0.3s ease;
+}
+
+/* 5. 精致的悬停效果 */
+.icon-btn:hover {
+  color: #000;
+  background-color: #fff;
+  transform: scale(1.1) rotate(-10deg); /* 放大一点并稍微旋转，增加趣味性 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 同样增加阴影 */
 }
 /* 1) Lightbox overlay for enlarged event images */
 #image-lightbox {
@@ -847,8 +882,8 @@ header {
 .network-footer {
   font-size: 0.9rem;
   color: #555;
-  text-align: center;
-  margin-top: -0.5rem;
+  text-align: left;
+  
 }
 
 
@@ -882,42 +917,36 @@ header {
   object-fit: cover;
 }
 
-/* Right side: bigger column for text */
 .wall-label {
   flex: 1;  /* take remaining space */
   display: flex;
   flex-direction: column;
 }
 
-/* Larger text for the “big” lines */
 .wall-label h2 {
   font-size: 1.3rem;
   margin-bottom: 0.3rem;
 }
 
-/* Slightly smaller text for sublines (e.g. “Paris, 1717”) */
 .wall-label h3 {
   font-size: 1rem;
   color: #555;
   margin-bottom: 0.3rem;
 }
 
-/* Medium text (Oil on canvas) */
 .paint-medium {
   font-size: 1rem;
   color: #555;
 }
 
-/* Intro and museum link can be normal size */
 #intro-text, 
 #current-museum {
   font-size: 1rem;
   color: #333;
 }
 
-/* Smaller spacer between lines */
 .label-spacer {
-  margin: 0.5rem 0; /* smaller than 1rem */
+  margin: 0.5rem 0;
 }
 
 
@@ -945,3 +974,317 @@ header {
   object-fit: contain;  
   display: block;
 }
+
+.content-section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+#story-section {
+  padding: 1rem;
+}
+.story-grid-container {
+  display: grid;
+  grid-template-rows: 1fr auto; 
+  grid-template-columns: 1fr 1.2fr 1.8fr; 
+  gap: 1rem;
+  height: 500px;
+  width: 100%;
+}
+#story-section .overlay-col {
+  height: 105%; 
+}
+#story-section .overlay-nav {
+  grid-column: 1 / 4; 
+  margin-top: 0; 
+}
+
+.two-column-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.column {
+  flex: 1; 
+  min-width: 0;
+}
+
+
+#social-network-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1.5rem;
+  height: 600px; 
+  flex-direction: column;
+}
+#social-network-container h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.placeholder-content {
+  flex-grow: 1;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-style: italic;
+}
+
+
+#map-container {
+  position: relative;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #eee;
+  margin-bottom: 0; 
+  width: 100%; 
+}
+
+
+
+.object-header,
+.content-section,
+.column {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+#story-section .overlay-nav {
+  display: flex;
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  border-top: 1px solid #eee;
+  height: auto;
+}
+
+
+.overlay-nav button {
+  flex: 1;
+  width: 50%;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 1rem; 
+  color: #555;
+  padding: 1rem 2rem; 
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  
+
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+#prev-event {
+  justify-content: flex-start; 
+}
+
+#next-event {
+  justify-content: flex-end; 
+}
+
+
+.overlay-nav .arrow {
+  font-size: 20px;
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.overlay-nav .nav-text {
+
+  max-width: 0;
+  opacity: 0;
+  white-space: nowrap; 
+  overflow: hidden;
+  transition: max-width 0.5s cubic-bezier(0.19, 1, 0.22, 1), 
+              opacity 0.2s ease 0.1s; 
+}
+
+
+.overlay-nav button:hover {
+  background-color: #f8f8f8; 
+  color: #111; 
+}
+
+.overlay-nav button:hover .nav-text {
+  max-width: 150px;
+  opacity: 1;
+}
+
+
+#prev-event .arrow {
+  margin-right: 0.75em;
+}
+#prev-event:hover .arrow {
+  transform: translateX(-4px); 
+}
+
+#next-event .arrow {
+  margin-left: 0.75em;
+}
+#next-event:hover .arrow {
+  transform: translateX(4px); 
+}
+
+.overlay-nav button.is-hidden {
+  opacity: 0;
+
+  pointer-events: none;
+
+  cursor: default;
+}
+
+:root {
+  --tl-border: #ddd;
+  --tl-shadow: rgba(0,0,0,.05);
+  --tl-related-shadow: rgba(0,0,0,.10);
+  --tl-primary: #4c8bf5;
+  --tl-primary-shadow: rgba(76,139,245,.25);
+}
+.provenance-entry.is-related {
+  text-decoration: underline dotted rgba(0,0,0,.35);
+  text-underline-offset: 2px;
+}
+.provenance-entry.is-primary {
+  text-decoration: underline solid var(--tl-primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.provenance-entry.highlighted,
+.provenance-entry.sub-highlight,
+.provenance-entry.is-related,
+.provenance-entry.is-primary {
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+
+.timeline-container { position: relative; }
+.timeline-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; scrollbar-width: none;
+}
+.timeline-wrapper::-webkit-scrollbar { display: none; }
+
+.timeline {
+  display: flex;
+  position: relative;
+  padding-top: 0px;
+  padding: 0px 60px;
+  min-height: var(--tl-min-height, 350px); 
+}
+
+.timeline-event {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;      
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.timeline::before { content: ''; position: absolute; width: 100%; top: 50%; left: 0;
+  height: 4px; background-color: #e0e0e0; transform: translateY(-50%); }
+
+.timeline-item { position: relative; flex: 1; display: flex; justify-content: center; }
+.timeline-point {
+  position: absolute; top: 50%; left: 50%; border: 3px solid #fff;
+  border-radius: 50%; transform: translate(-50%, -50%); z-index: 2; transition: all .3s ease;
+}
+.timeline-item:not([data-story-id]) .timeline-point { width: 12px; height: 12px; background-color: #b0b0b0; }
+.timeline-item[data-story-id] .timeline-point { width: 18px; height: 18px; background-color: #3498db; }
+
+.timeline-content {
+  position: absolute; width: 260px; padding: 10px; background-color: #fff;
+  border: 1px solid var(--tl-border); border-radius: 6px;
+  box-shadow: 0 2px 5px var(--tl-shadow);
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+  z-index: 1;
+}
+.timeline-item[data-story-id] { cursor: pointer; }
+.timeline-item[data-story-id]:hover .timeline-content {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.timeline-date-label {
+  position: absolute; left: 50%; transform: translateX(-50%);
+  font-size: 0.85em; font-weight: bold; color: #777;
+  background-color: #f7f7f7; padding: 2px 6px; border-radius: 4px; z-index: 1;
+}
+.timeline-item:nth-child(odd)  .timeline-date-label { top: 50%;  margin-top: 15px; }
+.timeline-item:nth-child(even) .timeline-date-label { bottom: 50%; margin-bottom: 15px; }
+
+.timeline-item:nth-child(odd)  .timeline-content { bottom: 50%; margin-bottom: 30px; }
+.timeline-item:nth-child(even) .timeline-content { top: 50%;    margin-top: 30px; }
+
+.timeline-item .timeline-content::after {
+  content: ''; position: absolute; left: 50%; transform: translateX(-50%);
+  border-style: solid; transition: border-color .15s ease;
+}
+.timeline-item:nth-child(odd) .timeline-content::after  { top: 100%;    border-width: 10px 10px 0;  border-color: var(--tl-border) transparent transparent transparent; }
+.timeline-item:nth-child(even) .timeline-content::after { bottom: 100%; border-width: 0 10px 10px; border-color: transparent transparent var(--tl-border) transparent; }
+
+.timeline-item.is-related .timeline-content {
+  box-shadow: 0 6px 16px var(--tl-related-shadow);
+}
+
+.timeline-item.is-primary .timeline-content {
+  border-color: var(--tl-primary);
+  box-shadow: 0 8px 22px var(--tl-primary-shadow);
+  transform: translateY(-2px);
+}
+
+.timeline-item.is-primary:nth-child(odd)  .timeline-content::after { border-color: var(--tl-primary) transparent transparent transparent; }
+.timeline-item.is-primary:nth-child(even) .timeline-content::after { border-color: transparent transparent var(--tl-primary) transparent; }
+
+.timeline-item.is-primary  .timeline-point { background-color: var(--tl-primary) !important; transform: translate(-50%, -50%) scale(1.15); }
+.timeline-item.is-related .timeline-point { transform: translate(-50%, -50%) scale(1.08); }
+
+.timeline-item:focus-within .timeline-content { outline: 2px solid var(--tl-primary); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .timeline-content { transition: none; } }
+
+.timeline-item.is-related,
+.timeline-item.is-primary {
+  outline: none !important;
+  border-radius: 0 !important;
+}
+
+
+.timeline-scroll-btn {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+  background: none; border: 1px solid #eee; border-radius: 8px;
+  font-size: 1rem; color: #555; padding: 0.75rem 1rem; cursor: pointer;
+  display: flex; align-items: center;
+  transition: all 0.4s ease;
+}
+#timeline-scroll-prev { left: 5px; justify-content: flex-start; }
+#timeline-scroll-next { right: 5px; justify-content: flex-end; }
+.timeline-scroll-btn .arrow { font-size: 20px; transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1); }
+.timeline-scroll-btn .nav-text {
+  max-width: 0; opacity: 0; white-space: nowrap; overflow: hidden;
+  transition: max-width 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s ease 0.1s;
+}
+.timeline-scroll-btn:hover { background-color: #f8f8f8; color: #111; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.timeline-scroll-btn:hover .nav-text { max-width: 100px; opacity: 1; }
+#timeline-scroll-prev .arrow { margin-right: 0.5em; }
+#timeline-scroll-prev:hover .arrow { transform: translateX(-4px); }
+#timeline-scroll-next .arrow { order: 1; margin-left: 0.5em; }
+#timeline-scroll-next:hover .arrow { transform: translateX(4px); }
+.timeline-scroll-btn.hidden { opacity: 0; pointer-events: none; }
+

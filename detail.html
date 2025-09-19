@@ -25,209 +25,174 @@
   </head>
 
 
-  <body class="detail-page">
-    <div class="page-container">
-      <header class="object-header">
+<body class="detail-page">
+  <div class="page-container">
+    <header class="object-header">
+      <div id="image-col">
+        <img id="artwork-image" alt="Artwork Image" />
+      </div>
+    
+      <div class="wall-label">
+        <h2 id="artist-name"></h2>
+        <h3 id="location-year"></h3>
+        <div class="label-spacer"></div>
+        <h2 id="artwork-name-year"></h2>
+        <div id="artwork-medium" class="paint-medium"></div>
+        <div class="label-spacer"></div>
+        <div id="intro-text"></div>
+        <div class="label-spacer"></div>
+        <div id="current-museum"></div>
+      </div>
+    </header>
+    
+    <div id="story-div-placeholder" class="content-section">
+      <h2>Provenance</h2>
 
-        <!-- LEFT: Artwork Image -->
-        <div id="image-col">
-          <img id="artwork-image" alt="Artwork Image" />
-        </div>
-      
-        <!-- RIGHT: All the text (wall label) -->
-        <div class="wall-label">
-          <!-- 1) Artist Name (Bigger) -->
-          <h2 id="artist-name"></h2>
-      
-          <!-- 2) Location, Year (smaller) -->
-          <h3 id="location-year"></h3>
-      
-          <!-- SMALLER spacer line -->
-          <div class="label-spacer"></div>
-      
-          <!-- 3) Artwork Name, Year (Bigger) -->
-          <h2 id="artwork-name-year"></h2>
-      
-          <!-- 4) Paint Medium  -->
-          <div id="artwork-medium" class="paint-medium"></div>
-      
-          <!-- SMALLER spacer line -->
-          <div class="label-spacer"></div>
-      
-          <!-- 5) Intro Text -->
-          <div id="intro-text"></div>
-      
-          <!-- SMALLER spacer line -->
-          <div class="label-spacer"></div>
-      
-          <!-- 6) Current Museum (hyperlinked) -->
-          <div id="current-museum"></div>
-        </div>
-      </header>
-      
+    </div>
+    <div id="timeline-placeholder" class="content-section">
 
-      <!-- Map container -->
-      <div id="map-container">
+
+    </div>
+
+    <div id="story-section" class="content-section">
+       <div class="story-grid-container">
+           <div class="overlay-col col-left">
+             <h3 id="overlay-event-title">Event Title Placeholder</h3>
+             <br>
+             <img id="overlay-artwork-thumb" alt="Event Artwork" src="https://via.placeholder.com/300x200.png?text=Event+Image" />
+             <div id="overlay-image-source" style="display:none;"></div>
+           </div>
+
+           <div class="overlay-col col-middle" style="position: relative;">
+             <div id="overlay-network" style="position: relative; width: 100%; height: 100%; border: 0; background-color: #f0f0f0; display:flex; align-items:center; justify-content:center;">
+<button id="magnify-event-network" class="icon-btn">⤢</button>             </div>
+           </div>
+           
+           <div class="overlay-col col-right">
+             <div id="overlay-event-text">
+                <p>这里是事件的详细文本描述。它将描述事件的背景、相关人物以及其在艺术品流传历史中的重要性。</p>
+             </div>
+           </div>
+   
+
+       </div>
+                <div class="overlay-nav">
+    <button id="prev-event">
+        <span class="arrow">&#8592;</span>
+        <span class="nav-text">Previous Event</span>
+    </button>
+    <button id="next-event">
+        <span class="nav-text">Next Event</span>
+        <span class="arrow">&#8594;</span>
+    </button>
+</div>
+    </div>
+
+    <div class="two-column-container">
+      
+      <div id="social-network-container" class="column">
+        <h2>Social Network Diagram</h2>
+        <div class="placeholder-content"></div>
+     <p class="network-footer">This diagram shows all the people involved in the episodes from this object’s Provenance Story.</p>
+
+      </div>
+
+      <div id="map-container" class="column">
         <div id="map"></div>
-
-        <!-- Show Provenance Network button -->
-        <button id="show-full-network" class="overlay-btn">
-          Show Provenance Network
-        </button>
-        <!-- Show Social Network button -->
-        <button id="show-social-network" class="overlay-btn" style="top: 50px;">
-          Show Social Network
-        </button>
-
-        <!-- Single Event Modal -->
-        <div id="map-overlay" class="hidden">
-          <div id="overlay-content">
-            <span id="overlay-close" class="close">&times;</span>
-            <!-- LEFT COL: event title, image, name -->
-            <div class="overlay-col col-left">
-              <h3 id="overlay-event-title"></h3>
-              <br>
-              <!-- Event image (hide if fails) -->
-              <img id="overlay-artwork-thumb" alt="Event Artwork" />
-
-              <!-- Source info for event image -->
-              <div id="overlay-image-source" style="display:none;"></div>
-
-              <!-- <p>
-                <strong>Artwork:</strong>
-                <span id="overlay-artwork-name"></span>
-              </p> -->
-            </div>
-
-       
-            <!-- RIGHT COL: local D3 network -->
-            <div class="overlay-col col-middle" style="position: relative;">
-              <div id="overlay-network" style="position: relative; width: 100%; height: 100%; border: 0;">
-                <!-- A four-arrow enlarge icon in bottom-right corner -->
-                  <button
-                  id="magnify-event-network"
-                  style="
-                    position: absolute;
-                    bottom: 5px;
-                    right: 5px;
-                    z-index: 99;
-                    font-size: 1rem;
-                    padding: 0.3rem 0.6rem;
-                    cursor: pointer;
-                    border: 1px solid #888;
-                    border-radius: 4px;
-                    background: #fafafa;
-                  "
-                >
-                  ⤢
-                </button>
-
-
-              </div>
-            </div>
-            
-                 <!-- MIDDLE COL: event text -->
-                 <div class="overlay-col col-right">
-                  <div id="overlay-event-text"></div>
-                </div>
-    
-            <div class="overlay-nav">
-              <button id="prev-event">&#8592;</button>
-              <button id="next-event">&#8594;</button>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- Back to Gallery button -->
-      <button id="back-to-gallery" class="back-btn">
-        ← Back to Gallery
-      </button>
     </div>
 
-    <!-- Full Network overlay -->
-    <div id="full-network-overlay" class="hidden">
-      <div id="full-network-content">
-        <span id="full-network-close" class="close">&times;</span>
-        <h2 id="full-network-title">Full Provenance Network</h2>
-        <p class="network-footer">This diagram shows all the provenance events related in this object’s Provenance Story.</p>
-        <div id="full-network-diagram"></div>
-      </div>
+<button id="back-to-gallery" class="back-btn">
+  <span class="arrow">←</span>
+  <span class="text">Back to Gallery</span>
+</button>
+  </div>
+
+  <div id="map-overlay" class="hidden"></div>
+  
+
+
+  <div id="social-network-overlay" class="hidden">
+    <div id="social-network-content">
+      <span id="social-network-close" class="close">&times;</span>
+      <h2 id="social-network-title">Social Network Diagram</h2>
+      <div id="social-network-diagram"></div>
     </div>
+  </div>
 
-    <!-- Social Network overlay -->
-    <div id="social-network-overlay" class="hidden">
-      <div id="social-network-content">
-        <span id="social-network-close" class="close">&times;</span>
-        <h2 id="social-network-title">Social Network Diagram</h2>
-        <p class="network-footer">This diagram shows all the people involved in the episodes from this object’s Provenance Story.</p>
-
-        <div id="social-network-diagram"></div>
-      </div>
+  <div id="image-lightbox" class="hidden">
+    <span id="lightbox-close" class="close">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightbox-img" alt="Full size event image" />
+      <div id="lightbox-text"></div>
     </div>
-
-    <!-- Lightbox for event image (vertical layout, centered) -->
-    <div id="image-lightbox" class="hidden">
-      <span id="lightbox-close" class="close">&times;</span>
-      <!-- Center the image + text in a flex column -->
-      <div class="lightbox-content">
-        <img id="lightbox-img" alt="Full size event image" />
-        <!-- Text info with white background -->
-        <div id="lightbox-text"></div>
-      </div>
-    </div>
-    
-
-    <!-- Enlarge local event network in a similar "lightbox" style -->
-    <div id="event-network-lightbox" class="hidden">
-      <span id="event-network-close" class="close">&times;</span>
-      <div class="lightbox-content">
-        <h3 id="event-network-title" style="margin-bottom: 0.5rem;">
-          Event Network (Enlarged)
-        </h3>
-        <div
-          id="event-network-zoomed-container"
-          style="
-            width: 80vw;
-            height: 70vh;
-            background: #fff;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-          "
-        ></div>
-      </div>
-    </div>
-
-    <div id="instructions-modal" class="hidden">
-      <div class="instructions-modal-content">
-          <span id="instructions-close" class="instructions-close">&times;</span>
-          <h2>Welcome to Colonial Networks: Provenance Stories</h2>
-          <p>Here are some tips to help you navigate:</p>
-          <ul>
-              <li><strong>Click</strong> on a circle marker to view provenance events at that location.</li>
-              <li><strong>Use</strong> the <em>“Show Provenance Network”</em> or <em>“Show Social Network”</em> buttons for a broader view of people involved in these stories.</li>
-              <li><strong>Navigate</strong> between provenance events using the arrow buttons in the event section.</li>
-          </ul>
-          <p>You can always reopen these instructions by clicking the small icon at the bottom-right of your screen.</p>
-      </div>
   </div>
   
-  <!-- Floating Help Icon -->
+  <div id="event-network-lightbox" class="hidden">
+    <span id="event-network-close" class="close">&times;</span>
+    <div class="lightbox-content">
+      <h3 id="event-network-title" style="margin-bottom: 0.5rem;">Event Network (Enlarged)</h3>
+      <div id="event-network-zoomed-container" style="width: 80vw; height: 70vh; background: #fff; border: 1px solid #ccc; border-radius: 4px;"></div>
+    </div>
+  </div>
+
+<div id="instructions-modal" class="hidden" role="dialog" aria-labelledby="instructions-title" aria-modal="true">
+  <div class="instructions-modal-content">
+    <span id="instructions-close" class="instructions-close" aria-label="Close instructions">&times;</span>
+
+    <h2 id="instructions-title">Welcome to Colonial Networks: Provenance Stories</h2>
+    <p>Quick tips to explore the map, timeline, and networks:</p>
+
+    <h3>Map</h3>
+    <ul>
+      <li><strong>Click</strong> a circle marker to see provenance events for that place.</li>
+      <li>Markers with a small badge show how many events are linked to that location.</li>
+      <li><strong>Dashed red lines</strong> show movement from one place to another for an event.</li>
+      <li><strong>Gray route lines</strong> indicate related connections. You can <strong>click a route</strong> to open its event.</li>
+    </ul>
+
+    <h3>Provenance panel</h3>
+    <ul>
+      <li><strong>Use</strong> the left and right arrows to move between events.</li>
+      <li><strong>Click</strong> the event thumbnail to open a larger image with source details.</li>
+      <li><strong>Magnify network</strong>: use the “enlarge” button to open an interactive view of the event’s network.</li>
+    </ul>
+
+    <h3>Timeline</h3>
+    <ul>
+      <li>The horizontal timeline lists all events in order.</li>
+      <li><strong>Click</strong> any timeline card to open that event.</li>
+      <li><strong>Prev</strong> / <strong>Next</strong> buttons scroll the timeline.</li>
+    </ul>
+
+    <h3>Provenance text</h3>
+    <ul>
+      <li>Clickable provenance sentences will jump to the matching story.</li>
+      <li>Related items in the text and timeline highlight together so you can track context.</li>
+    </ul>
+
+    <h3>Social network view</h3>
+    <ul>
+      <li>Open the <em>Show Social Network</em> view to see people and relationships.</li>
+      <li><strong>Zoom</strong> and <strong>pan</strong> with your mouse or trackpad; <strong>drag</strong> nodes to adjust layout.</li>
+      <li><strong>Hover</strong> a node to focus its connections. Use <strong>Reset Zoom</strong> to return to the default view.</li>
+    </ul>
+
+    <p>You can reopen these instructions anytime using the small icon in the bottom right.</p>
+  </div>
+</div>
+
   <div id="instructions-icon">
-      <!-- <span id="instructions-text">Help</span> -->
       <span>?</span>
   </div>
-  
-    <!-- Leaflet JS -->
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      crossorigin=""
-    ></script>
-
-    <!-- D3 v7 -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-
-    <!-- detail.js with new features -->
-    <script src="detail.js"></script>
-  </body>
+      <!-- This alert only appears on mobile screens (see style.css media query) -->
+    <div class="mobile-alert">
+      <p>Please use a laptop or a larger screen to view this content.</p>
+    </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- <script src="detail.js"></script> -->
+   <script type="module" src="./js/init.js"></script>
+</body>
 </html>
