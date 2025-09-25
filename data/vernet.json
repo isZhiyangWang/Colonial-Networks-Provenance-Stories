@@ -222,6 +222,7 @@
         "id": "prov-0",
         "owner": "Jean-Joseph de Laborde de Méréville",
         "location": "Paris",
+        "figure": "green",
         "details": "Owner from ca. 1791 until his death and the subsequent confiscation of his property in 1794.",
         "fullText": "Jean-Joseph de Laborde de Méréville, Paris (until d. 1794;"
       },     
@@ -275,68 +276,69 @@
         "fullText": "Darius Ogden Mills, New York (1906)"
       }
     ],
-    "events": [
-      {
-        "date": "1789",
-        "event": "Painted by Carle Vernet in Rome. Exhibited at the Paris Salon de 1789 ",
-        "storyId": 0,
-        "entryId": null
-      },
-      {
-        "date": "(1791)",
-        "event": "Jean-Joseph de Laborde de Méréville, Paris (until d. 1794; ",
-        "storyId": 1,
-        "entryId": "prov-0" 
-      },
-      {
-        "date": "1794",
-        "event": "confiscated by revolutionary forces);",
-        "storyId": 2,
-        "entryId": "prov-1" 
-      },
-      {
-        "date": "1797",
-        "event": "his widow, Nettine de Laborde (from 1797; restituted by the state);",
-        "storyId": 2,
-        "entryId": "prov-2"
-      },
-      {
-        "date": "1822",
-        "event": "Émile-Jean-Horace Vernet, Paris (in 1822);",
-        "storyId": 3,
-        "entryId": "prov-3"
-      },
-      {
-        "date": "1845",
-        "event": "Jean-Baptiste Claude Odiot, Paris (by 1845–at least 1847; his sale, Paillet, Paris, March 3–6, 1845, no. 66; his sale, Ridel, Paris, Feb. 20, 1847, no. 61);",
-        "storyId": null,
-        "entryId": "prov-4"
-      },
-      {
-        "date": "1847",
-        "event": "Baron François Delessert, Paris (until 1869; his sale, Pillet, Paris, March 15–18, 1869, no. 206, for Fr 8100);",
-        "storyId": null,
-        "entryId": "prov-5"
-      },
-      {
-        "date": "1891",
-        "event": "Heber R. Bishop, New York (by 1891–d. 1902; his estate sale, American Art Association, New York, January 19, 1906, no. 86, for $4,200 to Mills);",
-        "storyId": 4,
-        "entryId": "prov-6"
-      },
-      {
-        "date": "1906",
-        "event": "Darius Ogden Mills, New York (1906)",
-        "storyId": 4,
-        "entryId": "prov-7"
-      },
-      {
-        "date": "1906",
-        "event": "Accessioned into the collection of the Metropolitan Museum of Art – gift of Darius Ogden Mills.",
-        "storyId": 4,
-        "entryId": null
-      }
-    ]
+   "events": [
+  {
+    "date": "1789",
+    "event": "Painted by Vernet in Rome. Exhibited at the Paris Salon of 1789.",
+    "storyId": 0,
+    "entryId": null
+  },
+  {
+    "date": "(1791)",
+    "event": "Jean-Joseph de Laborde de Méréville",
+    "storyId": 1,
+    "entryId": "prov-0"
+  },
+  {
+    "date": "1794",
+    "event": "Confiscated by revolutionary forces",
+    "storyId": 2,
+    "entryId": "prov-1"
+  },
+  {
+    "date": "1797",
+    "event": "Rosalie Nettine de Laborde",
+    "storyId": 2,
+    "entryId": "prov-2"
+  },
+  {
+    "date": "1822",
+    "event": "Émile-Jean-Horace Vernet",
+    "storyId": 3,
+    "entryId": "prov-3"
+  },
+  {
+    "date": "1845",
+    "event": "Jean-Baptiste Claude Odiot",
+    "storyId": null,
+    "entryId": "prov-4"
+  },
+  {
+    "date": "1847",
+    "event": "Baron François Delessert",
+    "storyId": null,
+    "entryId": "prov-5"
+  },
+  {
+    "date": "1891",
+    "event": "Heber R. Bishop",
+    "storyId": 4,
+    "entryId": "prov-6"
+  },
+  {
+    "date": "1906",
+    "event": "Darius Ogden Mills",
+    "storyId": 4,
+    "entryId": "prov-7"
+  },
+  {
+    "date": "1906",
+    "event": "The Metropolitan Museum of Art",
+    "storyId": 4,
+    "entryId": null
+  }
+],
+    "source": {"url": "https://www.metmuseum.org/art/collection/search/437885", "text": "The Met"}
   }
   }
   

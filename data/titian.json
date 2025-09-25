@@ -48,7 +48,7 @@
       "from": "Madrid",
       "to": "Paris",
       "eventType": "moves from",
-      "text": "<p> Titian’s Perseus and Andromeda was painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion. This myth of a bound and captive Ethiopian princess (described as <a href='https://www.jstor.org/stable/751417' target='_blank'>Black<a/> in some ancient accounts) rescued by a Greek hero resonated strongly with early modern European collectors and artists. Two such artists likely owned this work: the Italian sculptor Leone Leoni, who was himself <a href='https://www.frick.org/interact/miniseries/cocktails_curator/leoni_medal_andrea_doria'>imprisoned</a> on the papal galleys, and the Flemish painter Anthony Van Dyck, who acquired it in 1623.</p>",
+      "text": "<p>Titian’s Perseus and Andromeda was painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion. This myth of a bound and captive Ethiopian princess (described as <a href='https://www.jstor.org/stable/751417'>Black</a> in some ancient accounts) rescued by a Greek hero resonated strongly with early modern European collectors and artists. Two such artists likely owned this work: the Italian sculptor Leone Leoni, who was himself <a href='https://www.italianartsociety.org/2017/07/leone-leoni-died-on-july-22-1590-in-milan/'>imprisoned</a> on the papal galleys, and the Flemish painter Anthony Van Dyck, who acquired it in 1623. It later ended up in Paris and was installed in the magnificent Galerie Dorée, now the headquarters of the Banque de France.</p>",
       "participants": [
         { "name": "King Philip II", "type": "person" },
         { "name": "Leone Leoni", "type": "person" },
@@ -80,7 +80,7 @@
       "from": "Comte de Toulouse",
       "to": "Philippe Egalité",
       "eventType": "inherited by",
-      "text": "<p>By 1723, after passing through the hands of several other French collectors, Titian’s painting had joined the Orléans Collection, recognized as perhaps the most significant private collection of Western art.</p><p>Assembled in large part by Philippe II, duc d’Orléans (1674-1723), who served as Regent of France from 1715-23—during a period when he and his cronies gained and lost fortunes through colonial speculation—the collection was displayed in the lavish Palais-Royal in Paris.</p><p>It was hung alongside other Titian paintings that were collectively known as the artist’s poesie, a series of meditations on Ovid’s Metamorphoses, including this tale of Perseus rescuing the Ethiopian princess Andromeda.</p><p>In 1785, the Orléans collection was inherited by the Regent’s great-grandson Louis-Philippe-Joseph, duc de Chartres, who became the duc d’Orléans upon the death of his father that year.</p><p>This latest heir to the Orléans art collection was a plantation owner who would later become the pro-Revolution noble known as Philippe Egalité.</p>",
+      "text": "<p>By 1723, after passing through the hands of several other French collectors, Titian’s painting had joined the Orléans Collection, recognized as perhaps the most significant private collection of Western art.<br><br>Assembled in large part by Philippe II, duc d’Orléans (1674-1723), who served as Regent of France from 1715-23—during a period when he and his cronies gained and lost fortunes through colonial speculation—the collection was displayed in the lavish Palais-Royal in Paris.<br><br>It was hung alongside other Titian paintings that were collectively known as the artist’s poesie, a series of meditations on Ovid’s Metamorphoses, including this tale of Perseus rescuing the Ethiopian princess Andromeda.<br><br>In 1785, the Orléans collection was inherited by the Regent’s great-grandson <a href=‘https://www.nationaltrustcollections.org.uk/object/485072’>Louis-Philippe-Joseph, duc de Chartres</a>, who became the duc d’Orléans upon the death of his father that year.<br><br>This latest heir to the Orléans art collection was a plantation owner and enslaver who would later become the pro-Revolution noble known as Philippe Egalité.</p>",
       "participants": [
         { "name": "Comte de Toulouse", "type": "person" },
         { "name": "Philippe II, duc d’Orléans", "type": "person" },
@@ -104,11 +104,11 @@
     },
     {
       "id": 2,
-      "title": "3. Laborde de Méréville’s purchase and sale of the Orléans collection",
+      "title": "3. Laborde de Méréville’s purchase and the sale of the Orléans collection",
       "from": "Duc d’Orléans, Philippe Egalité",
       "to": "London",
       "eventType": "bought by",
-      "text": "<p>In 1792, Louis Philippe d’Orléans (1787-93), known then as Philippe Egalité, sold part of the Orléans collection to the Brussels banker Édouard de Walckiers.</p><p>A close friend of the comte de Vaudreuil (from whom he acquired a sugar plantation in Saint-Domingue/Haiti), Philippe Egalité had dissipated the family fortune through gambling and made a huge profit off the sale.</p><p>Very soon after, Walckiers’s cousin, François Laborde de Méréville, who had spent a few years in Saint-Domingue managing his own family’s extensive sugar plantations, bought the collection for nearly a million francs and brought it to London (a move that contributed to his father’s arrest and subsequent execution by guillotine).</p><p>He too made a fortune by selling the paintings to Michael Bryan in 1798 for £43,500, the equivalent of 7 million dollars today.</p>",
+      "text": "<p>In 1792, Louis Philippe d’Orléans (1787–93), known then as Philippe Égalité, sold part of the Orléans collection to the Brussels banker and slave trader Édouard de Walckiers.<br><br>A close friend of the comte de Vaudreuil (from whom he acquired a sugar plantation in Saint-Domingue/Haiti), Philippe Égalité had dissipated the family fortune through gambling and made a huge profit off the sale.<br><br>Very soon after, Walckiers’s cousin, François Laborde de Méréville, who had spent a few years in Saint-Domingue managing his own family’s extensive sugar plantations, bought the collection for nearly a million francs and brought it to London (a move that contributed to his father’s arrest and subsequent execution by guillotine).<br><br>He too made a fortune by selling the paintings to Michael Bryan in 1798 for £43,500, the equivalent of 7 million dollars today.</p>",
       "participants": [
         { "name": "Duc d’Orléans, Philippe Egalité", "type": "greenperson" },
         { "name": "Édouard de Walckiers", "type": "person" },
@@ -274,150 +274,152 @@
     "entries": [
       {
         "id": "prov-0",
-        "owner": "King Philip II (1527–1598)",
+        "owner": "Philip of Habsburg (1527–1598)",
         "location": "Madrid",
-        "details": "Painted in 1554–56 for King Philip II.",
+        "details": "Painted in 1554–56 for Philip II of Spain.",
         "fullText": "Painted in 1554–56 for Philip of Habsburg (1527–1598) Madrid;"
       },
       {
         "id": "prov-1",
-        "owner": "Antonio Pérez (1540–1611)",
+        "owner": "Antonio Pérez (1540–1611); Pompeo Leoni (1533–1608)",
         "location": null,
-        "details": "Probably gifted to Antonio Pérez before 1579.",
-        "fullText": "probably gifted to Antonio Pérez (1540–1611) before 1579;"
+        "details": "Gifted to Antonio Pérez before 1579; possibly acquired by Pompeo Leoni.",
+        "fullText": "probably gifted to Antonio Pérez (1540–1611) before 1579; from whom possibly acquired by Pompeo Leoni (1533–1608);"
       },
       {
         "id": "prov-2",
-        "owner": "Pompeo Leoni (1533–1608)",
-        "location": null,
-        "details": "Possibly acquired from Antonio Pérez.",
-        "fullText": "from whom possibly acquired by Pompeo Leoni (1533–1608);"
-      },
-      {
-        "id": "prov-3",
         "owner": "Leon Battista Leoni (d. 1615)",
         "location": "Milan",
-        "details": "By descent to Leon Battista Leoni in Milan.",
+        "details": "By descent to Leon Battista Leoni.",
         "fullText": "by descent to Leon Battista Leoni (d. 1615), Milan;"
       },
       {
-        "id": "prov-4",
-        "owner": "Anthony Van Dyck (1599–1641)",
+        "id": "prov-3",
+        "owner": "Sir Anthony van Dyck (1599–1641)",
         "location": "Milan",
         "details": "Acquired probably in 1623 in Milan.",
         "fullText": "by descent until acquired by Sir Anthony van Dyck (1599–1641) probably in 1623 in Milan;"
       },
       {
-        "id": "prov-5",
+        "id": "prov-4",
         "owner": "Mary Ruthven (about 1622–1645)",
         "location": "London",
-        "details": "By descent to Mary Ruthven in London.",
+        "details": "By descent to Mary Ruthven.",
         "fullText": "by descent to his wife, Mary Ruthven (about 1622-1645) London;"
       },
       {
-        "id": "prov-6",
+        "id": "prov-5",
         "owner": "Sir John Wittewronge, 1st Baronet (1618–1693)",
         "location": null,
         "details": "Acquired circa 1644.",
         "fullText": "acquired by Sir John Wittewronge, 1st Baronet (1618–1693) c. 1644;"
       },
       {
-        "id": "prov-7",
+        "id": "prov-6",
         "owner": "Algernon Percy, 10th Earl of Northumberland (1602–1668)",
         "location": null,
         "details": "Bought in 1645.",
         "fullText": "bought by Algernon Percy, 10th Earl of Northumberland (1602–1668) in 1645;"
       },
       {
-        "id": "prov-8",
+        "id": "prov-7",
         "owner": "Louis Hesselin (1602–1662)",
         "location": null,
         "details": "Probably acquired by 1649.",
         "fullText": "probably acquired by Louis Hesselin (1602–1662) by 1649;"
       },
       {
-        "id": "prov-9",
-        "owner": "Louis Phélypeaux (1598–1681)",
+        "id": "prov-8",
+        "owner": "Louis-Phélypeaux (1598–1681)",
         "location": "Paris",
-        "details": "Louis-Phélypeaux, seigneur de La Vrillière, Paris, by 1655.",
+        "details": "By 1655 in Paris.",
         "fullText": "Louis-Phélypeaux, seigneur de La Vrillière (1598–1681) Paris, by 1655;"
       },
       {
-        "id": "prov-10",
-        "owner": "Balthazar Phélypeaux, marquis de Châteauneuf (1630–1700)",
+        "id": "prov-9",
+        "owner": "Balthazar Phélypeaux (1630–1700)",
         "location": null,
         "details": "By descent to Balthazar Phélypeaux.",
         "fullText": "by descent to Balthazar Phélypeaux, marquis de Châteauneuf (1630–1700);"
       },
       {
-        "id": "prov-11",
+        "id": "prov-10",
         "owner": "Louis Raulin-Rouillé (d. 1712)",
         "location": null,
         "details": "With Louis Raulin-Rouillé by 1705.",
         "fullText": "with Louis Raulin-Rouillé (d. 1712), by 1705;"
       },
       {
-        "id": "prov-12",
+        "id": "prov-11",
         "owner": "Mme Raulin-Rouillé",
         "location": null,
         "details": "By descent to Mme Raulin-Rouillé.",
         "fullText": "by descent to Mme Raulin-Rouillé;"
       },
       {
-        "id": "prov-13",
-        "owner": "Comte de Toulouse (Louis Alexandre de Bourbon, 1678–1737)",
+        "id": "prov-12",
+        "owner": "Louis Alexandre de Bourbon, comte de Toulouse (1678–1737)",
         "location": null,
         "details": "With the Comte de Toulouse by 1713.",
         "fullText": "with Louis Alexandre de Bourbon, comte de Toulouse (1678–1737), by 1713;"
       },
       {
-        "id": "prov-14",
+        "id": "prov-13",
         "owner": "Philippe II, duc d’Orléans (1674–1723)",
         "location": null,
         "details": "By 1723 with Philippe II, duc d’Orléans.",
         "fullText": "Philippe II, duc d’Orléans (1674–1723) by 1723;"
       },
       {
-        "id": "prov-15",
+        "id": "prov-14",
         "owner": "Louis, duc d’Orléans (1703–1752)",
         "location": null,
         "details": "By inheritance to Louis, duc d’Orléans.",
         "fullText": "by inheritance to Louis, duc d’Orléans (1703-1752);"
       },
       {
-        "id": "prov-16",
-        "owner": "Philippe Egalité (1747–1793)",
+        "id": "prov-15",
+        "owner": "to Louis-Philippe-Joseph, duc d’Orléans ",
+        "figure": "green",
         "location": null,
-        "details": "By descent to Louis-Philippe-Joseph, duc d’Orléans (Philippe Egalité).",
+        "details": "Later known as Philippe Egalité.",
         "fullText": "by descent to Louis-Philippe-Joseph, duc d’Orléans (1747–1793);"
       },
       {
-        "id": "prov-17",
+        "id": "prov-16",
         "owner": "Édouard de Walckiers (1758–1837)",
         "location": null,
         "details": "Bought in 1792.",
         "fullText": "bought by Édouard de Walckiers (1758–1837) in 1792;"
       },
       {
-        "id": "prov-18",
-        "owner": "François Laborde de Méréville (1761–1801)",
+        "id": "prov-17",
+        "owner": "François-Louis-Joseph de Laborde de Méréville",
+        "figure": "green",
         "location": null,
         "details": "Bought by 1793.",
         "fullText": "bought by François-Louis-Joseph de Laborde de Méréville (1761–1801) by 1793;"
       },
       {
-        "id": "prov-19",
+        "id": "prov-18",
         "owner": "Jeremiah Harman (1763–1844)",
         "location": null,
         "details": "Bought in 1798.",
         "fullText": "bought by Jeremiah Harman (1763–1844) in 1798;"
       },
       {
-        "id": "prov-20",
+        "id": "prov-19",
         "owner": "Michael Bryan (1757–1821)",
         "location": "London",
-        "details": "Bought in 1798; his London sale on 27 March 1805.",
-        "fullText": "bought by Michael Bryan (1757–1821) in 1798; his sale, Coxe, Burrell and Foster, London, 27 March 1805, lot 58 (buyer unknown)."
+        "details": "Bought in 1798; his London sale in 1805.",
+        "fullText": "bought by Michael Bryan (1757–1821) in 1798; his sale, Coxe, Burrell and Foster, London, 27 March 1805, lot 58"
+      },
+      {
+        "id": "prov-20",
+        "owner": "Unknown buyer",
+        "location": null,
+        "details": "Unidentified purchaser at the 1805 sale.",
+        "fullText": "(buyer unknown)."
       },
       {
         "id": "prov-21",
@@ -428,43 +430,40 @@
       },
       {
         "id": "prov-22",
-        "owner": "3rd Marquess of Hertford",
+        "owner": "Francis Charles Seymour-Conway, 3rd Marquess of Hertford",
         "location": null,
         "details": "Bought for £362.10.",
         "fullText": "bought by Francis Charles Seymour-Conway, 3rd Marquess of Hertford for £362.10."
       }
     ],
- "events": [
-  { "date": "1554-56", "event": "Painted in 1554–56 for Philip of Habsburg (1527–1598) Madrid;", "storyId": 0, "entryId": "prov-0" },
-
-  { "date": "1579", "event": "probably gifted to Antonio Pérez (1540–1611) before 1579; from whom possibly acquired by Pompeo Leoni (1533–1608);", "storyId": null, "entryId": "prov-1" },
-  { "date": "1608", "event": "by descent to Leon Battista Leoni (d. 1615), Milan;", "storyId": 0, "entryId": "prov-2" },
-  { "date": "1623", "event": "acquired by Sir Anthony van Dyck (1599–1641) probably in 1623 in Milan;", "storyId": 0, "entryId": "prov-3" },
-
-  { "date": "1641", "event": "by descent to his wife, Mary Ruthven (about 1622-1645) London;", "storyId": null, "entryId": "prov-4" },
-  { "date": "1644", "event": "acquired by Sir John Wittewronge, 1st Baronet (1618–1693) c. 1644;", "storyId": null, "entryId": "prov-5" },
-  { "date": "1645", "event": "bought by Algernon Percy, 10th Earl of Northumberland (1602–1668) in 1645;", "storyId": null, "entryId": "prov-6" },
-  { "date": "1649", "event": "probably acquired by Louis Hesselin (1602–1662) by 1649;", "storyId": null, "entryId": "prov-7" },
-  { "date": "1655", "event": "Louis-Phélypeaux, seigneur de La Vrillière (1598–1681) Paris, by 1655;", "storyId": null, "entryId": "prov-8" },
-  { "date": "1681", "event": "by descent to Balthazar Phélypeaux, marquis de Châteauneuf (1630–1700);", "storyId": null, "entryId": "prov-9" },
-  { "date": "1705", "event": "with Louis Raulin-Rouillé (d. 1712), by 1705;", "storyId": null, "entryId": "prov-10" },
-  { "date": "1712", "event": "by descent to Mme Raulin-Rouillé;", "storyId": null, "entryId": "prov-11" },
-
-  { "date": "1713", "event": "with Louis Alexandre de Bourbon, comte de Toulouse (1678–1737), by 1713;", "storyId": null, "entryId": "prov-12" },
-  { "date": "", "event": "Philippe II, duc d’Orléans (1674–1723) by 1723;", "storyId": 1, "entryId": "prov-13" },
-  { "date": "1723", "event": "by inheritance to Louis, duc d’Orléans (1703-1752);", "storyId": 1, "entryId": "prov-14" },
-  { "date": "1785", "event": "by descent to Louis-Philippe-Joseph, duc d’Orléans (1747–1793);", "storyId": 1, "entryId": "prov-15" },
-
-  { "date": "1792", "event": "bought by Édouard de Walckiers (1758–1837) in 1792;", "storyId": 2, "entryId": "prov-16" },
-  { "date": "1793", "event": "bought by François-Louis-Joseph de Laborde de Méréville (1761–1801) by 1793;", "storyId": 2, "entryId": "prov-17" },
-
-  { "date": "1798", "event": "bought by Jeremiah Harman (1763–1844) in 1798;", "storyId": 3, "entryId": "prov-18" },
-  { "date": "1798", "event": "bought by Michael Bryan (1757–1821) in 1798; his sale, Coxe, Burrell and Foster, London, 27 March 1805, lot 58 (buyer unknown).", "storyId": 2, "entryId": "prov-19" },
-
-  { "date": "1805", "event": "(buyer unknown). Sir Gregory Osborne Page Turner (1785–1843); his sale, Phillips, London 20 May 1815, lot 204;", "storyId": null, "entryId": "prov-20" },
-  { "date": "1815", "event": "bought by Francis Charles Seymour-Conway, 3rd Marquess of Hertford for £362.10.", "storyId": 3, "entryId": "prov-21" }
-]
-
+    "events": [
+      { "date": "1554–56", "event": "Painted in 1554–56 for Philip II of Spain", "storyId": 1, "entryId": "prov-0" },
+      { "date": "1579", "event": "Antonio Pérez; Pompeo Leoni", "storyId": null, "entryId": "prov-1" },
+      { "date": "1608", "event": "Leone Leoni", "storyId": 1, "entryId": "prov-2" },
+      { "date": "1623", "event": "Sir Anthony van Dyck", "storyId": 1, "entryId": "prov-3" },
+      { "date": "1641", "event": "Mary Ruthven", "storyId": null, "entryId": "prov-4" },
+      { "date": "1644", "event": "Sir John Wittewronge", "storyId": null, "entryId": "prov-5" },
+      { "date": "1645", "event": "Algernon Percy, 10th Earl of Northumberland", "storyId": null, "entryId": "prov-6" },
+      { "date": "1649", "event": "Louis Hesselin", "storyId": null, "entryId": "prov-7" },
+      { "date": "1655", "event": "Louis-Phélypeaux, seigneur de La Vrillière, Paris", "storyId": null, "entryId": "prov-8" },
+      { "date": "1681", "event": "Balthazar Phélypeaux, marquis de Châteauneuf", "storyId": null, "entryId": "prov-9" },
+      { "date": "1705", "event": "Louis Raulin-Rouillé", "storyId": null, "entryId": "prov-10" },
+      { "date": "1712", "event": "Mme Raulin-Rouillé", "storyId": null, "entryId": "prov-11" },
+      { "date": "1713", "event": "Louis Alexandre de Bourbon, comte de Toulouse", "storyId": null, "entryId": "prov-12" },
+      { "date": "1723", "event": "Philippe II, duc d’Orléans", "storyId": 2, "entryId": "prov-13" },
+      { "date": "1723", "event": "Louis, duc d’Orléans", "storyId": 2, "entryId": "prov-14" },
+      { "date": "1785", "event": "Louis-Philippe-Joseph, duc d’Orléans, later known as Philippe Egalité", "storyId": 3, "entryId": "prov-15" },
+      { "date": "1792", "event": "Édouard de Walckiers", "storyId": 3, "entryId": "prov-16" },
+      { "date": "1793", "event": "François-Louis-Joseph de Laborde de Méréville", "storyId": 3, "entryId": "prov-17" },
+      { "date": "1798", "event": "Jeremiah Harman", "storyId": 4, "entryId": "prov-18" },
+      { "date": "1798", "event": "Michael Bryan", "storyId": 4, "entryId": "prov-19" },
+      { "date": "1805", "event": "Unknown buyer", "storyId": null, "entryId": "prov-20" },
+      { "date": "1815", "event": "Sir Gregory Osborne Page Turner", "storyId": null, "entryId": "prov-21" },
+      { "date": "1815", "event": "Francis Charles Seymour-Conway, 3rd Marquess of Hertford", "storyId": 4, "entryId": "prov-22" },
+        { "date": "1897", "event": "The Wallace Collection", "storyId": 4, "entryId": null }
+    ],
+    "source": {"url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64901&viewType=detailView", "text": "Wallace Collection"}
   }
+
 
 }

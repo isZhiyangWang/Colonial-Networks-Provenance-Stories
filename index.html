@@ -2,49 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Artworks Gallery</title>
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="landing.css" />
   </head>
 
-
-  <!-- Add class="landing-page" so CSS can specifically target this page -->
   <body class="landing-page">
+    <!-- Wrap ensures intro and gallery have exactly the same width -->
+    <div class="landing-wrap">
+      <h1 class="site-title">Colonial Networks: Provenance Stories</h1>
 
-    <!-- This alert only appears on mobile screens (see style.css media query) -->
-    <div class="mobile-alert">
+      <!-- Intro card -->
+      <section class="landing-hero" aria-labelledby="about-title">
+        <h2 id="about-title" class="sr-only">About this project</h2>
+        <div class="landing-hero-inner">
+          <p class="intro-text-bold">
+            Art works tell stories, not only through subject matter, but through their lives as objects. Who owned them? Who saw them? Where did they go? And how did they end up in our museums?
+          </p>
+          <p class="intro-text">
+            This interactive website tells new stories about old master European artworks through the lens of provenance. It focuses specifically on owners with strong colonial ties.
+          </p>
+          <p class="intro-text">
+            What can the stories of artworks tell us about histories of colonialism and enslavement?
+          </p>
+          <p class="click-text">Click on an artwork to see its story</p>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <main class="landing-main" aria-live="polite">
+        <div id="gallery-container" class="landing-grid"></div>
+      </main>
+    </div>
+
+    <!-- Mobile notice (very small screens) -->
+    <div class="mobile-alert" role="dialog" aria-modal="true" aria-label="Use larger screen">
       <p>Please use a laptop or a larger screen to view this content.</p>
-    </div>
-
-    <!-- Left side (fixed) -->
-    <div class="landing-left">
-      <div class="landing-left-content">
-        <h2></h2>
-        <p class="intro-text-bold">
-        Art works tell stories – not just through their subject matter, but though their lives as objects. Who owned them? Who saw them? Where did they go? And how did they end up in our museums?      </p>
-        <p class="intro-text">
-       This interactive website tells new stories about old master European artworks through the lens of provenance. It focuses specifically on owners with strong colonial ties.</p>
-        <p class="intro-text">
-        What can the stories of artworks tell us about histories of colonialism and enslavement? 
-        </p>
-        <p class="click-text">
-          Click on an artwork to see its story
-        </p>
-      </div>
-    </div>
-
-    <!-- Right side (scrollable) -->
-    <div class="landing-right">
-      <h1>Colonial Networks: Provenance Stories</h1>
-      <div id="gallery-container" class="landing-grid"></div>
     </div>
 
     <script src="gallery.js"></script>

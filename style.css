@@ -1288,3 +1288,117 @@ header {
 #timeline-scroll-next:hover .arrow { transform: translateX(4px); }
 .timeline-scroll-btn.hidden { opacity: 0; pointer-events: none; }
 
+.provenance-source { margin-top: 0.5rem; font-size: 0.95rem; }
+.provenance-source .provenance-source-link { text-decoration: underline; }
+.provenance-source { margin-top: 0.5rem; font-size: 0.95rem; }
+.provenance-source .provenance-source-link { text-decoration: underline; }
+.prov-event-mention { font-weight: 700; }
+.colonial-figure { color: #2e7d32; }
+/* “整条加粗”的类：给每个片段都加这个类，避免被其它样式覆盖 */
+.prov-entry-bold { font-weight: 700 !important; }
+
+/* 事件词仍可单独选择（如果你以后想给事件词额外样式） */
+.prov-event-mention { /* 这里不强制加粗，因为上面已整条加粗；需要的话也可以加粗 */
+  /* font-weight: 700; */
+}
+
+/* 绿色人物：仅作用于 owner 片段 */
+.colonial-figure { color: #2e7d32; }
+
+/* 进入故事聚焦模式：把非同故事元素整体降不透明度 */
+.has-cohort-focus .provenance-entry,
+.has-cohort-focus .timeline-item {
+  opacity: 0.45;
+  transition: opacity .18s ease;
+}
+
+/* 同故事（related / primary）保持全亮 */
+.has-cohort-focus .provenance-entry.is-related,
+.has-cohort-focus .provenance-entry.is-primary,
+.has-cohort-focus .timeline-item.is-related,
+.has-cohort-focus .timeline-item.is-primary {
+  opacity: 1;
+}
+
+/* 鼠标悬停在时间线项时，轻度提升可读性（可选） */
+.has-cohort-focus .timeline-item:hover { opacity: 0.7; }
+.has-cohort-focus .timeline-item.is-related:hover,
+.has-cohort-focus .timeline-item.is-primary:hover { opacity: 1; }
+
+/* 不要淡化 popover 和滚动按钮等辅助 UI */
+.story-cohort-popover,
+.timeline-scroll-btn {
+  opacity: 1 !important;
+}
+
+/* 仍保留你已有的样式（示意） */
+.provenance-entry.is-related {
+  text-decoration: underline dotted rgba(0,0,0,.35);
+  text-underline-offset: 2px;
+}
+.provenance-entry.is-primary {
+  text-decoration: underline solid var(--tl-primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+/* Unlinked items (no storyId) look muted by default */
+.timeline-item[data-story-id=""],
+.timeline-item[data-unlinked="1"] {
+  cursor: default; /* not clickable */
+}
+
+.timeline-item[data-story-id=""] .timeline-point,
+.timeline-item[data-unlinked="1"] .timeline-point {
+  width: 12px;
+  height: 12px;
+  background-color: #b0b0b0;
+  filter: grayscale(60%);
+  opacity: 0.65;
+}
+
+.timeline-item[data-story-id=""] .timeline-content,
+.timeline-item[data-story-id=""] .timeline-date-label,
+.timeline-item[data-unlinked="1"] .timeline-content,
+.timeline-item[data-unlinked="1"] .timeline-date-label {
+  opacity: 0.35;
+  filter: grayscale(50%);
+  transition: opacity .15s ease, filter .15s ease, box-shadow .15s ease, transform .15s ease;
+  /* Optional: make them feel a bit “collapsed” */
+  /* transform: scale(0.99); */
+}
+
+/* Hover to reveal: higher opacity and normal shadow */
+.timeline-item[data-story-id=""]:hover .timeline-content,
+.timeline-item[data-unlinked="1"]:hover .timeline-content{
+  opacity: 1;
+  filter: none;
+  /* transform: scale(1); */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+.timeline-item[data-story-id=""]:hover .timeline-date-label,
+.timeline-item[data-unlinked="1"]:hover .timeline-date-label {
+  opacity: 1;
+  filter: none;
+
+}
+/* In cohort-focus mode, keep unlinked items even more muted,
+   but still let hover reveal them clearly */
+.has-cohort-focus .timeline-item[data-story-id=""] .timeline-content,
+.has-cohort-focus .timeline-item[data-story-id=""] .timeline-date-label,
+.has-cohort-focus .timeline-item[data-unlinked="1"] .timeline-content,
+.has-cohort-focus .timeline-item[data-unlinked="1"] .timeline-date-label {
+  opacity: 0.25;
+  filter: grayscale(60%);
+}
+
+.has-cohort-focus .timeline-item[data-story-id=""]:hover .timeline-content,
+.has-cohort-focus .timeline-item[data-story-id=""]:hover .timeline-date-label,
+.has-cohort-focus .timeline-item[data-unlinked="1"]:hover .timeline-content,
+.has-cohort-focus .timeline-item[data-unlinked="1"]:hover .timeline-date-label {
+  opacity: 0.95;
+  filter: none;
+}
+
+/* Ensure linked (story) items remain interactive as before */
+.timeline-item[data-story-id]:not([data-story-id=""]) { cursor: pointer; }

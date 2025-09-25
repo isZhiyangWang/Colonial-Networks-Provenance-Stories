@@ -1,38 +1,57 @@
 (async function () {
-  // 1. Fetch the list of artworks (with extended fields)
-  const resp = await fetch("data/gallery.json");
-  const artworks = await resp.json();
+  try {
+    const resp = await fetch("data/gallery.json", { cache: "no-store" });
+    const artworks = await resp.json();
 
-  // 2. Select the container for images
-  const container = document.getElementById("gallery-container");
+    const container = document.getElementById("gallery-container");
+    if (!Array.isArray(artworks) || artworks.length === 0) {
+      container.innerHTML = "<p>No artworks available.</p>";
+      return;
+    }
 
-  // 3. Populate each artwork
-  artworks.forEach((art) => {
-    // Create a wrapper div
-    const wrapper = document.createElement("div");
-    wrapper.className = "gallery-item"; // for styling
+    artworks.forEach((art) => {
+      const item = document.createElement("article");
+      item.className = "gallery-item";
+      item.tabIndex = 0; // keyboard focus
+      item.setAttribute(
+        "aria-label",
+        `${art.artist}, ${art.title} (${art.date}) — ${art.museum}`
+      );
+      item.setAttribute("role", "button");
 
-    // Create the image
-    const img = document.createElement("img");
-    img.src = art.image_url;
-    img.alt = art.title;
+      const ratio = document.createElement("div");
+      ratio.className = "ratio-box";
 
-    // Create the hover caption
-    const caption = document.createElement("div");
-    caption.className = "image-caption";
-    // You can style the text however you like; here's a simple concatenation:
-    caption.innerText = `${art.artist}, ${art.title} (${art.date})\n${art.museum}`;
+      const img = document.createElement("img");
+      img.src = art.image_url;
+      img.alt = art.title || "Artwork";
+      img.loading = "lazy";
+      img.decoding = "async";
 
-    // Clicking the wrapper goes to detail.html?id=<ID>
-    wrapper.addEventListener("click", () => {
-      window.location.href = `detail.html?id=${art.id}`;
+      const caption = document.createElement("div");
+      caption.className = "image-caption";
+      caption.innerText = `${art.artist}, ${art.title} (${art.date})\n${art.museum}`;
+
+      const goDetail = () => {
+        window.location.href = `detail.html?id=${encodeURIComponent(art.id)}`;
+      };
+
+      item.addEventListener("click", goDetail);
+      item.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          goDetail();
+        }
+      });
+
+      ratio.appendChild(img);
+      item.appendChild(ratio);
+      item.appendChild(caption);
+      container.appendChild(item);
     });
-
-    // Add the image and the caption to the wrapper
-    wrapper.appendChild(img);
-    wrapper.appendChild(caption);
-
-    // Add the wrapper to the main container
-    container.appendChild(wrapper);
-  });
+  } catch (err) {
+    console.error(err);
+    const container = document.getElementById("gallery-container");
+    if (container) container.innerHTML = "<p>Failed to load artworks.</p>";
+  }
 })();

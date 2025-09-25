@@ -5,7 +5,8 @@ function getColorForType(t = "") {
     case "museum": return "#ffff00";
     case "institution": return "#800080";
     case "greenperson": return "#008000";
-    default: return "#1e90ff";
+    default: return "#636363ff";
+    // default: return "#1e90ff";
   }
 }
 
