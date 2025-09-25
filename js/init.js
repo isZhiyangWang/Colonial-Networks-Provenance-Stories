@@ -7,10 +7,10 @@ import { drawSocialNetwork } from "./socialNetwork.js";
 import { renderInteractiveProvenanceD3 } from "./provenanceRenderer.js";
 import { getFilenameBase } from "./utils.js";
 
-// 安装全局高亮 API（保持与旧代码兼容）
+
 installHighlightSelection();
 
-// DOM 顶部 UI：说明与 Lightbox 控件
+
 document.addEventListener("DOMContentLoaded", () => {
   const instructionsModal = $("instructions-modal");
   const instructionsClose = $("instructions-close");
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   $("back-to-gallery")?.addEventListener("click", () => (window.location.href = "index.html"));
 });
 
-// 保持对外 API：initProvenance（挂到 window 上）
+
 async function initProvenance(json) {
   const {
     artworkData = {},
@@ -39,7 +39,7 @@ async function initProvenance(json) {
     provenanceTimeline = null,
   } = json || {};
 
-  // 顶部信息
+  document.title = `${artworkData.artworkName || "Artwork"} - Provenance Story`;
   setText("artist-name", artworkData.artistName);
   setText("location-year", `${artworkData.location}, ${artworkData.creationYear}`);
   setText("artwork-name-year", `${artworkData.artworkName} (${artworkData.artworkYear})`);
@@ -56,7 +56,7 @@ async function initProvenance(json) {
     artImg.alt = artworkData.artworkName || "Art Image";
   }
 
-  // 地图 + 事件绘制
+
   const map = buildMap("map");
   const { placeCounts } = processProvenanceOnMap({
     map,
@@ -66,7 +66,6 @@ async function initProvenance(json) {
   });
   plotPlaces({ map, placeData, placeCounts, provenanceEvents, openEventModal });
 
-  // 事件 Modal 控制
   let currentIndex = 0;
   let currentEventData = null;
 
@@ -116,7 +115,6 @@ async function initProvenance(json) {
       }
     }
 
-    // 关键联动
     window.highlightItemsForStory(idx);
     drawNetworkForEvent(ev);
   }
@@ -140,7 +138,6 @@ async function initProvenance(json) {
     openEnlargedEventNetwork(currentEventData);
   });
 
-  // 社交网络（若存在）
   if (socialNetworkData) {
     const onPageContainer = d3.select("#social-network-container .placeholder-content");
     if (!onPageContainer.empty()) {
@@ -150,14 +147,11 @@ async function initProvenance(json) {
     }
   }
 
-  // 渲染文字与时间轴
   renderInteractiveProvenanceD3(provenanceTimeline, provenanceEvents, openEventModal);
 
-  // 默认打开第一个事件
   if (provenanceEvents.length > 0) openEventModal(0);
 }
 
-// 读取 ?id 并加载 JSON，保持你原流程
 (async function bootstrap() {
   const params = new URLSearchParams(window.location.search);
   const artworkId = params.get("id");
@@ -176,6 +170,5 @@ async function initProvenance(json) {
   }
 })();
 
-// 向外暴露与兼容旧代码
 window.initProvenance = initProvenance;
 window.renderInteractiveProvenanceD3 = renderInteractiveProvenanceD3; // 如果外部需要直接用
