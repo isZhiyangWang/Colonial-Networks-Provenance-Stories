@@ -437,10 +437,10 @@
       }
     ],
     "events": [
-      { "date": "1554–56", "event": "Painted in 1554–56 for Philip II of Spain", "storyId": 1, "entryId": "prov-0" },
+      { "date": "1554–56", "event": "Painted in 1554–56 for Philip II of Spain", "storyId": 0, "entryId": "prov-0" },
       { "date": "1579", "event": "Antonio Pérez; Pompeo Leoni", "storyId": null, "entryId": "prov-1" },
-      { "date": "1608", "event": "Leone Leoni", "storyId": 1, "entryId": "prov-2" },
-      { "date": "1623", "event": "Sir Anthony van Dyck", "storyId": 1, "entryId": "prov-3" },
+      { "date": "1608", "event": "Leone Leoni", "storyId": 0, "entryId": "prov-2" },
+      { "date": "1623", "event": "Sir Anthony van Dyck", "storyId": 0, "entryId": "prov-3" },
       { "date": "1641", "event": "Mary Ruthven", "storyId": null, "entryId": "prov-4" },
       { "date": "1644", "event": "Sir John Wittewronge", "storyId": null, "entryId": "prov-5" },
       { "date": "1645", "event": "Algernon Percy, 10th Earl of Northumberland", "storyId": null, "entryId": "prov-6" },
@@ -450,17 +450,17 @@
       { "date": "1705", "event": "Louis Raulin-Rouillé", "storyId": null, "entryId": "prov-10" },
       { "date": "1712", "event": "Mme Raulin-Rouillé", "storyId": null, "entryId": "prov-11" },
       { "date": "1713", "event": "Louis Alexandre de Bourbon, comte de Toulouse", "storyId": null, "entryId": "prov-12" },
-      { "date": "1723", "event": "Philippe II, duc d’Orléans", "storyId": 2, "entryId": "prov-13" },
-      { "date": "1723", "event": "Louis, duc d’Orléans", "storyId": 2, "entryId": "prov-14" },
-      { "date": "1785", "event": "Louis-Philippe-Joseph, duc d’Orléans, later known as Philippe Egalité", "storyId": 3, "entryId": "prov-15" },
-      { "date": "1792", "event": "Édouard de Walckiers", "storyId": 3, "entryId": "prov-16" },
-      { "date": "1793", "event": "François-Louis-Joseph de Laborde de Méréville", "storyId": 3, "entryId": "prov-17" },
-      { "date": "1798", "event": "Jeremiah Harman", "storyId": 4, "entryId": "prov-18" },
-      { "date": "1798", "event": "Michael Bryan", "storyId": 4, "entryId": "prov-19" },
+      { "date": "1723", "event": "Philippe II, duc d’Orléans", "storyId": 1, "entryId": "prov-13" },
+      { "date": "1723", "event": "Louis, duc d’Orléans", "storyId": 1, "entryId": "prov-14" },
+      { "date": "1785", "event": "Louis-Philippe-Joseph, duc d’Orléans, later known as Philippe Egalité", "storyId": 1, "entryId": "prov-15" },
+      { "date": "1792", "event": "Édouard de Walckiers", "storyId": 2, "entryId": "prov-16" },
+      { "date": "1793", "event": "François-Louis-Joseph de Laborde de Méréville", "storyId": 2, "entryId": "prov-17" },
+      { "date": "1798", "event": "Jeremiah Harman", "storyId": 3, "entryId": "prov-18" },
+      { "date": "1798", "event": "Michael Bryan", "storyId": 2, "entryId": "prov-19" },
       { "date": "1805", "event": "Unknown buyer", "storyId": null, "entryId": "prov-20" },
       { "date": "1815", "event": "Sir Gregory Osborne Page Turner", "storyId": null, "entryId": "prov-21" },
-      { "date": "1815", "event": "Francis Charles Seymour-Conway, 3rd Marquess of Hertford", "storyId": 4, "entryId": "prov-22" },
-        { "date": "1897", "event": "The Wallace Collection", "storyId": 4, "entryId": null }
+      { "date": "1815", "event": "Francis Charles Seymour-Conway, 3rd Marquess of Hertford", "storyId": 3, "entryId": "prov-22" },
+        { "date": "1897", "event": "The Wallace Collection", "storyId": 3, "entryId": null }
     ],
     "source": {"url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64901&viewType=detailView", "text": "Wallace Collection"}
   }
