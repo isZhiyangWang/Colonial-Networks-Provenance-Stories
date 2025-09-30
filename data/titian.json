@@ -450,7 +450,7 @@
       { "date": "1705", "event": "Louis Raulin-Rouillé", "storyId": null, "entryId": "prov-10" },
       { "date": "1712", "event": "Mme Raulin-Rouillé", "storyId": null, "entryId": "prov-11" },
       { "date": "1713", "event": "Louis Alexandre de Bourbon, comte de Toulouse", "storyId": null, "entryId": "prov-12" },
-      { "date": "1723", "event": "Philippe II, duc d’Orléans", "storyId": 1, "entryId": "prov-13" },
+      { "date": "", "event": "Philippe II, duc d’Orléans", "storyId": 1, "entryId": "prov-13" },
       { "date": "1723", "event": "Louis, duc d’Orléans", "storyId": 1, "entryId": "prov-14" },
       { "date": "1785", "event": "Louis-Philippe-Joseph, duc d’Orléans, later known as Philippe Egalité", "storyId": 1, "entryId": "prov-15" },
       { "date": "1792", "event": "Édouard de Walckiers", "storyId": 2, "entryId": "prov-16" },
