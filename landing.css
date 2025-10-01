@@ -161,3 +161,69 @@ body.landing-page { height: auto; overflow: visible; }
   .landing-wrap { display: none; }
   .mobile-alert { display: flex !important; }
 }
+
+/* ===== Scroll Cue ===== */
+.scroll-cue {
+  position: fixed;
+  left: 95%;
+  bottom: 22px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px; height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.9);
+  color: #222; /* uses theme text color */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  backdrop-filter: blur(6px);
+
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease, background .2s ease;
+  z-index: 50; 
+}
+
+.scroll-cue .chevron {
+  display: block;
+}
+
+.scroll-cue.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@keyframes cue-bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%      { transform: translate(-50%, 6px); }
+}
+@keyframes cue-pulse {
+  0%, 100% { box-shadow: 0 6px 18px rgba(0,0,0,0.10); }
+  50%      { box-shadow: 0 8px 22px rgba(0,0,0,0.14); }
+}
+
+.scroll-cue.is-visible {
+  animation: cue-bounce 1.8s ease-in-out infinite, cue-pulse 2.4s ease-in-out infinite;
+}
+
+.scroll-cue:hover { transform: translateX(-50%) translateY(0) scale(1.03); }
+.scroll-cue:active { transform: translateX(-50%) translateY(1px) scale(0.98); }
+
+.hero-banner .site-title ~ .scroll-cue {
+  border-color: rgba(255,255,255,0.22);
+  background: rgba(20,20,20,0.55);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue.is-visible {
+    animation: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .scroll-cue { display: none; }
+}
