@@ -53,7 +53,6 @@ body.landing-page { height: auto; overflow: visible; }
 .landing-hero {
     width: min(1200px, 94vw);
   margin: 2rem auto 3rem;
-
   background: none;
   border: none;
   border-radius: 0;
@@ -67,15 +66,25 @@ body.landing-page { height: auto; overflow: visible; }
 .landing-hero .intro-text-bold {
   margin: 0.9rem 0;
   font-size: 1.2rem;
-  line-height: 1.7;
+  line-height: 1.6;
   color: #333;
 }
-.landing-hero .intro-text-bold { font-weight: 600; }
+.landing-hero .intro-text{
+   padding-bottom: 0.5rem; 
+}
+.landing-hero .intro-text-bold {
+  margin: 1rem 0;
+  font-size: 1.5rem;   /* increased font size */
+  font-weight: 700;
+  text-align: center;  /* center tagline */
+  line-height: 1.6;
+  padding-bottom: 0.5rem; 
+}
 .landing-hero .click-text {
-  margin-top: 0.8rem;
-  font-size: 1.2rem;
-  
-  font-weight: 600;
+  margin: 2rem 0 0;     /* extra space above for separation */
+  font-size: 1.5rem;    /* increased font size */
+  font-weight: 700;
+  text-align: center;   /* center call-to-action */
   color: #222;
 }
 
