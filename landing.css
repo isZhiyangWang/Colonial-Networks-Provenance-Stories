@@ -18,22 +18,42 @@ body.landing-page { height: auto; overflow: visible; }
 
 .landing-wrap {
   width: min(1200px, 94vw);
-  margin: 2rem auto 3rem;
+  height: auto;
+  margin: 0 auto 3rem;
 }
 
-/* Title on top */
-.site-title {
-  font-size: clamp(1.6rem, 2.2vw + 1rem, 2.2rem);
-  font-weight: 650;
-  letter-spacing: 0.2px;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  color: #222;
+.hero-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto; /* keeps natural ratio automatically */
+}
+
+.hero-banner .site-title {
+  position: absolute;
+  inset: 0; /* fill parent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: clamp(1.8rem, 2.8vw + 1rem, 3rem);
+  font-weight: 800;
+  color: #fff;
+  padding: 0 1rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
 
 
 .landing-hero {
+    width: min(1200px, 94vw);
+  margin: 2rem auto 3rem;
+
   background: none;
   border: none;
   border-radius: 0;
@@ -42,35 +62,25 @@ body.landing-page { height: auto; overflow: visible; }
   margin-bottom: 1.5rem;
 } 
 
-/* 
-.landing-hero {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: clamp(1rem, 2vw, 1.25rem);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  margin-bottom: 1rem;
-} */
 
-
-.landing-hero-inner { max-width: 820px; }
 .landing-hero .intro-text,
 .landing-hero .intro-text-bold {
   margin: 0.9rem 0;
-  font-size: 0.98rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   color: #333;
 }
 .landing-hero .intro-text-bold { font-weight: 600; }
 .landing-hero .click-text {
   margin-top: 0.8rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  
   font-weight: 600;
   color: #222;
 }
 
 /* ========== Gallery ========== */
-.landing-main { margin-top: 0.5rem; }
+.landing-main { margin-top: 0.5rem; padding-bottom: 1rem;}
 
 .landing-grid {
   display: grid;
