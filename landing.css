@@ -16,8 +16,9 @@ body {
 /* ========== Landing layout ========== */
 body.landing-page { height: auto; overflow: visible; }
 
+/* CONTENT WRAP: make margins wider (narrower content area) */
 .landing-wrap {
-  width: min(1200px, 94vw);
+  width: min(1050px, 86vw); /* was 1200px / 94vw */
   height: auto;
   margin: 0 auto 3rem;
 }
@@ -26,14 +27,20 @@ body.landing-page { height: auto; overflow: visible; }
   position: relative;
   width: 100%;
   overflow: hidden;
+
+  height: clamp(240px, 32vw, 420px);
+
 }
 
 .hero-image {
   display: block;
   width: 100%;
-  height: auto; /* keeps natural ratio automatically */
+  height: 100%;          
+  object-fit: cover;    
+  object-position: center; 
 }
 
+/* Title overlay stays centered */
 .hero-banner .site-title {
   position: absolute;
   inset: 0; /* fill parent */
@@ -49,18 +56,17 @@ body.landing-page { height: auto; overflow: visible; }
   text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-
+/* ========== Intro ========== */
+/* Make intro follow the content width (no separate width rule) */
 .landing-hero {
-    width: min(1200px, 94vw);
   margin: 2rem auto 3rem;
   background: none;
   border: none;
   border-radius: 0;
   box-shadow: none;
-  padding: 0; 
+  padding: 0;
   margin-bottom: 1.5rem;
-} 
-
+}
 
 .landing-hero .intro-text,
 .landing-hero .intro-text-bold {
@@ -70,21 +76,19 @@ body.landing-page { height: auto; overflow: visible; }
   color: #333;
 }
 .landing-hero .intro-text{
-   padding-bottom: 0.5rem; 
+   padding-bottom: 0.5rem;
 }
 .landing-hero .intro-text-bold {
   margin: 1rem 0;
   font-size: 1.5rem;   /* increased font size */
   font-weight: 700;
-  text-align: center;  /* center tagline */
   line-height: 1.6;
-  padding-bottom: 0.5rem; 
+  padding-bottom: 0.5rem;
 }
 .landing-hero .click-text {
   margin: 2rem 0 0;     /* extra space above for separation */
   font-size: 1.5rem;    /* increased font size */
   font-weight: 700;
-  text-align: center;   /* center call-to-action */
   color: #222;
 }
 
@@ -184,12 +188,10 @@ body.landing-page { height: auto; overflow: visible; }
   opacity: 0;
   pointer-events: none;
   transition: opacity .25s ease, transform .25s ease, background .2s ease;
-  z-index: 50; 
+  z-index: 50;
 }
 
-.scroll-cue .chevron {
-  display: block;
-}
+.scroll-cue .chevron { display: block; }
 
 .scroll-cue.is-visible {
   opacity: 1;
@@ -219,9 +221,7 @@ body.landing-page { height: auto; overflow: visible; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .scroll-cue.is-visible {
-    animation: none;
-  }
+  .scroll-cue.is-visible { animation: none; }
 }
 
 @media (max-width: 700px) {

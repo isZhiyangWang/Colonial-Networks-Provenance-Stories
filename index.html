@@ -14,59 +14,62 @@
     <link rel="stylesheet" href="landing.css" />
   </head>
 
-  <!-- Scroll cue -->
-<button class="scroll-cue" aria-label="Scroll for more" title="Scroll for more">
-  <!-- Chevron SVG (inline, crisp, themeable) -->
-  <svg class="chevron" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-</button>
+  <body class="landing-page">
 
+    <!-- Scroll cue -->
+    <button class="scroll-cue" aria-label="Scroll for more" title="Scroll for more">
+      <svg class="chevron" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
 
-<body class="landing-page">
-  <div class="landing-wrap">
-   <div class="hero-banner">
-  <img src="assets/vernet.jpg" alt="" class="hero-image" />
-  <h1 class="site-title">Colonial Networks: Provenance Stories</h1>
-</div>
+    <!-- FULL-WIDTH HERO (moved OUTSIDE landing-wrap so it can span full page width) -->
+    <div class="hero-banner">
+      <img src="assets/HeaderImage_Choiseul.jpg" alt="" class="hero-image" />
+      <h1 class="site-title">Colonial Networks: Provenance Stories</h1>
+    </div>
 
+    <!-- CONTENT WRAP (wider margins) -->
+    <div class="landing-wrap">
 
-    <!-- Intro card -->
-<section class="landing-hero" aria-labelledby="about-title">
-  <h2 id="about-title" class="sr-only">About this project</h2>
-  <div class="landing-hero-inner">
-    <p class="intro-text-bold">
-      Provenance stories – tracing the movement of artworks through hands, places, and power structures – vividly reveal the colonial entanglements that shaped their journeys.
-    </p>
+      <!-- Intro card -->
+      <section class="landing-hero" aria-labelledby="about-title">
+        <!-- <h2 id="about-title" class="sr-only">About this project</h2> -->
+        <div class="landing-hero-inner">
+          <p class="intro-text-bold">
+          Provenance Stories trace the movement of artworks through
+          hands, places, and power structures. These stories vividly reveal
+          the colonial entanglements that shaped the journeys of European
+          paintings.          
+          </p>
 
+          <p class="intro-text">
+          In the eighteenth century, many of Paris’s most prolific art collectors,
+          celebrated artists, and influential art dealers were also planters,
+          enslavers, or beneficiaries of colonial commerce. This website
+          uncovers the deep yet mostly unknown connections between the Paris
+          art world and the French colony of Saint-Domingue – present-day Haiti.          
+          </p>
 
+          <p class="intro-text">
+            You can explore these colonial networks through the objects in this gallery. Each artwork’s journey unfolds through an interactive dashboard – combining storybooks, timelines, maps, and social network diagrams – that brings provenance to life. These tools reveal how colonial ties shaped the meaning of these works in their own time and continue to shape how we understand them today.
+          </p>
 
-    <p class="intro-text">
-      This website uncovers the deep yet mostly unknown connections between the Paris art world and the French colony of Saint-Domingue – present-day Haiti. In the eighteenth century, many of Paris’s most prolific art collectors, celebrated artists, and influential art dealers were also planters, enslavers, or beneficiaries of colonial commerce.
-    </p>
-    <p class="intro-text">
-      You can explore these colonial networks through the objects in this gallery. Each artwork’s journey unfolds through an interactive dashboard – combining storybooks, timelines, maps, and social network diagrams – that brings provenance to life. These tools reveal how colonial ties shaped the meaning of these works in their own time and continue to shape how we understand them today.
-    </p>
+          <p class="click-text">Begin by selecting an object from the gallery below.</p>
+        </div>
+      </section>
 
+      <!-- Gallery -->
+      <main class="landing-main" aria-live="polite">
+        <div id="gallery-container" class="landing-grid"></div>
+      </main>
+    </div>
 
+    <!-- Mobile notice (very small screens) -->
+    <div class="mobile-alert" role="dialog" aria-modal="true" aria-label="Use larger screen">
+      <p>Please use a laptop or a larger screen to view this content.</p>
+    </div>
 
-    <p class="click-text">Begin by selecting an object from the gallery below.</p>
-  </div>
-</section>
-
-
-    <!-- Gallery -->
-    <main class="landing-main" aria-live="polite">
-      <div id="gallery-container" class="landing-grid"></div>
-    </main>
-  </div>
-
-  <!-- Mobile notice (very small screens) -->
-  <div class="mobile-alert" role="dialog" aria-modal="true" aria-label="Use larger screen">
-    <p>Please use a laptop or a larger screen to view this content.</p>
-  </div>
-
-  <script src="gallery.js"></script>
-</body>
-
+    <script src="gallery.js"></script>
+  </body>
 </html>
