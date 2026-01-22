@@ -1,0 +1,8 @@
+[
+    {
+        "name": "3rd Marquess of Hertford",
+        "type": "we can update the type tag later",
+        "bio": "We can also change the bio later, now use the text from the network description."
+      },
+  { "name": "Add a new person if needed", "type": "person", "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
+]

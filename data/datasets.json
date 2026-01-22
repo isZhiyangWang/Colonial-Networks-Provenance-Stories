@@ -1,0 +1,8 @@
+{
+  "datasets": [
+    "titian.json",
+    "rembrandt.json",
+    "vernet.json",
+    "watteau.json"
+  ]
+}
