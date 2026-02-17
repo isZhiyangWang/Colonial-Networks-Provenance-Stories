@@ -141,7 +141,7 @@
     "text": "Rosalie’s mother was an influential court banker in the Austrian Netherlands, the counterpart to Jean-Joseph de Laborde in Paris. She contributed a massive dowry to her daughter’s 1760 marriage to Laborde, who named a slave ship after his wife and immortalized her as the ideal “well-loved mother” in a painting by Greuze. Two of her sons drowned off the coast of Alaska during the La Pérouse expedition.",
     "image": {
       "src": "./assets/figures/rosalie.jpg",
-      "shape": "rect",
+      "shape": "oval",
       "work": "School of Alexander Roslin, Rosalie de Nettine de Laborde, c. 1760.",
       "sourcePrefix": " Image source: ",
       "sourceName": "Wikimedia Commons",
