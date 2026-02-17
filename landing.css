@@ -1,11 +1,37 @@
 /* ========== Base ========== */
+:root{
+  --bg: #fafafa;
+  --text: #333;
+  --muted: #555;
+
+  --card-bg: #fff;
+  --border: #ddd;
+  --border-strong: #ccc;
+
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-hover: 0 10px 24px rgba(0,0,0,0.08);
+
+  --radius: 8px;
+  --accent: #4c8bf5;
+
+  --wrap-max: 1050px;
+  --wrap-vw: 86vw;
+
+  --font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #fafafa;
-  color: #333;
+
+body{
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 /* Screen reader only text */
 .sr-only {

@@ -1,8 +1,227 @@
 [
-    {
-        "name": "3rd Marquess of Hertford",
-        "type": "we can update the type tag later",
-        "bio": "We can also change the bio later, now use the text from the network description."
-      },
-  { "name": "Add a new person if needed", "type": "person", "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
+  {
+    "id": "etienne-francois",
+    "name": "Étienne-François, comte de Stainville, duc de Choiseul",
+    "dates": "1719-1785",
+    "text": "Hailing from a powerful family with deep ties to Haiti/Saint-Domingue, Choiseul was an important government administrator under Louis XV as well as an influential courtier and art collector. As minister of the navy, war, and foreign affairs, Choiseul oversaw colonial and maritime policy after the Seven Years War, including the administration of the Caribbean colonies of Saint-Domingue, Martinique, and Guadeloupe. He also led a disastrous failed mission to French Guiana.",
+    "image": {
+      "src": "./assets/figures/etienne-francois.jpg",
+      "shape": "oval",
+      "work": "Workshop of Louis-Michel van Loo, Étienne-François, duc de Choiseul Stainville, 18 th C.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_painting_of_%C3%89tienne_Fran%C3%A7ois_de_Choiseul_(1719-1785)_Duke_of_Choiseul_by_Louis_Michel_van_Loo_(Versailles).jpg"
+    }
+  },
+  {
+    "id": "joseph-hyacinthe-francois",
+    "name": "Joseph-Hyacinthe-François de Paule de Rigaud, comte de Vaudreuil",
+    "dates": "1740-1817",
+    "text": "Born in Saint-Domingue, where his father served as colonial governor, Vaudreuil moved to Paris and later became one of the capital’s most voracious art collectors. His family owned several sugar plantations worked by enslaved laborers in Saint-Domingue, and he used the profits from these plantations to buy art and to commission new works by celebrated painters like Elisabeth Vigée Le Brun, who may have been his lover.",
+    "image": {
+      "src": "./assets/figures/joseph-hyacinthe-francois.jpg",
+      "shape": "rect",
+      "work": "François-Hubert Drouais, The comte de Vaudreuil, 1758.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Comte-de-Vaudreuil-1758-par-Francois-Hubert-Drouais.jpeg"
+    }
+  },
+  {
+    "id": "claude",
+    "name": "Claude Glucq",
+    "dates": "1676-1742",
+    "text": "Glucq’s father, Jean, was a master dyer whose factory supplied brilliant colors (made with colonial materials like cochineal) to the Gobelins royal tapestry manufactory. He passed that business along with his fortune gained through colonial commerce and slave trading to his son Claude, who became a major art collector known for his patronage of Watteau. At one point Claude owned Watteau’s Shopsign of Gersaint and many other works by modern French artists.",
+    "image": {
+      "src": "./assets/figures/claude.jpg",
+      "shape": "rect",
+      "work": "Detail of Antoine Watteau, The Shopsign of Gersaint (with presumed depiction of Claude Glucq), 1720-21.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoine_Watteau_050.jpg"
+    }
+  },
+  {
+    "id": "jean",
+    "name": "Jean de Jullienne",
+    "dates": "1686-1766",
+    "text": "A cousin of Claude Glucq, Jean de Jullienne was an esteemed art collector, amateur, and close friend of Watteau who led a project to reproduce the artist’s work (the Receuil Julienne). He followed his family in colonial investments, specifically trading in indigo produced with enslaved labor, and he eventually took over managing the Gobelins manufactory, where he built a house to display his extensive art collection.",
+    "image": {
+      "src": "./assets/figures/jean.jpg",
+      "shape": "rect",
+      "work": "François de Troy, Jean de Julienne, before 1730.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_de_Troy_-_Portrait_of_Jean_de_Jullienne_-_WGA23078.jpg"
+    }
+  },
+  {
+    "id": "jean-baptiste-pierre",
+    "name": "Jean-Baptiste-Pierre Le Brun",
+    "dates": "1748-1813",
+    "text": "A painter, engraver, and collector of art, Le Brun is best known for his activities as an art dealer and for his marriage to the celebrated painter Élisabeth Vigée-Le Brun (1755-1842). He bought art and organized sales for most of the planter collectors in this colonial network, and during the French Revolution he helped the new government seize these same artworks from the collectors’ homes and bring them to the Louvre.",
+    "image": {
+      "src": "./assets/figures/jean-baptiste-pierre.jpg",
+      "shape": "rect",
+      "work": "Jean-Baptiste-Pierre Le Brun, Self-Portrait, c. 1795.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jean-Baptiste-Pierre_Le_Brun_1796.jpg"
+    }
+  },
+  {
+    "id": "louis-philippe-joseph",
+    "name": "Louis-Philippe-Joseph, duc d’Orléans (Philippe Égalité)",
+    "dates": "1747-1793",
+    "text": "A French prince renowned as one of Europe’s greatest art collectors through his inheritance of the legendary Orléans collection. That collection had been partly financed by colonial investment during the Regency (1715-23), and Louis-Philippe continued that tradition by buying a Saint-Domingue sugar plantation from his friend Vaudreuil. In 1792, he renounced his noble titles to become ‘Philippe Égalité’, aligning himself with French Revolutionary ideals of liberty, even as he continued to own slaves.",
+    "image": {
+      "src": "./assets/figures/louis-philippe-joseph.jpg",
+      "shape": "rect",
+      "work": "After Joshua Reynolds, Louis Philippe II, duc d’Orléans, c. 1779.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Louis_Philippe_d%27Orl%C3%A9ans_Reynolds_Chantilly.jpg"
+    }
+  },
+  {
+    "id": "edouard",
+    "name": "Édouard de Walckiers",
+    "dates": "1758-1837",
+    "text": "A Brussels-based financier and art collector who inherited the family banking business run by his grandmother Barbe de Nettine, a Saint-Domingue plantation owner. He was best known for acquiring the Orléans collection in 1792 and, with his cousin François Laborde de Méréville, orchestrating its sale in Britain. His activities place him at the intersection of finance and the international art market during the revolutionary era.",
+    "image": {
+      "src": "./assets/figures/edouard.jpg",
+      "shape": "rect",
+      "work": "Unknown, Édouard de Walckiers, n.d.",
+      "sourcePrefix": " ",
+      "sourceName": "Image source",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://www.tracetavie.com/produit-un.html?numero=1&id=39"
+    }
+  },
+  {
+    "id": "jean-joseph",
+    "name": "Jean-Joseph de Laborde",
+    "dates": "1724-1794",
+    "text": "A powerful French financier, slave trader, tax farmer, and art patron famous for his art and architectural commissions, most notably his estate of Méréville. His wealth, which underwrote his art buying, was partly derived from colonial commerce and plantation investments in Saint-Domingue, where he was one of the largest landowners. He trafficked more than 10,000 enslaved Africans to the colony on ships that he owned.",
+    "image": {
+      "src": "./assets/figures/jean-joseph.jpg",
+      "shape": "rect",
+      "work": "Alexandre Roslin, Jean-Joseph de Laborde, before 1779.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeanjosephdelaborde.jpeg"
+    }
+  },
+  {
+    "id": "francois-louis-joseph",
+    "name": "François-Louis-Joseph de Laborde de Méréville",
+    "dates": "1761-1801",
+    "text": "A French financier and art patron who famously acquired the Orléans collection during the French Revolution and brought it to London to be sold. As a member of the revolutionary government (who appears in David’s Oath of the Tennis Court), he fought hard to maintain slavery in France’s colonies, where he had lived during the 1780s while managing one of his family’s extensive sugar plantations in Saint-Domingue.",
+    "image": {
+      "src": "./assets/figures/francois-louis-joseph.jpg",
+      "shape": "rect",
+      "work": "Nicolas-François Le Vachez Père (éditeur), François Louis Jean-Joseph de Laborde de Méréville, 18 th C.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Louis_Jean-Joseph_de_Laborde_de_M%C3%A9r%C3%A9ville.jpg"
+    }
+  },
+  {
+    "id": "rosalie",
+    "name": "Rosalie de Nettine de Laborde",
+    "dates": "1737-1820",
+    "text": "Rosalie’s mother was an influential court banker in the Austrian Netherlands, the counterpart to Jean-Joseph de Laborde in Paris. She contributed a massive dowry to her daughter’s 1760 marriage to Laborde, who named a slave ship after his wife and immortalized her as the ideal “well-loved mother” in a painting by Greuze. Two of her sons drowned off the coast of Alaska during the La Pérouse expedition.",
+    "image": {
+      "src": "./assets/figures/rosalie.jpg",
+      "shape": "rect",
+      "work": "School of Alexander Roslin, Rosalie de Nettine de Laborde, c. 1760.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%89cole_de_Alexander_Roslin_Portrait_de_Rosalie-Claire-Jos%C3%A8phe_de_Nettine.jpg"
+    }
+  },
+  {
+    "id": "horace",
+    "name": "Horace Vernet",
+    "dates": "1789-1863",
+    "text": "A French artist known for his battle paintings and Orientalist scenes, notably those tied to France’s invasion and colonization of Algeria, which he visited several times under government protection. He later became director of the French Academy in Rome and created an exotic “Moorish” cabinet there inspired by his North African travels. Horace was the son of painter Carle Vernet (1758-1836).",
+    "image": {
+      "src": "./assets/figures/horace.jpg",
+      "shape": "rect",
+      "work": "Horace Vernet, Self-Portrait, 1835.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horace_Vernet_-_Self-Portrait_-_WGA24753.jpg"
+    }
+  },
+  {
+    "id": "carle",
+    "name": "Carle Vernet",
+    "dates": "1758-1836",
+    "text": "The son of marine painter Claude-Joseph Vernet (1714-1789) and the father of Horace Vernet, Carle was a French artist known for his equestrian and military scenes whose career spanned the Ancien Régime, Revolution, First Empire and Bourbon Restoration. His ambitious Salon debut, The Triumph of Aemilius Paulus (1789), depicted an ancient Rome procession of enslaved captives and was bought by Jean-Joseph de Laborde.",
+    "image": {
+      "src": "./assets/figures/carle.jpg",
+      "shape": "rect",
+      "work": "Robert Lefèvre, Carle Vernet, 1804.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carle_Vernet_by_Robert_Lefevre.jpg"
+    }
+  },
+  {
+    "id": "antoine",
+    "name": "Antoine Watteau",
+    "dates": "1684-1721",
+    "text": "A French painter whose elegant fête galantes and theatrical scenes won him the patronage and high esteem of Parisian collectors, nobles, and amateurs, including the wealthy financier Pierre Crozat. Many of his paintings feature Black, probably enslaved, attendants, suggesting his awareness of their growing presence in the French capital alongside the expansion of colonial commerce.",
+    "image": {
+      "src": "./assets/figures/antoine.jpg",
+      "shape": "rect",
+      "work": "Rosalba Carriera, Antoine Watteau, c. 1721.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Treviso)_The_painter_Antoine_Watteau_by_Rosalba_Carriera_-_Museo_civico_di_Santa_Caterina.jpg"
+    }
+  },
+  {
+    "id": "pierre",
+    "name": "Pierre Crozat",
+    "dates": "1665-1740",
+    "text": "A wealthy French banker and preeminent art collector whose extensive patronage supported leading artists of his time, including Watteau (who lived at one point in his Parisian mansion) and Charles de La Fosse. His brother and business partner, Antoine Crozat (c. 1655-1783), built an immense fortune from colonial investments, including slave trading, and was the first proprietary owner of French Louisiana (from 1712-1717).",
+    "image": {
+      "src": "./assets/figures/pierre.jpg",
+      "shape": "rect",
+      "work": "Rosalba Carriera, Presumed Portrait of Pierre Crozat, c. 1721.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "artnet",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://www.artnet.com/artists/rosalba-carriera/portrait-de-pierre-crozat-_CGclI0Oq7wrLOIHTxdBdg2"
+    }
+  },
+  {
+    "id": "elisabeth",
+    "name": "Élisabeth Vigée Le Brun",
+    "dates": "1755-1842",
+    "text": "A French painter venerated for her elegant depictions of aristocrats and courtiers, most famously Queen Marie-Antoinette (1755-1793). She and her husband were a principal node in the colonial network linking the Paris art world to Haiti/Saint-Domingue, and she may have portrayed more planter collectors and their families than any other artist.",
+    "image": {
+      "src": "./assets/figures/elisabeth.jpg",
+      "shape": "rect",
+      "work": "Élisabeth Vigée Le Brun, Self-Portrait in a Straw Hat, 1782.",
+      "sourcePrefix": " Image source: ",
+      "sourceName": "Wikimedia Commons",
+      "sourceSuffix": ".",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Self-portrait_in_a_Straw_Hat_by_Elisabeth-Louise_Vig%C3%A9e-Lebrun.jpg"
+    }
+  }
 ]

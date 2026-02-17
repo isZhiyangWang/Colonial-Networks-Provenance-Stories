@@ -15,16 +15,17 @@
   --radius: 8px;
   --accent: #4c8bf5;
 
-  --wrap-max: 1050px;   
+  --wrap-max: 1050px;
   --wrap-vw: 86vw;
-}
 
+  --font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
 
 body{
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-sans);
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -32,15 +33,14 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .sr-only{
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
 
-
 a{ color: inherit; }
 
+/* Top nav */
 .top-nav{
   display: flex;
   gap: 12px;
@@ -83,20 +83,27 @@ a{ color: inherit; }
   outline-offset: 2px;
 }
 
-.top-nav { display: flex; }
-.top-nav .nav-link { order: 1; }
-
-
+/* Layout */
 .page-wrap{
   width: min(var(--wrap-max), var(--wrap-vw));
   margin: 0 auto;
   padding: 28px 0 60px;
 }
 
+/* Key Figures page wider only */
+.key-figures .page-wrap{
+  width: min(1400px, 92vw);
+}
+
+/* Prevent auto hyphenation on Key Figures page */
+.key-figures{
+  hyphens: none;
+}
+
 .content-section{
   background: var(--card-bg);
   border: 1px solid var(--border-strong);
-  border-radius: 6px; 
+  border-radius: 6px;
   padding: 1rem;
   box-shadow: var(--shadow);
   margin: 1rem 0;
@@ -107,11 +114,13 @@ a{ color: inherit; }
   line-height: 1.2;
   margin-bottom: 0.75rem;
 }
+
 .page-wrap h2{
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: 1.25rem 0 0.5rem;
 }
 
+/* Generic 3-col grid (other pages may use) */
 .cards-grid{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -130,7 +139,6 @@ a{ color: inherit; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 16px;
-
   box-shadow: var(--shadow);
   transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
 }
@@ -141,22 +149,157 @@ a{ color: inherit; }
   border-color: #d1d1d1;
 }
 
-.figure-card .figure-name{
-  margin: 0 0 8px;
+/* ========== Key Figures (kf-*) ========== */
+
+.kf-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+@media (max-width: 980px){
+  .kf-grid{ grid-template-columns: 1fr; }
+}
+
+.kf-card{
+  background: var(--card-bg);
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 12px;
+  padding: 20px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 12px; /* was 0 */
+}
+
+.kf-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.08);
+  border-color: rgba(0,0,0,0.14);
+}
+
+@media (max-width: 560px){
+  .kf-card{ padding: 20px; }
+}
+
+.kf-title{
+  margin: 0;
+  font-size: 2.05rem;
+  line-height: 1.06;
+  font-weight: 600;
+  color: #111;
+
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.kf-body{
+  display: grid;
+  grid-template-columns: minmax(240px, 3fr) minmax(0, 7fr);
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 560px){
+  .kf-body{ grid-template-columns: 1fr; }
+}
+
+.kf-left{
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 14px;
+}
+
+.kf-dates{
+  font-size: 1.15rem;
+  line-height: 1.1;
+  color: #111;
+}
+
+.kf-figure{ margin: 0; }
+
+.kf-media{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0px;
+  background: rgba(0,0,0,0.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.kf-media img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.kf-media--oval{
+  border-radius: 50% / 60%;
+}
+
+.kf-caption{
+  margin-top: 10px;
   font-size: 1rem;
-  font-weight: 700;
-  color: #111;
+  line-height: 1.35;
+  color: #222;
 }
 
-.figure-card .figure-type{
-  font-size: 0.8rem;
-  opacity: 0.7;
-  margin-bottom: 10px;
+.kf-caption a{
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-.figure-card .figure-value{
-  font-size: 1.8rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+/* Vertical centering (only when right side is shorter) */
+.kf-text{
+  font-size: 1.15rem;
+  line-height: 1.6;
   color: #111;
+
+  min-width: 0;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+@media (max-width: 560px){
+  .kf-text{ justify-content: flex-start; }
+}
+
+/* Narrow cards, keep 2-up */
+@media (max-width: 1320px){
+  .kf-body{
+    grid-template-columns: minmax(240px, 4fr) minmax(0, 6fr);
+    gap: 22px;
+  }
+
+  .kf-text{
+    font-size: 1.08rem;
+    line-height: 1.55;
+  }
+
+  .kf-title{
+    font-size: 1.9rem;
+  }
+}
+
+/* Even narrower */
+@media (max-width: 1120px){
+  .kf-body{
+    grid-template-columns: minmax(220px, 45fr) minmax(0, 55fr);
+    gap: 18px;
+  }
+
+  .kf-text{
+    font-size: 1.03rem;
+    line-height: 1.5;
+  }
 }
