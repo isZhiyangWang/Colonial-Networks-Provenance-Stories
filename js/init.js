@@ -47,7 +47,6 @@ function hideLoadingCover(ms = 450) {
   const finish = () => el.classList.add("hidden");
   el.addEventListener("transitionend", finish, { once: true });
 
-  // safety: transitionend can be flaky
   window.setTimeout(finish, ms);
 }
 
@@ -74,7 +73,6 @@ function waitForImage(imgEl, timeoutMs = 2500) {
     imgEl.addEventListener("load", finish, { once: true });
     imgEl.addEventListener("error", finish, { once: true });
 
-    // decode helps reduce flicker
     if (typeof imgEl.decode === "function") {
       imgEl.decode().then(finish).catch(() => {});
     }
@@ -185,11 +183,13 @@ async function initProvenance(json) {
 
   prevBtn?.addEventListener("click", () => {
     window.__provSelection = { mode: "story" };
+    window.__suppressTimelineScrollOnce = true;
     openEventModal(currentIndex - 1);
   });
 
   nextBtn?.addEventListener("click", () => {
     window.__provSelection = { mode: "story" };
+    window.__suppressTimelineScrollOnce = true;
     openEventModal(currentIndex + 1);
   });
 

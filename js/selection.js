@@ -3,7 +3,6 @@ export function installHighlightSelection() {
 
 document.body.classList.remove("has-cohort-focus");
 
-
 const _popover = document.getElementById("story-cohort-popover");
 if (_popover) {
   _popover.classList.add("hidden");
@@ -19,10 +18,8 @@ d3.selectAll(
 ).classed("highlighted", false).classed("sub-highlight", false)
  .classed("is-primary", false).classed("is-related", false);
 
-
 window.__provSelection = null;
 
-  // --------- Popover helpers (for "Also in this story") ----------------------
   function ensurePopoverRoot() {
     let el = document.getElementById("story-cohort-popover");
     if (!el) {
@@ -78,7 +75,6 @@ window.__provSelection = null;
       });
     });
   }
-  // ---------------------------------------------------------------------------
 
   window.highlightSelection = function(sel) {
 
@@ -92,6 +88,9 @@ window.__provSelection = null;
     document.body.classList.remove("has-cohort-focus");
 
     if (!sel) return;
+
+    const suppressAutoScroll = !!window.__suppressTimelineScrollOnce;
+    if (window.__suppressTimelineScrollOnce) window.__suppressTimelineScrollOnce = false;
 
     const map = window.__provMap || {};
     const storyId = sel.storyId;
@@ -133,7 +132,9 @@ window.__provSelection = null;
     if (!primaryTimelineNode && !tlSel.empty()) primaryTimelineNode = tlSel.nodes()[0];
     if (primaryTimelineNode) {
       d3.select(primaryTimelineNode).classed("is-primary", true);
-      primaryTimelineNode.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      if (!suppressAutoScroll) {
+        primaryTimelineNode.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      }
     }
 
     let relatedEntryIds = (map.storyIdToEntryIds && map.storyIdToEntryIds[storyId]) ? map.storyIdToEntryIds[storyId] : [];
@@ -163,7 +164,7 @@ window.__provSelection = null;
       if (eid === primaryEntryId) span.classed("is-primary", true);
     });
 
-    if (primaryEntryId) {
+    if (primaryEntryId && !suppressAutoScroll) {
       const mainSel = d3.selectAll("span.provenance-entry")
         .filter(function(){ return d3.select(this).attr("data-entry-id") === String(primaryEntryId); });
       if (!mainSel.empty()) mainSel.nodes()[0].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
@@ -171,7 +172,7 @@ window.__provSelection = null;
 
     document.body.classList.add("has-cohort-focus");
 
-    if (primaryTimelineNode) {
+    if (!suppressAutoScroll && primaryTimelineNode) {
       const allNodes = tlSel.nodes();
       const cohort = [];
       allNodes.forEach(node => {
