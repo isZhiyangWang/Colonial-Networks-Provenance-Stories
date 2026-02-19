@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-window.addEventListener("load", () => {
+ window.addEventListener("load", () => {
   if (window.location.hash === "#gallery") maybeAutoScrollGallery();
 });
+ 
