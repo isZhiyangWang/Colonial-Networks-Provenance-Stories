@@ -2,12 +2,8 @@ import { $, setText } from "./utils.js";
 
 function getColorForType(t = "") {
   switch (t.toLowerCase()) {
-    case "place": return "#ffa500";
-    case "museum": return "#ffff00";
-    case "institution": return "#800080";
     case "greenperson": return "#008000";
-      default: return "#636363ff";
-    // default: return "#1e90ff";
+    default: return "#636363ff";
   }
 }
 
@@ -83,7 +79,11 @@ function renderLocalNetwork(svg, w, h, ev) {
       .on("end", (evt, d) => { if (!evt.active) sim.alphaTarget(0); d.fx = null; d.fy = null; })
     );
 
-  nodeGroup.append("circle").attr("r", 12)
+  const r = 12;
+  nodeGroup.append("rect")
+    .attr("x", -r).attr("y", -r)
+    .attr("width", r * 2).attr("height", r * 2)
+    .attr("rx", 2).attr("ry", 2)
     .attr("fill", (d) => getColorForType(d.type))
     .attr("stroke", "#fff").attr("stroke-width", 1.5);
 
@@ -187,7 +187,11 @@ export function openEnlargedEventNetwork(ev) {
       .on("end", (evt, d) => { if (!evt.active) sim.alphaTarget(0); d.fx = null; d.fy = null; })
     );
 
-  nodeGroup.append("circle").attr("r", 14)
+  const rr = 14;
+  nodeGroup.append("rect")
+    .attr("x", -rr).attr("y", -rr)
+    .attr("width", rr * 2).attr("height", rr * 2)
+    .attr("rx", 2).attr("ry", 2)
     .attr("fill", (d) => getColorForType(d.type))
     .attr("stroke", "#fff").attr("stroke-width", 2);
 

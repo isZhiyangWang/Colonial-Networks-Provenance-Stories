@@ -1,5 +1,5 @@
 {
-    "artworkData": {
+  "artworkData": {
     "artistName": "Carle Vernet",
     "location": "Bordeaux",
     "creationYear": "1758 - 1836",
@@ -9,214 +9,260 @@
     "intro": "Vernet’s painting, which depicts a ruler of ancient Rome proudly parading enslaved captives and other spoils of war through the city streets, exemplifies the popularity of Neoclassicism during the era of the French Revolution. It also suggests how Neoclassicism may have been linked to proslavery and pro-colonial ideas held by its owners, among them the wealthy financier Jean-Joseph de Laborde.",
     "museumUrl": "https://www.metmuseum.org/art/collection/search/437885",
     "museumName": "The Met",
-    "imageUrl": "assets/vernet.jpg"    
+    "imageUrl": "assets/vernet.jpg"
   },
-    "placeData": {
-      "Rome": {
-        "name": "Rome",
-        "coords": [41.9028, 12.4964]
-      },
-      "Paris": {
-        "name": "Paris",
-        "coords": [48.8566, 2.3522]
-      },
-      "NewYork": {
-        "name": "New York City",
-        "coords": [40.7128, -74.006]
-      }
-    },
-    "provenanceEvents": [
-      {
-        "id": 0,
-        "title": "1. Vernet’s Ambitious Debut in Rome (1789)",
-        "from": "Rome",
-        "to": "Paris",
-        "eventType": "moves from",
-        "text": "Vernet painted his ambitious Triumph of Aemilius Paulus in 1789, while he was a student of the French Academy in Rome. This enormous canvas (so large that he had to rent a bigger studio in Rome to complete it) was intended to cap off Vernet’s splash debut on the Paris art scene. He included it as the centerpiece of his portfolio of works for admission to the Academy, and he showed it at the Salons of 1789 and 1791. Neoclassical paintings of Roman history were major attractions at the Salons of the 1780s (we can see several in Martini’s print of the Salon of 1787), and scholars often link these paintings to calls for revolution and reform, specifically to the desire to metaphorically liberate French citizens from an oppressive absolutist regime. Vernet’s painting, however, depicts slavery in a different sense. It represents a famed triumphal procession of a Roman consul who had conquered a territory and brought back 150,000 enslaved captives, and thus seems to celebrate colonial domination and enslavement as fundamental to the glory and prosperity of Rome—and perhaps to France as well, given the fact that the question of maintaining slavery in the colonies was being hotly debated at this time. Salon critics noticed that Vernet included several ancient monuments depicting enslaved captives that had not been built at the time this ancient procession had taken place (and he also exaggerated the representation of captives on these monuments), implying that Vernet may have wanted to stoke these Revolutionary debates about slavery—but from a colonial rather than a metaphorical perspective.",
-        "participants": [
-          { "name": "Rome", "type": "place" },
-          { "name": "Paris", "type": "place" }
-        ],
-        "networkPairs": [
-          {
-            "source": "Rome",
-            "target": "Paris",
-            "label": "moves from"
-          }
-        ],
-        "changedLocation": true, 
-        "imageSource": "<p> Pietro Antonio Martini (after Johann Heinrich Ramberg), Exhibition at the Salon du Louvre in 1787, 1787. Etching and engraving, 32.2 x 49.1 cm. The Metropolitan Museum of Art, The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1949</p>",
-        "imageAlt": "Pietro Antonio Martini (after Johann Heinrich Ramberg), Exhibition at the Salon du Louvre in 1787, 1787. Etching and engraving, 32.2 x 49.1 cm. The Metropolitan Museum of Art, The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1949"
-      },
-      {
-        "id": 1,
-        "title": "2. Purchased by Laborde (1791)",
-        "from": "Paris",
-        "to": "Paris",
-        "eventType": "bought by",
-        "text": "The possible proslavery subtext of Vernet’s painting is supported by the fact that it was bought by Jean-Joseph de Laborde (1724-94), an extremely wealthy financier who was one of the largest landowners in Saint-Domingue (Haiti), and who had personally overseen the trafficking of more than 10,000 enslaved Africans to the colony. Laborde acquired the painting in 1791, as he and other slave traders, despite the Revolution, were continuing to prosper. His son, François Laborde de Méréville (1761-1801), became a deputy for the new Revolutionary government (he appears near the center of David’s Oath of the Tennis Court) and was a member of the proslavery lobby that argued for the need to maintain slavery in the colonies. The story behind this painting suggests that scholars should rethink Neoclassicism as a style associated mainly with liberty and reform and acknowledge how some Neoclassical artworks endorsed a vision of slavery in the ancient world, one that 18th C. colonial patrons used to model and justify their own practices.",
-        "participants": [
-          { "name": "Carle Vernet", "type": "person" },
-          { "name": "Jean-Joseph de Laborde", "type": "person" }
-        ],
-        "networkPairs": [
-          {
-            "source": "Carle Vernet",
-            "target": "Jean-Joseph de Laborde",
-            "label": "bought by"
-          }
-        ], 
-        "imageSource": "<p>Jacques-Louis David, <em>The Oath of the Tennis Court</em>, 1791. Pen, ink, and wash on paper, 66 x 101.2 cm. Musée du Louvre, on deposit at the Musée National des Châteaux de Versailles et de Trianon. © GrandPalaisRmn (Château de Versailles).</p>",
-        "imageAlt": "<p>Jacques-Louis David, <em>The Oath of the Tennis Court</em>, 1791. Musée du Louvre, on deposit at the Musée National des Châteaux de Versailles et de Trianon.</p>"
-      },
-      {
-        "id": 2,
-        "title": "3. Seized and Returned (1794–1797)",
-        "from": "Paris",
-        "to": "Paris",
-        "eventType": "taken/returned",
-        "text": "In 1794, the same year that slavery was temporarily abolished in France, Revolutionary forces confiscated the Triumph of Aemilius Paulus from the Parisian hôtel where Laborde was living on the rue d’Artois, right around the same time that Laborde himself was guillotined. Three years later, the painting was restituted to the family by the state and returned to Laborde’s widow, Rosalie de Nettine de Laborde.",
-        "participants": [
-          { "name": "Jean-Joseph de Laborde", "type": "person" },
-          { "name": "Paris Revolutionary Forces", "type": "institution" },
-          { "name": "Rosalie de Nettine de Laborde", "type": "person" }
-        ],
-        "networkPairs": [
-          {
-            "source": "Jean-Joseph de Laborde",
-            "target": "Paris Revolutionary Forces",
-            "label": "taken by"
-          },
-          {
-            "source": "Paris Revolutionary Forces",
-            "target": "Rosalie de Nettine de Laborde",
-            "label": "returned to"
-          }
-        ],"imageSource": "<p>Jean-Jacques Champin, <em>Hôtel of the Laborde family (later known as the Hôtel Lafitte)</em>, 19th Century. Lithograph, 17.9 x 22 cm. Musée Carnavalet, Paris (CC0 1.0).</p>",
-      "imageAlt": "<p>Jean-Jacques Champin, <em>Hôtel of the Laborde family (later known as the Hôtel Lafitte)</em>, 19th Century. Musée Carnavalet, Paris.</p>"
-    },
-      {
-        "id": 3,
-        "title": "4. Back in the Vernet Family (1822)",
-        "from": "Paris",
-        "to": "Paris",
-        "eventType": "bought by",
-        "text": "By 1822, Vernet’s triumphalist painting had made its way into the collection of the artist’s own family and had become the property of Carle’s son Horace, who continued both his father and grandfather’s tradition of engaging with colonial themes in art. He would later become France’s chief painter and propagandist in connection with the monarchy’s invasion and colonization of Algiers, while also fashioning himself as an Orientalist art collector as evidenced by his self-portrait of 1835.",
-        "participants": [
-          { "name": "Rosalie de Nettine de Laborde", "type": "person" },
-          { "name": "Horace Vernet", "type": "person" }
-        ],
-        "networkPairs": [
-          {
-            "source": "Rosalie de Nettine de Laborde",
-            "target": "Horace Vernet",
-            "label": "bought by"
-          }
-        ],
-        "imageSource": "<p>Horace Vernet, <em>Self-Portrait with a Pipe</em>, c. 1835. Oil on canvas, 47 x 39 cm. Hermitage Museum, Saint Petersburg, Russia. Image source: WikiArt.</p>",
-        "imageAlt": "<p>Horace Vernet, <em>Self-Portrait with a Pipe</em>, c. 1835. Hermitage Museum, Saint Petersburg.</p>"
-      },
-      {
-        "id": 4,
-        "title": "5. Vernet’s Triumph in Gilded America (1906)",
-        "from": "Paris",
-        "to": "NewYork",
-        "eventType": "moves from",
-        "text": "By the late nineteenth century, the Triumph of Aemilius Paulus—like so many old regime French paintings acquired by Gilded Age tycoons—ended up in the U.S. in the hands of Heber R Bishop (1840-1902), an art collector and trustee of The Metropolitan Museum of Art, who made his first fortune through a sugar refinery business in Cuba. Bishop later invested in many banking, railroad, steel, and mining companies, and he used the profits to amass an extensive collection of artifacts from Asia, Mexico, Alaska, and New Zealand that he donated to the Met and to the American Museum of Natural History. After he died, his wife’s brother-in-law, Darius Ogden Mills, acquired Vernet’s painting and gave it to the Met in 1906.",
-        "participants": [
-          { "name": "Paris", "type": "place" },
-          { "name": "NewYork", "type": "place" },
-          { "name": "Metropolitan Museum of Art", "type": "museum" }
-        ],
-        "networkPairs": [
-          {
-            "source": "Paris",
-            "target": "NewYork",
-            "label": "moves from"
-          },
-          {
-            "source": "NewYork",
-            "target": "Metropolitan Museum of Art",
-            "label": "gifted to"
-          }
-        ],
-        "changedLocation": true,
-        "imageSource": "<p>Photograph of the ballroom of Heber R. Bishop’s mansion at 881 Fifth Avenue, New York City, late 19th Century. Image in the public domain.</p>",
-       "imageAlt": "<p>Photograph of the ballroom of Heber R. Bishop’s mansion, late 19th Century.</p>"
-    }
-    ],
-    "socialNetwork": {
-      "nodes": [
-        {
-          "id": "Carle Vernet",
-          "type": "person",
-          "bio": "French painter (1758–1836), known for large-scale Neoclassical works. Father of Horace Vernet."
-        },
-        {
-          "id": "Jean-Joseph de Laborde",
-          "type": "greenperson",
-          "bio": "Extremely wealthy financier and major landowner in Saint-Domingue (Haiti). Oversaw the trafficking of 10,000+ enslaved Africans."
-        },
-        {
-          "id": "François Laborde de Méréville",
-          "type": "greenperson",
-          "bio": "Son of Jean-Joseph de Laborde, deputy in the Revolutionary government and member of the proslavery lobby."
-        },
-        {
-          "id": "Paris Revolutionary Forces",
-          "type": "institution",
-          "bio": "Confiscated the painting in 1794, during the temporary abolition of slavery in Revolutionary France."
-        },
-        {
-          "id": "Rosalie de Nettine de Laborde",
-          "type": "person",
-          "bio": "Wife (and later widow) of Jean-Joseph de Laborde; retrieved the painting after Revolutionary confiscation."
-        },
-        {
-          "id": "Horace Vernet",
-          "type": "greenperson",
-          "bio": "Son of Carle Vernet. Became France’s chief painter and propagandist for the colonial invasion of Algiers."
-        },
-        {
-          "id": "Heber R Bishop",
-          "type": "greenperson",
-          "bio": "American sugar-refining magnate (1840–1902) and trustee of the Met. His collection included Vernet’s Triumph."
-        },
-        {
-          "id": "Darius Ogden Mills",
-          "type": "person",
-          "bio": "Brother-in-law of Heber R Bishop. Acquired Triumph of Aemilius Paulus after Bishop's death and donated it to the Met."
-        },
-        {
-          "id": "Metropolitan Museum of Art",
-          "type": "museum",
-          "bio": "Major American art museum in New York City, recipient of Vernet’s painting in 1906."
-        }
-      ],
-      "edges": [
-        {
-          "source": "Jean-Joseph de Laborde",
-          "target": "François Laborde de Méréville",
-          "relationship": "father → son"
-        },
-        {
-          "source": "Jean-Joseph de Laborde",
-          "target": "Rosalie de Nettine de Laborde",
-          "relationship": "spouses"
-        },
-        {
-          "source": "Carle Vernet",
-          "target": "Horace Vernet",
-          "relationship": "father → son"
-        },
-        {
-          "source": "Heber R Bishop",
-          "target": "Darius Ogden Mills",
-          "relationship": "passed to in-law"
-        }
+  "placeData": {
+    "Rome": {
+      "name": "Rome",
+      "coords": [
+        41.9028,
+        12.4964
       ]
     },
-"provenanceTimeline": {
+    "Paris": {
+      "name": "Paris",
+      "coords": [
+        48.8566,
+        2.3522
+      ]
+    },
+    "NewYork": {
+      "name": "New York City",
+      "coords": [
+        40.7128,
+        -74.006
+      ]
+    }
+  },
+  "provenanceEvents": [
+    {
+      "id": 0,
+      "title": "1. Vernet’s Ambitious Debut in Rome (1789)",
+      "from": "Rome",
+      "to": "Paris",
+      "eventType": "moves from",
+      "text": "Vernet painted his ambitious Triumph of Aemilius Paulus in 1789, while he was a student of the French Academy in Rome. This enormous canvas (so large that he had to rent a bigger studio in Rome to complete it) was intended to cap off Vernet’s splash debut on the Paris art scene. He included it as the centerpiece of his portfolio of works for admission to the Academy, and he showed it at the Salons of 1789 and 1791. Neoclassical paintings of Roman history were major attractions at the Salons of the 1780s (we can see several in Martini’s print of the Salon of 1787), and scholars often link these paintings to calls for revolution and reform, specifically to the desire to metaphorically liberate French citizens from an oppressive absolutist regime. Vernet’s painting, however, depicts slavery in a different sense. It represents a famed triumphal procession of a Roman consul who had conquered a territory and brought back 150,000 enslaved captives, and thus seems to celebrate colonial domination and enslavement as fundamental to the glory and prosperity of Rome—and perhaps to France as well, given the fact that the question of maintaining slavery in the colonies was being hotly debated at this time. Salon critics noticed that Vernet included several ancient monuments depicting enslaved captives that had not been built at the time this ancient procession had taken place (and he also exaggerated the representation of captives on these monuments), implying that Vernet may have wanted to stoke these Revolutionary debates about slavery—but from a colonial rather than a metaphorical perspective.",
+      "participants": [
+        {
+          "name": "Rome",
+          "type": "place"
+        },
+        {
+          "name": "Paris",
+          "type": "place"
+        }
+      ],
+      "networkPairs": [
+        {
+          "source": "Rome",
+          "target": "Paris",
+          "label": "moves from"
+        }
+      ],
+      "changedLocation": true,
+      "imageSource": "<p> Pietro Antonio Martini (after Johann Heinrich Ramberg), Exhibition at the Salon du Louvre in 1787, 1787. Etching and engraving, 32.2 x 49.1 cm. The Metropolitan Museum of Art, The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1949</p>",
+      "imageAlt": "Pietro Antonio Martini (after Johann Heinrich Ramberg), Exhibition at the Salon du Louvre in 1787, 1787. Etching and engraving, 32.2 x 49.1 cm. The Metropolitan Museum of Art, The Elisha Whittelsey Collection, The Elisha Whittelsey Fund, 1949"
+    },
+    {
+      "id": 1,
+      "title": "2. Purchased by Laborde (1791)",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "bought by",
+      "text": "The possible proslavery subtext of Vernet’s painting is supported by the fact that it was bought by Jean-Joseph de Laborde (1724-94), an extremely wealthy financier who was one of the largest landowners in Saint-Domingue (Haiti), and who had personally overseen the trafficking of more than 10,000 enslaved Africans to the colony. Laborde acquired the painting in 1791, as he and other slave traders, despite the Revolution, were continuing to prosper. His son, François Laborde de Méréville (1761-1801), became a deputy for the new Revolutionary government (he appears near the center of David’s Oath of the Tennis Court) and was a member of the proslavery lobby that argued for the need to maintain slavery in the colonies. The story behind this painting suggests that scholars should rethink Neoclassicism as a style associated mainly with liberty and reform and acknowledge how some Neoclassical artworks endorsed a vision of slavery in the ancient world, one that 18th C. colonial patrons used to model and justify their own practices.",
+      "participants": [
+        {
+          "name": "Carle Vernet",
+          "type": "greenperson"
+        },
+        {
+          "name": "Jean-Joseph de Laborde",
+          "type": "greenperson"
+        }
+      ],
+      "networkPairs": [
+        {
+          "source": "Carle Vernet",
+          "target": "Jean-Joseph de Laborde",
+          "label": "bought by"
+        }
+      ],
+      "imageSource": "<p>Jacques-Louis David, <em>The Oath of the Tennis Court</em>, 1791. Pen, ink, and wash on paper, 66 x 101.2 cm. Musée du Louvre, on deposit at the Musée National des Châteaux de Versailles et de Trianon. © GrandPalaisRmn (Château de Versailles).</p>",
+      "imageAlt": "<p>Jacques-Louis David, <em>The Oath of the Tennis Court</em>, 1791. Musée du Louvre, on deposit at the Musée National des Châteaux de Versailles et de Trianon.</p>"
+    },
+    {
+      "id": 2,
+      "title": "3. Seized and Returned (1794–1797)",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "taken/returned",
+      "text": "In 1794, the same year that slavery was temporarily abolished in France, Revolutionary forces confiscated the Triumph of Aemilius Paulus from the Parisian hôtel where Laborde was living on the rue d’Artois, right around the same time that Laborde himself was guillotined. Three years later, the painting was restituted to the family by the state and returned to Laborde’s widow, Rosalie de Nettine de Laborde.",
+      "participants": [
+        {
+          "name": "Jean-Joseph de Laborde",
+          "type": "greenperson"
+        },
+        {
+          "name": "Paris Revolutionary Forces",
+          "type": "institution"
+        },
+        {
+          "name": "Rosalie de Nettine de Laborde",
+          "type": "greenperson"
+        }
+      ],
+      "networkPairs": [
+        {
+          "source": "Jean-Joseph de Laborde",
+          "target": "Paris Revolutionary Forces",
+          "label": "taken by"
+        },
+        {
+          "source": "Paris Revolutionary Forces",
+          "target": "Rosalie de Nettine de Laborde",
+          "label": "returned to"
+        }
+      ],
+      "imageSource": "<p>Jean-Jacques Champin, <em>Hôtel of the Laborde family (later known as the Hôtel Lafitte)</em>, 19th Century. Lithograph, 17.9 x 22 cm. Musée Carnavalet, Paris (CC0 1.0).</p>",
+      "imageAlt": "<p>Jean-Jacques Champin, <em>Hôtel of the Laborde family (later known as the Hôtel Lafitte)</em>, 19th Century. Musée Carnavalet, Paris.</p>"
+    },
+    {
+      "id": 3,
+      "title": "4. Back in the Vernet Family (1822)",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "bought by",
+      "text": "By 1822, Vernet’s triumphalist painting had made its way into the collection of the artist’s own family and had become the property of Carle’s son Horace, who continued both his father and grandfather’s tradition of engaging with colonial themes in art. He would later become France’s chief painter and propagandist in connection with the monarchy’s invasion and colonization of Algiers, while also fashioning himself as an Orientalist art collector as evidenced by his self-portrait of 1835.",
+      "participants": [
+        {
+          "name": "Rosalie de Nettine de Laborde",
+          "type": "greenperson"
+        },
+        {
+          "name": "Horace Vernet",
+          "type": "greenperson"
+        }
+      ],
+      "networkPairs": [
+        {
+          "source": "Rosalie de Nettine de Laborde",
+          "target": "Horace Vernet",
+          "label": "bought by"
+        }
+      ],
+      "imageSource": "<p>Horace Vernet, <em>Self-Portrait with a Pipe</em>, c. 1835. Oil on canvas, 47 x 39 cm. Hermitage Museum, Saint Petersburg, Russia. Image source: WikiArt.</p>",
+      "imageAlt": "<p>Horace Vernet, <em>Self-Portrait with a Pipe</em>, c. 1835. Hermitage Museum, Saint Petersburg.</p>"
+    },
+    {
+      "id": 4,
+      "title": "5. Vernet’s Triumph in Gilded America (1906)",
+      "from": "Paris",
+      "to": "NewYork",
+      "eventType": "moves from",
+      "text": "By the late nineteenth century, the Triumph of Aemilius Paulus—like so many old regime French paintings acquired by Gilded Age tycoons—ended up in the U.S. in the hands of Heber R Bishop (1840-1902), an art collector and trustee of The Metropolitan Museum of Art, who made his first fortune through a sugar refinery business in Cuba. Bishop later invested in many banking, railroad, steel, and mining companies, and he used the profits to amass an extensive collection of artifacts from Asia, Mexico, Alaska, and New Zealand that he donated to the Met and to the American Museum of Natural History. After he died, his wife’s brother-in-law, Darius Ogden Mills, acquired Vernet’s painting and gave it to the Met in 1906.",
+      "participants": [
+        {
+          "name": "Paris",
+          "type": "place"
+        },
+        {
+          "name": "NewYork",
+          "type": "place"
+        },
+        {
+          "name": "Metropolitan Museum of Art",
+          "type": "museum"
+        }
+      ],
+      "networkPairs": [
+        {
+          "source": "Paris",
+          "target": "NewYork",
+          "label": "moves from"
+        },
+        {
+          "source": "NewYork",
+          "target": "Metropolitan Museum of Art",
+          "label": "gifted to"
+        }
+      ],
+      "changedLocation": true,
+      "imageSource": "<p>Photograph of the ballroom of Heber R. Bishop’s mansion at 881 Fifth Avenue, New York City, late 19th Century. Image in the public domain.</p>",
+      "imageAlt": "<p>Photograph of the ballroom of Heber R. Bishop’s mansion, late 19th Century.</p>"
+    }
+  ],
+  "socialNetwork": {
+    "nodes": [
+      {
+        "id": "Carle Vernet",
+        "type": "greenperson",
+        "bio": "The son of marine painter Claude-Joseph Vernet (1714-1789) and the father of Horace Vernet, Carle was a French artist known for his equestrian and military scenes whose career spanned the Ancien Régime, Revolution, First Empire and Bourbon Restoration. His ambitious Salon debut, The Triumph of Aemilius Paulus (1789), depicted an ancient Rome procession of enslaved captives and was bought by Jean-Joseph de Laborde."
+      },
+      {
+        "id": "Jean-Joseph de Laborde",
+        "type": "greenperson",
+        "bio": "A powerful French financier, slave trader, tax farmer, and art patron famous for his art and architectural commissions, most notably his estate of Méréville. His wealth, which underwrote his art buying, was partly derived from colonial commerce and plantation investments in Saint-Domingue, where he was one of the largest landowners. He trafficked more than 10,000 enslaved Africans to the colony on ships that he owned."
+      },
+      {
+        "id": "François Laborde de Méréville",
+        "type": "greenperson",
+        "bio": "A French financier and art patron who famously acquired the Orléans collection during the French Revolution and brought it to London to be sold. As a member of the revolutionary government (who appears in David’s Oath of the Tennis Court), he fought hard to maintain slavery in France’s colonies, where he had lived during the 1780s while managing one of his family’s extensive sugar plantations in Saint-Domingue."
+      },
+      {
+        "id": "Paris Revolutionary Forces",
+        "type": "institution",
+        "bio": "Confiscated the painting in 1794, during the temporary abolition of slavery in Revolutionary France."
+      },
+      {
+        "id": "Rosalie de Nettine de Laborde",
+        "type": "greenperson",
+        "bio": "Rosalie’s mother was an influential court banker in the Austrian Netherlands, the counterpart to Jean-Joseph de Laborde in Paris. She contributed a massive dowry to her daughter’s 1760 marriage to Laborde, who named a slave ship after his wife and immortalized her as the ideal “well-loved mother” in a painting by Greuze. Two of her sons drowned off the coast of Alaska during the La Pérouse expedition."
+      },
+      {
+        "id": "Horace Vernet",
+        "type": "greenperson",
+        "bio": "A French artist known for his battle paintings and Orientalist scenes, notably those tied to France’s invasion and colonization of Algeria, which he visited several times under government protection. He later became director of the French Academy in Rome and created an exotic “Moorish” cabinet there inspired by his North African travels. Horace was the son of painter Carle Vernet (1758-1836)."
+      },
+      {
+        "id": "Heber R Bishop",
+        "type": "greenperson",
+        "bio": "American sugar-refining magnate (1840–1902) and trustee of the Met. His collection included Vernet’s Triumph."
+      },
+      {
+        "id": "Darius Ogden Mills",
+        "type": "person",
+        "bio": "Brother-in-law of Heber R Bishop. Acquired Triumph of Aemilius Paulus after Bishop's death and donated it to the Met."
+      },
+      {
+        "id": "Metropolitan Museum of Art",
+        "type": "museum",
+        "bio": "Major American art museum in New York City, recipient of Vernet’s painting in 1906."
+      }
+    ],
+    "edges": [
+      {
+        "source": "Jean-Joseph de Laborde",
+        "target": "François Laborde de Méréville",
+        "relationship": "father → son"
+      },
+      {
+        "source": "Jean-Joseph de Laborde",
+        "target": "Rosalie de Nettine de Laborde",
+        "relationship": "spouses"
+      },
+      {
+        "source": "Carle Vernet",
+        "target": "Horace Vernet",
+        "relationship": "father → son"
+      },
+      {
+        "source": "Heber R Bishop",
+        "target": "Darius Ogden Mills",
+        "relationship": "passed to in-law"
+      }
+    ]
+  },
+  "provenanceTimeline": {
     "entries": [
       {
         "id": "prov-0",
@@ -225,7 +271,7 @@
         "figure": "green",
         "details": "Owner from ca. 1791 until his death and the subsequent confiscation of his property in 1794.",
         "fullText": "Jean-Joseph de Laborde de Méréville, Paris (until d. 1794;"
-      },     
+      },
       {
         "id": "prov-1",
         "owner": "Jean-Joseph de Laborde de Méréville",
@@ -276,69 +322,71 @@
         "fullText": "Darius Ogden Mills, New York (1906)"
       }
     ],
-   "events": [
-  {
-    "date": "1789",
-    "event": "Painted by Vernet in Rome. Exhibited at the Paris Salon of 1789.",
-    "storyId": 0,
-    "entryId": null
-  },
-  {
-    "date": "(1791)",
-    "event": "Jean-Joseph de Laborde de Méréville",
-    "storyId": 1,
-    "entryId": "prov-0"
-  },
-  {
-    "date": "1794",
-    "event": "Confiscated by revolutionary forces",
-    "storyId": 2,
-    "entryId": "prov-1"
-  },
-  {
-    "date": "1797",
-    "event": "Rosalie Nettine de Laborde",
-    "storyId": 2,
-    "entryId": "prov-2"
-  },
-  {
-    "date": "1822",
-    "event": "Émile-Jean-Horace Vernet",
-    "storyId": 3,
-    "entryId": "prov-3"
-  },
-  {
-    "date": "1845",
-    "event": "Jean-Baptiste Claude Odiot",
-    "storyId": null,
-    "entryId": "prov-4"
-  },
-  {
-    "date": "1847",
-    "event": "Baron François Delessert",
-    "storyId": null,
-    "entryId": "prov-5"
-  },
-  {
-    "date": "1891",
-    "event": "Heber R. Bishop",
-    "storyId": 4,
-    "entryId": "prov-6"
-  },
-  {
-    "date": "1906",
-    "event": "Darius Ogden Mills",
-    "storyId": 4,
-    "entryId": "prov-7"
-  },
-  {
-    "date": "1906",
-    "event": "The Metropolitan Museum of Art",
-    "storyId": 4,
-    "entryId": null
+    "events": [
+      {
+        "date": "1789",
+        "event": "Painted by Vernet in Rome. Exhibited at the Paris Salon of 1789.",
+        "storyId": 0,
+        "entryId": null
+      },
+      {
+        "date": "(1791)",
+        "event": "Jean-Joseph de Laborde de Méréville",
+        "storyId": 1,
+        "entryId": "prov-0"
+      },
+      {
+        "date": "1794",
+        "event": "Confiscated by revolutionary forces",
+        "storyId": 2,
+        "entryId": "prov-1"
+      },
+      {
+        "date": "1797",
+        "event": "Rosalie Nettine de Laborde",
+        "storyId": 2,
+        "entryId": "prov-2"
+      },
+      {
+        "date": "1822",
+        "event": "Émile-Jean-Horace Vernet",
+        "storyId": 3,
+        "entryId": "prov-3"
+      },
+      {
+        "date": "1845",
+        "event": "Jean-Baptiste Claude Odiot",
+        "storyId": null,
+        "entryId": "prov-4"
+      },
+      {
+        "date": "1847",
+        "event": "Baron François Delessert",
+        "storyId": null,
+        "entryId": "prov-5"
+      },
+      {
+        "date": "1891",
+        "event": "Heber R. Bishop",
+        "storyId": 4,
+        "entryId": "prov-6"
+      },
+      {
+        "date": "1906",
+        "event": "Darius Ogden Mills",
+        "storyId": 4,
+        "entryId": "prov-7"
+      },
+      {
+        "date": "1906",
+        "event": "The Metropolitan Museum of Art",
+        "storyId": 4,
+        "entryId": null
+      }
+    ],
+    "source": {
+      "url": "https://www.metmuseum.org/art/collection/search/437885",
+      "text": "The Met"
+    }
   }
-],
-    "source": {"url": "https://www.metmuseum.org/art/collection/search/437885", "text": "The Met"}
-  }
-  }
-  
+}

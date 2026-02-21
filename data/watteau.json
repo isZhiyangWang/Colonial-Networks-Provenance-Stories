@@ -38,7 +38,7 @@
       "participants": [
         {
           "name": "Jean-Antoine Watteau",
-          "type": "person"
+          "type": "greenperson"
         }
       ],
       "networkPairs": [
@@ -62,11 +62,11 @@
       "participants": [
         {
           "name": "Jean-Antoine Watteau",
-          "type": "person"
+          "type": "greenperson"
         },
         {
           "name": "Pierre Crozat",
-          "type": "person"
+          "type": "greenperson"
         },
         {
           "name": "Paris",
@@ -94,7 +94,7 @@
       "participants": [
         {
           "name": "Claude Glucq",
-          "type": "person"
+          "type": "greenperson"
         },
         {
           "name": "Paris",
@@ -126,7 +126,7 @@
       "participants": [
         {
           "name": "Jean de Jullienne",
-          "type": "person"
+          "type": "greenperson"
         },
         {
           "name": "Comte de Vaudreuil",
@@ -134,7 +134,7 @@
         },
         {
           "name": "Jean-Baptiste-Pierre Le Brun",
-          "type": "person"
+          "type": "greenperson"
         }
       ],
       "networkPairs": [
@@ -163,33 +163,33 @@
     "nodes": [
       {
         "id": "Jean-Antoine Watteau",
-        "type": "person",
-        "bio": "A pioneer of the fête galante genre, Watteau is celebrated for his depictions of elegant outdoor entertainments and for shaping early 18th‑century French art."
+        "type": "greenperson",
+        "bio": "A French painter whose elegant fête galantes and theatrical scenes won him the patronage and high esteem of Parisian collectors, nobles, and amateurs, including the wealthy financier Pierre Crozat. Many of his paintings feature Black, probably enslaved, attendants, suggesting his awareness of their growing presence in the French capital alongside the expansion of colonial commerce."
       },
       {
         "id": "Pierre Crozat",
-        "type": "person",
-        "bio": "A highly influential art patron in early 18th‑century Paris, whose vast wealth derived from maritime speculation and colonial trade helped support Watteau and his contemporaries."
+        "type": "greenperson",
+        "bio": "A wealthy French banker and preeminent art collector whose extensive patronage supported leading artists of his time, including Watteau (who lived at one point in his Parisian mansion) and Charles de La Fosse. His brother and business partner, Antoine Crozat (c. 1655-1783), built an immense fortune from colonial investments, including slave trading, and was the first proprietary owner of French Louisiana (from 1712-1717)."
       },
       {
         "id": "Claude Glucq",
-        "type": "person",
-        "bio": "An enthusiastic collector of Watteau’s work, Claude came from a family involved in textile dyeing and colonial investments in the Mississippi Company."
+        "type": "greenperson",
+        "bio": "Glucq’s father, Jean, was a master dyer whose factory supplied brilliant colors (made with colonial materials like cochineal) to the Gobelins royal tapestry manufactory. He passed that business along with his fortune gained through colonial commerce and slave trading to his son Claude, who became a major art collector known for his patronage of Watteau. At one point Claude owned Watteau’s Shopsign of Gersaint and many other works by modern French artists."
       },
       {
         "id": "Jean de Jullienne",
-        "type": "person",
-        "bio": "A fervent Watteau patron, Jean de Jullienne managed an extensive art collection and was connected to the Gobelins manufactory and colonial trade networks."
+        "type": "greenperson",
+        "bio": "A cousin of Claude Glucq, Jean de Jullienne was an esteemed art collector, amateur, and close friend of Watteau who led a project to reproduce the artist’s work (the Receuil Julienne). He followed his family in colonial investments, specifically trading in indigo produced with enslaved labor, and he eventually took over managing the Gobelins manufactory, where he built a house to display his extensive art collection."
       },
       {
         "id": "Comte de Vaudreuil",
         "type": "greenperson",
-        "bio": "A prominent collector and courtier with longstanding colonial connections, Vaudreuil played a notable role in the later art market for Watteau’s works."
+        "bio": "Born in Saint-Domingue, where his father served as colonial governor, Vaudreuil moved to Paris and later became one of the capital’s most voracious art collectors. His family owned several sugar plantations worked by enslaved laborers in Saint-Domingue, and he used the profits from these plantations to buy art and to commission new works by celebrated painters like Elisabeth Vigée Le Brun, who may have been his lover."
       },
       {
         "id": "Jean-Baptiste-Pierre Le Brun",
-        "type": "person",
-        "bio": "An art dealer active in the Paris market, Le Brun facilitated transactions among colonial clients and maintained links with influential figures such as Elisabeth Vigée Le Brun."
+        "type": "greenperson",
+        "bio": "A painter, engraver, and collector of art, Le Brun is best known for his activities as an art dealer and for his marriage to the celebrated painter Élisabeth Vigée-Le Brun (1755-1842). He bought art and organized sales for most of the planter collectors in this colonial network, and during the French Revolution he helped the new government seize these same artworks from the collectors’ homes and bring them to the Louvre."
       }
     ],
     "edges": [
@@ -290,7 +290,6 @@
         "fullText": " Unsold and passed to London, Noel Desenfans;"
       },
       {
-       
         "id": "prov-7",
         "owner": "Sir Abraham Hume; Noel Desenfans",
         "location": "London",
@@ -339,20 +338,85 @@
       }
     ],
     "events": [
-       { "date": "1717", "event": "Painted by Watteau, most likely when he was living with Pierre Crozat", "storyId": [0,1], "entryId": null },
-      { "date": "1731", "event": "Claude Glucq, Conseiller du Parlement", "storyId": 2, "entryId": "prov-0" },
-      { "date": "1752", "event": "Louis Pasquier; V. Gournay", "storyId": null, "entryId": "prov-1" },
-      { "date": "1756", "event": "Jean de Jullienne", "storyId": 3, "entryId": "prov-2" },
-      { "date": "1783", "event": "Jean-Baptiste-François de Montullé", "storyId": 3, "entryId": "prov-3" },
-      { "date": "1787", "event": "Joseph-Hyacinthe-François de Paule de Rigaud, comte de Vaudreuil", "storyId": 3, "entryId": "prov-4" },
-      { "date": "1788", "event": "Anne Pierre, marquis de Montesquiou-Fezensac", "storyId": null, "entryId": "prov-5" },
-      { "date": "1791", "event": "Jean-Baptiste-Pierre Le Brun; Noel Desenfans", "storyId": 3, "entryId": "prov-6" },
-      { "date": "1792", "event": "Sir Abraham Hume; Noel Desenfans", "storyId": null, "entryId": "prov-7" },
-      { "date": "1802", "event": "Noel Desenfans", "storyId": null, "entryId": "prov-8" },
-      { "date": "1807", "event": "Sir Francis Bourgeois", "storyId": null, "entryId": "prov-12" },
-      { "date": "1811", "event": "Bourgeois Bequest, Dulwich Picture Gallery", "storyId": null, "entryId": "prov-13" }
+      {
+        "date": "1717",
+        "event": "Painted by Watteau, most likely when he was living with Pierre Crozat",
+        "storyId": [
+          0,
+          1
+        ],
+        "entryId": null
+      },
+      {
+        "date": "1731",
+        "event": "Claude Glucq, Conseiller du Parlement",
+        "storyId": 2,
+        "entryId": "prov-0"
+      },
+      {
+        "date": "1752",
+        "event": "Louis Pasquier; V. Gournay",
+        "storyId": null,
+        "entryId": "prov-1"
+      },
+      {
+        "date": "1756",
+        "event": "Jean de Jullienne",
+        "storyId": 3,
+        "entryId": "prov-2"
+      },
+      {
+        "date": "1783",
+        "event": "Jean-Baptiste-François de Montullé",
+        "storyId": 3,
+        "entryId": "prov-3"
+      },
+      {
+        "date": "1787",
+        "event": "Joseph-Hyacinthe-François de Paule de Rigaud, comte de Vaudreuil",
+        "storyId": 3,
+        "entryId": "prov-4"
+      },
+      {
+        "date": "1788",
+        "event": "Anne Pierre, marquis de Montesquiou-Fezensac",
+        "storyId": null,
+        "entryId": "prov-5"
+      },
+      {
+        "date": "1791",
+        "event": "Jean-Baptiste-Pierre Le Brun; Noel Desenfans",
+        "storyId": 3,
+        "entryId": "prov-6"
+      },
+      {
+        "date": "1792",
+        "event": "Sir Abraham Hume; Noel Desenfans",
+        "storyId": null,
+        "entryId": "prov-7"
+      },
+      {
+        "date": "1802",
+        "event": "Noel Desenfans",
+        "storyId": null,
+        "entryId": "prov-8"
+      },
+      {
+        "date": "1807",
+        "event": "Sir Francis Bourgeois",
+        "storyId": null,
+        "entryId": "prov-12"
+      },
+      {
+        "date": "1811",
+        "event": "Bourgeois Bequest, Dulwich Picture Gallery",
+        "storyId": null,
+        "entryId": "prov-13"
+      }
     ],
-        "source": {"url": "https://artsandculture.google.com/asset/les-plaisirs-du-bal/ygEIIXQmEkmkNA?hl=en", "text": "Google Arts and Culture"}
+    "source": {
+      "url": "https://artsandculture.google.com/asset/les-plaisirs-du-bal/ygEIIXQmEkmkNA?hl=en",
+      "text": "Google Arts and Culture"
+    }
   }
-
 }

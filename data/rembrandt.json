@@ -10,7 +10,7 @@
     "museumUrl": "https://collections.louvre.fr/ark:/53355/cl010062022",
     "museumName": "Musée du Louvre",
     "imageUrl": "assets/rembrandt.jpg"
-    },
+  },
   "placeData": {
     "Amsterdam": {
       "name": "Amsterdam",
@@ -36,16 +36,25 @@
       "eventType": "moves from",
       "text": "<p>Rembrandt’s Philosopher in Comtemplation was painted in 1632 and spent its first hundred years in private collections in Flanders and the Netherlands. But in the 18th century, it moved to Paris, where it has remained ever since.<br><br>Its first Parisian owner, in 1748, was the marquis d’Argenson (1722-82), an ambassador, war minister, and art collector. When he bought it (along with 16 other Dutch pictures), the Paris art market was witnessing a new fashion for Dutch “golden age” art. D’Argenson paired it with another Dutch painting of a philosopher, at the time also attributed to Rembrandt (now to Salomon de Koninck), and the two circulated as pendants from then on.</p>",
       "participants": [
-        { "name": "Amsterdam", "type": "place" },
-        { "name": "Paris", "type": "place" }
+        {
+          "name": "Amsterdam",
+          "type": "place"
+        },
+        {
+          "name": "Paris",
+          "type": "place"
+        }
       ],
       "networkPairs": [
-        { "source": "Amsterdam", "target": "Paris", "label": "moves from" }
+        {
+          "source": "Amsterdam",
+          "target": "Paris",
+          "label": "moves from"
+        }
       ],
       "changedLocation": true,
       "imageSource": "<p>Joan Blaeu, <em>Map of Amsterdam</em>, 1649. Biblioteca Nacional de Espana. Image in the public domain.</p>",
       "imageAlt": "<p>Joan Blaeu, <em>Map of Amsterdam 1649. Biblioteca Nacional de Espana. Image in the public domain.</p>"
-
     },
     {
       "id": 1,
@@ -55,11 +64,21 @@
       "eventType": "bought by",
       "text": "<p>The Philosopher in Comtemplation and its pendant became famous in Parisian art circles, and engravings of both paintings were shown at the Salons of 1753 and 1755. In 1762, the marquis d’Argenson sold the Philosopher in Comtemplation to the duc de Choiseul (1719-85), who already owned its pendant, for 3000 livres. D’Argenson hoped to curry favor with Choiseul, another big art collector and one of the most powerful men in France. During the 1760s he served as foreign minister and directed French colonial policy. <br><br>Choiseul’s family had deep colonial and slaveholding ties in the Americas. His grandfather had been the colonial governor of Saint-Domingue (Haiti), and much of his wealth derived from his wife, Louise Honorine Crozat, whose grandfather, the financier Antoine Crozat (c. 1655-1738), was heavily involved in French colonization, especially in Louisiana. Choiseul and his wife lived in a lavish Parisian hôtel originally built for Crozat’s brother, another major art collector, and the family fortune fueled Choiseul’s art buying. <br><br>Choiseul was especially fond of 17th C. Dutch and Flemish art and owned several Rembrandts that he displayed in his hôtel. The Philosopher in Comtemplation was hung in the first room (premier cabinet) according to the famous Choiseul snuffbox, a gold tobacco box decorated with miniatures of the duc’s collection, now one of the national treasures of the Louvre . </p>",
       "participants": [
-        { "name": "Marquis d’Argenson", "type": "person" },
-        { "name": "Duc de Choiseul", "type": "greenperson" }
+        {
+          "name": "Marquis d’Argenson",
+          "type": "person"
+        },
+        {
+          "name": "Duc de Choiseul",
+          "type": "greenperson"
+        }
       ],
       "networkPairs": [
-        { "source": "Marquis d’Argenson", "target": "Duc de Choiseul", "label": "bought by" }
+        {
+          "source": "Marquis d’Argenson",
+          "target": "Duc de Choiseul",
+          "label": "bought by"
+        }
       ],
       "changedLocation": false,
       "imageSource": "<p><a href=\"https://collections.louvre.fr/ark:/53355/cl010501761\">Louis Roucel and Louis Nicolas Van Blarenberghe, Choiseul snuffbox</a>, 1770-71. Gold with gouache miniatures on vellum, 3.7 x 7.8 x 6 cm. © 2024 GrandPalaisRmn (musée du Louvre) / Hervé Lewandowski.</p>"
@@ -72,11 +91,21 @@
       "eventType": "sold to",
       "text": "<p>The comte de Vaudreuil (1740-1817), another high-profile Parisian art collector whose family had strong ties to Saint-Domingue/Haiti (his father had been the colonial governor, and his wealth derived from his family’s extensive sugar plantations), acquired the Philosopher in Comtemplation in the late 1770s—exactly the same time that he inherited these plantations and sold one of them to his friend the duc de Chartres. In 1784, Vaudreuil sold the painting and its pendant to Louis XVI for 13,000 livres—an amount that is distressingly close to the 13,500 livres that he would pay a few years later to acquire six men and four women to serve as enslaved laborers on one of his plantations, according to a slave ship manifest. </p>",
       "participants": [
-        { "name": "Comte de Vaudreuil", "type": "greenperson" },
-        { "name": "Louis XVI", "type": "person" }
+        {
+          "name": "Comte de Vaudreuil",
+          "type": "greenperson"
+        },
+        {
+          "name": "Louis XVI",
+          "type": "person"
+        }
       ],
       "networkPairs": [
-        { "source": "Comte de Vaudreuil", "target": "Louis XVI", "label": "sold to" }
+        {
+          "source": "Comte de Vaudreuil",
+          "target": "Louis XVI",
+          "label": "sold to"
+        }
       ],
       "changedLocation": false,
       "imageSource": "<p>“Prices of paintings from the sale of Mr. de Vaudreuil on the 24 and 25th of November, 1784” (n. 28). Fondation Custodia, Collection Frits Lugt, Paris, 9185Ab.</p>",
@@ -90,18 +119,34 @@
       "eventType": "accessioned by",
       "text": "<p>Louis XVI (1753-94) and his arts administrator, the comte d’Angiviller, acquired the Philosopher in Comtemplation and other artworks from Vaudreuil’s collection in 1784 to hang in the Grand Gallery of the planned royal museum at the Louvre. D’Angiviller’s vision for the museum, housed in a palace that was also the headquarters of the French Academy, was to glorify the Crown’s peerless collections and arts patronage. However, it would be the new Revolutionary government that would open the Louvre to the public in 1793, the same year Louis XVI was executed. Hubert Robert’s painting of the Grand Gallery presents a utopian, aspirational view of its civic potential, but in another painting he envisioned the same space in ruins—as if to acknowledge that France, like other powerful empires of the past, could readily topple. </p>",
       "participants": [
-        { "name": "Louis XVI", "type": "person" },
-        { "name": "French State", "type": "institution" },
-        { "name": "Musée du Louvre", "type": "museum" }
+        {
+          "name": "Louis XVI",
+          "type": "person"
+        },
+        {
+          "name": "French State",
+          "type": "institution"
+        },
+        {
+          "name": "Musée du Louvre",
+          "type": "museum"
+        }
       ],
       "networkPairs": [
-        { "source": "Louis XVI", "target": "French State", "label": "nationalized by" },
-        { "source": "French State", "target": "Musée du Louvre", "label": "accessioned by" }
+        {
+          "source": "Louis XVI",
+          "target": "French State",
+          "label": "nationalized by"
+        },
+        {
+          "source": "French State",
+          "target": "Musée du Louvre",
+          "label": "accessioned by"
+        }
       ],
       "changedLocation": false,
       "imageSource": "<p><a href=\"https://collections.louvre.fr/ark:/53355/cl010065360\">Hubert Robert</a>, <em>Project for the Transformation of the Grand Gallery of the Louvre</em>, 1796. Oil on canvas, 115 x 145 cm. Musée du Louvre. © 2024 GrandPalaisRmn (musée du Louvre) / Jean-Gilles Berizzi.</p>",
       "imageAlt": "<p><a href=\"https://collections.louvre.fr/ark:/53355/cl010065360\">Hubert Robert</a>, <em>Project for the Transformation of the Grand Gallery of the Louvre</em>, 1796. Oil on canvas, 115 x 145 cm. Musée du Louvre. © 2024 GrandPalaisRmn (musée du Louvre) / Jean-Gilles Berizzi.</p>"
-
     }
   ],
   "socialNetwork": {
@@ -114,12 +159,12 @@
       {
         "id": "Duc de Choiseul",
         "type": "greenperson",
-        "bio": "A prominent French statesman and art collector with close ties to the aristocracy. His influence at court extended into both cultural and political realms."
+        "bio": "Hailing from a powerful family with deep ties to Haiti/Saint-Domingue, Choiseul was an important government administrator under Louis XV as well as an influential courtier and art collector. As minister of the navy, war, and foreign affairs, Choiseul oversaw colonial and maritime policy after the Seven Years War, including the administration of the Caribbean colonies of Saint-Domingue, Martinique, and Guadeloupe. He also led a disastrous failed mission to French Guiana."
       },
       {
         "id": "Comte de Vaudreuil",
         "type": "greenperson",
-        "bio": "A high-profile courtier and collector with deep colonial connections, particularly through his family’s sugar plantations in Saint-Domingue. Historically, he was also noted for his volatile temperament and rumored romantic liaisons."
+        "bio": "Born in Saint-Domingue, where his father served as colonial governor, Vaudreuil moved to Paris and later became one of the capital’s most voracious art collectors. His family owned several sugar plantations worked by enslaved laborers in Saint-Domingue, and he used the profits from these plantations to buy art and to commission new works by celebrated painters like Elisabeth Vigée Le Brun, who may have been his lover."
       },
       {
         "id": "Louis XVI",
@@ -247,22 +292,88 @@
       }
     ],
     "events": [
-      { "date": "1632", "event": "Painted by Rembrandt in Amsterdam", "storyId": 0, "entryId": null },
-      { "date": "1673", "event": "Probably Peter Wouters", "entryId": "prov-1673" },
-      { "date": "1687", "event": "Probably Catharina Deyl", "entryId": "prov-1687" },
-      { "date": "1738", "event": "Thomas Emmanuel, comte de Fraula; Willem Lormier", "entryId": "prov-1738" },
-      { "date": "1748", "event": "Marc-René de Voyer, marquis d’Argenson", "storyId": 0, "entryId": "prov-1748" },
-      { "date": "1751", "event": "Claude-Alexandre de Villeneuve, comte de Vence", "entryId": "prov-1751" },
-      { "date": "1754", "event": "Engraved by L. Surugue", "entryId": "prov-1754" },
-      { "date": "1761", "event": "Sale of comte de Vence; Voyer", "entryId": "prov-1761" },
-      { "date": "1762", "event": "Étienne-François, comte de Stainville, duc de Choiseul", "storyId": 1, "entryId": "prov-1762" },
-      { "date": "1771", "event": "Engraved by Baillie for the Cabinet Choiseul", "entryId": "prov-1771" },
-      { "date": "1772", "event": "Donjeux from Choiseul sale", "entryId": "prov-1772" },
-      { "date": "1777", "event": "P. P. L. Randon de Boisset; Perrin for Millon d’Ailly, nephew of Randon de Boisset", "entryId": "prov-1777" },
-      { "date": "1784", "event": "Joseph-Hyacinthe-François de Paule de Rigaud, comte de Vaudreuil; A. J. Paillet for Louis XVI", "storyId": [2, 3], "entryId": "prov-1784" },
-      { "date": "1793", "event": "Exhibited at the Louvre", "storyId": 3, "entryId": "prov-1793" }
+      {
+        "date": "1632",
+        "event": "Painted by Rembrandt in Amsterdam",
+        "storyId": 0,
+        "entryId": null
+      },
+      {
+        "date": "1673",
+        "event": "Probably Peter Wouters",
+        "entryId": "prov-1673"
+      },
+      {
+        "date": "1687",
+        "event": "Probably Catharina Deyl",
+        "entryId": "prov-1687"
+      },
+      {
+        "date": "1738",
+        "event": "Thomas Emmanuel, comte de Fraula; Willem Lormier",
+        "entryId": "prov-1738"
+      },
+      {
+        "date": "1748",
+        "event": "Marc-René de Voyer, marquis d’Argenson",
+        "storyId": 0,
+        "entryId": "prov-1748"
+      },
+      {
+        "date": "1751",
+        "event": "Claude-Alexandre de Villeneuve, comte de Vence",
+        "entryId": "prov-1751"
+      },
+      {
+        "date": "1754",
+        "event": "Engraved by L. Surugue",
+        "entryId": "prov-1754"
+      },
+      {
+        "date": "1761",
+        "event": "Sale of comte de Vence; Voyer",
+        "entryId": "prov-1761"
+      },
+      {
+        "date": "1762",
+        "event": "Étienne-François, comte de Stainville, duc de Choiseul",
+        "storyId": 1,
+        "entryId": "prov-1762"
+      },
+      {
+        "date": "1771",
+        "event": "Engraved by Baillie for the Cabinet Choiseul",
+        "entryId": "prov-1771"
+      },
+      {
+        "date": "1772",
+        "event": "Donjeux from Choiseul sale",
+        "entryId": "prov-1772"
+      },
+      {
+        "date": "1777",
+        "event": "P. P. L. Randon de Boisset; Perrin for Millon d’Ailly, nephew of Randon de Boisset",
+        "entryId": "prov-1777"
+      },
+      {
+        "date": "1784",
+        "event": "Joseph-Hyacinthe-François de Paule de Rigaud, comte de Vaudreuil; A. J. Paillet for Louis XVI",
+        "storyId": [
+          2,
+          3
+        ],
+        "entryId": "prov-1784"
+      },
+      {
+        "date": "1793",
+        "event": "Exhibited at the Louvre",
+        "storyId": 3,
+        "entryId": "prov-1793"
+      }
     ],
-        "source": {"url": "https://collections.louvre.fr/ark:/53355/cl010062022", "text": "Musée du Louvre"}
+    "source": {
+      "url": "https://collections.louvre.fr/ark:/53355/cl010062022",
+      "text": "Musée du Louvre"
+    }
   }
-
 }

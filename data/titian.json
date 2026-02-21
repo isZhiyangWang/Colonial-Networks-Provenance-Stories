@@ -50,13 +50,34 @@
       "eventType": "moves from",
       "text": "<p>Titian’s Perseus and Andromeda was painted in the 1550s for Spain’s King Philip II (1527-98) during the so-called “Golden Age” of Spanish art and imperial expansion. This myth of a bound and captive Ethiopian princess (described as <a href='https://www.jstor.org/stable/751417'>Black</a> in some ancient accounts) rescued by a Greek hero resonated strongly with early modern European collectors and artists. Two such artists likely owned this work: the Italian sculptor Leone Leoni, who was himself <a href='https://www.italianartsociety.org/2017/07/leone-leoni-died-on-july-22-1590-in-milan/'>imprisoned</a> on the papal galleys, and the Flemish painter Anthony Van Dyck, who acquired it in 1623. It later ended up in Paris and was installed in the magnificent Galerie Dorée, now the headquarters of the Banque de France.</p>",
       "participants": [
-        { "name": "King Philip II", "type": "person" },
-        { "name": "Leone Leoni", "type": "person" },
-        { "name": "Anthony Van Dyck", "type": "person" },
-        { "name": "Louis Phélypeaux", "type": "person" },
-        { "name": "Madrid", "type": "place" },
-        { "name": "Milan", "type": "place" },
-        { "name": "Paris", "type": "place" }
+        {
+          "name": "King Philip II",
+          "type": "person"
+        },
+        {
+          "name": "Leone Leoni",
+          "type": "person"
+        },
+        {
+          "name": "Anthony Van Dyck",
+          "type": "person"
+        },
+        {
+          "name": "Louis Phélypeaux",
+          "type": "person"
+        },
+        {
+          "name": "Madrid",
+          "type": "place"
+        },
+        {
+          "name": "Milan",
+          "type": "place"
+        },
+        {
+          "name": "Paris",
+          "type": "place"
+        }
       ],
       "networkPairs": [
         {
@@ -82,9 +103,18 @@
       "eventType": "inherited by",
       "text": "<p>By 1723, after passing through the hands of several other French collectors, Titian’s painting had joined the Orléans Collection, recognized as perhaps the most significant private collection of Western art.<br><br>Assembled in large part by Philippe II, duc d’Orléans (1674-1723), who served as Regent of France from 1715-23—during a period when he and his cronies gained and lost fortunes through colonial speculation—the collection was displayed in the lavish Palais-Royal in Paris.<br><br>It was hung alongside other Titian paintings that were collectively known as the artist’s poesie, a series of meditations on Ovid’s Metamorphoses, including this tale of Perseus rescuing the Ethiopian princess Andromeda.<br><br>In 1785, the Orléans collection was inherited by the Regent’s great-grandson <a href=‘https://www.nationaltrustcollections.org.uk/object/485072’>Louis-Philippe-Joseph, duc de Chartres</a>, who became the duc d’Orléans upon the death of his father that year.<br><br>This latest heir to the Orléans art collection was a plantation owner and enslaver who would later become the pro-Revolution noble known as Philippe Egalité.</p>",
       "participants": [
-        { "name": "Comte de Toulouse", "type": "person" },
-        { "name": "Philippe II, duc d’Orléans", "type": "person" },
-        { "name": "Philippe Egalité", "type": "greenperson" }
+        {
+          "name": "Comte de Toulouse",
+          "type": "person"
+        },
+        {
+          "name": "Philippe II, duc d’Orléans",
+          "type": "person"
+        },
+        {
+          "name": "Philippe Egalité",
+          "type": "greenperson"
+        }
       ],
       "networkPairs": [
         {
@@ -99,7 +129,7 @@
         }
       ],
       "changedLocation": false,
-      "imageSource":"<p>Louis-Joseph Mondhare, <em>Perspective view of the garden façade of the Palais Royal</em>, 1760. Engraving, 27 x 46 cm. Image source: gallica.bnf.fr / Bibliothèque nationale de France.</p>",
+      "imageSource": "<p>Louis-Joseph Mondhare, <em>Perspective view of the garden façade of the Palais Royal</em>, 1760. Engraving, 27 x 46 cm. Image source: gallica.bnf.fr / Bibliothèque nationale de France.</p>",
       "imageAlt": "<p>Louis-Joseph Mondhare, <em>Perspective view of the garden façade of the Palais Royal</em>, 1760. Engraving, 27 x 46 cm. Image source: gallica.bnf.fr / Bibliothèque nationale de France.</p>"
     },
     {
@@ -110,12 +140,30 @@
       "eventType": "bought by",
       "text": "<p>In 1792, Louis Philippe d’Orléans (1787–93), known then as Philippe Égalité, sold part of the Orléans collection to the Brussels banker and slave trader Édouard de Walckiers.<br><br>A close friend of the comte de Vaudreuil (from whom he acquired a sugar plantation in Saint-Domingue/Haiti), Philippe Égalité had dissipated the family fortune through gambling and made a huge profit off the sale.<br><br>Very soon after, Walckiers’s cousin, François Laborde de Méréville, who had spent a few years in Saint-Domingue managing his own family’s extensive sugar plantations, bought the collection for nearly a million francs and brought it to London (a move that contributed to his father’s arrest and subsequent execution by guillotine).<br><br>He too made a fortune by selling the paintings to Michael Bryan in 1798 for £43,500, the equivalent of 7 million dollars today.</p>",
       "participants": [
-        { "name": "Duc d’Orléans, Philippe Egalité", "type": "greenperson" },
-        { "name": "Édouard de Walckiers", "type": "person" },
-        { "name": "François Laborde de Méréville", "type": "greenperson" },
-        { "name": "Paris", "type": "place" },
-        { "name": "London", "type": "place" },
-        { "name": "Michael Bryan", "type": "person" }
+        {
+          "name": "Duc d’Orléans, Philippe Egalité",
+          "type": "greenperson"
+        },
+        {
+          "name": "Édouard de Walckiers",
+          "type": "greenperson"
+        },
+        {
+          "name": "François Laborde de Méréville",
+          "type": "greenperson"
+        },
+        {
+          "name": "Paris",
+          "type": "place"
+        },
+        {
+          "name": "London",
+          "type": "place"
+        },
+        {
+          "name": "Michael Bryan",
+          "type": "person"
+        }
       ],
       "networkPairs": [
         {
@@ -145,7 +193,7 @@
         }
       ],
       "changedLocation": true,
-      "imageSource":"<p>Nicolas-François Le Vachez (éditeur), <a href='https://catalogue.bnf.fr/ark:/12148/cb402510948' target='_blank' >François Laborde de Méréville</a>, 1791. Etching, 23.5 x 18 cm. Image</p><br><p>source: <a href='https://urldefense.proofpoint.com/v2/url?u=http-3A__gallica.bnf.fr_&d=DwMGaQ&c=slrrB7dE8n7gBJbeO0g-IQ&r=8lDQW6lFu5uaVAHh2ka5x4ZKRTsFHpCLoFZFpViW-x4&m=1H1VgHjg0SORteFRM1j2NVM0ne3H6i-oaoDjFXBZ04icMswqWm8O2bdUj-Pa0zpk&s=pqdVjHNtCRYndsfILWgF4uPlArLXcOazis1cmOV8gRY&e=' target='_blank'>gallica.bnf.fr</a> / Bibliothèque nationale de France.</p>",
+      "imageSource": "<p>Nicolas-François Le Vachez (éditeur), <a href='https://catalogue.bnf.fr/ark:/12148/cb402510948' target='_blank' >François Laborde de Méréville</a>, 1791. Etching, 23.5 x 18 cm. Image</p><br><p>source: <a href='https://urldefense.proofpoint.com/v2/url?u=http-3A__gallica.bnf.fr_&d=DwMGaQ&c=slrrB7dE8n7gBJbeO0g-IQ&r=8lDQW6lFu5uaVAHh2ka5x4ZKRTsFHpCLoFZFpViW-x4&m=1H1VgHjg0SORteFRM1j2NVM0ne3H6i-oaoDjFXBZ04icMswqWm8O2bdUj-Pa0zpk&s=pqdVjHNtCRYndsfILWgF4uPlArLXcOazis1cmOV8gRY&e=' target='_blank'>gallica.bnf.fr</a> / Bibliothèque nationale de France.</p>",
       "imageAlt": "<p>Nicolas-François Le Vachez (éditeur), <a href='https://catalogue.bnf.fr/ark:/12148/cb402510948' target='_blank' >François Laborde de Méréville</a>, 1791. Etching, 23.5 x 18 cm. Image</p><br><p>source: <a href='https://urldefense.proofpoint.com/v2/url?u=http-3A__gallica.bnf.fr_&d=DwMGaQ&c=slrrB7dE8n7gBJbeO0g-IQ&r=8lDQW6lFu5uaVAHh2ka5x4ZKRTsFHpCLoFZFpViW-x4&m=1H1VgHjg0SORteFRM1j2NVM0ne3H6i-oaoDjFXBZ04icMswqWm8O2bdUj-Pa0zpk&s=pqdVjHNtCRYndsfILWgF4uPlArLXcOazis1cmOV8gRY&e=' target='_blank'>gallica.bnf.fr</a> / Bibliothèque nationale de France.</p>"
     },
     {
@@ -156,11 +204,26 @@
       "eventType": "accessioned by",
       "text": "<p>Together with Jeremiah Harman, a director of the Bank of England and an important art collector, Bryan formed a syndicate to sell the paintings, which the British Royal Academy had tried to acquire but couldn’t afford.</p><p>More than 300 French, Spanish, and Italian works were publicly exhibited in 1798 in two London venues—Pall Mall and the Lyceum in the Strand—and some were bought by John Angerstein, a major benefactor to London’s National Gallery.</p><p>Titian’s painting, however, was sold a few years later and, after passing through various hands on the London art market, it was acquired by the 3rd Marquess of Hertford (1777-1842) for £362.10.</p><p>His collection forms part of the Wallace Collection in London, which opened as a museum in 1897.</p>",
       "participants": [
-        { "name": "Michael Bryan", "type": "person" },
-        { "name": "Jeremiah Harman", "type": "person" },
-        { "name": "3rd Marquess of Hertford", "type": "person" },
-        { "name": "Wallace Collection", "type": "museum" },
-        { "name": "London", "type": "place" }
+        {
+          "name": "Michael Bryan",
+          "type": "person"
+        },
+        {
+          "name": "Jeremiah Harman",
+          "type": "person"
+        },
+        {
+          "name": "3rd Marquess of Hertford",
+          "type": "person"
+        },
+        {
+          "name": "Wallace Collection",
+          "type": "museum"
+        },
+        {
+          "name": "London",
+          "type": "place"
+        }
       ],
       "networkPairs": [
         {
@@ -180,7 +243,7 @@
         }
       ],
       "changedLocation": false,
-      "imageSource":"<p>Joseph Farington, Diagram the Orléans collection displayed at the Lyceum in London in 1799. Getty Research Institute, Los Angeles, 880391.</p>",
+      "imageSource": "<p>Joseph Farington, Diagram the Orléans collection displayed at the Lyceum in London in 1799. Getty Research Institute, Los Angeles, 880391.</p>",
       "imageAlt": "<p>Joseph Farington, Diagram the Orléans collection displayed at the Lyceum in London in 1799. Getty Research Institute, Los Angeles, 880391.</p>"
     }
   ],
@@ -219,17 +282,17 @@
       {
         "id": "Philippe Egalité",
         "type": "greenperson",
-        "bio": "Louis-Philippe-Joseph, duc d’Orléans. A plantation owner and pro-Revolution noble who inherited the Orléans Collection in 1785."
+        "bio": "A French prince renowned as one of Europe’s greatest art collectors through his inheritance of the legendary Orléans collection. That collection had been partly financed by colonial investment during the Regency (1715-23), and Louis-Philippe continued that tradition by buying a Saint-Domingue sugar plantation from his friend Vaudreuil. In 1792, he renounced his noble titles to become ‘Philippe Égalité’, aligning himself with French Revolutionary ideals of liberty, even as he continued to own slaves."
       },
       {
         "id": "Édouard de Walckiers",
-        "type": "person",
-        "bio": "A Brussels banker who acquired part of the Orléans Collection from Philippe Egalité in 1792."
+        "type": "greenperson",
+        "bio": "A Brussels-based financier and art collector who inherited the family banking business run by his grandmother Barbe de Nettine, a Saint-Domingue plantation owner. He was best known for acquiring the Orléans collection in 1792 and, with his cousin François Laborde de Méréville, orchestrating its sale in Britain. His activities place him at the intersection of finance and the international art market during the revolutionary era."
       },
       {
         "id": "François Laborde de Méréville",
         "type": "greenperson",
-        "bio": "Cousin of Édouard de Walckiers; managed sugar plantations in Saint-Domingue and brought the Orléans Collection to London."
+        "bio": "A French financier and art patron who famously acquired the Orléans collection during the French Revolution and brought it to London to be sold. As a member of the revolutionary government (who appears in David’s Oath of the Tennis Court), he fought hard to maintain slavery in France’s colonies, where he had lived during the 1780s while managing one of his family’s extensive sugar plantations in Saint-Domingue."
       },
       {
         "id": "Michael Bryan",
@@ -437,33 +500,154 @@
       }
     ],
     "events": [
-      { "date": "1554–56", "event": "Painted in 1554–56 for Philip II of Spain", "storyId": 0, "entryId": "prov-0" },
-      { "date": "1579", "event": "Antonio Pérez; Pompeo Leoni", "storyId": null, "entryId": "prov-1" },
-      { "date": "1608", "event": "Leone Leoni", "storyId": 0, "entryId": "prov-2" },
-      { "date": "1623", "event": "Sir Anthony van Dyck", "storyId": 0, "entryId": "prov-3" },
-      { "date": "1641", "event": "Mary Ruthven", "storyId": null, "entryId": "prov-4" },
-      { "date": "1644", "event": "Sir John Wittewronge", "storyId": null, "entryId": "prov-5" },
-      { "date": "1645", "event": "Algernon Percy, 10th Earl of Northumberland", "storyId": null, "entryId": "prov-6" },
-      { "date": "1649", "event": "Louis Hesselin", "storyId": null, "entryId": "prov-7" },
-      { "date": "1655", "event": "Louis-Phélypeaux, seigneur de La Vrillière, Paris", "storyId": null, "entryId": "prov-8" },
-      { "date": "1681", "event": "Balthazar Phélypeaux, marquis de Châteauneuf", "storyId": null, "entryId": "prov-9" },
-      { "date": "1705", "event": "Louis Raulin-Rouillé", "storyId": null, "entryId": "prov-10" },
-      { "date": "1712", "event": "Mme Raulin-Rouillé", "storyId": null, "entryId": "prov-11" },
-      { "date": "1713", "event": "Louis Alexandre de Bourbon, comte de Toulouse", "storyId": null, "entryId": "prov-12" },
-      { "date": "", "event": "Philippe II, duc d’Orléans", "storyId": 1, "entryId": "prov-13" },
-      { "date": "1723", "event": "Louis, duc d’Orléans", "storyId": 1, "entryId": "prov-14" },
-      { "date": "1785", "event": "Louis-Philippe-Joseph, duc d’Orléans, later known as Philippe Egalité", "storyId": 1, "entryId": "prov-15" },
-      { "date": "1792", "event": "Édouard de Walckiers", "storyId": 2, "entryId": "prov-16" },
-      { "date": "1793", "event": "François-Louis-Joseph de Laborde de Méréville", "storyId": 2, "entryId": "prov-17" },
-      { "date": "1798", "event": "Jeremiah Harman", "storyId": 3, "entryId": "prov-18" },
-      { "date": "1798", "event": "Michael Bryan", "storyId": 2, "entryId": "prov-19" },
-      { "date": "1805", "event": "Unknown buyer", "storyId": null, "entryId": "prov-20" },
-      { "date": "1815", "event": "Sir Gregory Osborne Page Turner", "storyId": null, "entryId": "prov-21" },
-      { "date": "1815", "event": "Francis Charles Seymour-Conway, 3rd Marquess of Hertford", "storyId": 3, "entryId": "prov-22" },
-        { "date": "1897", "event": "The Wallace Collection", "storyId": 3, "entryId": null }
+      {
+        "date": "1554–56",
+        "event": "Painted in 1554–56 for Philip II of Spain",
+        "storyId": 0,
+        "entryId": "prov-0"
+      },
+      {
+        "date": "1579",
+        "event": "Antonio Pérez; Pompeo Leoni",
+        "storyId": null,
+        "entryId": "prov-1"
+      },
+      {
+        "date": "1608",
+        "event": "Leone Leoni",
+        "storyId": 0,
+        "entryId": "prov-2"
+      },
+      {
+        "date": "1623",
+        "event": "Sir Anthony van Dyck",
+        "storyId": 0,
+        "entryId": "prov-3"
+      },
+      {
+        "date": "1641",
+        "event": "Mary Ruthven",
+        "storyId": null,
+        "entryId": "prov-4"
+      },
+      {
+        "date": "1644",
+        "event": "Sir John Wittewronge",
+        "storyId": null,
+        "entryId": "prov-5"
+      },
+      {
+        "date": "1645",
+        "event": "Algernon Percy, 10th Earl of Northumberland",
+        "storyId": null,
+        "entryId": "prov-6"
+      },
+      {
+        "date": "1649",
+        "event": "Louis Hesselin",
+        "storyId": null,
+        "entryId": "prov-7"
+      },
+      {
+        "date": "1655",
+        "event": "Louis-Phélypeaux, seigneur de La Vrillière, Paris",
+        "storyId": null,
+        "entryId": "prov-8"
+      },
+      {
+        "date": "1681",
+        "event": "Balthazar Phélypeaux, marquis de Châteauneuf",
+        "storyId": null,
+        "entryId": "prov-9"
+      },
+      {
+        "date": "1705",
+        "event": "Louis Raulin-Rouillé",
+        "storyId": null,
+        "entryId": "prov-10"
+      },
+      {
+        "date": "1712",
+        "event": "Mme Raulin-Rouillé",
+        "storyId": null,
+        "entryId": "prov-11"
+      },
+      {
+        "date": "1713",
+        "event": "Louis Alexandre de Bourbon, comte de Toulouse",
+        "storyId": null,
+        "entryId": "prov-12"
+      },
+      {
+        "date": "",
+        "event": "Philippe II, duc d’Orléans",
+        "storyId": 1,
+        "entryId": "prov-13"
+      },
+      {
+        "date": "1723",
+        "event": "Louis, duc d’Orléans",
+        "storyId": 1,
+        "entryId": "prov-14"
+      },
+      {
+        "date": "1785",
+        "event": "Louis-Philippe-Joseph, duc d’Orléans, later known as Philippe Egalité",
+        "storyId": 1,
+        "entryId": "prov-15"
+      },
+      {
+        "date": "1792",
+        "event": "Édouard de Walckiers",
+        "storyId": 2,
+        "entryId": "prov-16"
+      },
+      {
+        "date": "1793",
+        "event": "François-Louis-Joseph de Laborde de Méréville",
+        "storyId": 2,
+        "entryId": "prov-17"
+      },
+      {
+        "date": "1798",
+        "event": "Jeremiah Harman",
+        "storyId": 3,
+        "entryId": "prov-18"
+      },
+      {
+        "date": "1798",
+        "event": "Michael Bryan",
+        "storyId": 2,
+        "entryId": "prov-19"
+      },
+      {
+        "date": "1805",
+        "event": "Unknown buyer",
+        "storyId": null,
+        "entryId": "prov-20"
+      },
+      {
+        "date": "1815",
+        "event": "Sir Gregory Osborne Page Turner",
+        "storyId": null,
+        "entryId": "prov-21"
+      },
+      {
+        "date": "1815",
+        "event": "Francis Charles Seymour-Conway, 3rd Marquess of Hertford",
+        "storyId": 3,
+        "entryId": "prov-22"
+      },
+      {
+        "date": "1897",
+        "event": "The Wallace Collection",
+        "storyId": 3,
+        "entryId": null
+      }
     ],
-    "source": {"url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64901&viewType=detailView", "text": "Wallace Collection"}
+    "source": {
+      "url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64901&viewType=detailView",
+      "text": "Wallace Collection"
+    }
   }
-
-
 }
