@@ -159,7 +159,7 @@
       "from": "Paris",
       "to": "NewYork",
       "eventType": "moves from",
-      "text": "By the late nineteenth century, the Triumph of Aemilius Paulus—like so many old regime French paintings acquired by Gilded Age tycoons—ended up in the U.S. in the hands of Heber R Bishop (1840-1902), an art collector and trustee of The Metropolitan Museum of Art, who made his first fortune through a sugar refinery business in Cuba. Bishop later invested in many banking, railroad, steel, and mining companies, and he used the profits to amass an extensive collection of artifacts from Asia, Mexico, Alaska, and New Zealand that he donated to the Met and to the American Museum of Natural History. After he died, his wife’s brother-in-law, Darius Ogden Mills, acquired Vernet’s painting and gave it to the Met in 1906.",
+      "text": "By the late nineteenth century, the Triumph of Aemilius Paulus—like so many old regime French paintings acquired by Gilded Age tycoons—ended up in the U.S. in the hands of Heber R. Bishop (1840-1902), an art collector and trustee of The Metropolitan Museum of Art, who made his first fortune through a sugar refinery business in Cuba. Bishop later invested in many banking, railroad, steel, and mining companies, and he used the profits to amass an extensive collection of artifacts from Asia, Mexico, Alaska, and New Zealand that he donated to the Met and to the American Museum of Natural History. After he died, his wife’s brother-in-law, Darius Ogden Mills, acquired Vernet’s painting and gave it to the Met in 1906.",
       "participants": [
         {
           "name": "Paris",
@@ -224,14 +224,14 @@
         "bio": "A French artist known for his battle paintings and Orientalist scenes, notably those tied to France’s invasion and colonization of Algeria, which he visited several times under government protection. He later became director of the French Academy in Rome and created an exotic “Moorish” cabinet there inspired by his North African travels. Horace was the son of painter Carle Vernet (1758-1836)."
       },
       {
-        "id": "Heber R Bishop",
+        "id": "Heber R. Bishop",
         "type": "greenperson",
         "bio": "American sugar-refining magnate (1840–1902) and trustee of the Met. His collection included Vernet’s Triumph."
       },
       {
         "id": "Darius Ogden Mills",
         "type": "person",
-        "bio": "Brother-in-law of Heber R Bishop. Acquired Triumph of Aemilius Paulus after Bishop's death and donated it to the Met."
+        "bio": "Brother-in-law of Heber R. Bishop. Acquired Triumph of Aemilius Paulus after Bishop's death and donated it to the Met."
       },
       {
         "id": "Metropolitan Museum of Art",
@@ -256,7 +256,7 @@
         "relationship": "father → son"
       },
       {
-        "source": "Heber R Bishop",
+        "source": "Heber R. Bishop",
         "target": "Darius Ogden Mills",
         "relationship": "passed to in-law"
       }
