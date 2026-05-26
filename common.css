@@ -303,3 +303,63 @@ a{ color: inherit; }
     line-height: 1.5;
   }
 }
+
+.kf-caption-title {
+  font-style: italic;
+}
+
+#figures-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.kf-card {
+  padding: 14px 16px;
+}
+
+.kf-title {
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  margin: 0 0 0.45rem;
+}
+
+.kf-body {
+  display: grid;
+  grid-template-columns: minmax(90px, 115px) 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.kf-left {
+  max-width: 115px;
+}
+
+.kf-media {
+  width: 100%;
+  max-width: 105px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  margin-inline: auto;
+}
+
+.kf-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kf-media--oval {
+  border-radius: 50%;
+}
+
+.kf-caption {
+  font-size: 0.68rem;
+  line-height: 1.22;
+  margin-top: 0.35rem;
+}
+
+.kf-text {
+  font-size: 0.9rem;
+  line-height: 1.42;
+}

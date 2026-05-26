@@ -12,15 +12,7 @@ function getColorForType(t = "") {
 
 export function drawSocialNetwork(container, w, h, socialNetworkData) {
   container.selectAll("*").remove();
-  d3.select("body").select("#tooltip").remove();
 
-  const tooltip = d3.select("body").append("div")
-    .attr("id", "tooltip")
-    .style("position", "absolute").style("opacity", 0).style("pointer-events", "none")
-    .style("background", "rgba(0, 0, 0, 0.85)").style("color", "#fff")
-    .style("border-radius", "4px").style("padding", "8px 12px")
-    .style("font-family", "Arial, sans-serif").style("font-size", "12px")
-    .style("max-width", "350px").style("z-index", "9999");
 
   const svg = container.append("svg").attr("width", w).attr("height", h).style("background", "#fff");
   const zoomContainer = svg.append("g");
@@ -39,11 +31,30 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
     node.y = centerY + radius * Math.sin(angle);
   });
 
-  const linksWithCoords = links.map((link) => {
+  const linksWithCoords = links
+  .map((link) => {
     const sourceNode = nodes.find((n) => n.id === link.source);
     const targetNode = nodes.find((n) => n.id === link.target);
-    return { source: sourceNode, target: targetNode, relationship: link.relationship };
-  });
+    if (!sourceNode || !targetNode) return null;
+
+    const midX = (sourceNode.x + targetNode.x) / 2;
+    const midY = (sourceNode.y + targetNode.y) / 2;
+
+    const dx = targetNode.x - sourceNode.x;
+    const dy = targetNode.y - sourceNode.y;
+    const len = Math.hypot(dx, dy) || 1;
+
+    const offset = typeof link.labelOffset === "number" ? link.labelOffset : 14;
+
+    return {
+      source: sourceNode,
+      target: targetNode,
+      relationship: link.relationship || "",
+      labelX: midX + (-dy / len) * offset,
+      labelY: midY + (dx / len) * offset,
+    };
+  })
+  .filter(Boolean);
 
   const link = zoomContainer.selectAll(".social-link").data(linksWithCoords).enter()
     .append("line").attr("class", "social-link")
@@ -54,7 +65,8 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
   const linkLabel = zoomContainer.selectAll(".social-link-label").data(linksWithCoords).enter()
     .append("text").attr("class", "social-link-label")
     .text((d) => d.relationship)
-    .attr("x", (d) => (d.source.x + d.target.x) / 2).attr("y", (d) => (d.source.y + d.target.y) / 2)
+    .attr("x", (d) => d.labelX)
+.attr("y", (d) => d.labelY) 
     .attr("text-anchor", "middle")
     .style("font-family", "Arial, sans-serif").style("font-size", "10px").style("font-weight", "normal")
     .style("fill", "#666").style("pointer-events", "none")
@@ -91,36 +103,50 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
     });
 
   const nodeGroups = zoomContainer.selectAll(".social-node-group");
-  nodeGroups
-    .on("mouseover", function (event, d) {
-      tooltip.transition().duration(200).style("opacity", 0.9);
-      tooltip.html(`<strong>${d.id}</strong><br/>${d.bio ?? ""}`)
-        .style("left", `${event.pageX + 10}px`).style("top", `${event.pageY - 28}px`);
 
-      const connectedIds = new Set([d.id]);
-      links.forEach((l) => { if (l.source === d.id) connectedIds.add(l.target); if (l.target === d.id) connectedIds.add(l.source); });
+nodeGroups
+  .on("mouseover", function (event, d) {
+    const connectedIds = new Set([d.id]);
 
-      link.style("opacity", 0.1);
-      nodeGroups.style("opacity", 0.1);
-      nodeLabel.style("opacity", 0.1);
-      linkLabel.style("opacity", 0.1);
-
-      nodeGroups.filter((n) => connectedIds.has(n.id)).style("opacity", 1);
-      nodeLabel.filter((n) => connectedIds.has(n.id)).style("opacity", 1).raise();
-      link.filter((l) => connectedIds.has(l.source.id) && connectedIds.has(l.target.id)).style("opacity", 1);
-      linkLabel.filter((l) => l.source.id === d.id || l.target.id === d.id)
-        .style("opacity", 1).style("font-size", "13px").style("font-weight", "bold").raise();
-    })
-    .on("mousemove", (event) => {
-      tooltip.style("left", `${event.pageX + 10}px`).style("top", `${event.pageY - 28}px`);
-    })
-    .on("mouseout", function () {
-      tooltip.transition().duration(300).style("opacity", 0);
-      nodeGroups.style("opacity", 1);
-      link.style("opacity", 1);
-      nodeLabel.style("opacity", 1);
-      linkLabel.style("opacity", 1).style("font-size", "10px").style("font-weight", "normal");
+    links.forEach((l) => {
+      if (l.source === d.id) connectedIds.add(l.target);
+      if (l.target === d.id) connectedIds.add(l.source);
     });
+
+    link.style("opacity", 0.1);
+    nodeGroups.style("opacity", 0.1);
+    nodeLabel.style("opacity", 0.1);
+    linkLabel.style("opacity", 0.1);
+
+    nodeGroups
+      .filter((n) => connectedIds.has(n.id))
+      .style("opacity", 1);
+
+    nodeLabel
+      .filter((n) => connectedIds.has(n.id))
+      .style("opacity", 1)
+      .raise();
+
+    link
+      .filter((l) => connectedIds.has(l.source.id) && connectedIds.has(l.target.id))
+      .style("opacity", 1);
+
+    linkLabel
+      .filter((l) => l.source.id === d.id || l.target.id === d.id)
+      .style("opacity", 1)
+      .style("font-size", "13px")
+      .style("font-weight", "bold")
+      .raise();
+  })
+  .on("mouseout", function () {
+    nodeGroups.style("opacity", 1);
+    link.style("opacity", 1);
+    nodeLabel.style("opacity", 1);
+    linkLabel
+      .style("opacity", 1)
+      .style("font-size", "10px")
+      .style("font-weight", "normal");
+  });
 
   const zoom = d3.zoom().scaleExtent([0.3, 10]).on("zoom", (event) => {
     zoomContainer.attr("transform", event.transform);

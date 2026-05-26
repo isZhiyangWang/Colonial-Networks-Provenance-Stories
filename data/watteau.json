@@ -196,7 +196,8 @@
       {
         "source": "Pierre Crozat",
         "target": "Jean-Antoine Watteau",
-        "relationship": "patron of"
+        "relationship": "patron of",
+        "offset": 30
       },
       {
         "source": "Claude Glucq",

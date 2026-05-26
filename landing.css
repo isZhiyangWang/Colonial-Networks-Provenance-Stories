@@ -256,3 +256,36 @@ body.landing-page { height: auto; overflow: visible; }
 
 .landing-main:focus { outline: none; }
 .landing-main:focus-visible { outline: none; }
+
+
+
+.landing-main {
+  max-width: none;
+  margin-inline: auto;
+}
+
+/* NYT-style: keep prose narrow and readable */
+.landing-main :is(h1, h2, h3, p, ul, ol, blockquote, .text-block, .intro-text) {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* But let visual material breathe wider */
+.landing-main :is(figure, .wide-media, .image-row, .gallery-section, #gallery-container) {
+  max-width: min(1180px, calc(100vw - 36px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* If images are direct children or inside figures */
+.landing-main figure img,
+.landing-main .wide-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.landing-main p {
+  line-height: 1.58;
+}

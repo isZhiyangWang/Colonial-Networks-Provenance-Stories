@@ -22,7 +22,12 @@
     const sourceUrl = s(imgData?.sourceUrl);
     const sourceSuffix = s(imgData?.sourceSuffix);
 
-    if (work) cap.appendChild(document.createTextNode(work));
+    if (work) {
+    const cite = document.createElement("cite");
+    cite.className = "kf-caption-title";
+    cite.textContent = work;
+    cap.appendChild(cite);
+  }
     if (sourcePrefix) cap.appendChild(document.createTextNode(sourcePrefix));
 
     if (sourceName) {
