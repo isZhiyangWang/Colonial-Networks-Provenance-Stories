@@ -133,19 +133,31 @@ async function initProvenance(json) {
   const nextBtn = $("next-event");
 
   function openEventModal(idx) {
-    if (idx < 0 || idx >= provenanceEvents.length) return;
-    currentIndex = idx;
+const eventIndex = Number(idx);
+if (!Number.isInteger(eventIndex) || eventIndex < 0 || eventIndex >= provenanceEvents.length) return;
 
-    if (!window.__provSelection || window.__provSelection.mode === "story") {
-      window.__provSelection = { mode: "story", storyId: idx };
-    } else {
-      window.__provSelection.storyId = idx;
-    }
+currentIndex = eventIndex;
+
+const currentSelection = window.__provSelection;
+const sameStory =
+  currentSelection &&
+  currentSelection.storyId !== undefined &&
+  currentSelection.storyId !== null &&
+  String(currentSelection.storyId) === String(eventIndex);
+
+// Preserve provenance-entry or timeline-origin selections when opening the matching event.
+// This prevents Provenance text clicks from being downgraded to generic story selections.
+if (!currentSelection || currentSelection.mode === "story" || !sameStory) {
+  window.__provSelection = { mode: "story", storyId: eventIndex };
+} else {
+  window.__provSelection.storyId = eventIndex;
+}
 
     prevBtn?.classList.toggle("is-hidden", currentIndex === 0);
     nextBtn?.classList.toggle("is-hidden", currentIndex === provenanceEvents.length - 1);
 
-    const ev = provenanceEvents[idx];
+    const ev = provenanceEvents[eventIndex];
+
     currentEventData = ev;
 
     if (eventTitleEl) eventTitleEl.textContent = ev.title || "";
@@ -177,7 +189,7 @@ async function initProvenance(json) {
       }
     }
 
-    window.highlightItemsForStory(idx);
+    window.highlightItemsForStory(eventIndex);
     drawNetworkForEvent(ev);
   }
 

@@ -200,14 +200,32 @@ function findAllOccurrences(haystack, needle){
 
       return buildStyledHtml(d.fullText, greenTerms, relevantEvents, forceEntryBold) + " ";
     })
-    .on("click", function() {
-      const d = d3.select(this).datum();
-      const sid = entryIdToStoryId[d.id];
-      if (sid === undefined || sid === null) return;
-      window.__provSelection = { mode: "entry", entryId: d.id, storyId: sid };
-      eventHandlerCallback(sid);
-      if (typeof window.highlightSelection === "function") window.highlightSelection(window.__provSelection);
-    });
+    .on("click", function(event) {
+  event.stopPropagation();
+
+  const d = d3.select(this).datum();
+  const sid = entryIdToStoryId[d.id];
+  if (sid === undefined || sid === null) return;
+
+  const selection = {
+    mode: "entry",
+    entryId: d.id,
+    storyId: sid,
+  };
+
+  // Keep the intended provenance-entry selection before opening the modal.
+  window.__provSelection = selection;
+
+  // Open the corresponding story/event panel.
+  eventHandlerCallback(sid);
+
+  // Restore the provenance-entry selection because opening the panel may update global selection state.
+  window.__provSelection = selection;
+
+  if (typeof window.highlightSelection === "function") {
+    window.highlightSelection(selection);
+  }
+});
 
   // --- Source line ------------------------------------------------------------
   const sources = normalizeSources(
@@ -296,17 +314,30 @@ function findAllOccurrences(haystack, needle){
     event.stopPropagation();
   });
 
-  provenanceContainer.on("click.delegated", function(event){
-    const node = event.target.closest("span.provenance-entry");
-    if (!node || !provenanceContainer.node().contains(node)) return;
-    const sidAttr = node.getAttribute("data-story-id");
-    const eidAttr = node.getAttribute("data-entry-id");
-    if (!sidAttr) return; 
-    const sid = isNaN(+sidAttr) ? sidAttr : +sidAttr;
-    window.__provSelection = { mode: "entry", storyId: sid, entryId: eidAttr };
-    if (typeof window.highlightSelection === "function") window.highlightSelection(window.__provSelection);
-    event.stopPropagation();
-  });
+provenanceContainer.on("click.delegated", function(event) {
+  const node = event.target.closest("span.provenance-entry");
+  if (!node || !provenanceContainer.node().contains(node)) return;
+
+  const sidAttr = node.getAttribute("data-story-id");
+  const eidAttr = node.getAttribute("data-entry-id");
+  if (!sidAttr) return;
+
+  const sid = isNaN(+sidAttr) ? sidAttr : +sidAttr;
+
+  const selection = {
+    mode: "entry",
+    storyId: sid,
+    entryId: eidAttr,
+  };
+
+  window.__provSelection = selection;
+
+  if (typeof window.highlightSelection === "function") {
+    window.highlightSelection(selection);
+  }
+
+  event.stopPropagation();
+});
 
   // --- Auto height ------------------------------------------------------------
   (function setupAutoHeight() {

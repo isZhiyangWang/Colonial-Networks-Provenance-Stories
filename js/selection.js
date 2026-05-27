@@ -185,16 +185,26 @@ window.__provSelection = null;
     }
   };
 
-  window.highlightItemsForStory = function(storyId) {
-    if (!window.__provSelection || window.__provSelection.mode === "story" || window.__provSelection.storyId !== storyId) {
-      window.__provSelection = { mode: "story", storyId };
-    } else {
-      window.__provSelection.storyId = storyId;
-    }
-    if (typeof window.highlightSelection === "function") {
-      window.highlightSelection(window.__provSelection);
-    }
-  };
+window.highlightItemsForStory = function(storyId) {
+  const currentSelection = window.__provSelection;
+  const sameStory =
+    currentSelection &&
+    currentSelection.storyId !== undefined &&
+    currentSelection.storyId !== null &&
+    String(currentSelection.storyId) === String(storyId);
+
+  // Preserve entry/timeline selections when they refer to the same story.
+  // This keeps Provenance text -> Timeline linking from being overwritten as a generic story click.
+  if (!currentSelection || currentSelection.mode === "story" || !sameStory) {
+    window.__provSelection = { mode: "story", storyId };
+  } else {
+    window.__provSelection.storyId = storyId;
+  }
+
+  if (typeof window.highlightSelection === "function") {
+    window.highlightSelection(window.__provSelection);
+  }
+};
 
   function clearFocusUI(){ hidePopover(); document.body.classList.remove("has-cohort-focus"); }
   document.addEventListener("keydown", (e)=>{ if (e.key === "Escape") clearFocusUI(); });

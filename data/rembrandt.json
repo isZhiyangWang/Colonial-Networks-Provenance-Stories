@@ -186,8 +186,8 @@
       {
         "source": "Comte de Vaudreuil",
         "target": "Louis XVI",
-        "relationship": "served as a royal officer",
-        "offset": 40
+        "relationship": "courtier",
+        "labelOffset": -20
       },
       {
         "source": "Comte de Vaudreuil",

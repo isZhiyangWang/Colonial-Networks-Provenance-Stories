@@ -151,7 +151,7 @@
         {
           "source": "Comte de Vaudreuil",
           "target": "Jean-Baptiste-Pierre Le Brun",
-          "label": "bought by"
+          "label": "dealer"
         }
       ],
       "changedLocation": false,
@@ -197,7 +197,7 @@
         "source": "Pierre Crozat",
         "target": "Jean-Antoine Watteau",
         "relationship": "patron of",
-        "offset": 30
+        "labelOffset": 30
       },
       {
         "source": "Claude Glucq",
@@ -217,7 +217,7 @@
       {
         "source": "Comte de Vaudreuil",
         "target": "Jean-Baptiste-Pierre Le Brun",
-        "relationship": "commercial associate"
+        "relationship": "dealer"
       }
     ]
   },
