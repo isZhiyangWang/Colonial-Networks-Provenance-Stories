@@ -23,11 +23,12 @@
     const sourceSuffix = s(imgData?.sourceSuffix);
 
     if (work) {
-    const cite = document.createElement("cite");
-    cite.className = "kf-caption-title";
-    cite.textContent = work;
-    cap.appendChild(cite);
-  }
+      const cite = document.createElement("cite");
+      cite.className = "kf-caption-title";
+      cite.textContent = work;
+      cap.appendChild(cite);
+    }
+
     if (sourcePrefix) cap.appendChild(document.createTextNode(sourcePrefix));
 
     if (sourceName) {
@@ -87,8 +88,10 @@
       const img = document.createElement("img");
       img.src = s(imgData?.src);
       img.alt = s(imgData?.work);
-      media.appendChild(img);
+      img.loading = "lazy";
+      img.decoding = "async";
 
+      media.appendChild(img);
       figure.appendChild(media);
       figure.appendChild(buildCaption(imgData));
 
