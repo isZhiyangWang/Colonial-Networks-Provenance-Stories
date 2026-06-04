@@ -2,6 +2,7 @@ import { $, setText } from "./utils.js";
 
 function getColorForType(t = "") {
   switch (t.toLowerCase()) {
+    case "museum": return "#ffff00";
     case "greenperson": return "#008000";
     default: return "#636363ff";
   }

@@ -17,6 +17,7 @@
 
   --wrap-max: 1050px;
   --wrap-vw: 86vw;
+  --text-max: 720px;
 
   --font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
@@ -114,6 +115,11 @@ body.landing-page {
   box-shadow: none;
 }
 
+.landing-hero-inner {
+  width: min(var(--text-max), 100%);
+  margin: 0 auto;
+}
+
 .landing-hero .intro-text,
 .landing-hero .intro-text-bold {
   margin: 0.9rem 0;
@@ -157,7 +163,7 @@ body.landing-page {
   .text-block,
   .page-copy
 ) {
-  max-width: 700px;
+  max-width: var(--text-max);
   margin-left: auto;
   margin-right: auto;
   line-height: 1.36;
@@ -182,7 +188,7 @@ body.landing-page {
 }
 
 .landing-main :is(h1, h2, h3) {
-  max-width: 700px;
+  max-width: var(--text-max);
   margin-left: auto;
   margin-right: auto;
 }

@@ -1,11 +1,7 @@
 function getColorForType(t = "") {
   switch (t.toLowerCase()) {
-    case "place":
-      return "#ffa500";
     case "museum":
       return "#ffff00";
-    case "institution":
-      return "#800080";
     case "greenperson":
       return "#008000";
     default:

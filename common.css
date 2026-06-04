@@ -17,6 +17,7 @@
 
   --wrap-max: 1050px;
   --wrap-vw: 86vw;
+  --text-max: 720px;
 
   --font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
@@ -102,7 +103,7 @@ a{
 
 /* Layout */
 .page-wrap{
-  width: min(var(--wrap-max), var(--wrap-vw));
+  width: min(var(--text-max), var(--wrap-vw));
   margin: 0 auto;
   padding: 28px 0 60px;
 }
@@ -110,6 +111,12 @@ a{
 /* Key Figures page uses a wider editorial canvas */
 .key-figures .page-wrap{
   width: min(1500px, 94vw);
+}
+
+.key-figures .page-wrap > :is(h1, p){
+  max-width: var(--text-max);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Prevent awkward automatic hyphenation on Key Figures page */

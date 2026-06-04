@@ -877,6 +877,7 @@ header {
   border-radius: 6px;
   padding: 1.5rem;
   height: 600px;
+  display: flex;
   flex-direction: column;
 }
 
@@ -886,10 +887,10 @@ header {
 }
 
 .placeholder-content {
-  flex-grow: 1;
+  flex: 1 1 auto;
   background-color: #f0f0f0;
   border-radius: 4px;
-  height: 85%;
+  min-height: 0;
 
   display: flex;
   align-items: center;
@@ -897,6 +898,51 @@ header {
 
   color: #888;
   font-style: italic;
+}
+
+.network-footer {
+  margin-top: 0.75rem;
+}
+
+.network-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.85rem;
+  align-items: center;
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.network-legend-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.network-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 50%;
+}
+
+.legend-swatch--key {
+  background: #008000;
+}
+
+.legend-swatch--museum {
+  background: #ffff00;
+}
+
+.legend-swatch--other {
+  background: #636363;
 }
 
 /* --- Timeline / provenance ------------------------------------ */

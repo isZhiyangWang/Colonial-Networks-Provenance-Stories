@@ -210,11 +210,6 @@
         "relationship": "connected in collector circle"
       },
       {
-        "source": "Jean de Jullienne",
-        "target": "Comte de Vaudreuil",
-        "relationship": "connected in collector circle"
-      },
-      {
         "source": "Comte de Vaudreuil",
         "target": "Jean-Baptiste-Pierre Le Brun",
         "relationship": "dealer"
