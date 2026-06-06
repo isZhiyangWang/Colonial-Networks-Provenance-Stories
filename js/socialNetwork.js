@@ -194,7 +194,8 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
     .append("circle")
     .attr("r", (d) => d.radius)
     .attr("fill", (d) => getColorForType(d.type))
-    .attr("stroke", "#fff")
+    .attr("stroke", "#4f4f4f")
+    .attr("stroke-opacity", 0.65)
     .attr("stroke-width", 1.5);
 
   const nodeLabel = zoomContainer

@@ -86,7 +86,7 @@ function renderLocalNetwork(svg, w, h, ev) {
     .attr("width", r * 2).attr("height", r * 2)
     .attr("rx", 2).attr("ry", 2)
     .attr("fill", (d) => getColorForType(d.type))
-    .attr("stroke", "#fff").attr("stroke-width", 1.5);
+    .attr("stroke", "#4f4f4f").attr("stroke-opacity", 0.65).attr("stroke-width", 1.5);
 
   nodeGroup.append("text").attr("class", "local-node-label")
     .style("font-size", "12px").style("fill", "#333")
@@ -194,7 +194,7 @@ export function openEnlargedEventNetwork(ev) {
     .attr("width", rr * 2).attr("height", rr * 2)
     .attr("rx", 2).attr("ry", 2)
     .attr("fill", (d) => getColorForType(d.type))
-    .attr("stroke", "#fff").attr("stroke-width", 2);
+    .attr("stroke", "#4f4f4f").attr("stroke-opacity", 0.65).attr("stroke-width", 1.5);
 
   nodeGroup.append("text").attr("class", "enlarged-node-label")
     .style("font-size", "12px").style("fill", "#333").style("pointer-events", "none")
