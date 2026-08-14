@@ -34,5 +34,14 @@
     "museum": "Metropolitan Museum of Art",
     "image_url": "assets/vernet-thumbnail.png",
     "excerpt": "Painted in 1632, famously relocated to Paris in the 18th century."
+  },
+  {
+    "id": "claude",
+    "artist": "Claude",
+    "title": "A Seaport",
+    "date": "1644",
+    "museum": "National Gallery (London)",
+    "image_url": "assets/claude.png",
+    "excerpt": "An imaginary seaport that traveled from Rome to Paris and eventually to London."
   }
 ]

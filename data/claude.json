@@ -1,0 +1,294 @@
+{
+  "artworkData": {
+    "artistName": "Claude",
+    "nationality": "French",
+    "creationYear": "1604/5-1682",
+    "artworkName": "A Seaport",
+    "artworkYear": "1644",
+    "medium": "Oil on canvas",
+    "intro": "Claude Gellée, known as Claude Lorrain or simply Claude, was the leading marine painter of his day, known for his luminous port scenes and coastal landscapes. This painting of an imaginary seaport traveled from Rome to Paris and eventually to London over the two centuries following its creation. Along the way, it passed through the collections of many powerful patrons whose wealth and influence were closely tied to shipping and transatlantic trade. These collectors appreciated not only Claude’s rose-colored vision of maritime exchange but also the way he elevated commercial activity via allusions to antiquity.",
+    "museumUrl": "https://www.nationalgallery.org.uk/paintings/claude-a-seaport",
+    "museumName": "National Gallery (London)",
+    "imageUrl": "assets/claude.png"
+  },
+  "placeData": {
+    "Rome": {
+      "name": "Rome",
+      "coords": [41.9028, 12.4964]
+    },
+    "Paris": {
+      "name": "Paris",
+      "coords": [48.8566, 2.3522]
+    },
+    "London": {
+      "name": "London",
+      "coords": [51.5074, -0.1278]
+    }
+  },
+  "provenanceEvents": [
+    {
+      "id": 0,
+      "title": "1. Painter to Bankers, Popes, and Kings: Claude in Rome",
+      "from": "Rome",
+      "to": "Rome",
+      "eventType": "commissioned by",
+      "text": "<p>Claude is considered a French artist because of his origins, but he spent nearly his entire career in Rome, creating artworks for extremely powerful and wealthy patrons. Among them were French agents residing in the Eternal City, members of the Medici family and the papacy, and Spain’s King Philip IV, all of whom were involved one way or another in shipping. This painting may have been commissioned by Angelo Giori (1586-1662), an Italian chamberlain in the papal household, although the ship’s flags, as well as the fleurs-de-lis on the coat of arms above the building’s clock, also suggest a French connection.</p><p>Claude’s port scenes often combined references to antiquity—in this case, the Arch of Titus, which depicts a triumphal procession of enslaved captives—with modern-day buildings and vessels, flattering elite clients who likened their own maritime activities to the imperial conquests of the past. The artist further bathed his paintings in a warm, glowing light that romanticized maritime transport, whether for commercial, colonial, or religious gain.</p>",
+      "participants": [
+        { "name": "Claude", "type": "person" },
+        { "name": "Angelo Giori", "type": "person" }
+      ],
+      "networkPairs": [
+        { "source": "Claude", "target": "Angelo Giori", "label": "commissioned by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>The Arch of Titus, Rome, c. 81 CE. Image source: Wikimedia Commons.</p>",
+      "imageAlt": "The Arch of Titus, Rome, c. 81 CE."
+    },
+    {
+      "id": 1,
+      "title": "2. A Collection built on a Colonial Bubble: The Comte de Lassay",
+      "from": "Rome",
+      "to": "Paris",
+      "eventType": "acquired by",
+      "text": "<p>In the first part of the eighteenth century, <em>A Seaport</em> entered the collection of Leon de Madaillan de Lesparre, comte de Lassay (1683-1750). The painting may have belonged first to his father, the marquis de Lassay (1652-1738), a French military officer and salon <em>habitué</em> who nurtured his son’s extravagant taste in art and architecture. The comte was the lover of Louise-Françoise, duchesse de Bourbon (a legitimized daughter of Louis XIV), who appears with her sister and a crudely caricatured enslaved attendant in a <a href=\"https://commons.wikimedia.org/wiki/File:The_sisters_Mademoiselle_de_Blois_and_Mademoiselle_de_Nantes_by_Philippe_Vignon.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">portrait</a> by Philippe Vignon.</p><p>Lassay and the duchesse were major players in the Mississippi Bubble, a financial speculation scheme masterminded by John Law, which promised to turn investors into millionaires overnight by shipping enslaved African laborers to French colonial Louisiana to grow tobacco. Through their royal connections, the two lovers made huge profits and got out early, before the bubble burst in 1720 and many people were ruined.</p><p>The comte used his windfall to build the lavish Hôtel de Lassy—currently the home of the President of France’s National Assembly—and expand his art collection, which became one of the finest in the kingdom. In addition to Claude’s <em>Seaport</em>, he owned works by Van Dyck, Rembrandt, Murillo, and other artists that are now in major museums like the National Gallery in London, the Getty, and the Louvre.</p>",
+      "participants": [
+        { "name": "Angelo Giori", "type": "person" },
+        { "name": "Marquis de Lassay", "type": "person" },
+        { "name": "Comte de Lassay", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Angelo Giori", "target": "Marquis de Lassay", "label": "acquired by" },
+        { "source": "Marquis de Lassay", "target": "Comte de Lassay", "label": "acquired by" }
+      ],
+      "changedLocation": true,
+      "imageSource": "<p>Hôtel de Lassay (now the official residence of the Président of the Assemblée nationale), Paris. <span style=\"color:#4a4e57\">Image source: Wikimedia Commons.</span></p>",
+      "imageAlt": "Hôtel de Lassay, Paris."
+    },
+    {
+      "id": 2,
+      "title": "3. Islands, Plantations, and Art Collections: The Choiseul-Praslins",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "inherited by",
+      "text": "<p>By the 1770s, <em>A Seaport</em> was acquired by another pair of father-and-son collectors: César-Gabriel de Choiseul, duc de Praslin (1712-85), and his son César-Renaud, the duc de Choiseul-Praslin (1735-91). They were members of the extensive Choiseul family, an aristocratic dynasty of colonial administrators, plantation owners, and art patrons. César-Gabriel served as France’s foreign and navy minister, hugely influential roles that he traded off with his cousin, the duc de Choiseul, during the 1760s, when France had lost much of its colonial empire owing to the Seven Years’ War (1756-63). He may have admired Claude’s painting for its idealized vision of maritime trade at a moment when his administration was aiming to restore France as a major naval and commercial power.</p><p>In 1767, King Louis XV granted César-Gabriel ownership of three timber-rich islands off the coast of Saint-Domingue, and he also acquired a large sugar plantation near the southern town of Les Cayes. He and his son, who inherited these properties and their enslaved labor force, likely used the profits to enrich their art collections and embellish their Parisian mansions—one of which was known as the Hôtel de Belle Isle (which means “beautiful island”).</p>",
+      "participants": [
+        { "name": "Louis-Jean Gaignat", "type": "person" },
+        { "name": "Duc de Praslin", "type": "greenperson" },
+        { "name": "Duc de Choiseul-Praslin", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Louis-Jean Gaignat", "target": "Duc de Praslin", "label": "acquired by" },
+        { "source": "Duc de Praslin", "target": "Duc de Choiseul-Praslin", "label": "inherited by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Detail of Choiseul-Praslins’ plantation from René Phelipeau, <em>Plan of the plain at the bottom of Île-à-vache on the island of Saint-Domingue</em>, 1786. Etching and engraving, 100 x 110 cm. Image source: gallica.bnf.fr / Bibliothèque nationale de France.</p>",
+      "imageAlt": "Detail of Choiseul-Praslins’ plantation from René Phelipeau’s 1786 plan."
+    },
+    {
+      "id": 3,
+      "title": "4. Maritime Insurance and Museums: Angerstein’s National Gallery",
+      "from": "Paris",
+      "to": "London",
+      "eventType": "moved to",
+      "text": "<p>During the French Revolution, Claude’s <em>Seaport</em> was seized as emigré property by the government in 1794. Not long afterwards, it made its way to London and was bought for a princely sum by John Julius Angerstein (1735-1823), an art collector whose ties to slavery have been explored by the <a href=\"https://www.nationalgallery.org.uk/people/john-julius-angerstein\" target=\"_blank\" rel=\"noopener noreferrer\">National Gallery and the Legacies of British Slave Ownership project</a>. A prominent member of Lloyd’s of London, Angerstein made a fortune brokering and underwriting maritime insurance, an industry that played a key role in expanding the transatlantic slave trade. Some of the vessels he insured were slave ships, and he was also a trustee of plantations and enslaved people in the British colonies of Antigua and Grenada. His second wife, Eliza Lucas, brought a significant amount of money from her first husband’s sugar plantation in St. Kitts into their marriage.</p><p>Angerstein used profits from these entities to assemble one of Britain’s greatest art collections, and after his death in 1823, thirty-eight of the paintings he owned—by Claude, Raphael, Rubens, and others—were acquired by the government to form the foundation of a new national museum. The National Gallery opened a year later in Angerstein’s former townhouse in London.</p>",
+      "participants": [
+        { "name": "Herries", "type": "person" },
+        { "name": "French State", "type": "institution" },
+        { "name": "Delahante", "type": "person" },
+        { "name": "Philippe Panné", "type": "person" },
+        { "name": "John Julius Angerstein", "type": "greenperson" },
+        { "name": "National Gallery, London", "type": "museum" }
+      ],
+      "networkPairs": [
+        { "source": "Herries", "target": "French State", "label": "seized by" },
+        { "source": "French State", "target": "Delahante", "label": "imported by" },
+        { "source": "Delahante", "target": "Philippe Panné", "label": "acquired by" },
+        { "source": "Philippe Panné", "target": "John Julius Angerstein", "label": "bought by" },
+        { "source": "John Julius Angerstein", "target": "National Gallery, London", "label": "accessioned by" }
+      ],
+      "changedLocation": true,
+      "imageSource": "<p>Frederick Mackenzie, <em>The National Gallery when at JJ Angerstein’s House, Pall Mall</em>, c. 1824-34. Watercolor, 69 x 89.5 cm. The Victoria & Albert Museum, London.</p>",
+      "imageAlt": "Frederick Mackenzie, The National Gallery when at JJ Angerstein’s House, Pall Mall, c. 1824-34."
+    }
+  ],
+  "socialNetwork": {
+    "nodes": [
+      { "id": "Claude", "type": "person" },
+      { "id": "Angelo Giori", "type": "person" },
+      { "id": "Marquis de Lassay", "type": "person" },
+      { "id": "Comte de Lassay", "type": "greenperson" },
+      { "id": "Louis-Jean Gaignat", "type": "person" },
+      { "id": "Duc de Praslin", "type": "greenperson" },
+      { "id": "Duc de Choiseul-Praslin", "type": "greenperson" },
+      { "id": "Herries", "type": "person" },
+      { "id": "French State", "type": "institution" },
+      { "id": "Delahante", "type": "person" },
+      { "id": "Philippe Panné", "type": "person" },
+      { "id": "John Julius Angerstein", "type": "greenperson" },
+      { "id": "National Gallery, London", "type": "museum" }
+    ],
+    "edges": [
+      { "source": "Claude", "target": "Angelo Giori", "relationship": "commissioned by" },
+      { "source": "Angelo Giori", "target": "Marquis de Lassay", "relationship": "acquired by" },
+      { "source": "Marquis de Lassay", "target": "Comte de Lassay", "relationship": "acquired by" },
+      { "source": "Louis-Jean Gaignat", "target": "Duc de Praslin", "relationship": "acquired by" },
+      { "source": "Duc de Praslin", "target": "Duc de Choiseul-Praslin", "relationship": "inherited by" },
+      { "source": "Herries", "target": "French State", "relationship": "seized by" },
+      { "source": "French State", "target": "Delahante", "relationship": "imported by" },
+      { "source": "Delahante", "target": "Philippe Panné", "relationship": "acquired by" },
+      { "source": "Philippe Panné", "target": "John Julius Angerstein", "relationship": "bought by" },
+      { "source": "John Julius Angerstein", "target": "National Gallery, London", "relationship": "accessioned by" }
+    ]
+  },
+  "provenanceTimeline": {
+    "entries": [
+      {
+        "id": "prov-1644",
+        "owner": "Angelo Giori",
+        "storyId": 0,
+        "location": "Rome",
+        "boldText": "Possibly painted for Angelo Giori (1586–1662), chamberlain to the papal household",
+        "fullText": "Possibly painted for Angelo Giori (1586–1662), chamberlain to the papal household;"
+      },
+      {
+        "id": "prov-1738",
+        "owner": "Marquis de Lassay; Léon de Madaillan, comte de Lassay",
+        "storyId": 1,
+        "greenNames": ["Léon de Madaillan, comte de Lassay"],
+        "location": "Paris",
+        "boldText": "in the collection of the marquis de Lassay, possibly Armand de Madaillan de Lesparre (1652–1738) or his only son, Léon de Madaillan, comte de Lassay (1683–1750)",
+        "fullText": "in the collection of the marquis de Lassay, possibly Armand de Madaillan de Lesparre (1652–1738) or his only son, Léon de Madaillan, comte de Lassay (1683–1750);"
+      },
+      {
+        "id": "prov-1757",
+        "owner": "Louis-Jean Gaignat",
+        "location": "Paris",
+        "fullText": "in the collection of Louis-Jean Gaignat (1697?–1768), Receveur des Consignations, possibly by 1757 or 1762, but certainly in his sale, Paris, Pierre Rémy, 14ff. February 1769 (lot 53, 5010 livres to Rémy for Aubert?);"
+      },
+      {
+        "id": "prov-1777",
+        "owner": "César-Gabriel de Choiseul, duc de Praslin",
+        "storyId": 2,
+        "greenNames": ["César-Gabriel de Choiseul, duc de Praslin"],
+        "location": "Paris",
+        "boldText": "in the collection of César-Gabriel de Choiseul, duc de Praslin (1712–85), by 1777",
+        "fullText": "in the collection of César-Gabriel de Choiseul, duc de Praslin (1712–85), by 1777;"
+      },
+      {
+        "id": "prov-1785",
+        "owner": "Louis-César-Renaud, duc de Choiseul-Praslin",
+        "storyId": 2,
+        "greenNames": ["Louis-César-Renaud, duc de Choiseul-Praslin"],
+        "location": "Paris",
+        "boldText": "posthumous sale of Louis-César-Renaud, duc de Choiseul-Praslin, Paris, Paillet, 18–25 February 1793 (lot 141, 15001 livres to Dulac)",
+        "fullText": "posthumous sale of Louis-César-Renaud, duc de Choiseul-Praslin, Paris, Paillet, 18–25 February 1793 (lot 141, 15001 livres to Dulac);"
+      },
+      {
+        "id": "prov-1793",
+        "owner": "Herries",
+        "location": "Paris",
+        "fullText": "possibly in the collection of Herries, an English banker living in the rue de Bac, Paris, and"
+      },
+      {
+        "id": "prov-1794",
+        "owner": "French State",
+        "storyId": 3,
+        "location": "Paris",
+        "boldText": "seized as émigré property 2 August 1794",
+        "fullText": "seized as émigré property 2 August 1794;"
+      },
+      {
+        "id": "prov-1805-delahante",
+        "owner": "Delahante",
+        "location": "London",
+        "fullText": "according to Buchanan, imported by Delahante;"
+      },
+      {
+        "id": "prov-1805-panne",
+        "owner": "Philippe Panné",
+        "location": "London",
+        "fullText": "with the dealer Philippe Panné, George Street, Hanover Square, by February 1805 when offered (with NG 2) by Panné for 6000 guineas;"
+      },
+      {
+        "id": "prov-1805-angerstein",
+        "owner": "John Julius Angerstein",
+        "storyId": 3,
+        "greenNames": ["John Julius Angerstein"],
+        "location": "London",
+        "boldText": "bought by John Julius Angerstein (1735–1823) together with NG 2 in March 1805 for £4500",
+        "fullText": "bought by John Julius Angerstein (1735–1823) together with NG 2 in March 1805 for £4500;"
+      },
+      {
+        "id": "prov-1824",
+        "owner": "National Gallery, London",
+        "storyId": 3,
+        "location": "London",
+        "boldText": "bought with other paintings from Angerstein’s collection from his executors in 1824",
+        "fullText": "bought with other paintings from Angerstein’s collection from his executors in 1824."
+      }
+    ],
+    "events": [
+      {
+        "date": "1644",
+        "event": "Painted in Rome, possibly for Angelo Giori",
+        "storyId": 0,
+        "entryId": "prov-1644"
+      },
+      {
+        "date": "1738",
+        "event": "Armand de Madaillan de Lesparre, marquis de Lassay, or his son, Léon de Madaillan, comte de Lassay, by 1738 or 1750",
+        "storyId": 1,
+        "entryId": "prov-1738"
+      },
+      {
+        "date": "1757",
+        "event": "Louis-Jean Gaignat, Receveur des Consignations, possibly by 1757",
+        "entryId": "prov-1757"
+      },
+      {
+        "date": "1777",
+        "event": "César-Gabriel de Choiseul, duc de Praslin, by 1777",
+        "storyId": 2,
+        "entryId": "prov-1777"
+      },
+      {
+        "date": "1785",
+        "event": "Louis-César-Renaud, duc de Choiseul-Praslin",
+        "storyId": 2,
+        "entryId": "prov-1785"
+      },
+      {
+        "date": "1793",
+        "event": "Possibly Herries, an English banker living in Paris",
+        "entryId": "prov-1793"
+      },
+      {
+        "date": "1794",
+        "event": "Seized by French state as émigré property",
+        "storyId": 3,
+        "entryId": "prov-1794"
+      },
+      {
+        "date": "1805",
+        "event": "Possibly imported to Britain by Delahante; with Philippe Panné by 1805",
+        "entryId": "prov-1805-delahante"
+      },
+      {
+        "date": "1805",
+        "event": "John Julius Angerstein",
+        "storyId": 3,
+        "entryId": "prov-1805-angerstein"
+      },
+      {
+        "date": "1824",
+        "event": "National Gallery, London",
+        "storyId": 3,
+        "entryId": "prov-1824"
+      }
+    ],
+    "source": {
+      "url": "https://www.nationalgallery.org.uk/paintings/claude-a-seaport",
+      "text": "National Gallery (London)"
+    }
+  }
+}

@@ -74,7 +74,7 @@ function findAllOccurrences(haystack, needle){
 }
 
 
-  function buildStyledHtml(fullText, greenTerms, eventsToBold, forceEntryBold) {
+  function buildStyledHtml(fullText, greenTerms, eventsToBold) {
     const text = String(fullText || "");
     const ranges = [];
 
@@ -121,7 +121,7 @@ function findAllOccurrences(haystack, needle){
       const classes=["prov-chunk"];
       if (styles.event) classes.push("prov-event-mention");
       if (styles.green) classes.push("colonial-figure");
-      return `<span class="${classes.join(" ")}${forceEntryBold ? " prov-entry-bold" : ""}">${chunk}</span>`;
+      return `<span class="${classes.join(" ")}">${chunk}</span>`;
     }).join("");
   }
 
@@ -148,6 +148,12 @@ function findAllOccurrences(haystack, needle){
     const sids = storyIdsOf(ev);
     if (ev && ev.entryId && sids.length) {
       if (entryIdToStoryId[ev.entryId] === undefined) entryIdToStoryId[ev.entryId] = sids[0];
+    }
+  });
+  entries.forEach((entry) => {
+    const explicitStoryId = entry.storyId ?? (Array.isArray(entry.storyIds) ? entry.storyIds[0] : null);
+    if (explicitStoryId != null && entryIdToStoryId[entry.id] === undefined) {
+      entryIdToStoryId[entry.id] = explicitStoryId;
     }
   });
 
@@ -192,13 +198,26 @@ function findAllOccurrences(haystack, needle){
     .html((d) => {
       const isGreenColor = (d.figure && String(d.figure).toLowerCase() === "green");
 
-      const greenTerms = isGreenColor ? normalizeNames(d.owner) : [];
+      const greenTerms = normalizeNames(d.greenNames ?? (isGreenColor ? d.owner : []));
 
       const sid = entryIdToStoryId[d.id];
       const forceEntryBold = !!(sid !== undefined && sid !== null);
       const relevantEvents = forceEntryBold ? (storyIdToEventsMap[sid] || []) : [];
 
-      return buildStyledHtml(d.fullText, greenTerms, relevantEvents, forceEntryBold) + " ";
+      const styledText = buildStyledHtml(d.fullText, greenTerms, relevantEvents);
+      if (!forceEntryBold) return `${styledText} `;
+
+      if (d.boldText && d.fullText.startsWith(d.boldText)) {
+        const styledBoldText = buildStyledHtml(d.boldText, greenTerms, relevantEvents);
+        const styledRemainder = buildStyledHtml(
+          d.fullText.slice(d.boldText.length),
+          greenTerms,
+          relevantEvents
+        );
+        return `<strong class="prov-entry-bold">${styledBoldText}</strong>${styledRemainder} `;
+      }
+
+      return `<strong class="prov-entry-bold">${styledText}</strong> `;
     })
     .on("click", function(event) {
   event.stopPropagation();

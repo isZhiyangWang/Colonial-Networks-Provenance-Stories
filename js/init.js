@@ -24,6 +24,33 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   $("lightbox-close")?.addEventListener("click", closeImageLightbox);
+  $("social-network-close")?.addEventListener("click", () => {
+    $("social-network-overlay")?.classList.add("hidden");
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+
+    if (!$("event-network-lightbox")?.classList.contains("hidden")) {
+      $("event-network-close")?.click();
+      return;
+    }
+
+    if (!$("image-lightbox")?.classList.contains("hidden")) {
+      closeImageLightbox();
+      return;
+    }
+
+    if (!$("social-network-overlay")?.classList.contains("hidden")) {
+      $("social-network-overlay")?.classList.add("hidden");
+      return;
+    }
+
+    if (!modal?.classList.contains("hidden")) {
+      closeBtn?.click();
+    }
+  });
+
   $("back-to-gallery")?.addEventListener("click", () => {
     window.location.href = "index.html";
   });
@@ -92,13 +119,16 @@ async function initProvenance(json) {
 
   document.title = `${artworkData.artworkName || "Artwork"} - Provenance Story`;
   setText("artist-name", artworkData.artistName);
-  setText("location-year", `${artworkData.location}, ${artworkData.creationYear}`);
+  setText(
+    "nationality-year",
+    `${artworkData.nationality ?? artworkData.location ?? ""}, ${artworkData.creationYear}`
+  );
   setText("artwork-name-year", `${artworkData.artworkName} (${artworkData.artworkYear})`);
   setText("artwork-medium", artworkData.medium);
   setText("intro-text", artworkData.intro);
   setHTML(
     "current-museum",
-    `Current Museum: <a href="${artworkData.museumUrl}" target="_blank">${artworkData.museumName}</a>`
+    `Current Location: <a href="${artworkData.museumUrl}" target="_blank" rel="noopener noreferrer">${artworkData.museumName}</a>`
   );
 
   const artImg = $("artwork-image");
@@ -161,7 +191,11 @@ if (!currentSelection || currentSelection.mode === "story" || !sameStory) {
     currentEventData = ev;
 
     if (eventTitleEl) eventTitleEl.textContent = ev.title || "";
-    if (eventTextEl) eventTextEl.innerHTML = `<p>${ev.text ?? ""}</p>`;
+    if (eventTextEl) {
+      const eventMarkup = String(ev.text ?? "").trim();
+      const hasBlockMarkup = /^<(p|ul|ol|div|blockquote)\b/i.test(eventMarkup);
+      eventTextEl.innerHTML = hasBlockMarkup ? eventMarkup : `<p>${eventMarkup}</p>`;
+    }
 
     const base = getFilenameBase(artworkData.imageUrl);
     const eventImgUrl = `assets/${base}-${ev.id}.jpg`;

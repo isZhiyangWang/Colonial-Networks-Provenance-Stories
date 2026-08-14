@@ -1,13 +1,13 @@
 {
   "artworkData": {
     "artistName": "Jean-Antoine Watteau",
-    "location": "Paris",
+    "nationality": "French",
     "creationYear": "1684 - 1721",
     "artworkName": "Pleasures of the Ball",
     "artworkYear": "1717",
     "medium": "Oil on canvas",
     "intro": "Watteau’s Pleasures of the Ball depicts a group of elegantly dressed French elites dancing, making music, and enjoying each other’s company on an outdoor terrace. But the inclusion of two apparently enslaved Black figures in the picture raises the question of whose pleasure we are seeing, and at what cost.",
-    "museumUrl": "https://www.dulwichpicturegallery.org.uk/explore-the-collection/151-200/the-pleasures-of-the-ball/",
+    "museumUrl": "https://www.dulwichpicturegallery.org.uk/explore/explore-the-collection/the-pleasures-of-the-ball/",
     "museumName": "Dulwich Picture Gallery",
     "imageUrl": "assets/watteau.png"
   },
@@ -25,6 +25,13 @@
         48.7269,
         2.2833
       ]
+    },
+    "London": {
+      "name": "London",
+      "coords": [
+        51.5074,
+        -0.1278
+      ]
     }
   },
   "provenanceEvents": [
@@ -34,7 +41,7 @@
       "from": "Paris",
       "to": "Paris",
       "eventType": "painted by",
-      "text": "<p>Watteau painted the Pleasures of the Ball around 1715-17. He is best known for inventing the fête galante, a genre representing elegant elites entertaining each other in an idyllic outdoor setting. This same period coincided with the inclusion of Black figures in Watteau’s paintings and drawings, some of whom appear to have been modeled from life.<br><br>Watteau’s Pleasures is one of several fêtes galantes that includes Black figures: a young boy in the crowd and another who stands on a balcony at the far right and looks down at the dancers. He wears a turban and possibly (though it is less clear) a metal collar, which would denote his enslavement. The presence of enslaved African and Afro-descended individuals—most of whom were trafficked from France’s Caribbean colonies to serve as domestic laborers in the metropole—was increasing in Paris at this moment, and the inclusion of these Black figures makes us wonder: What was the artist’s own opinion about this practice? What does it mean that he seems to have made the boy on the balcony a surrogate spectator? How does this change our understanding of the painting and the fête galante genre as being preoccupied with pleasure? “Pleasure” at whose cost?</p>",
+      "text": "<p>Watteau painted the <a href='https://smarthistory.org/antoine-watteau-pleasures-ball/' target='_blank' rel='noopener noreferrer'>Pleasures of the Ball</a> around 1715-17. He is best known for inventing the fête galante, a genre representing elegant elites entertaining each other in an idyllic outdoor setting. This same period coincided with the inclusion of Black figures in Watteau’s paintings and drawings, some of whom appear to have been modeled from life.<br><br>Watteau’s Pleasures is one of several fêtes galantes that includes Black figures: a young boy in the crowd and another who stands on a balcony at the far right and looks down at the dancers. He wears a turban and possibly (though it is less clear) a metal collar, which would denote his enslavement. The presence of enslaved African and Afro-descended individuals—most of whom were trafficked from France’s Caribbean colonies to serve as domestic laborers in the metropole—was increasing in Paris at this moment, and the inclusion of these Black figures makes us wonder: What was the artist’s own opinion about this practice? What does it mean that he seems to have made the boy on the balcony a surrogate spectator? How does this change our understanding of the painting and the fête galante genre as being preoccupied with pleasure? “Pleasure” at whose cost?</p>",
       "participants": [
         {
           "name": "Jean-Antoine Watteau",
@@ -54,11 +61,11 @@
     },
     {
       "id": 1,
-      "title": "2. Watteau and his colonial patrons at the Hôtel Crozat",
+      "title": "2. Colonial Patronage: Watteau at the Hôtel Crozat",
       "from": "Paris",
       "to": "Paris",
       "eventType": "supported by the patronage of",
-      "text": "<p>Watteau painted the Pleasures of the Ball around the same time he was living in the Parisian hôtel of his principal patron, Pierre Crozat (1665-70). (This same hôtel on the rue Richelieu would later be the residence of the duc de Choiseul.)  <br><br>While the Black figure in Pleasures is inspired by works by Veronese and other artists Crozat collected, his presence raises the question of whether Watteau could have based the figure on a real-life enslaved model in Paris. <br><br>Pierre Crozat and his brother Antoine made their fortunes in maritime speculation, and from 1712-17 Antoine had a commercial monopoly on French Louisiana and controlled part of France’s slave trade. Despite royal restrictions, it would have been easy for the Crozats and their friends to traffic enslaved individuals into Paris, and indeed in 1716 the Crown relaxed such restrictions, acknowledging the desire among metropolitan elites for enslaved domestic servants. </p>",
+      "text": "<p>Watteau painted the Pleasures of the Ball around the same time he was living in the Parisian hôtel of his principal patron, Pierre Crozat (1665-70). This same hôtel on the rue Richelieu would later be the residence of the duc de Choiseul, another colonial collector.<br><br>While the Black figure in Pleasures is inspired by works by Veronese and other artists Crozat collected, his presence raises the question of whether Watteau could have based the figure on a real-life enslaved model in Paris.<br><br>Pierre Crozat and his brother Antoine made their fortunes in maritime speculation, and from 1712-17 Antoine had a commercial monopoly on French Louisiana and controlled part of France’s slave trade. Despite royal restrictions, it would have been easy for the Crozats and their friends to traffic enslaved individuals into Paris, and indeed in 1716 the Crown relaxed such restrictions, acknowledging the desire among metropolitan elites for enslaved domestic servants.</p>",
       "participants": [
         {
           "name": "Jean-Antoine Watteau",
@@ -86,7 +93,7 @@
     },
     {
       "id": 2,
-      "title": "3. Dyeing for Watteau: the Glucq family",
+      "title": "3. Textiles and Colonial Commodities: The Glucq Family",
       "from": "Paris",
       "to": "Massy",
       "eventType": "bought by",
@@ -118,11 +125,11 @@
     },
     {
       "id": 3,
-      "title": "4. The Afterlife of Pleasures: Julienne, Vaudreuil, and Le Brun",
+      "title": "4. Collectors, Dealers, and Colonial Networks: Julienne, Vaudreuil, and Le Brun",
       "from": "Paris",
       "to": "Paris",
       "eventType": "bought by",
-      "text": "<p>Pleasures of the Ball was later owned by Glucq’s cousin Jean de Jullienne (1686-1766), another fervent Watteau patron. His uncle had partnered with Glucq’s father to establish a business that later became the Gobelins textile manufactory. Jullienne, who followed his family’s tradition in investing in colonial trade (specifically, as Charlotte Guichard points out, in indigo to dye textiles), took over managing the Gobelins in 1729, and he built a residence onsite that housed his extensive art collection. Another cousin named Montullé to whom Julienne bequeathed the collection oversaw the creation of a beautiful album depicting rooms in which these artwokrs were displayed, although it doesn’t specify where Pleasures was hung. <br><br>In 1783, the comte de Vaudreuil bought Watteau’s painting at Montullé’s posthumous sale, but he flipped it a few years later. Soon after it passed through the hands of the dealer Jean-Baptiste-Pierre Le Brun, who bought and sold scores of artworks for colonial clients, many of whom were portrayed by his wife Elisabeth Vigée Le Brun.</p>",
+      "text": "<p>Pleasures of the Ball was later owned by Glucq’s cousin Jean de Jullienne (1686-1766), another fervent Watteau patron. His uncle had partnered with Glucq’s father to establish a business that later became the Gobelins textile manufactory. Jullienne, who followed his family’s tradition in investing in colonial trade (specifically, <a href='https://histoire.ens.psl.eu/charlotte-guichard-colonial-watteau-empire-commerce-and-galanterie-in-regency.html' target='_blank' rel='noopener noreferrer'>as Charlotte Guichard points out</a>, in indigo to dye textiles), took over managing the Gobelins in 1729, and he built a residence onsite that housed his extensive art collection. Another cousin named Montullé to whom Julienne bequeathed the collection oversaw the creation of a beautiful album depicting rooms in which these artwokrs were displayed, although it doesn’t specify where Pleasures was hung.<br><br>In 1783, the comte de Vaudreuil bought Watteau’s painting at Montullé’s posthumous sale, but he flipped it a few years later. Soon after it passed through the hands of the dealer Jean-Baptiste-Pierre Le Brun, who bought and sold scores of artworks for colonial clients, many of whom were portrayed by his wife Elisabeth Vigée Le Brun.</p>",
       "participants": [
         {
           "name": "Jean de Jullienne",
@@ -157,6 +164,52 @@
       "changedLocation": false,
       "imageSource": "<p>French School, <em>Catalogue des tableaux de Mr. de Julienne</em> (compiled by Montullé), 18th Century, detail of p. 50. Pen and black ink, gray wash, and watercolor on paper, 19.6 x 26 cm. The Morgan Library and Museum, New York City.</p>",
       "imageAlt": "<p>French School, <em>Catalogue des tableaux de Mr. de Julienne</em>, 18th Century. The Morgan Library and Museum, New York City.</p>"
+    },
+    {
+      "id": 4,
+      "title": "5. Revolutions, a Royal Collection, and a Public Gallery: Bourgeois and the Desenfans in London",
+      "from": "Paris",
+      "to": "London",
+      "eventType": "acquired by",
+      "text": "<p><em>Pleasures of the Ball</em> reached London during the upheavals of the French and Haitian Revolutions. After failing to sell in Le Brun’s Paris sale of 1791, it was acquired by Noël Desenfans, a French art dealer operating in London who worked regularly with Le Brun. Like many works that entered the London art market during these years, the painting was available because French elites were dispersing collections or moving artworks abroad in response to political and economic uncertainty.<br><br>Desenfans, his wife Margaret, and his business partner Francis Bourgeois (a landscape painter) had been commissioned by the King of Poland to assemble a grand art collection. The venture was underwritten by Margaret’s family fortune, derived from the Welsh copper industry, which produced equipment and currency for plantation owners and slave traders operating in Africa, the Caribbean, and the East Indies. When the Polish kingdom collapsed in 1795 and a royal collection was no longer required, the art-dealing trio were left with hundreds of Old Master paintings, including <em>Pleasures of the Ball</em>.<br><br>Rather than disperse the paintings, they sought a buyer for the whole collection, even offering it to the British government, but without success. After Noel's death, the collection passed to Bourgeois, who bequeathed it in 1811 to Dulwich College, along with funds to build a permanent home. The resulting Dulwich Picture Gallery—Britain's first purpose-built public art gallery—received Watteau’s painting through collecting networks shaped both by revolution and by the commercial and colonial connections that underpinned its formation.</p>",
+      "participants": [
+        {
+          "name": "Jean-Baptiste-Pierre Le Brun",
+          "type": "greenperson"
+        },
+        {
+          "name": "Noël Desenfans",
+          "type": "greenperson"
+        },
+        {
+          "name": "Francis Bourgeois",
+          "type": "greenperson"
+        },
+        {
+          "name": "Dulwich Picture Gallery",
+          "type": "museum"
+        }
+      ],
+      "networkPairs": [
+        {
+          "source": "Jean-Baptiste-Pierre Le Brun",
+          "target": "Noël Desenfans",
+          "label": "acquired by"
+        },
+        {
+          "source": "Noël Desenfans",
+          "target": "Francis Bourgeois",
+          "label": "inherited by"
+        },
+        {
+          "source": "Francis Bourgeois",
+          "target": "Dulwich Picture Gallery",
+          "label": "by bequest"
+        }
+      ],
+      "changedLocation": true,
+      "imageSource": "<p>Paul Sandby, <em>Noël Desenfans and Francis Bourgeois</em>, c. 1805. Watercolor, 14.3 x 15.3 cm. Dulwich Picture Gallery. Image source: Wikimedia Commons.</p>",
+      "imageAlt": "Paul Sandby, Noël Desenfans and Francis Bourgeois, c. 1805. Dulwich Picture Gallery."
     }
   ],
   "socialNetwork": {
@@ -222,6 +275,7 @@
         "id": "prov-0",
         "owner": "Claude Glucq",
         "figure": "green",
+        "greenNames": ["Claude Glucq"],
         "location": null,
         "details": "Bought Watteau's Enseigne de Gersaint weeks after the artist's death; owner by 1731.",
         "fullText": "Claude Glucq, Conseiller du Parlement (who had bought Watteau's Enseigne de Gersaint a few weeks after the artist's death) by 1731;"
@@ -237,6 +291,7 @@
         "id": "prov-2",
         "owner": "Jean de Jullienne",
         "figure": "green",
+        "greenNames": ["Jean de Jullienne"],
         "location": null,
         "details": "Owned before 1756.",
         "fullText": "Jean de Jullienne bef. 1756;"
@@ -252,6 +307,7 @@
         "id": "prov-4",
         "owner": "Vaudreuil",
         "figure": "green",
+        "greenNames": ["Vaudreuil"],
         "location": "Paris",
         "details": "Vaudreuil sale, Paris, 26 Nov. 1787, lot 60.",
         "fullText": "Paris, Vaudreuil sale, 26 Nov. 1787, lot 60."
@@ -274,6 +330,7 @@
         "id": "prov-6",
         "owner": "Lebrun",
         "figure": "green",
+        "greenNames": ["Lebrun"],
         "location": "Paris / London",
         "details": "Two Lebrun sales in 1791; unsold and passed to London to Noel Desenfans.",
         "fullText": "Paris, (either J.-A. or J.B.P., but probably the latter) Lebrun sale, 11ff. Apr. 1791, lot 197; Paris, (either J.-A. or J.B.P., but probably the latter) Lebrun sale, 15ff. Nov. 1791, lot 94;"
@@ -281,6 +338,8 @@
       {
         "id": "prov-6a",
         "owner": "Jean-Baptiste-Pierre Le Brun; Noel Desenfans",
+        "greenNames": ["Noel Desenfans"],
+        "storyId": 4,
         "location": "Paris / London",
         "details": "Two Lebrun sales in 1791; unsold and passed to London to Noel Desenfans.",
         "fullText": " Unsold and passed to London, Noel Desenfans;"
@@ -288,6 +347,8 @@
       {
         "id": "prov-7",
         "owner": "Sir Abraham Hume; Noel Desenfans",
+        "greenNames": ["Desenfans"],
+        "storyId": 4,
         "location": "London",
         "details": "Owned by Hume in 1792; exchanged with Desenfans; exchanged again with Hume in 1797.",
         "fullText": "Sir Abraham Hume in 1792, who exchanged it with Desenfans for another picture; again exchanged with Hume, 1797;"
@@ -295,6 +356,8 @@
       {
         "id": "prov-8",
         "owner": "Noel Desenfans",
+        "greenNames": ["Noel Desenfans", "Desenfans"],
+        "storyId": 4,
         "location": "London",
         "details": "Desenfans ownership 1797–1807; 1802 Skinner and Dyke sale; 1804 insurance list mentions.",
         "fullText": "London, Noel Desenfans, 1797-1807: London, Skinner and Dyke, Desenfans sale, 18 Mar. 1802, lot 173 ('Watteaux-Le Bal Champetre'. Descriptive Catalogue no. 68); 1804 Insurance List, no. 46 ('A Ball'. £200);"
@@ -302,6 +365,7 @@
       {
         "id": "prov-9",
         "owner": "RKD catalogue note",
+        "storyId": 4,
         "location": "The Hague",
         "details": "Handwritten note in copy of the 1802 catalogue; dimensions noted.",
         "fullText": "Handwritten note in copy of catalogue at The Hague, RKD: '21 1/2' [i.e. 2 x 1 1/2]."
@@ -309,18 +373,22 @@
       {
         "id": "prov-10",
         "owner": "Elliott",
+        "storyId": 4,
         "location": null,
         "details": "Buyer noted in margin; likely buy-in.",
         "fullText": "Bt Elliott for £65.2 (bt in);"
       },
       {
         "id": "prov-11",
+        "storyId": 4,
         "location": "London",
         "fullText": "1804 Insurance List, no. 46 ('A Ball'. £200);"
       },
       {
         "id": "prov-12",
         "owner": "Sir Francis Bourgeois",
+        "greenNames": ["Sir Francis Bourgeois"],
+        "storyId": 4,
         "location": "London",
         "details": "Owned 1807–1811.",
         "fullText": "London, Sir Francis Bourgeois, 1807-1811;"
@@ -328,6 +396,7 @@
       {
         "id": "prov-13",
         "owner": "Bourgeois Bequest, Dulwich Picture Gallery",
+        "storyId": 4,
         "location": "London",
         "details": "Bequest in 1811 to the Dulwich Picture Gallery.",
         "fullText": "Bourgeois Bequest, 1811."
@@ -388,25 +457,25 @@
       {
         "date": "1792",
         "event": "Sir Abraham Hume; Noel Desenfans",
-        "storyId": null,
+        "storyId": 4,
         "entryId": "prov-7"
       },
       {
         "date": "1802",
         "event": "Noel Desenfans",
-        "storyId": null,
+        "storyId": 4,
         "entryId": "prov-8"
       },
       {
         "date": "1807",
         "event": "Sir Francis Bourgeois",
-        "storyId": null,
+        "storyId": 4,
         "entryId": "prov-12"
       },
       {
         "date": "1811",
         "event": "Bourgeois Bequest, Dulwich Picture Gallery",
-        "storyId": null,
+        "storyId": 4,
         "entryId": "prov-13"
       }
     ],

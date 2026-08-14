@@ -5,6 +5,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Artwork Detail</title>
     <!-- Google Font -->
@@ -46,7 +47,7 @@
     
       <div class="wall-label">
         <h2 id="artist-name"></h2>
-        <h3 id="location-year"></h3>
+        <h3 id="nationality-year"></h3>
         <div class="label-spacer"></div>
         <h2 id="artwork-name-year"></h2>
         <div id="artwork-medium" class="paint-medium"></div>
@@ -151,8 +152,8 @@
   </div>
   
   <div id="event-network-lightbox" class="hidden">
-    <span id="event-network-close" class="close">&times;</span>
-    <div class="lightbox-content">
+    <div class="lightbox-content event-network-lightbox-content">
+      <button id="event-network-close" class="close" type="button" aria-label="Close enlarged event network">&times;</button>
       <h3 id="event-network-title" style="margin-bottom: 0.5rem;">Event Network (Enlarged)</h3>
       <div id="event-network-zoomed-container" style="width: 80vw; height: 70vh; background: #fff; border: 1px solid #ccc; border-radius: 4px;"></div>
     </div>
@@ -161,6 +162,7 @@
 <div id="instructions-modal" class="hidden" role="dialog" aria-labelledby="instructions-title" aria-modal="true">
   <div class="instructions-modal-content">
     <span id="instructions-close" class="instructions-close" aria-label="Close instructions">&times;</span>
+    <div class="instructions-modal-scroll">
 
     <h2 id="instructions-title">Welcome to Colonial Networks: Provenance Stories</h2>
     <p>Quick tips to explore the map, timeline, and networks:</p>
@@ -201,6 +203,7 @@
     </ul>
 
     <p>You can reopen these instructions anytime using the small icon in the bottom right.</p>
+    </div>
   </div>
 </div>
 
@@ -215,6 +218,6 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- <script src="detail.js"></script> -->
   <script type="module" src="./js/nav.js"></script>
-   <script type="module" src="./js/init.js"></script>
+   <script type="module" src="./js/init.js?v=20260814"></script>
 </body>
 </html>

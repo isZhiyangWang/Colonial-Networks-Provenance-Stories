@@ -8,6 +8,74 @@ function getColorForType(t = "") {
   }
 }
 
+function wrapLabel(text, maxChars = 18) {
+  const tokens = String(text || "").replace(/-/g, "- ").trim().split(/\s+/).filter(Boolean);
+  const lines = [];
+  let line = "";
+
+  tokens.forEach((token) => {
+    const separator = line && !line.endsWith("-") ? " " : "";
+    const candidate = `${line}${separator}${token}`;
+    if (line && candidate.length > maxChars) {
+      lines.push(line);
+      line = token;
+    } else {
+      line = candidate;
+    }
+  });
+
+  if (line) lines.push(line);
+  return lines.length ? lines : [""];
+}
+
+function appendWrappedLabels(nodeGroup, className, maxChars = 18) {
+  nodeGroup.append("text")
+    .attr("class", className)
+    .style("font-size", "12px")
+    .style("fill", "#333")
+    .style("pointer-events", "none")
+    .attr("text-anchor", "middle")
+    .each(function (d) {
+      const lines = wrapLabel(d.id, maxChars);
+      const firstDy = -18 - ((lines.length - 1) * 12);
+      const text = d3.select(this);
+      lines.forEach((line, index) => {
+        text.append("tspan")
+          .attr("x", 0)
+          .attr("dy", index === 0 ? firstDy : 12)
+          .text(line);
+      });
+    });
+}
+
+function addLayoutForces(simulation, nodes, w, h) {
+  const vertical = h > w * 1.2;
+  const count = Math.max(nodes.length, 1);
+  const targetX = (d) => vertical
+    ? w * (d.layoutIndex % 2 === 0 ? 0.34 : 0.66)
+    : ((d.layoutIndex + 1) * w) / (count + 1);
+  const targetY = (d) => vertical
+    ? ((d.layoutIndex + 1) * h) / (count + 1)
+    : h * (d.layoutIndex % 2 === 0 ? 0.43 : 0.57);
+
+  simulation
+    .force("x", d3.forceX(targetX).strength(0.65))
+    .force("y", d3.forceY(targetY).strength(0.65))
+    .force("collide", d3.forceCollide(vertical ? 42 : 58));
+
+  return vertical;
+}
+
+function clampNodes(nodes, w, h, vertical) {
+  const xPadding = vertical ? Math.min(70, w * 0.24) : 80;
+  const yPaddingTop = 48;
+  const yPaddingBottom = 32;
+  nodes.forEach((d) => {
+    d.x = Math.max(xPadding, Math.min(w - xPadding, d.x));
+    d.y = Math.max(yPaddingTop, Math.min(h - yPaddingBottom, d.y));
+  });
+}
+
 export function drawNetworkForEvent(ev) {
   const container = d3.select("#overlay-network");
   container.selectAll("svg").remove();
@@ -48,19 +116,19 @@ function renderLocalNetwork(svg, w, h, ev) {
   const nodeNames = new Set();
   ev.networkPairs.forEach((pair) => { nodeNames.add(pair.source); nodeNames.add(pair.target); });
 
-  const nodes = Array.from(nodeNames).map((name) => {
+  const nodes = Array.from(nodeNames).map((name, layoutIndex) => {
     const found = ev.participants?.find((pt) => pt.name === name);
     const t = found ? found.type : "person";
-    return { id: name, type: t };
+    return { id: name, type: t, layoutIndex };
   });
 
   const links = ev.networkPairs.map((pair) => ({ source: pair.source, target: pair.target, label: pair.label || "" }));
 
   const sim = d3.forceSimulation(nodes)
-    .force("charge", d3.forceManyBody().strength(-200))
-    .force("link", d3.forceLink(links).id((d) => d.id).distance(120))
-    .force("center", d3.forceCenter(w / 2, h / 2))
-    .on("tick", ticked);
+    .force("charge", d3.forceManyBody().strength(-140))
+    .force("link", d3.forceLink(links).id((d) => d.id).distance(105));
+  const verticalLayout = addLayoutForces(sim, nodes, w, h);
+  sim.on("tick", ticked);
 
   const link = svg.selectAll(".local-link").data(links).enter()
     .append("line").attr("class", "local-link")
@@ -88,9 +156,7 @@ function renderLocalNetwork(svg, w, h, ev) {
     .attr("fill", (d) => getColorForType(d.type))
     .attr("stroke", "#4f4f4f").attr("stroke-opacity", 0.65).attr("stroke-width", 1.5);
 
-  nodeGroup.append("text").attr("class", "local-node-label")
-    .style("font-size", "12px").style("fill", "#333")
-    .attr("dy", -18).attr("text-anchor", "middle").text((d) => d.id);
+  appendWrappedLabels(nodeGroup, "local-node-label");
 
   nodeGroup
     .on("mouseover", function (event, d) {
@@ -116,12 +182,18 @@ function renderLocalNetwork(svg, w, h, ev) {
     });
 
   function ticked() {
+    clampNodes(nodes, w, h, verticalLayout);
     link.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y)
         .attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
     linkLabel.attr("x", (d) => (d.source.x + d.target.x) / 2)
              .attr("y", (d) => (d.source.y + d.target.y) / 2);
     nodeGroup.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
   }
+
+  // Settle before paint so the diagram appears in its final position.
+  sim.stop();
+  sim.tick(220);
+  ticked();
 }
 
 export function openEnlargedEventNetwork(ev) {
@@ -158,17 +230,17 @@ export function openEnlargedEventNetwork(ev) {
 
   const nodeNames = new Set();
   ev.networkPairs.forEach((pair) => { nodeNames.add(pair.source); nodeNames.add(pair.target); });
-  const nodes = Array.from(nodeNames).map((name) => {
+  const nodes = Array.from(nodeNames).map((name, layoutIndex) => {
     const found = ev.participants?.find((pt) => pt.name === name);
-    return { id: name, type: found ? found.type : "person" };
+    return { id: name, type: found ? found.type : "person", layoutIndex };
   });
   const links = ev.networkPairs.map((pair) => ({ source: pair.source, target: pair.target, label: pair.label || "" }));
 
   const sim = d3.forceSimulation(nodes)
-    .force("charge", d3.forceManyBody().strength(-250))
-    .force("link", d3.forceLink(links).id((d) => d.id).distance(130))
-    .force("center", d3.forceCenter(w / 2, h / 2))
-    .on("tick", ticked);
+    .force("charge", d3.forceManyBody().strength(-180))
+    .force("link", d3.forceLink(links).id((d) => d.id).distance(130));
+  const verticalLayout = addLayoutForces(sim, nodes, w, h);
+  sim.on("tick", ticked);
 
   const link = zoomContainer.selectAll(".enlarged-link").data(links).enter()
     .append("line").attr("class", "enlarged-link")
@@ -196,9 +268,7 @@ export function openEnlargedEventNetwork(ev) {
     .attr("fill", (d) => getColorForType(d.type))
     .attr("stroke", "#4f4f4f").attr("stroke-opacity", 0.65).attr("stroke-width", 1.5);
 
-  nodeGroup.append("text").attr("class", "enlarged-node-label")
-    .style("font-size", "12px").style("fill", "#333").style("pointer-events", "none")
-    .attr("text-anchor", "middle").attr("dy", -20).text((d) => d.id);
+  appendWrappedLabels(nodeGroup, "enlarged-node-label", 22);
 
   nodeGroup
     .on("mouseover", function (event, d) {
@@ -229,10 +299,16 @@ export function openEnlargedEventNetwork(ev) {
   svg.call(zoom);
 
   function ticked() {
+    clampNodes(nodes, w, h, verticalLayout);
     link.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y)
         .attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
     linkLabel.attr("x", (d) => (d.source.x + d.target.x) / 2)
              .attr("y", (d) => (d.source.y + d.target.y) / 2);
     nodeGroup.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
   }
+
+
+  sim.stop();
+  sim.tick(260);
+  ticked();
 }
