@@ -27,6 +27,25 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
+function wrapSocialLabel(text, maxChars = 18) {
+  const words = String(text || "").trim().split(/\s+/).filter(Boolean);
+  const lines = [];
+  let line = "";
+
+  words.forEach((word) => {
+    const candidate = line ? `${line} ${word}` : word;
+    if (line && candidate.length > maxChars) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = candidate;
+    }
+  });
+
+  if (line) lines.push(line);
+  return lines.length ? lines : [""];
+}
+
 function resetLabelPositions(labelSelection) {
   labelSelection
     .attr("x", (d) => d.labelX)
@@ -110,6 +129,7 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
   const zoomContainer = svg.append("g");
 
   const fixedNodeRadius = 12;
+  const compact = w < 520;
   const nodes = socialNetworkData.nodes.map((d) => ({
     ...d,
     radius: fixedNodeRadius,
@@ -121,8 +141,15 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
   const centerX = w / 2;
   const centerY = h / 2;
   const angleStep = (2 * Math.PI) / nodes.length;
+  const compactRows = Math.ceil(nodes.length / 2);
 
   nodes.forEach((node, i) => {
+    if (compact) {
+      node.x = w * (i % 2 === 0 ? 0.25 : 0.75);
+      node.y = ((Math.floor(i / 2) + 1) * h) / (compactRows + 1);
+      return;
+    }
+
     const angle = i * angleStep;
     node.x = centerX + radius * Math.cos(angle);
     node.y = centerY + radius * Math.sin(angle);
@@ -210,22 +237,45 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
     .style("fill", "#333")
     .style("pointer-events", "none")
     .attr("text-anchor", (d, i) => {
+      if (compact) return "middle";
       const angle = i * angleStep;
       return angle > Math.PI / 2 && angle < Math.PI * 1.5 ? "end" : "start";
     })
     .attr("dominant-baseline", "middle")
     .attr("x", (d, i) => {
+      if (compact) return d.x;
       const angle = i * angleStep;
       const offset = d.radius + 8;
       return d.x + offset * Math.cos(angle);
     })
     .attr("y", (d, i) => {
+      if (compact) {
+        const isUnpairedLastNode = nodes.length % 2 === 1 && i === nodes.length - 1;
+        return d.y + (isUnpairedLastNode ? 24 : -18);
+      }
       const angle = i * angleStep;
       const offset = d.radius + 8;
       return d.y + offset * Math.sin(angle);
     });
 
+  if (compact) {
+    nodeLabel.each(function (d) {
+      const lines = wrapSocialLabel(d.id);
+      const label = d3.select(this).text(null);
+      lines.forEach((line, index) => {
+        label.append("tspan")
+          .attr("x", d.x)
+          .attr("dy", index === 0 ? -((lines.length - 1) * 11) : 11)
+          .text(line);
+      });
+    });
+  }
+
   linkLabel.raise();
+
+  if (compact) {
+    requestAnimationFrame(() => resolveLabelCollisions(linkLabel.nodes(), w, h));
+  }
 
   const nodeGroups = zoomContainer.selectAll(".social-node-group");
 

@@ -1,0 +1,305 @@
+{
+  "artworkData": {
+    "artistName": "Claude-Joseph Vernet",
+    "nationality": "French",
+    "creationYear": "1714-1789",
+    "artworkName": "The Bridge and Castel Sant’Angelo in Rome",
+    "artworkYear": "1745",
+    "medium": "Oil on canvas",
+    "intro": "Vernet’s sunlit view of Rome’s Tiber River sets a modest group of fishermen against a grand backdrop of classical architecture, including two monuments associated with the Emperor Hadrian. Whether depicting tranquil river landscapes or violent shipwrecks, Vernet’s marine paintings captivated eighteenth-century patrons who viewed them through the lens of their own colonial and maritime ambitions. By linking a humble contemporary scene of local commerce to the imperial splendor of ancient Rome, this painting may hint at how everyday maritime labor formed the bedrock of empires both past and present.",
+    "museumUrl": "https://collections.louvre.fr/ark:/53355/cl010059264",
+    "museumName": "Musée du Louvre",
+    "imageUrl": "assets/joseph-vernet.jpg"
+  },
+  "placeData": {
+    "Rome": {
+      "name": "Rome",
+      "coords": [41.9028, 12.4964]
+    },
+    "Paris": {
+      "name": "Paris",
+      "coords": [48.8566, 2.3522]
+    }
+  },
+  "provenanceEvents": [
+    {
+      "id": 0,
+      "title": "1. Choiseul’s Classical and Colonial Visions",
+      "from": "Rome",
+      "to": "Paris",
+      "eventType": "acquired by",
+      "text": "<p>Vernet painted this urban riverscape during the two decades he lived and worked in Rome, from the 1730s to the 1750s. Its first recorded owner was Étienne-François, duc de Choiseul (1719-89). Like Vernet, Choiseul also lived in Rome, where he served as Louis XV’s ambassador (1754-57) and developed a deep appreciation for ancient and neoclassical art. After returning to France, Choiseul became head of the navy and foreign ministry, alternating these positions with his cousin, the duc de Choiseul Praslin, during the 1760s. Their family had deep colonial ties that helped fund the impressive art collections both men assembled. It’s not known when Choiseul acquired this Vernet painting, or its <a href=\"https://collections.louvre.fr/ark:/53355/cl010059265\" target=\"_blank\" rel=\"noopener noreferrer\">pendant of another Roman bridge</a>, but it was probably after his return to France. The two scenes likely evoked nostalgia for his time in Rome, while also appealing to a larger desire to model France’s commercial and maritime empire on ancient precedents.</p><p>Around this time, France suffered a damaging defeat in the Seven Years’ War (1756-63) that entailed the loss of Canada and other colonial territories. Choiseul subsequently launched a massive campaign to expand the French colony of Guiana. Propagandistic <a href=\"https://gallica.bnf.fr/ark:/12148/btv1b6949500g\" target=\"_blank\" rel=\"noopener noreferrer\">prints</a> of Guiana were published to lure prospective colonists, some of which resembled Vernet’s idyllic maritime views, including a neoclassical scene of <a href=\"https://www.liechtensteincollections.at/en/collections-online/bathers\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Bathers</em></a> that Choiseul owned. The publicity scheme worked, and approximately 13,000 settlers—many of them migrant laborers from the war-torn Alsace and Rhine regions—were shipped to Guiana between 1763-65. However, Choiseul’s administration so badly mismanaged the project that the vast majority of them died.</p>",
+      "participants": [
+        { "name": "Vernet", "type": "person" },
+        { "name": "Duc de Choiseul", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Vernet", "target": "Duc de Choiseul", "label": "acquired by" }
+      ],
+      "changedLocation": true,
+      "imageSource": "<p>Giovanni Paolo Panini, <em>Ancient Rome</em> (detail with duc de Choiseul), 1757. Oil on canvas, 172.1 x 229.9 cm. The Metropolitan Museum of Art, New York, Gwynne Andrews Fund, 1952.</p>",
+      "imageAlt": "Giovanni Paolo Panini, Ancient Rome (detail with duc de Choiseul), 1757."
+    },
+    {
+      "id": 1,
+      "title": "2. Art and Tea with the Prince de Conti",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "bought by",
+      "text": "<p>After Choiseul, Vernet’s painting entered the collection of Louis François de Bourbon, prince de Conti (1717-76), the son-in-law of France’s former Regent. Conti speculated in colonial ventures and was a founding investor in the Société d’Affrique, a company that aimed to correct Choiseul’s mistakes and successfully expand the colony of Guiana by controlling land development and slave trading in the region. In 1777, the same year that a high-profile auction of Conti’s collection was held, the Société was renamed the French Guiana Company. Several of its investors acquired works in the sale, suggesting a deep entanglement between colonial speculation and art buying.</p><p>As Grand Prior of the Knights of Malta, Conti resided in Paris’s Palais du Temple, where he displayed his art collection and presided over a counter-court filled with Enlightenment luminaries such as Rousseau, Beaumarchais, and Diderot. In a painting of one these gatherings, the young Mozart plays the harpsichord while Conti’s guests consume tea and sugar—colonial products tied to systems of extraction and enslavement that made this rarefied world possible.</p>",
+      "participants": [
+        { "name": "Duc de Choiseul", "type": "greenperson" },
+        { "name": "Prince de Conti", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Duc de Choiseul", "target": "Prince de Conti", "label": "bought by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Michel-Barthélémy Ollivier, <em>Afternoon Tea at the Palais du Temple with the Entire Court of the Prince de Conti</em>, 1766. Oil on canvas, 53 x 68 cm. Palace of Versailles. Image: Wikimedia Commons.</p>",
+      "imageAlt": "Michel-Barthélémy Ollivier, Afternoon Tea at the Palais du Temple with the Entire Court of the Prince de Conti, 1766."
+    },
+    {
+      "id": 2,
+      "title": "3. Colonial Filiations: The Rohan and Castelmore Families",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "bought by",
+      "text": "<p>At Conti’s 1777 sale, Vernet’s <em>Bridge</em> passed into the hands of Louis-Antoine, duc de Rohan-Chabot (1733-1807), whose cousin, <a href=\"https://www.chateaunantes.fr/roch-aza-et-louis-armand-constantin-de-rohan-prince-de-montbazon-1732-1794%EF%BF%BC/\" target=\"_blank\" rel=\"noopener noreferrer\">Louis-Armand-Constantin de Rohan</a>, served as governor of Saint-Domingue after the Seven Years’ War. Rohan-Chabot sold the painting in 1787 to the comte de Castelmore (1787-1827), who also hailed from a colonial family: one of his ancestors had governed the French Antilles (from 1669-77) and was responsible for consolidating France’s hold over Martinique and expanding the slave trade there. Although neither collector was directly involved in colonial trade, their families played a major role in developing France’s two most significant Caribbean colonies, whose profits fueled the growth and splendor of eighteenth-century Paris.</p><p>Among the beneficiaries of this exploitative system were Parisian art dealers who had colonial collectors as their clients. Vernet’s <em>Bridge</em> was briefly owned by the dealers Feuillet and Paillet before they flipped the painting, selling it first to Rohan-Chabot and later to Simon-Charles Boutin. Together with Jean-Baptiste-Pierre Le Brun, these dealers helped create a huge market and inflated prices for Vernet’s work in the years preceding the French and Haitian Revolutions.</p>",
+      "participants": [
+        { "name": "Prince de Conti", "type": "greenperson" },
+        { "name": "Duc de Rohan-Chabot", "type": "person" },
+        { "name": "Comte de Castelmore", "type": "person" },
+        { "name": "Simon-Charles Boutin", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Prince de Conti", "target": "Duc de Rohan-Chabot", "label": "bought by" },
+        { "source": "Duc de Rohan-Chabot", "target": "Comte de Castelmore", "label": "bought by" },
+        { "source": "Comte de Castelmore", "target": "Simon-Charles Boutin", "label": "bought by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Studio of Jean-Marc Nattier, <em>Roch Aza et Louis-Armand-Constantin Rohan, Prince de Montbazon</em>, 1758. Oil on canvas. © David Gallard / Château des ducs de Bretagne – Musée d’histoire de Nantes.</p>",
+      "imageAlt": "Studio of Jean-Marc Nattier, Roch Aza et Louis-Armand-Constantin Rohan, Prince de Montbazon, 1758."
+    },
+    {
+      "id": 3,
+      "title": "4. Plantations and Pleasure Gardens: Boutin’s Rendez-vous and Tivoli",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "bought by",
+      "text": "<p>The last private owner of Vernet’s <em>Bridge</em> was the financier Simon-Charles Boutin (1719 -94), who acquired it in 1791. Boutin made his fortune through trade and planation speculation and served as France’s treasurer of the navy and the colonies. His taste for art collecting was instilled by his friend, the <em>salonnière</em> Madame Geoffrin, who left Boutin a large Vernet seascape in her will. Boutin was a noted supporter of neoclassical artists like Hubert Robert and Greuze, and in 1788 the artist Elisabeth Vigée Le Brun, wife of the art dealer Le Brun, threw a lavish Greek-inspired supper (the so-called <em>souper grec</em>) in honor of Boutin and another colonial collector, the comte de Vaudreuil. Many Paris art world elites attended, including Vernet’s daughter, the painter Émilie Chalgrin.</p><p>Around 1768, Boutin had built an elaborate park in Paris named <a href=\"https://catalogue.bnf.fr/ark:/12148/cb40264678m\" target=\"_blank\" rel=\"noopener noreferrer\">Tivoli</a> after the ancient site near Rome that many artists, including Vernet, visited. He opened Tivoli to the public and filled it with fragments of classical statues, a mineralogical cabinet, and specimens of flowers and birds obtained through colonial channels. Boutin also owned a large sugar plantation near Port au Prince in Saint-Domingue named “Rendezvous,” where 200 men, women, and children were listed as enslaved in a 1787-88 inventory. A rare surviving plan indicates that its main house, near the slave quarters, featured a French-style garden, the colonial counterpart to his <em>jardin français</em> at Tivoli. Boutin’s plantation profits supported his art buying, including the acquisition of Vernet’s <em>Bridge</em> and its pendant from the dealer Paillet in 1791—which, despite the upheavals of the French Revolution, was one of the most profitable years ever for Saint-Domingue planters and slave traders.</p>",
+      "participants": [
+        { "name": "Comte de Castelmore", "type": "person" },
+        { "name": "Simon-Charles Boutin", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Comte de Castelmore", "target": "Simon-Charles Boutin", "label": "bought by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Detail showing homes of enslaved workers on a plantation later acquired by Boutin. <em>Plan de l'Habitation de Monsieur de La Porte-Lalanne</em>, 1753. Ink and watercolor, 96 x 69 cm. William L. Clements Library, University of Michigan.</p>",
+      "imageAlt": "Detail showing homes of enslaved workers on a plantation later acquired by Boutin, 1753."
+    },
+    {
+      "id": 4,
+      "title": "5. The Beautiful and the Damned: Artworks Seized by Le Brun",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "seized by",
+      "text": "<p>Vernet’s <em>Bridge</em> was seized along with the rest of Boutin’s art collection from his two Parisian residences (Tivoli and a hôtel on the rue de Richelieu) in September 1794. He had been arrested and guillotined that summer, due in part to his suspected friendship with Marie-Antoinette, a guest at Tivoli. Vigée Le Brun’s husband, who had joined the Revolutionary government’s new Commission des Arts—an organization in charge of seizing and nationalizing the property of condemned and emigrated aristocrats—went to Boutin’s home to draw up a detailed list of his possessions. He brought the painter Jean-Honoré Fragonard along to assist in this work.</p><p>Having been the primary dealer for many of these aristocrats, Le Brun was well aware of the artworks they owned and their value. Beginning with a bust of Hadrian “after the antique,” he carefully listed all the ancient sarcophagi, vases, and other sculptural fragments that adorned the Tivoli gardens, assigning them a monetary value and an asterisk if he felt they should enter the Louvre’s collection. He also inventoried hundreds of drawings in Boutin’s collection as well as paintings attributed to Vernet, Greuze, Poussin, Rubens, Teniers, and others. Vernet’s <em>Bridge</em> and its pendant were itemized as no. 39 on a list of 49 paintings taken from the rue de Richelieu, valued together at 3,600 <em>livres</em>. Although Le Brun did not give them an asterisk, they were in the Louvre’s collection by 1798 and remain there still.</p>",
+      "participants": [
+        { "name": "Simon-Charles Boutin", "type": "greenperson" },
+        { "name": "Revolutionary forces", "type": "institution" },
+        { "name": "Musée du Louvre", "type": "museum" }
+      ],
+      "networkPairs": [
+        { "source": "Simon-Charles Boutin", "target": "Revolutionary forces", "label": "seized by" },
+        { "source": "Revolutionary forces", "target": "Musée du Louvre", "label": "entered" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Inventory by Le Brun, Fragonard, and Bonvoisin of artworks seized from Boutin’s Tivoli residence, 1794. Archives nationales de France, F/7/1267.</p>",
+      "imageAlt": "Inventory of artworks seized from Boutin’s Tivoli residence, 1794."
+    }
+  ],
+  "socialNetwork": {
+    "nodes": [
+      { "id": "Vernet", "type": "person" },
+      { "id": "Duc de Choiseul", "type": "greenperson" },
+      { "id": "Prince de Conti", "type": "greenperson" },
+      { "id": "Duc de Rohan-Chabot", "type": "person" },
+      { "id": "Comte de Castelmore", "type": "person" },
+      { "id": "Simon-Charles Boutin", "type": "greenperson" },
+      { "id": "Revolutionary forces", "type": "institution" },
+      { "id": "Musée du Louvre", "type": "museum" }
+    ],
+    "edges": [
+      { "source": "Vernet", "target": "Duc de Choiseul", "relationship": "acquired by" },
+      { "source": "Duc de Choiseul", "target": "Prince de Conti", "relationship": "bought by" },
+      { "source": "Prince de Conti", "target": "Duc de Rohan-Chabot", "relationship": "bought by" },
+      { "source": "Duc de Rohan-Chabot", "target": "Comte de Castelmore", "relationship": "bought by" },
+      { "source": "Comte de Castelmore", "target": "Simon-Charles Boutin", "relationship": "bought by" },
+      { "source": "Simon-Charles Boutin", "target": "Revolutionary forces", "relationship": "seized by" },
+      { "source": "Revolutionary forces", "target": "Musée du Louvre", "relationship": "entered" }
+    ]
+  },
+  "provenanceTimeline": {
+    "entries": [
+      {
+        "id": "prov-1771-choiseul",
+        "owner": "Étienne François, duc de Choiseul-Stainville",
+        "storyId": 0,
+        "greenNames": ["Étienne François, duc de Choiseul-Stainville"],
+        "location": "Paris",
+        "boldText": "Paris, collection of Étienne François, duc de Choiseul-Stainville (1719-1785), 1771",
+        "fullText": "Paris, collection of Étienne François, duc de Choiseul-Stainville (1719-1785), 1771;"
+      },
+      {
+        "id": "prov-1772-choiseul-sale",
+        "owner": "Étienne François, duc de Choiseul-Stainville",
+        "location": "Paris",
+        "fullText": "absent from the Choiseul sale of 1772;"
+      },
+      {
+        "id": "prov-1776-conti",
+        "owner": "Louis-François de Bourbon, prince de Conti",
+        "storyId": 1,
+        "greenNames": ["Louis-François de Bourbon, prince de Conti"],
+        "location": "Paris",
+        "boldText": "Paris, collection of Louis-François de Bourbon, prince de Conti (1717-1776)",
+        "fullText": "Paris, collection of Louis-François de Bourbon, prince de Conti (1717-1776);"
+      },
+      {
+        "id": "prov-1777-conti-sale",
+        "owner": "Jean-Baptiste Feuillet",
+        "location": "Paris",
+        "fullText": "Paris, sale of prince de Conti, 2 May 1777, n° 735 (sold for 5200 livres with its pendant to Jean-Baptiste Feuillet);"
+      },
+      {
+        "id": "prov-1777-rohan-chabot",
+        "owner": "Louis-Antoine-Auguste, duc de Rohan-Chabot",
+        "storyId": 2,
+        "location": "Paris",
+        "boldText": "Paris, collection of Louis-Antoine-Auguste, duc de Rohan-Chabot (1733-1807)",
+        "fullText": "Paris, collection of Louis-Antoine-Auguste, duc de Rohan-Chabot (1733-1807);"
+      },
+      {
+        "id": "prov-1787-rohan-sale",
+        "owner": "Louis-Constantin de Batz, comte de Castelmore",
+        "location": "Paris",
+        "fullText": "Paris, sale of Rohan-Chabot, 10 December 1787, n° 65 (sold for 4500 livres with its pendant to Louis-Constantin de Batz, comte de Castelmore (1747-1827));"
+      },
+      {
+        "id": "prov-1787-castelmore",
+        "owner": "comte de Castelmore",
+        "storyId": 2,
+        "location": "Paris",
+        "boldText": "Paris, collection of comte de Castelmore",
+        "fullText": "Paris, collection of comte de Castelmore;"
+      },
+      {
+        "id": "prov-1791-castelmore-sale",
+        "owner": "Alexandre-Joseph Paillet",
+        "location": "Paris",
+        "fullText": "Paris, sale of Castelmore, 20 December 1791, n° 25 (sold for 6501 livres with its pendant to Alexandre-Joseph Paillet);"
+      },
+      {
+        "id": "prov-1791-boutin",
+        "owner": "Simon-Charles Boutin",
+        "storyId": 3,
+        "greenNames": ["Simon-Charles Boutin"],
+        "location": "Paris",
+        "boldText": "Paris, collection of Simon-Charles Boutin (1720-1794), trésorier de la Marine",
+        "fullText": "Paris, collection of Simon-Charles Boutin (1720-1794), trésorier de la Marine;"
+      },
+      {
+        "id": "prov-1794-seized",
+        "owner": "Revolutionary forces",
+        "storyId": 4,
+        "location": "Paris",
+        "boldText": "seized during the Revolution, 1794",
+        "fullText": "seized during the Revolution, 1794;"
+      },
+      {
+        "id": "prov-1794-nesle",
+        "owner": "dépôt de Nesle",
+        "location": "Paris",
+        "fullText": "Paris, dépôt de Nesle, 21 September 1794;"
+      },
+      {
+        "id": "prov-1798-musee-central",
+        "owner": "Musée central des arts",
+        "location": "Paris",
+        "fullText": "Paris, Musée central des arts, 27 May 1798;"
+      },
+      {
+        "id": "prov-1798-louvre",
+        "owner": "Musée Napoléon (Musée du Louvre)",
+        "storyId": 4,
+        "location": "Paris",
+        "boldText": "Paris, Musée Napoléon (Musée du Louvre)",
+        "fullText": "Paris, Musée Napoléon (Musée du Louvre)."
+      }
+    ],
+    "events": [
+      {
+        "date": "1745",
+        "event": "Painted in Rome",
+        "storyId": 0
+      },
+      {
+        "date": "1771",
+        "event": "Étienne François, duc de Choiseul-Stainville, by 1771",
+        "storyId": 0,
+        "entryId": "prov-1771-choiseul"
+      },
+      {
+        "date": "1776",
+        "event": "Louis-François de Bourbon, prince de Conti, by 1776",
+        "storyId": 1,
+        "entryId": "prov-1776-conti"
+      },
+      {
+        "date": "1777",
+        "event": "Jean-Baptiste Feuillet",
+        "entryId": "prov-1777-conti-sale"
+      },
+      {
+        "date": "1777",
+        "event": "Louis-Antoine-Auguste, duc de Rohan-Chabot",
+        "storyId": 2,
+        "entryId": "prov-1777-rohan-chabot"
+      },
+      {
+        "date": "1787",
+        "event": "Louis-Constantin de Batz, comte de Castelmore",
+        "storyId": 2,
+        "entryId": "prov-1787-castelmore"
+      },
+      {
+        "date": "1791",
+        "event": "Alexandre-Joseph Paillet",
+        "entryId": "prov-1791-castelmore-sale"
+      },
+      {
+        "date": "1791",
+        "event": "Simon-Charles Boutin",
+        "storyId": 3,
+        "entryId": "prov-1791-boutin"
+      },
+      {
+        "date": "1794",
+        "event": "Seized by Revolutionary forces",
+        "storyId": 4,
+        "entryId": "prov-1794-seized"
+      },
+      {
+        "date": "1798",
+        "event": "Musée Napoléon (later renamed Musée du Louvre)",
+        "storyId": 4,
+        "entryId": "prov-1798-louvre"
+      }
+    ],
+    "source": {
+      "url": "https://collections.louvre.fr/ark:/53355/cl010059264",
+      "text": "Musée du Louvre"
+    }
+  }
+}

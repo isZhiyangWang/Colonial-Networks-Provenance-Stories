@@ -140,8 +140,8 @@ a{
   margin-top: 1.25rem;
 }
 
-.editorial-copy > h2{
-  margin-top: 2.5rem;
+.page-wrap.editorial-copy > h2{
+  margin-top: 3rem;
 }
 
 .key-figures .kf-grid{
@@ -155,6 +155,10 @@ a{
 .recommended-citation,
 .support-credit{
   color: #222;
+}
+
+.recommended-citation{
+  padding-left: clamp(1.25rem, 4vw, 2.5rem);
 }
 
 /* Prevent awkward automatic hyphenation on Key Figures page */
@@ -429,5 +433,113 @@ a{
 
   .kf-text{
     font-size: 0.98rem;
+  }
+}
+
+/* ========== Shared mobile editorial layout ========== */
+
+@media (max-width: 720px) {
+  .top-nav {
+    gap: 3px;
+    padding: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .top-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .top-nav .nav-link {
+    flex: 0 0 auto;
+    padding: 7px 8px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .page-wrap,
+  .key-figures .page-wrap {
+    width: calc(100% - 40px);
+    padding: 24px 0 52px;
+    font-size: 0.98rem;
+    line-height: 1.64;
+  }
+
+  .page-wrap h1 {
+    margin-bottom: 1rem;
+    font-size: 1.55rem;
+    line-height: 1.22;
+  }
+
+  .page-wrap h2 {
+    font-size: 1.1rem;
+    line-height: 1.35;
+  }
+
+  .editorial-copy > p + p {
+    margin-top: 1.45rem;
+  }
+
+  .page-wrap.editorial-copy > h2 {
+    margin-top: 2.5rem;
+  }
+
+  .recommended-citation {
+    padding-left: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  #figures-container,
+  .kf-grid {
+    gap: 16px;
+  }
+
+  .kf-card {
+    gap: 16px;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.045);
+  }
+
+  .kf-title {
+    font-size: 1.12rem;
+    line-height: 1.22;
+    letter-spacing: 0;
+  }
+
+  .kf-dates {
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  .kf-text {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+}
+
+@media (max-width: 420px) {
+  .top-nav {
+    gap: 2px;
+    justify-content: space-between;
+    padding: 7px 6px;
+  }
+
+  .top-nav .nav-link {
+    padding: 6px 7px;
+    font-size: 12.5px;
+  }
+
+  .page-wrap,
+  .key-figures .page-wrap {
+    width: calc(100% - 40px);
+  }
+
+  .kf-card {
+    padding: 18px;
+  }
+
+  .kf-media {
+    max-width: 150px;
   }
 }

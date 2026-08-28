@@ -13,18 +13,11 @@ function isPlainLeftClick(e) {
   );
 }
 
-function scrollToLandingMain() {
-  const el = document.querySelector("main.landing-main");
+function scrollToGallery() {
+  const el = document.querySelector("#gallery");
   if (!el) return false;
 
   el.scrollIntoView({ behavior: "smooth", block: "start" });
-  el.setAttribute("tabindex", "-1");
-  el.focus({ preventScroll: true });
-  el.addEventListener(
-    "blur",
-    () => el.removeAttribute("tabindex"),
-    { once: true }
-  );
   return true;
 }
 
@@ -35,43 +28,59 @@ function maybeAutoScrollGallery() {
   if (currentFile !== "index.html") return;
   if (window.location.hash !== "#gallery") return;
 
-
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
-      if (scrollToLandingMain()) return;
-      setTimeout(scrollToLandingMain, 250);
-      setTimeout(scrollToLandingMain, 700);
+      if (scrollToGallery()) return;
+      setTimeout(scrollToGallery, 250);
+      setTimeout(scrollToGallery, 700);
     });
+  });
+}
+
+function updateActiveNav() {
+  const links = Array.from(document.querySelectorAll(".top-nav .nav-link"));
+  const current = normalizePath(window.location.pathname);
+  const currentFile = current.split("/").pop() || "index.html";
+  const onGalleryAnchor = currentFile === "index.html" && window.location.hash === "#gallery";
+
+  links.forEach((a) => {
+    const hrefRaw = a.getAttribute("href") || "";
+    const hrefFile = normalizePath(hrefRaw).split("/").pop();
+    const hrefHash = hrefRaw.includes("#") ? `#${hrefRaw.split("#")[1]}` : "";
+
+    let isActive = false;
+    if (currentFile === "detail.html") {
+      isActive = hrefFile === "index.html" && hrefHash === "#gallery";
+    } else if (currentFile === "index.html") {
+      isActive = onGalleryAnchor
+        ? hrefFile === "index.html" && hrefHash === "#gallery"
+        : hrefFile === "index.html" && !hrefHash;
+    } else {
+      isActive = currentFile === hrefFile;
+    }
+
+    a.classList.toggle("is-active", isActive);
+    if (isActive) a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   maybeAutoScrollGallery();
-  window.addEventListener("hashchange", maybeAutoScrollGallery);
+  updateActiveNav();
+  window.addEventListener("hashchange", () => {
+    maybeAutoScrollGallery();
+    updateActiveNav();
+  });
 
   const links = Array.from(document.querySelectorAll(".top-nav .nav-link"));
   if (links.length) {
-    const current = normalizePath(window.location.pathname);
-    const currentFile = current.split("/").pop() || "index.html";
-
     links.forEach((a) => {
       const hrefRaw = a.getAttribute("href") || "";
       const hrefFile = normalizePath(hrefRaw).split("/").pop();
+      const hrefHash = hrefRaw.includes("#") ? `#${hrefRaw.split("#")[1]}` : "";
 
-      const isActive =
-        (currentFile === "" && hrefFile === "index.html") ||
-        currentFile === hrefFile ||
-        (currentFile === "detail.html" && hrefFile === "index.html");
-
-      if (isActive) {
-        a.classList.add("is-active");
-        a.setAttribute("aria-current", "page");
-      } else {
-        a.classList.remove("is-active");
-        a.removeAttribute("aria-current");
-      }
-
-      if (hrefFile === "index.html") {
+      if (hrefFile === "index.html" && hrefHash === "#gallery") {
         a.addEventListener("click", (e) => {
           if (!isPlainLeftClick(e)) return;
 
@@ -81,17 +90,34 @@ document.addEventListener("DOMContentLoaded", () => {
           e.preventDefault();
           if (hereFile === "index.html") {
             history.replaceState(null, "", "#gallery");
-            scrollToLandingMain();
+            scrollToGallery();
+            updateActiveNav();
+            if (e.detail > 0) a.blur();
           } else {
             window.location.href = "index.html#gallery";
           }
+        });
+      }
+
+      if (hrefFile === "index.html" && !hrefHash) {
+        a.addEventListener("click", (e) => {
+          if (!isPlainLeftClick(e)) return;
+
+          const here = normalizePath(window.location.pathname);
+          const hereFile = here.split("/").pop() || "index.html";
+          if (hereFile !== "index.html") return;
+
+          e.preventDefault();
+          history.replaceState(null, "", window.location.pathname + window.location.search);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          updateActiveNav();
+          if (e.detail > 0) a.blur();
         });
       }
     });
   }
 });
 
- window.addEventListener("load", () => {
+window.addEventListener("load", () => {
   if (window.location.hash === "#gallery") maybeAutoScrollGallery();
 });
- 

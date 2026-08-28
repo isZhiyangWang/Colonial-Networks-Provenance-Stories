@@ -49,21 +49,63 @@ function appendWrappedLabels(nodeGroup, className, maxChars = 18) {
 }
 
 function addLayoutForces(simulation, nodes, w, h) {
-  const vertical = h > w * 1.2;
+  const compact = w < 520;
+  const vertical = compact || h > w * 1.2;
   const count = Math.max(nodes.length, 1);
-  const targetX = (d) => vertical
-    ? w * (d.layoutIndex % 2 === 0 ? 0.34 : 0.66)
-    : ((d.layoutIndex + 1) * w) / (count + 1);
-  const targetY = (d) => vertical
-    ? ((d.layoutIndex + 1) * h) / (count + 1)
-    : h * (d.layoutIndex % 2 === 0 ? 0.43 : 0.57);
+  const useCompactGrid = compact && count > 3;
+  const compactRows = Math.ceil(count / 2);
+  const targetX = (d) => {
+    if (compact) return useCompactGrid ? w * (d.layoutIndex % 2 === 0 ? 0.3 : 0.7) : w * 0.5;
+    return vertical
+      ? w * (d.layoutIndex % 2 === 0 ? 0.34 : 0.66)
+      : ((d.layoutIndex + 1) * w) / (count + 1);
+  };
+  const targetY = (d) => {
+    if (compact) {
+      const row = useCompactGrid ? Math.floor(d.layoutIndex / 2) : d.layoutIndex;
+      const rowCount = useCompactGrid ? compactRows : count;
+      return ((row + 1) * h) / (rowCount + 1);
+    }
+    return vertical
+      ? ((d.layoutIndex + 1) * h) / (count + 1)
+      : h * (d.layoutIndex % 2 === 0 ? 0.43 : 0.57);
+  };
 
   simulation
-    .force("x", d3.forceX(targetX).strength(0.65))
-    .force("y", d3.forceY(targetY).strength(0.65))
-    .force("collide", d3.forceCollide(vertical ? 42 : 58));
+    .force("x", d3.forceX(targetX).strength(compact ? 1 : 0.65))
+    .force("y", d3.forceY(targetY).strength(compact ? 0.85 : 0.65))
+    .force("collide", d3.forceCollide(compact ? 44 : vertical ? 42 : 58));
+
+  if (compact) simulation.force("charge", d3.forceManyBody().strength(-50));
 
   return vertical;
+}
+
+function getLinkLabelPosition(link, offset = 0) {
+  const x = (link.source.x + link.target.x) / 2;
+  const y = (link.source.y + link.target.y) / 2;
+  if (!offset) return { x, y };
+
+  const dx = link.target.x - link.source.x;
+  const dy = link.target.y - link.source.y;
+  const length = Math.hypot(dx, dy) || 1;
+  let normalX = -dy / length;
+  let normalY = dx / length;
+
+  if (Math.abs(dy) <= Math.abs(dx) * 0.35 && normalY < 0) {
+    normalX *= -1;
+    normalY *= -1;
+  } else if (Math.abs(dx) < Math.abs(dy) && normalX > 0) {
+    normalX *= -1;
+    normalY *= -1;
+  }
+
+  const nearHorizontal = Math.abs(dy) <= Math.abs(dx) * 0.35;
+  const horizontalShift = offset && nearHorizontal ? Math.sign(dx || 1) * 38 : 0;
+  return {
+    x: x + normalX * offset + horizontalShift,
+    y: y + normalY * offset,
+  };
 }
 
 function clampNodes(nodes, w, h, vertical) {
@@ -82,6 +124,20 @@ export function drawNetworkForEvent(ev) {
 
   const parent = document.querySelector(".col-middle");
   if (!parent) { console.error("Parent container `.col-middle` not found!"); return; }
+
+  const compactLayout = window.matchMedia("(max-width: 900px)").matches;
+
+  if (compactLayout) {
+    const nodeNames = new Set();
+    ev.networkPairs?.forEach((pair) => { nodeNames.add(pair.source); nodeNames.add(pair.target); });
+    const rows = nodeNames.size > 3 ? Math.ceil(nodeNames.size / 2) : nodeNames.size;
+    const compactHeight = rows > 2 ? rows * 130 + 80 : 320;
+    parent.style.height = `${compactHeight}px`;
+    parent.style.minHeight = `${compactHeight}px`;
+  } else {
+    parent.style.removeProperty("height");
+    parent.style.removeProperty("min-height");
+  }
 
   const w = parent.clientWidth;
   const h = parent.clientHeight;
@@ -137,7 +193,9 @@ function renderLocalNetwork(svg, w, h, ev) {
 
   const linkLabel = svg.selectAll(".local-link-label").data(links).enter()
     .append("text").attr("class", "local-link-label")
+    .attr("text-anchor", "middle")
     .style("font-size", "10px").style("fill", "#555")
+    .style("paint-order", "stroke").style("stroke", "#fff").style("stroke-width", "3px")
     .text((d) => d.label);
 
   const nodeGroup = svg.selectAll(".local-node-group").data(nodes).enter()
@@ -185,8 +243,8 @@ function renderLocalNetwork(svg, w, h, ev) {
     clampNodes(nodes, w, h, verticalLayout);
     link.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y)
         .attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
-    linkLabel.attr("x", (d) => (d.source.x + d.target.x) / 2)
-             .attr("y", (d) => (d.source.y + d.target.y) / 2);
+    linkLabel.attr("x", (d) => getLinkLabelPosition(d, w < 520 ? 36 : 0).x)
+             .attr("y", (d) => getLinkLabelPosition(d, w < 520 ? 36 : 0).y);
     nodeGroup.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
   }
 
@@ -249,7 +307,9 @@ export function openEnlargedEventNetwork(ev) {
 
   const linkLabel = zoomContainer.selectAll(".enlarged-link-label").data(links).enter()
     .append("text").attr("class", "enlarged-link-label")
+    .attr("text-anchor", "middle")
     .style("font-size", "11px").style("fill", "#555").style("pointer-events", "none")
+    .style("paint-order", "stroke").style("stroke", "#fff").style("stroke-width", "3px")
     .text((d) => d.label);
 
   const nodeGroup = zoomContainer.selectAll(".enlarged-node-group").data(nodes).enter()
@@ -302,8 +362,8 @@ export function openEnlargedEventNetwork(ev) {
     clampNodes(nodes, w, h, verticalLayout);
     link.attr("x1", (d) => d.source.x).attr("y1", (d) => d.source.y)
         .attr("x2", (d) => d.target.x).attr("y2", (d) => d.target.y);
-    linkLabel.attr("x", (d) => (d.source.x + d.target.x) / 2)
-             .attr("y", (d) => (d.source.y + d.target.y) / 2);
+    linkLabel.attr("x", (d) => getLinkLabelPosition(d, w < 520 ? 38 : 0).x)
+             .attr("y", (d) => getLinkLabelPosition(d, w < 520 ? 38 : 0).y);
     nodeGroup.attr("transform", (d) => `translate(${d.x}, ${d.y})`);
   }
 

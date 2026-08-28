@@ -2,8 +2,8 @@ import { $, $q, setText, setHTML, px, getFilenameBase } from "./utils.js";
 import { openImageLightbox, closeImageLightbox } from "./lightbox.js";
 import { installHighlightSelection } from "./selection.js";
 import { buildMap, processProvenanceOnMap, plotPlaces } from "./map.js";
-import { drawNetworkForEvent, openEnlargedEventNetwork } from "./localNetwork.js";
-import { drawSocialNetwork } from "./socialNetwork.js";
+import { drawNetworkForEvent, openEnlargedEventNetwork } from "./localNetwork.js?v=20260826-desktop-8";
+import { drawSocialNetwork } from "./socialNetwork.js?v=20260824-mobile-5";
 import { renderInteractiveProvenanceD3 } from "./provenanceRenderer.js";
 
 installHighlightSelection();
