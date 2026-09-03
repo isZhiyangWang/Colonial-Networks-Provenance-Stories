@@ -52,5 +52,14 @@
     "museum": "Musée du Louvre",
     "image_url": "assets/joseph-vernet.jpg",
     "excerpt": "Vernet’s sunlit view of Rome’s Tiber River sets a modest group of fishermen against a grand backdrop of classical architecture, including two monuments associated with the Emperor Hadrian."
+  },
+  {
+    "id": "vigee-le-brun",
+    "artist": "Élisabeth Vigée Le Brun",
+    "title": "Portrait of Hubert Robert",
+    "date": "1788",
+    "museum": "Musée du Louvre",
+    "image_url": "assets/vigee-le-brun.jpg",
+    "excerpt": "Vigée Le Brun’s pared-down portrait of a wigless Hubert Robert presents him as a natural and enlightened figure, fitting characteristics for the period’s leading landscape painter."
   }
 ]

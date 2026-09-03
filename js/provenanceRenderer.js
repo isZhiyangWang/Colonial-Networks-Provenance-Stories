@@ -74,7 +74,7 @@ function findAllOccurrences(haystack, needle){
 }
 
 
-  function buildStyledHtml(fullText, greenTerms, eventsToBold) {
+  function buildStyledHtml(fullText, greenTerms, yellowTerms, eventsToBold) {
     const text = String(fullText || "");
     const ranges = [];
 
@@ -82,6 +82,13 @@ function findAllOccurrences(haystack, needle){
       if (!term) return;
       const occ = findAllOccurrences(text, buildNameRegex(term));
       occ.forEach(o => { o.styles = { ...o.styles, green: true }; });
+      ranges.push(...occ);
+    });
+
+    (yellowTerms || []).forEach(term => {
+      if (!term) return;
+      const occ = findAllOccurrences(text, buildNameRegex(term));
+      occ.forEach(o => { o.styles = { ...o.styles, yellow: true }; });
       ranges.push(...occ);
     });
 
@@ -121,6 +128,7 @@ function findAllOccurrences(haystack, needle){
       const classes=["prov-chunk"];
       if (styles.event) classes.push("prov-event-mention");
       if (styles.green) classes.push("colonial-figure");
+      if (styles.yellow) classes.push("museum-name");
       return `<span class="${classes.join(" ")}">${chunk}</span>`;
     }).join("");
   }
@@ -199,19 +207,21 @@ function findAllOccurrences(haystack, needle){
       const isGreenColor = (d.figure && String(d.figure).toLowerCase() === "green");
 
       const greenTerms = normalizeNames(d.greenNames ?? (isGreenColor ? d.owner : []));
+      const yellowTerms = normalizeNames(d.yellowNames);
 
       const sid = entryIdToStoryId[d.id];
       const forceEntryBold = !!(sid !== undefined && sid !== null);
       const relevantEvents = forceEntryBold ? (storyIdToEventsMap[sid] || []) : [];
 
-      const styledText = buildStyledHtml(d.fullText, greenTerms, relevantEvents);
+      const styledText = buildStyledHtml(d.fullText, greenTerms, yellowTerms, relevantEvents);
       if (!forceEntryBold) return `${styledText} `;
 
       if (d.boldText && d.fullText.startsWith(d.boldText)) {
-        const styledBoldText = buildStyledHtml(d.boldText, greenTerms, relevantEvents);
+        const styledBoldText = buildStyledHtml(d.boldText, greenTerms, yellowTerms, relevantEvents);
         const styledRemainder = buildStyledHtml(
           d.fullText.slice(d.boldText.length),
           greenTerms,
+          yellowTerms,
           relevantEvents
         );
         return `<strong class="prov-entry-bold">${styledBoldText}</strong>${styledRemainder} `;

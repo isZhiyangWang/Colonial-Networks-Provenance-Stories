@@ -1085,6 +1085,10 @@ header {
   color: #2e7d32;
 }
 
+.museum-name {
+  color: #b28a00;
+}
+
 .prov-entry-bold {
   font-weight: 700 !important;
 }

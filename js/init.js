@@ -4,7 +4,7 @@ import { installHighlightSelection } from "./selection.js";
 import { buildMap, processProvenanceOnMap, plotPlaces } from "./map.js";
 import { drawNetworkForEvent, openEnlargedEventNetwork } from "./localNetwork.js?v=20260826-desktop-8";
 import { drawSocialNetwork } from "./socialNetwork.js?v=20260824-mobile-5";
-import { renderInteractiveProvenanceD3 } from "./provenanceRenderer.js";
+import { renderInteractiveProvenanceD3 } from "./provenanceRenderer.js?v=20260827-vigee-1";
 
 installHighlightSelection();
 
@@ -260,7 +260,10 @@ if (!currentSelection || currentSelection.mode === "story" || !sameStory) {
 
   renderInteractiveProvenanceD3(provenanceTimeline, provenanceEvents, openEventModal);
 
-  if (provenanceEvents.length > 0) openEventModal(0);
+  if (provenanceEvents.length > 0) {
+    window.__suppressTimelineScrollOnce = true;
+    openEventModal(0);
+  }
 }
 
 // --- Bootstrap ---------------------------------------------------------------
