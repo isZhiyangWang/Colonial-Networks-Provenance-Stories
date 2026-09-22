@@ -1,0 +1,245 @@
+{
+  "artworkData": {
+    "artistName": "Claude Audran III",
+    "nationality": "French",
+    "creationYear": "Before 1658-1724",
+    "artworkName": "Ceiling painted with arabesques and singeries",
+    "artworkNameHtml": "Ceiling painted with <em>arabesques</em> and <em>singeries</em>",
+    "artworkYear": "c. 1713",
+    "medium": "Oil on plaster",
+    "intro": "Audran’s decorative style of painting was beloved by members of the French court, including financiers who built fortunes from colonial trade. This singerie ceiling was originally created for a room in a hôtel on Paris’s Left Bank that belonged to a director of the Saint-Domingue Company. It depicts fancifully dressed monkeys, one of whom holds up a slave collar. The painting attests to the multiple entanglements of empire, race, and enslavement among the hôtel’s occupants over three centuries—notably its female occupants and enslaved servants, who typically remain absent from provenance histories.",
+    "introHtml": "Audran’s decorative style of painting was beloved by members of the French court, including financiers who built fortunes from colonial trade. This <a href=\"https://journals.openedition.org/insitu/805\" target=\"_blank\" rel=\"noopener noreferrer\"><em>singerie</em> ceiling</a> was originally created for a room in a hôtel on Paris’s Left Bank that belonged to a director of the Saint-Domingue Company. It depicts fancifully dressed monkeys, one of whom holds up a slave collar. The painting attests to the multiple entanglements of empire, race, and enslavement among the hôtel’s occupants over three centuries—notably its female occupants and enslaved servants, who typically remain absent from provenance histories.",
+    "museumUrl": "https://maps.app.goo.gl/xaSvF5vCDLAzPhDK8",
+    "museumName": "Éditions Gallimard Offices, 26 rue de Condé, Paris",
+    "imageUrl": "assets/audran.jpg"
+  },
+  "placeData": {
+    "Paris": {
+      "name": "Paris",
+      "coords": [48.8566, 2.3522]
+    }
+  },
+  "provenanceEvents": [
+    {
+      "id": 0,
+      "title": "1. Audran in the “Hôtel Charles Testu”:  A Fixed Artwork with Mobile Occupants",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "painted",
+      "text": "<p>Unlike other objects in the Provenance Stories Gallery, this ceiling has stayed in the same place since its creation.  The “journey” explored here is experienced not by the artwork itself but via the room’s many occupants, who moved through the space as the property changed hands over time. Built in the mid-seventeenth century for Charles Testu, who was charged with overseeing nighttime security in Paris, this hôtel at 26 rue de Condé passed to his widow and then to her sister before it was acquired by Joseph Legendre d’Armény, who commissioned the ceiling from Audran.</p><p>While portable cabinet pictures became increasingly popular among eighteenth-century French collectors, decorative paintings created for a specific interior were still common. Indeed some of the most famous French artworks from this period, including those that now hang in museums, were originally made to be site-specific.</p><p>Audran was the leading decorative painter of his generation, executing works for the royal palaces of Fontainebleau and Versailles in addition to hôtels acquired by Paris’s art world elite. He also served as the resident curator of Luxembourg Palace, just a stone’s throw away from 26 rue de Condé.</p>",
+      "participants": [
+        { "name": "Audran", "type": "person" },
+        { "name": "Hôtel Ceiling", "type": "object" }
+      ],
+      "networkPairs": [
+        { "source": "Audran", "target": "Hôtel Ceiling", "label": "painted" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Hôtel Charles Testu, 26 rue de Condé, Paris. Source: <a href=\"https://fr.wikipedia.org/wiki/H%C3%B4tel_Charles-Testu\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>.</p>",
+      "imageAlt": "Hôtel Charles Testu, 26 rue de Condé, Paris."
+    },
+    {
+      "id": 1,
+      "title": "2. Audran’s Colonial Clients",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "commissioned by",
+      "text": "<p>Joseph Legendre d’Armény (c. 1683-after 1735, also spelled d’Arminy) hired Audran to paint this ceiling around 1713, the same year he bought the hôtel. He was the son of François Legendre (c. 1630-96), a wealthy tax farmer, business partner, and father-in-law of Antoine Crozat, who played a key role in developing France’s colonial empire and slave trading operations in the Americas. The Legendre-Crozat alliance probably led to Joseph’s appointment as a director of the Saint-Domingue Company (created by Louis XIV in 1698 to develop the colony of Saint-Domingue), given that his father and Crozat were principal investors.</p><p>Legendre d’Armény was a typical client for Audran, who had his own family connections to the colony: the artist’s nephew Gabriel lived there. Many of Audran’s patrons, among them the <a href=\"https://madparis.fr/Claude-III-Audran-1657-1734-attrib-to-Ceiling-painted-with-singeries-Paris-c\" target=\"_blank\" rel=\"noopener noreferrer\">comtesse de Verrue</a>,  were involved in colonial commerce, either as royal administrators or as speculators in ventures like John Law’s Mississippi Company. They built spectacular Parisian hôtels that Audran and his student assistants ornamented with arabesque, <em>singerie</em>, and <em>chinoiserie</em> designs.</p><p>Audran’s design for this <em>singerie</em> (“monkey-trick”) cabinet, which may have served as a boudoir for a female resident, featured elements that evoked its patron’s colonial ties, including tropical birds as well as monkeys that were often associated in this period with colonial territories and enslaved Africans. One monkey on this ceiling holds out a slave collar similar to those worn in contemporaneous portraits of enslaved African attendants alongside white sitters, including <a href=\"https://musee-aquitaine.opacweb.fr/fr/notice/2003-4-2-portrait-presume-de-la-comtesse-de-fontenelle-et-de-son-negrillon-8897b729-49da-4f3c-a351-1a6e184357a6\" target=\"_blank\" rel=\"noopener noreferrer\">one painting</a> that makes a demeaning connection between an enslaved African child and a monkey.</p>",
+      "participants": [
+        { "name": "Audran", "type": "person" },
+        { "name": "Legendre d’Armény", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Audran", "target": "Legendre d’Armény", "label": "commissioned by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Audran’s <em>singerie</em> ceiling at the hôtel Charles Testu, 26 rue de Condé. Photo by Meredith Martin; reproduced with the kind permission of Éditions Gallimard.</p>",
+      "imageAlt": "Audran’s singerie ceiling at the hôtel Charles Testu, 26 rue de Condé."
+    },
+    {
+      "id": 2,
+      "title": "3. Femmes coloniales: Mesdames d’Aulnoy, Crozat, Souscarrière, and Legendre",
+      "titleHtml": "3. <em>Femmes coloniales</em>: Mesdames d’Aulnoy, Crozat, Souscarrière, and Legendre",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "by usufruct to",
+      "text": "<p>One of the hôtel’s first occupants was Françoise-Angélique-Maxime de la Motte d’Aulnoy (c. 1677-1727), Legendre d’Armény’s protegée and possible lover. He authorized her to live and “enjoy” the property via usufruct “for the duration of her life,” and he may even have commissioned the ceiling for her. Françoise-Angélique was the daughter of the famed fairy tale author Madame d’Aulnoy, whose <a href=\"https://www.tandfonline.com/doi/full/10.1080/20563035.2023.2185848\" target=\"_blank\" rel=\"noopener noreferrer\">travel writings</a> and <a href=\"https://www.academia.edu/35052790/Imperial_Marvels_Race_and_the_Colonial_Imagination_in_the_Fairy_Tales_of_Madame_dAulnoy\" target=\"_blank\" rel=\"noopener noreferrer\">stories</a>—including one about a princess transformed into a monkey—engaged themes of race, colonialism, and enslavement. At one point, recounting her time in Spain, Madame d’Aulnoy writes of purchasing her own enslaved servant, a nine-year-old girl named Zayde. Audran often referenced fairy tales in his work, and certain details of this ceiling decoration could have been inspired by d’Aulnoy and her daughter.</p><p>Legendre d’Armény had several sisters whom his parents married off to wealthy elites with influential government and colonial ties. In addition to <a href=\"https://www.museefabre.fr/recherche/musee%3AMUS_BIEN%3A3476?is_search_page=1&amp;search=crozat&amp;currentPage=1\" target=\"_blank\" rel=\"noopener noreferrer\">Marie-Marguerite</a> (1668-1741), who wed Antoine Crozat, two other sisters, Catherine-Marie (d. 1749) and Françoise (ca. 1684-1733), married Claude Pécoil and the chevalier de Souscarrière respectively. Both women were depicted with enslaved African attendants wearing metal collars in portraits by <a href=\"https://www.nationalgallery.org.uk/paintings/nicolas-de-largillierre-and-studio-mme-de-souscarriere-and-her-page\" target=\"_blank\" rel=\"noopener noreferrer\">Nicolas de Largillière</a> and <a href=\"https://www.liverpoolmuseums.org.uk/santerres-catherine-marie-legendre\" target=\"_blank\" rel=\"noopener noreferrer\">Jean-Baptiste Santerre</a>. Although often interpreted as figural “types” meant to enhance the beauty of their white sitters, these portrayed servants likely referred to real-life enslaved youth who had been trafficked to Paris to serve the Legendre family. Like their female enslavers, they, too, may have visited the rue de Condé hôtel and seen Audran’s work.</p>",
+      "participants": [
+        { "name": "Legendre d’Armény", "type": "greenperson" },
+        { "name": "La Motte d’Aulnoy", "type": "person" }
+      ],
+      "networkPairs": [
+        { "source": "Legendre d’Armény", "target": "La Motte d’Aulnoy", "label": "by usufruct to" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Nicolas de Largillière and Studio, <em>Mme de Souscarrière (?) with an Enslaved Attendant</em>, prob. 1729. Oil on canvas, 136.5 x 104.1 cm. National Gallery, London</p>",
+      "imageAlt": "Nicolas de Largillière and Studio, Mme de Souscarrière (?) with an Enslaved Attendant, probably 1729."
+    },
+    {
+      "id": 3,
+      "title": "4. A French Author and His Creole Servant: Beaumarchais and Ambroise Lucas",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "acquired by",
+      "text": "<p>In 1763, the hôtel was acquired by the writer Pierre-Augustin Caron de Beaumarchais (1732-99), who resided there along with his father and two younger sisters. Although best known for his Figaro plays—one of which, <em>The Barber of Seville</em> (1773), was written onsite—Beaumarchais also worked as a watchmaker, musician, diplomat, spy, and arms dealer, supplying weapons to rebel forces before and during the American Revolution that were funneled through Saint-Domingue. Through court contacts he met the financier Joseph Pâris Duverney, who reorganized the French East India Company in the wake of the Law scandal. In 1764, a year after he purchased the hôtel, Beaumarchais traveled to Spain on Duverney’s behalf to obtain the rights to trade slaves in Spain’s American colonies.</p><p>In 1766, a formerly enslaved man born in Martinique named Ambroise Lucas joined the rue de Condé household as a domestic servant. Beaumarchais described him as “<a href=\"https://slavesinparis.org/\" target=\"_blank\" rel=\"noopener noreferrer\">the lackey who opens my door for me</a>.” That year, Lucas’s former enslaver had him arrested and sent to Saint-Domingue, where he was re-enslaved before returning to Paris and obtaining his freedom in 1770. Beaumarchais fought the arrest, although his main objection seems to have been that Lucas was seized while wearing Beaumarchais’s livery, thus drawing attention to him. Lucas would certainly have encountered the Audran ceiling during his time at the hôtel.</p>",
+      "participants": [
+        { "name": "François Chevalier", "type": "person" },
+        { "name": "Beaumarchais", "type": "person" }
+      ],
+      "networkPairs": [
+        { "source": "François Chevalier", "target": "Beaumarchais", "label": "acquired by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Jean-Marc Nattier, <em>Portrait of Beaumarchais</em>, c. 1755. Private Collection. Source: <a href=\"https://commons.wikimedia.org/wiki/File:Jean-Marc_Nattier,_Portrait_de_Pierre-Augustin_Caron_de_Beaumarchais_(1755).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>.</p>",
+      "imageAlt": "Jean-Marc Nattier, Portrait of Beaumarchais, c. 1755."
+    },
+    {
+      "id": 4,
+      "title": "5. Colonialism and the Creative Imagination: Rachilde and the Mercure de France",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "acquired by",
+      "text": "<p>After Beaumarchais, the property passed into the hands of the Faure family, who occupied it for most of the nineteenth century. Around 1890, it became the headquarters of the <em>Mercure de France</em>, a Symbolist journal founded by Arthur Vallette and a group of writers that included his wife, Marguerite Vallette-Eymery (1860-1953), who went by the pen name Rachilde. She lived there for many years.</p><p>Rachilde’s father had been a solider stationed in French Algeria, and she became a prominent author and cultural figure during the height of France’s Second Colonial Empire. Many of her novels explored colonial themes, among them <em>The Juggler</em> (1900), whose female protagonist, Eliante, identifies as French Créole and has a Black Martinican servant named Ninaude. Eliante’s Parisian bedroom is filled with animal skins, ebony furniture, and Indian textiles taken from a ship that her husband commanded during one of his transoceanic voyages, and she displays a marked preference for exotic experiences and things.</p><p>Rachilde fashioned a colonial fantasy in this fictional room that enabled her protagonist to transport herself beyond Paris. Much like the real cabinet with Audran’s decorative ceiling, both these rooms created spaces for immersive reverie embedded in France’s colonial imaginings, despite the two centuries of history between them.</p>",
+      "participants": [
+        { "name": "Beaumarchais", "type": "person" },
+        { "name": "Faure Family", "type": "person" },
+        { "name": "Mercure de France", "type": "institution" }
+      ],
+      "networkPairs": [
+        { "source": "Beaumarchais", "target": "Faure Family", "label": "acquired by" },
+        { "source": "Faure Family", "target": "Mercure de France", "label": "acquired by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Book cover for an English edition of Rachilde’s <em>The Juggler</em>, first published in 1900. Source: <a href=\"https://www.rutgersuniversitypress.org/the-juggler/9780813516257\" target=\"_blank\" rel=\"noopener noreferrer\">Rutgers University Press</a>.</p>",
+      "imageAlt": "Book cover for an English edition of Rachilde’s The Juggler."
+    }
+  ],
+  "socialNetwork": {
+    "nodes": [
+      { "id": "Audran", "type": "person" },
+      { "id": "Hôtel Ceiling", "type": "object" },
+      { "id": "Legendre d’Armény", "type": "greenperson" },
+      { "id": "La Motte d’Aulnoy", "type": "person" },
+      { "id": "François Chevalier", "type": "person" },
+      { "id": "Beaumarchais", "type": "person" },
+      { "id": "Faure Family", "type": "person" },
+      { "id": "Mercure de France", "type": "institution" }
+    ],
+    "edges": [
+      { "source": "Audran", "target": "Hôtel Ceiling", "relationship": "painted" },
+      { "source": "Audran", "target": "Legendre d’Armény", "relationship": "commissioned by" },
+      { "source": "Legendre d’Armény", "target": "La Motte d’Aulnoy", "relationship": "by usufruct to" },
+      { "source": "François Chevalier", "target": "Beaumarchais", "relationship": "acquired by" },
+      { "source": "Beaumarchais", "target": "Faure Family", "relationship": "acquired by" },
+      { "source": "Faure Family", "target": "Mercure de France", "relationship": "acquired by" }
+    ]
+  },
+  "provenanceTimeline": {
+    "entries": [
+      {
+        "id": "prov-1713-created",
+        "owner": "Joseph Legendre d’Armény",
+        "storyId": 1,
+        "greenNames": ["Joseph Legendre d’Armény"],
+        "location": "Paris",
+        "boldText": "Created around 1713 for Joseph Legendre d’Armény (c. 1683-after 1735)",
+        "fullText": "Created around 1713 for Joseph Legendre d’Armény (c. 1683-after 1735);"
+      },
+      {
+        "id": "prov-1713-purchased-prefix",
+        "owner": "Joseph Legendre d’Armény",
+        "location": "Paris",
+        "fullText": "he purchased the hôtel at 26 rue de Condé that year for"
+      },
+      {
+        "id": "prov-1713-aulnoy",
+        "owner": "Françoise-Angélique-Maxime de la Motte d’Aulnoy",
+        "storyId": 2,
+        "location": "Paris",
+        "boldText": "Françoise-Angélique-Maxime de la Motte d’Aulnoy (c. 1677-1727)",
+        "fullText": "Françoise-Angélique-Maxime de la Motte d’Aulnoy (c. 1677-1727);"
+      },
+      {
+        "id": "prov-1740-chevalier",
+        "owner": "François Chevalier, marquis du Perier",
+        "location": "Paris",
+        "fullText": "sold in 1740 to François Chevalier, marquis du Perier;"
+      },
+      {
+        "id": "prov-1763-beaumarchais",
+        "owner": "Pierre Augustin Caron de Beaumarchais",
+        "storyId": 3,
+        "greenNames": ["Pierre Augustin Caron de Beaumarchais"],
+        "location": "Paris",
+        "boldText": "acquired in 1763 by Pierre Augustin Caron de Beaumarchais (1732-99)",
+        "fullText": "acquired in 1763 by Pierre Augustin Caron de Beaumarchais (1732-99), who sold the property in 1785;"
+      },
+      {
+        "id": "prov-1809-faure",
+        "owner": "Faure family",
+        "location": "Paris",
+        "fullText": "occupied from 1809-79 by the Faure family;"
+      },
+      {
+        "id": "prov-1890-mercure",
+        "owner": "Mercure de France",
+        "storyId": 4,
+        "location": "Paris",
+        "boldText": "around 1890 the hôtel became headquarters of the Mercure de France publishing house, founded by Alfred Vallette and his wife Rachilde (1860-1953)",
+        "fullText": "around 1890 the hôtel became headquarters of the Mercure de France publishing house, founded by Alfred Vallette and his wife Rachilde (1860-1953);"
+      },
+      {
+        "id": "prov-1958-gallimard",
+        "owner": "Éditions Gallimard",
+        "location": "Paris",
+        "fullText": "bought by Éditions Gallimard in 1958."
+      }
+    ],
+    "events": [
+      {
+        "date": "1713",
+        "event": "Painted by Audran",
+        "storyId": 0
+      },
+      {
+        "date": "1713",
+        "event": "Joseph Legendre d’Armény (commissioned)",
+        "storyId": 1,
+        "entryId": "prov-1713-created"
+      },
+      {
+        "date": "1713",
+        "event": "La Motte d’Aulnoy",
+        "storyId": 2,
+        "entryId": "prov-1713-aulnoy"
+      },
+      {
+        "date": "1740",
+        "event": "François Chevalier",
+        "entryId": "prov-1740-chevalier"
+      },
+      {
+        "date": "1763",
+        "event": "Pierre Augustin Caron de Beaumarchais",
+        "storyId": 3,
+        "entryId": "prov-1763-beaumarchais"
+      },
+      {
+        "date": "1809",
+        "event": "Faure Family",
+        "entryId": "prov-1809-faure"
+      },
+      {
+        "date": "1890",
+        "event": "Mercure de France (Alfred Valette and Rachilde)",
+        "storyId": 4,
+        "entryId": "prov-1890-mercure"
+      },
+      {
+        "date": "1958",
+        "event": "Éditions Gallimard",
+        "entryId": "prov-1958-gallimard"
+      }
+    ]
+  }
+}

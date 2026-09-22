@@ -223,5 +223,187 @@
       "sourceSuffix": ".",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Self-portrait_in_a_Straw_Hat_by_Elisabeth-Louise_Vig%C3%A9e-Lebrun.jpg"
     }
+  },
+  {
+    "id": "jeanne-baptiste-d-albert",
+    "name": "Jeanne Baptiste d'Albert de Luynes, comtesse de Verrue",
+    "dates": "1670-1736",
+    "text": "One of the most important Parisian art collectors of the early eighteenth century, she played a key role in establishing a taste for Dutch and Flemish painting in France. Although thousands were ruined by the collapse of John Law’s Mississippi Bubble, Verrue and her well-connected circle of friends made a fortune off the colonial investment scheme and used their profits to buy art.",
+    "image": {
+      "src": "./assets/figures/jeanne-baptiste-d-albert.jpg",
+      "shape": "rect",
+      "work": "Circle of Hyacinthe Rigaud, Presumed portrait of the comtesse de Verrue, c. 1720.",
+      "captionHtml": "Circle of Hyacinthe Rigaud, <em>Presumed portrait of the comtesse de Verrue</em>, c. 1720. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:Portrait_dit_de_la_comtesse_de_Verrue.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "louis-de-bourbon-conde",
+    "name": "Louis de Bourbon-Condé, comte de Clermont",
+    "dates": "1709-1771",
+    "text": "A member of the royal Condé family whose father made millions from speculating in John Law’s Mississippi Company. The comte likely also invested in colonial trade, and, as the Grand Master of the chief Masonic lodge in France, he promoted the spread of Freemasonry throughout Saint-Domingue, which provided a supportive network both for French colonists and, later, for Haitian revolutionaries.",
+    "image": {
+      "src": "./assets/figures/louis-de-bourbon-conde.jpg",
+      "shape": "rect",
+      "work": "François-Hubert Drouais, Portrait of the comte de Clermont, 1771.",
+      "captionHtml": "François-Hubert Drouais, <em>Portrait of the comte de Clermont</em>, 1771. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:1771_portrait_painting_of_Louis_de_Bourbon,_Count_of_Clermont_by_Fran%C3%A7ois_Hubert_Drouais.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "louis-de-noailles",
+    "name": "Louis, duc de Noailles and d’Ayen",
+    "dates": "1713-1793",
+    "text": "Riding on the coattails of his father’s military exploits, Louis de Noailles was made a Marshal of France and was given a large land concession in the northern part of Saint-Domingue that Louis XV hoped he would develop into a profitable plantation. Noailles focused most of his attention, however, on small-scale botanical experiments and sugarcane cultivation at his lavish estate outside of Paris, in addition to growing his art collection.",
+    "image": {
+      "src": "./assets/figures/louis-de-noailles.jpg",
+      "shape": "rect",
+      "work": "Unidentified painter, Portrait of Louis de Noailles, n.d.",
+      "captionHtml": "Unidentified painter, <em>Portrait of Louis de Noailles</em>, n.d. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:Louis_de_Noailles,_Duke_of_Noailles_(1713-793),_Marshal_of_France,_(%C3%89cole_Fran%C3%A7aise).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "leon-de-madaillan",
+    "name": "Léon de Madaillan de Lesparre, comte de Lassay",
+    "dates": "1683-1750",
+    "text": "A member of the comtesse de Verrue’s inner circle who was also a celebrated patron of art and architecture. The Parisian hôtel that he built with his mistress (the duchesse de Bourbon, a daughter of Louis XIV) with the windfall they made from the Mississippi Bubble is now home to the President of France’s National Assembly.",
+    "image": {
+      "src": "./assets/figures/leon-de-madaillan.jpg",
+      "shape": "rect",
+      "work": "Studio of Jean-Baptiste van Loo, Portrait of the marquis de Lassay, n.d.",
+      "captionHtml": "Studio of Jean-Baptiste van Loo, <em>Portrait of the marquis de Lassay</em>, n.d. Image source: <a href=\"https://www.assemblee-nationale.fr/var/ezflow_site/storage/images/3/0/1/3/5733103-9-fre-FR/001_ID%201.1_Atelier%20de%20Van%20Loo,%20Marquis%20de%20Lassay%20C.%20AN_L.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Assemblée Nationale</a>."
+    }
+  },
+  {
+    "id": "cesar-gabriel-de-choiseul",
+    "name": "César Gabriel de Choiseul, duc de Praslin",
+    "dates": "1712-1785",
+    "text": "A powerful courtier, art collector, and royal administrator. During the 1760s, Praslin traded off the positions of France’s Foreign minister and Navy Minister with his cousin, the duc de Choiseul. In addition to overseeing France’s colonial policy during this decade, he acquired a sugar plantation in the southern part of Saint-Domingue and got Louis XV to grant his immediate family control of the three main islands off the coast of Saint-Domingue: Gonaïve, La Tortue, and the Isle à Vache.",
+    "image": {
+      "src": "./assets/figures/cesar-gabriel-de-choiseul.jpg",
+      "shape": "rect",
+      "work": "Alexandre Roslin, Portrait of César Gabriel de Choiseul, duc de Praslin, 1762.",
+      "captionHtml": "Alexandre Roslin, <em>Portrait of César Gabriel de Choiseul, duc de Praslin</em>, 1762. Image source: <a href=\"https://en.wikipedia.org/wiki/C%C3%A9sar_Gabriel_de_Choiseul,_Duke_of_Praslin\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "renaud-cesar-de-choiseul",
+    "name": "Renaud César de Choiseul, duc de Praslin",
+    "dates": "1735-1791",
+    "text": "A soldier and diplomat who inherited his father’s art collection, sugar plantation, and islands off the coast of Saint-Domingue. In 1785, he sold one of these islands (La Tortue) and its enslaved labor force to a developer and may have used the profits to renovate his sumptuous new Parisian hôtel, known as the “Hôtel de Belle Isle.” His also expanded his art collection, the sale of which, in 1793, was a major event in the Paris art world. Many of the works that were sold now reside in the Louvre and other major museums.",
+    "image": {
+      "src": "./assets/figures/renaud-cesar-de-choiseul.jpg",
+      "shape": "rect",
+      "work": "Unidentified artist, Portrait of Renaud César de Choiseul, duc de Praslin, n.d.",
+      "captionHtml": "Unidentified artist, <em>Portrait of Renaud César de Choiseul, duc de Praslin</em>, n.d. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:Renaud_C%C3%A9sar_de_Choiseul,_Duke_of_Praslin_(1735-1791)_by_an_anonymous_artist.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "john-julius-angerstein",
+    "name": "John Julius Angerstein",
+    "dates": "1735-1823",
+    "text": "A banker and art collector who played a key role in developing the maritime insurance business of Lloyd’s of London, underwriting ships that were involved in the transatlantic slave trade. He made a fortune in this industry and used it to amass a celebrated collection of paintings, 38 of which were bought by the British government upon his death to serve as the foundation of London’s National Gallery.",
+    "image": {
+      "src": "./assets/figures/john-julius-angerstein.jpg",
+      "shape": "rect",
+      "work": "Thomas Lawrence, Portrait of John Julius Angerstein, c. 1790.",
+      "captionHtml": "Thomas Lawrence, <em>Portrait of John Julius Angerstein</em>, c. 1790. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:John_Julius_Angerstein_1790.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "simon-charles-boutin",
+    "name": "Simon-Charles Boutin",
+    "dates": "1720-1794",
+    "text": "An immensely wealthy financier who served as Treasurer of France’s Navy and Colonies. In addition to Tivoli, a pleasure garden and estate in Paris that he opened to the public, he owned a large sugar plantation with 200 enslaved laborers in Saint-Domingue named “Rendezvous.” He collected neoclassical and early modern European art and was a member of Elisabeth Vigée Le Brun’s colonial network.",
+    "image": {
+      "src": "./assets/figures/simon-charles-boutin.jpg",
+      "shape": "rect",
+      "work": "Claude-Henri Watelet, Portrait of S.C. Boutin, 1752.",
+      "captionHtml": "Claude-Henri Watelet, <em>Portrait of S.C. Boutin</em>, 1752. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:Claude_Henri_Watelet_after_Charles-Nicolas_Cochin_II,_S.C._Boutin,_1752,_NGA_71311.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "louis-francois-de-bourbon",
+    "name": "Louis François de Bourbon, prince de Conti",
+    "dates": "1717-1776",
+    "text": "A legendary art collector and member of the French royal family. He served as the Grand Prior of the Knights of Malta and lived in Paris’s Palais du Temple, where he established an illustrious counter-court to rival Versailles. He was a founding investor on the Société d’Affrique, which, during the 1770s, sought to develop the French colony of Guiana and control the slave trade there.",
+    "image": {
+      "src": "./assets/figures/louis-francois-de-bourbon.jpg",
+      "shape": "rect",
+      "work": "Alexis Simon Belle, Portrait of the prince de Conti, c. 1730.",
+      "captionHtml": "Alexis Simon Belle, <em>Portrait of the prince de Conti</em>, c. 1730. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:Louis_Fran%C3%A7ois_de_Bourbon,_Prince_of_Conti_by_Alexis_Simon_Belle_(undated).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "joseph-marie-marguerite-legendre",
+    "name": "Joseph and Marie-Marguerite Legendre d’Armény",
+    "dates": "c. 1683-after 1735 and 1670-1742",
+    "text": "Joseph and his sister Marie-Marguerite were the children of François Legendre, a wealthy financier and business partner of Antoine Crozat, who was also Marie-Marguerite’s husband (she is depicted solo here, since no portrait of Joseph survives). It was most likely through these Crozat family connections that Joseph received the plum position of director of the Saint-Domingue Company, founded by Louis XIV to develop the colony of Saint-Domingue.",
+    "image": {
+      "src": "./assets/figures/joseph-marie-marguerite-legendre.jpg",
+      "shape": "rect",
+      "work": "Joseph Aved, Portrait of Marie-Marguerite Crozat (née Legendre d’Armény), 1741.",
+      "captionHtml": "Joseph Aved, <em>Portrait of Marie-Marguerite Crozat (née Legendre d’Armény)</em>, 1741. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:PeinturesMus%C3%A9eFabre061.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "pierre-augustin-beaumarchais",
+    "name": "Pierre-Augustin Caron de Beaumarchais",
+    "dates": "1732-1799",
+    "text": "A famous playwright who sold arms to American Revolutionary forces (funneling these weapons through Saint-Domingue) and negotiated slave trading rights on behalf of the French Crown. The profits he made through colonial trade and courtly connections helped him acquire a chic Parisian hôtel decorated with an Audran ceiling and to employ a formerly enslaved servant from Martinique named Ambroise Lucas.",
+    "image": {
+      "src": "./assets/figures/pierre-augustin-beaumarchais.jpg",
+      "shape": "rect",
+      "work": "Jean-Marc Nattier, Portrait of Beaumarchais, c. 1755.",
+      "captionHtml": "Jean-Marc Nattier, <em>Portrait of Beaumarchais</em>, c. 1755. Image source: <a href=\"https://en.wikipedia.org/wiki/Pierre-Augustin_de_Beaumarchais\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "claude-joseph-vernet",
+    "name": "Claude-Joseph Vernet",
+    "dates": "1714-1789",
+    "text": "France’s most celebrated marine painter of the eighteenth century. His monumental series of paintings known as the Ports de France aimed to suggest the monarchy’s potential for colonial and maritime prowess after the losses of the Seven Years’ War (1756-1763). In addition to creating works for the Crown, Vernet counted many planter collectors among his clients (including Laborde, Boutin, and Vaudreuil) and was a member of Vigée Le Brun’s social network.",
+    "textHtml": "France’s most celebrated marine painter of the eighteenth century. His monumental series of paintings known as the <em>Ports de France</em> aimed to suggest the monarchy’s potential for colonial and maritime prowess after the losses of the Seven Years’ War (1756-1763). In addition to creating works for the Crown, Vernet counted many planter collectors among his clients (including Laborde, Boutin, and Vaudreuil) and was a member of Vigée Le Brun’s social network.",
+    "image": {
+      "src": "./assets/figures/claude-joseph-vernet.jpg",
+      "shape": "rect",
+      "work": "Elisabeth Vigée Le Brun, Claude-Joseph Vernet, 1778.",
+      "captionHtml": "Elisabeth Vigée Le Brun, <em>Claude-Joseph Vernet</em>, 1778. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:%C3%89lisabeth-Louise_Vig%C3%A9e-Le_Brun_-_Joseph_Vernet_(1778).jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
+  },
+  {
+    "id": "claude-audran",
+    "name": "Claude Audran III",
+    "dates": "1658-1734",
+    "text": "The most important decorative painter of the early eighteenth century. He served as the curator of Luxembourg Palace and created elaborate arabesque and singerie ceilings, wall panels, and other ornamental artworks for the Crown and for a range of client with powerful colonial ties. Audran also had a nephew named Gabriel who, according to the artist’s will, lived in Saint-Domingue.",
+    "textHtml": "The most important decorative painter of the early eighteenth century. He served as the curator of Luxembourg Palace and created elaborate <em>arabesque</em> and <em>singerie</em> ceilings, wall panels, and other ornamental artworks for the Crown and for a range of client with powerful colonial ties. Audran also had a nephew named Gabriel who, according to the artist’s will, lived in Saint-Domingue.",
+    "image": {
+      "src": "./assets/figures/claude-audran.jpg",
+      "shape": "rect",
+      "work": "Antoine Watteau, A Bewigged Painter (Possibly Claude Audran), Seated at his Easel, Seen in Profile, c. 1709.",
+      "captionHtml": "Antoine Watteau, <em>A Bewigged Painter (Possibly Claude Audran), Seated at his Easel, Seen in Profile</em>, c. 1709. Image source: <a href=\"https://www.artic.edu/artworks/153181/a-bewigged-painter-possibly-claude-audran-seated-at-his-easel-seen-in-profile\" target=\"_blank\" rel=\"noopener noreferrer\">Art Institute of Chicago</a>."
+    }
+  },
+  {
+    "id": "noel-margaret-desenfans",
+    "name": "Noël and Margaret Desenfans",
+    "dates": "1744-1807 and 1731-1813",
+    "text": "Noël was a French-born art dealer who moved to London in the 1760s, and married Margaret Morris, whose family had made a fortune in the Welsh copper industry, supplying goods to colonial merchants trading in Africa and the East and West Indies. In the 1790s, Noël and Margaret, together with Francis Bourgeois, amassed a major art collection that would eventually form the foundation of the Dulwich Picture Gallery. They acquired many works being sold off by French collectors during events of the French and Haitian revolutions. Noël was also a close associate of the French art dealer, Jean-Baptiste-Pierre Le Brun.",
+    "image": {
+      "src": "./assets/figures/noel-margaret-desenfans.jpg",
+      "shape": "rect",
+      "work": "Moussa Ayoub after Joshua Reynolds, Portrait of Margaret Desenfans, 1930.",
+      "captionHtml": "Moussa Ayoub after Joshua Reynolds, <em>Portrait of Margaret Desenfans</em>, 1930. Image source: <a href=\"https://www.dulwichpicturegallery.org.uk/explore/explore-the-collection/mrs-margaret-desenfans/\" target=\"_blank\" rel=\"noopener noreferrer\">Dulwich Picture Gallery</a>."
+    }
+  },
+  {
+    "id": "francis-bourgeois",
+    "name": "Francis Bourgeois",
+    "dates": "1753-1811",
+    "text": "An English landscape painter of Swiss descent, who became an Associate of the Royal Academy and a court painter to George III. Along with Noël and Margaret Desenfans, Bourgeois was commissioned in the 1790s to amass a major art collection for Poland’s King Stanislaw. The trio acquired numerous works that circulating on the London art market as French collectors sold their collections in the wake of the French and Haitian revolutions. After the Polish king was forced to abdicate, this art collection ultimately became the foundation of Dulwich Picture Gallery, following Bourgeois’s death and bequest.",
+    "image": {
+      "src": "./assets/figures/francis-bourgeois.jpg",
+      "shape": "rect",
+      "work": "William Beechey, Sir Peter Francis Bourgeois, 1810.",
+      "captionHtml": "William Beechey, <em>Sir Peter Francis Bourgeois</em>, 1810. Image source: <a href=\"https://en.wikipedia.org/wiki/File:Sir_Peter_Francis_Bourgeois_by_Sir_William_Beechey.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>."
+    }
   }
 ]

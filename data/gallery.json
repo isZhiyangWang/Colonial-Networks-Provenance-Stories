@@ -61,5 +61,14 @@
     "museum": "Musée du Louvre",
     "image_url": "assets/vigee-le-brun.jpg",
     "excerpt": "Vigée Le Brun’s pared-down portrait of a wigless Hubert Robert presents him as a natural and enlightened figure, fitting characteristics for the period’s leading landscape painter."
+  },
+  {
+    "id": "audran",
+    "artist": "Claude Audran III",
+    "title": "Ceiling painted with arabesques and singeries",
+    "date": "c. 1713",
+    "museum": "Éditions Gallimard Offices, 26 rue de Condé, Paris",
+    "image_url": "assets/audran.jpg",
+    "excerpt": "Audran’s decorative style of painting was beloved by members of the French court, including financiers who built fortunes from colonial trade."
   }
 ]

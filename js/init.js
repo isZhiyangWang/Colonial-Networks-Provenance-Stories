@@ -123,9 +123,17 @@ async function initProvenance(json) {
     "nationality-year",
     `${artworkData.nationality ?? artworkData.location ?? ""}, ${artworkData.creationYear}`
   );
-  setText("artwork-name-year", `${artworkData.artworkName} (${artworkData.artworkYear})`);
+  if (artworkData.artworkNameHtml) {
+    setHTML("artwork-name-year", `${artworkData.artworkNameHtml} (${artworkData.artworkYear})`);
+  } else {
+    setText("artwork-name-year", `${artworkData.artworkName} (${artworkData.artworkYear})`);
+  }
   setText("artwork-medium", artworkData.medium);
-  setText("intro-text", artworkData.intro);
+  if (artworkData.introHtml) {
+    setHTML("intro-text", artworkData.introHtml);
+  } else {
+    setText("intro-text", artworkData.intro);
+  }
   setHTML(
     "current-museum",
     `Current Location: <a href="${artworkData.museumUrl}" target="_blank" rel="noopener noreferrer">${artworkData.museumName}</a>`
@@ -190,7 +198,10 @@ if (!currentSelection || currentSelection.mode === "story" || !sameStory) {
 
     currentEventData = ev;
 
-    if (eventTitleEl) eventTitleEl.textContent = ev.title || "";
+    if (eventTitleEl) {
+      if (ev.titleHtml) eventTitleEl.innerHTML = ev.titleHtml;
+      else eventTitleEl.textContent = ev.title || "";
+    }
     if (eventTextEl) {
       const eventMarkup = String(ev.text ?? "").trim();
       const hasBlockMarkup = /^<(p|ul|ol|div|blockquote)\b/i.test(eventMarkup);

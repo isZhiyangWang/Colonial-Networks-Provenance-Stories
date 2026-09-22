@@ -16,6 +16,11 @@
     const cap = document.createElement("figcaption");
     cap.className = "kf-caption";
 
+    if (s(imgData?.captionHtml)) {
+      cap.innerHTML = imgData.captionHtml;
+      return cap;
+    }
+
     const work = s(imgData?.work);
     const sourcePrefix = s(imgData?.sourcePrefix);
     const sourceName = s(imgData?.sourceName);
@@ -100,7 +105,8 @@
 
       const text = document.createElement("div");
       text.className = "kf-text";
-      text.textContent = s(f?.text);
+      if (s(f?.textHtml)) text.innerHTML = f.textHtml;
+      else text.textContent = s(f?.text);
 
       body.appendChild(left);
       body.appendChild(text);
