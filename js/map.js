@@ -2,7 +2,11 @@
 // 只关注地图与 placeCounts 统计，UI 文本由外部控制
 export function buildMap(containerId = "map") {
   const map = L.map(containerId);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", { maxZoom: 19 }).addTo(map);
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_44a4_1_d5d7789885b1668dd6035a91", {
+    maxZoom: 19,
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+  }).addTo(map);
   return map;
 }
 
