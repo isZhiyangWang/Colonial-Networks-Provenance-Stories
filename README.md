@@ -1,6 +1,8 @@
 # Colonial-Networks-Provenance-Stories
 Colonial Networks: Provenance Stories
 
+For routine content updates, see [CONTENT_HANDOVER.md](CONTENT_HANDOVER.md). It explains how to add, remove, or edit Gallery artworks and Key Figures without changing the site code.
+
 ## Repository Overview and Contribution Guide
 
 Welcome to this art provenance visualization project! This guide will help you (and future collaborators) understand the structure of the repository, the contents of each file/folder, and how to modify the JSON data files that power this site.
@@ -285,4 +287,3 @@ When you create or edit an artwork’s provenance, you’ll modify/add to the pr
     -   If you created a new branch, you can open a Pull Request for review.
 
 That’s it! Your changes will now be reflected in the repo. If you run into any issues or see errors in the JSON structure, GitHub will often highlight them. If so, correct them and commit again.
-

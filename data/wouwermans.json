@@ -1,0 +1,310 @@
+{
+  "artworkData": {
+    "artistName": "Philips Wouwermans",
+    "nationality": "Dutch",
+    "creationYear": "1619-1668",
+    "artworkName": "The Horse Fair",
+    "artworkYear": "late 1660s",
+    "medium": "Oil on mahogany panel",
+    "intro": "This panoramic landscape with a horse fair in the foreground shows off several elements of Wouwermans’ signature style, notably his silvery, atmospheric backgrounds and talent for painting lively equestrian subjects. Extraordinarily prolific and successful in the Netherlands during his own lifetime, Wouwermans was even more sought after in eighteenth-century France, when many colonial collectors owned his work.",
+    "museumUrl": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64940&viewType=detailView",
+    "museumName": "Wallace Collection",
+    "imageUrl": "assets/wouwermans.jpg"
+  },
+  "placeData": {
+    "Haarlem": {
+      "name": "Haarlem",
+      "coords": [52.3874, 4.6462]
+    },
+    "Paris": {
+      "name": "Paris",
+      "coords": [48.8566, 2.3522]
+    },
+    "London": {
+      "name": "London",
+      "coords": [51.5074, -0.1278]
+    }
+  },
+  "provenanceEvents": [
+    {
+      "id": 0,
+      "title": "1. An Art Star in the Dutch “Golden Age”",
+      "from": "Haarlem",
+      "to": "Haarlem",
+      "eventType": "painted",
+      "text": "<p>Philips Wouwermans (also spelled Wouwerman) painted <em>The Horse Fair</em> in the 1660s in Haarlem, where he was a prominent member of the city’s artistic and civic communities. Belonging to a family of painters, Wouwermans’ career coincided with the height of the Dutch “golden age,” an era of skyrocketing wealth fueled by violent colonial expansion and global trade. As a major textile production center, Haarlem participated in this trade, and <a href=\"https://research.frick.org/montias/searchKeyword\" target=\"_blank\" rel=\"noopener noreferrer\">inventories</a> suggest that during his lifetime Wouwermans sold works to families active in the textile industry as well as in the Dutch East and West India Companies.</p><p>Wouwermans’ career was bolstered by colonial wealth, but, in this case, his painting was also quite literarly supported by a colonial commodity. <em>The Horse Fair</em> is painted on mahogany, a tropical hardwood brought to the Netherlands from Dutch territories in the Americas. Though it later became a coveted luxury wood used to make furniture, in this period mahogany was mainly used to build crates to transport global goods and as ballast for Dutch ships, in addition to serving as supports for paintings for Wouwermans, <a href=\"https://www.frick.org/interact/miniseries/where_world/mahogany\" target=\"_blank\" rel=\"noopener noreferrer\">Rembrandt</a>, and their contemporaries.</p>",
+      "participants": [
+        { "name": "Philips Wouwermans", "type": "person" },
+        { "name": "The Horse Fair", "type": "object" }
+      ],
+      "networkPairs": [
+        { "source": "Philips Wouwermans", "target": "The Horse Fair", "label": "painted" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Philips Wouwermans, <em>Self-Portrait</em>, c. 1640. Red chalk on paper, 17.5 x 14.6 cm. © The Trustees of the British Museum, London. CC BY-NC-SA 4.0</p>",
+      "imageAlt": "Philips Wouwermans, Self-Portrait, c. 1640."
+    },
+    {
+      "id": 1,
+      "title": "2. In Defense of Colonial Luxury: The Comtesse de Verrue",
+      "from": "Haarlem",
+      "to": "Paris",
+      "eventType": "acquired by",
+      "text": "<p><em>The Horse Fair</em>’s first recorded owner was Jeanne Baptiste d’Albert de Luynes, comtesse de Verrue, one of the most influential collectors of early eighteenth-century Paris. She helped instill a craze for Dutch and Flemish painting among her contemporaries, and she owned more than a dozen works by Wouwermans that she also had engraved. Like members of her <a href=\"https://www.google.com/books/edition/Sheltering_Art/mME3Y0nZaOcC?hl=en&amp;gbpv=1&amp;printsec=frontcover\" target=\"_blank\" rel=\"noopener noreferrer\">social set</a>, which gathered at her hôtel on Paris’s Left Bank, Verrue made a fortune investing in John Law’s colonial speculation scheme that she poured into buying art and embellishing her properties.</p><p>One of Verrue’s associates was Jean-François Melon, an economist who served as Law’s secretary and promoted the consumption of global commodities as essential to economic growth. Voltaire took a similar stance in his controversial poem <a href=\"http://fr.wikisource.org/wiki/Le_Mondain\" target=\"_blank\" rel=\"noopener noreferrer\">Le Mondain</a> (1736). In defending his position, Voltaire published a letter purportedly written by Melon to Verrue that heralded her arts patronage and the trickle-down effect it had on families in Paris. Voltaire may have had Verrue in mind when waxing poetic on his worldly French patron, who drank coffee housed in Chinese porcelain vessels or in pots made of silver mined by enslaved laborers in Potosí.</p>",
+      "participants": [
+        { "name": "The Horse Fair", "type": "object" },
+        { "name": "Comtesse de Verrue", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "The Horse Fair", "target": "Comtesse de Verrue", "label": "acquired by" }
+      ],
+      "changedLocation": true,
+      "imageSource": "<p>Aerial view of the Hôtel de Verrue from the Plan Turgot, 1739. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:Hotel_de_verrue_plan_turgot.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>.</p>",
+      "imageAlt": "Aerial view of the Hôtel de Verrue from the Plan Turgot, 1739."
+    },
+    {
+      "id": 2,
+      "title": "3. The Condé Family and Colonial Freemasonry",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "purchased by",
+      "text": "<p>In 1737, the comte de Clermont acquired <em>The Horse Fair</em> from the posthumous sale of Verrue’s collection. Clermont was the son of the prince de Condé, another associate of Verrue’s who had used his insider connections to amass millions from Law’s scheme and later became a major shareholder in the French East India Company. Both Clermont’s <a href=\"https://commons.wikimedia.org/wiki/File:The_sisters_Mademoiselle_de_Blois_and_Mademoiselle_de_Nantes_by_Philippe_Vignon.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">mother</a> and his <a href=\"https://artsandculture.google.com/asset/mademoiselle-de-clermont-en-sultane-jean-marc-nattier/yAGjnGFU-lflqw?hl=en\" target=\"_blank\" rel=\"noopener noreferrer\">sister</a> were painted alongside dark-skinned attendants in well-known portraits from the period – images that visually reinforced the construction of racial hierarchies in eighteenth-century France.</p><p>Clermont likely also profited from colonial trade – and may have used these profits to expand his collection – but he is best known for serving as Grand Master of the Grand Masonic Lodge of France. In 1761, he granted the merchant Étienne Morin a patent to establish Freemasonry throughout the New World, notably in France’s colony of Saint-Domingue. Freemasonry was widely adopted there, not only among white planters and traders whose activities were supported by its network, but also by enslaved and free men of color who created a local, syncretic version that was fused with Vodou traditions. That version was embraced by Haitian revolutionaries and leaders throughout the nineteenth century, and it <a href=\"https://www-nybooks-com.us1.proxy.openathens.net/online/2018/06/02/picturing-haitis-freemasons/\" target=\"_blank\" rel=\"noopener noreferrer\">survives</a> to this day.</p>",
+      "participants": [
+        { "name": "Comtesse de Verrue", "type": "greenperson" },
+        { "name": "Comte de Clermont", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Comtesse de Verrue", "target": "Comte de Clermont", "label": "purchased by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>Sword of Faustin I, Emperor of Haiti, presented to him by the Grand Masonic Lodge of Haiti in 1850. Image source: The Metropolitan Museum of Art.</p>",
+      "imageAlt": "Sword of Faustin I, Emperor of Haiti, presented to him by the Grand Masonic Lodge of Haiti in 1850."
+    },
+    {
+      "id": 3,
+      "title": "4. Art as Colonial Fantasy: Louis de Noailles",
+      "from": "Paris",
+      "to": "Paris",
+      "eventType": "purchased by",
+      "text": "<p>In 1769, <em>The Horse Fair</em> was purchased by Louis de Noailles, a military marshal (maréchal) and collector who owned three works by Wouwermans. A year earlier, Noailles had acquired a set of Gobelins tapestries known as the <a href=\"https://www.colonialnetworks.org/?p=941\" target=\"_blank\" rel=\"noopener noreferrer\">Nouvelles Indes</a>, which depict lush colonial landscapes populated with flora, fauna, and, <a href=\"https://collection.mobilier-national.fr/objet/IAT-31-000\" target=\"_blank\" rel=\"noopener noreferrer\">in one instance</a>, two enslaved Africans standing near an oxcart piled high with sugar cane and a plantation modeled on paintings by another seventeenth-century Dutch artist, Frans Post. To some extent, the composition evokes <em>The Horse Fair</em>, which similarly portrays nature (in the form of horses) dominated and transformed into commodities against a hazy, limitless landscape.</p><p>Both of these artworks resonated with a colonial land concession that Noailles acquired from his father that same year. Originally gifted to the family by Louis XV, it comprised the Îlet du Massacre in the northern part of Saint-Domingue, and the idea was that they would turn it into a profitable sugar or indigo plantation. A <a href=\"https://catalogue.bnf.fr/ark:/12148/cb40616317q\" target=\"_blank\" rel=\"noopener noreferrer\">1776 map of the area</a>, however, indicates that the land, represented as an Edenic green space covered with trees and rivulets of water, remained undeveloped. Noailles seems to have preferred dabbling in colonial botany and sugarcane cultivation at his estate on the outskirts of Paris, where he could indulge his fantasies of a peaceful, productive plantation that looked more like the artworks on his walls than the real-life colonial territory he possessed.</p>",
+      "participants": [
+        { "name": "Gaignat", "type": "person" },
+        { "name": "Louis de Noailles", "type": "greenperson" }
+      ],
+      "networkPairs": [
+        { "source": "Gaignat", "target": "Louis de Noailles", "label": "purchased by" }
+      ],
+      "changedLocation": false,
+      "imageSource": "<p>François Desportes and Jacques Neilson, Les Taureaux, 1738 (designed), 1749–1788 (woven). Image source: Mobilier national, © Philippe Sébert.</p>",
+      "imageAlt": "François Desportes and Jacques Neilson, Les Taureaux, 1738 (designed), 1749–1788 (woven)."
+    },
+    {
+      "id": 4,
+      "title": "5. Reviving Wouwermans in the Nineteenth Century",
+      "from": "Paris",
+      "to": "London",
+      "eventType": "accessioned by",
+      "text": "<p>After Noailles’ death from natural causes in 1793, many members of his family either fled France or were guillotined, and his art collection was seized by the Revolutionary government. Some paintings entered public museums like the Louvre and others were dispersed. <em>The Horse Fair</em> was eventually acquired by the duc and duchesse de Berry.</p><p>Berry was the son of the comte d’Artois, who became King of France during the Bourbon Restoration and oversaw the forced payment of indemnities by the new Haitian government to their former French colonizers. The duc de Berry was assassinated in 1820, but his widow, portrayed in 1824 by Elisabeth Vigée Le Brun, continued to expand their celebrated art collection after his death. Like many eighteenth-century collectors before her, she had a particular taste for Dutch landscapes.</p><p>In 1837, the duchesse sold the painting to the baron de Mecklembourg, a Paris-based financier and railroad industrialist. In 1854, it was acquired by the 4th Marquess of Hertford, another admirer of Dutch art and of Wouwermans in particular. The Marquess bought at least seven works by the artist that later became part of The Wallace Collection, where <em>The Horse Fair</em> resides today.</p>",
+      "participants": [
+        { "name": "Duc de Berry", "type": "person" },
+        { "name": "Duchesse de Berry", "type": "person" },
+        { "name": "Baron de Mecklembourg", "type": "person" },
+        { "name": "Marquess of Hertford", "type": "person" },
+        { "name": "Wallace Collection", "type": "museum" }
+      ],
+      "networkPairs": [
+        { "source": "Duc de Berry", "target": "Duchesse de Berry", "label": "inherited by" },
+        { "source": "Duchesse de Berry", "target": "Baron de Mecklembourg", "label": "purchased by" },
+        { "source": "Baron de Mecklembourg", "target": "Marquess of Hertford", "label": "purchased by" },
+        { "source": "Marquess of Hertford", "target": "Wallace Collection", "label": "accessioned by" }
+      ],
+      "changedLocation": true,
+      "imageSource": "<p>Elisabeth Vigée Le Brun, <em>The Duchesse de Berry in a Blue Velvet Dress</em>, 1824. Oil on canvas, 100 x 75 cm. Image source: <a href=\"https://commons.wikimedia.org/wiki/File:Louise-Elisabeth_Vig%C3%A9e-Lebrun_-_La_duchesse_de_Berry_en_robe_de_velours_bleu.jpg\" target=\"_blank\" rel=\"noopener noreferrer\">Wikimedia Commons</a>.</p>",
+      "imageAlt": "Elisabeth Vigée Le Brun, The Duchesse de Berry in a Blue Velvet Dress, 1824."
+    }
+  ],
+  "socialNetwork": {
+    "nodes": [
+      { "id": "Philips Wouwermans", "type": "person" },
+      { "id": "The Horse Fair", "type": "object" },
+      { "id": "Comtesse de Verrue", "type": "greenperson" },
+      { "id": "Comte de Clermont", "type": "greenperson" },
+      { "id": "Gaignat", "type": "person" },
+      { "id": "Louis de Noailles", "type": "greenperson" },
+      { "id": "Duc de Berry", "type": "person" },
+      { "id": "Duchesse de Berry", "type": "person" },
+      { "id": "Baron de Mecklembourg", "type": "person" },
+      { "id": "Marquess of Hertford", "type": "person" },
+      { "id": "Wallace Collection", "type": "museum" }
+    ],
+    "edges": [
+      { "source": "Philips Wouwermans", "target": "The Horse Fair", "relationship": "painted" },
+      { "source": "The Horse Fair", "target": "Comtesse de Verrue", "relationship": "acquired by" },
+      { "source": "Comtesse de Verrue", "target": "Comte de Clermont", "relationship": "purchased by" },
+      { "source": "Gaignat", "target": "Louis de Noailles", "relationship": "purchased by" },
+      { "source": "Duc de Berry", "target": "Duchesse de Berry", "relationship": "inherited by" },
+      { "source": "Duchesse de Berry", "target": "Baron de Mecklembourg", "relationship": "purchased by" },
+      { "source": "Baron de Mecklembourg", "target": "Marquess of Hertford", "relationship": "purchased by" },
+      { "source": "Marquess of Hertford", "target": "Wallace Collection", "relationship": "accessioned by" }
+    ]
+  },
+  "provenanceTimeline": {
+    "entries": [
+      {
+        "id": "prov-1735-verrue",
+        "owner": "Comtesse de Verrue",
+        "storyId": 1,
+        "greenNames": ["comtesse de Verrue"],
+        "location": "Paris",
+        "boldText": "The comtesse de Verrue, by 1735",
+        "fullText": "The comtesse de Verrue, by 1735;"
+      },
+      {
+        "id": "prov-1737-clermont",
+        "owner": "Comte de Clermont",
+        "storyId": 2,
+        "greenNames": ["comte de Clermont"],
+        "location": "Paris",
+        "boldText": "her sale, Paris, 27 March 1737, no. 87; the comte de Clermont",
+        "fullText": "her sale, Paris, 27 March 1737, no. 87; the comte de Clermont."
+      },
+      {
+        "id": "prov-1762-gaignat",
+        "owner": "L.-J. Gaignat",
+        "location": "Paris",
+        "fullText": "L.-J. Gaignat, by 1762;"
+      },
+      {
+        "id": "prov-1769-noailles",
+        "owner": "Maréchal de Noailles",
+        "storyId": 3,
+        "greenNames": ["maréchal de Noailles"],
+        "location": "Paris",
+        "boldText": "his sale, Paris, 14 February 1769, no. 35; the maréchal de Noailles",
+        "fullText": "his sale, Paris, 14 February 1769, no. 35; the maréchal de Noailles."
+      },
+      {
+        "id": "prov-1801-robit",
+        "owner": "Seguin or Bell",
+        "location": "Paris",
+        "fullText": "G. Robit sale, Paris, 11 May 1801, no. 167; Seguin or Bell."
+      },
+      {
+        "id": "prov-1820-duc-berry",
+        "owner": "Charles-Ferdinand, duc de Berry",
+        "storyId": 4,
+        "location": "Paris",
+        "boldText": "Charles-Ferdinand, duc de Berry;",
+        "fullText": "Charles-Ferdinand, duc de Berry;"
+      },
+      {
+        "id": "prov-1820-duchesse-berry",
+        "owner": "Duchesse de Berry",
+        "storyId": 4,
+        "location": "Paris",
+        "boldText": "the duchesse de Berry",
+        "fullText": "the duchesse de Berry;"
+      },
+      {
+        "id": "prov-1834-christies",
+        "owner": "Duchesse de Berry",
+        "location": "Paris",
+        "fullText": "Christie's, April to June 1834, no. 27;"
+      },
+      {
+        "id": "prov-1837-mecklembourg",
+        "owner": "Baron de Mecklembourg",
+        "storyId": 4,
+        "location": "Paris",
+        "boldText": "the duchesse de Berry sale, Paris, 06 April 1837, no. 47; the baron de Mecklembourg",
+        "fullText": "the duchesse de Berry sale, Paris, 06 April 1837, no. 47; the baron de Mecklembourg;"
+      },
+      {
+        "id": "prov-1854-hertford",
+        "owner": "Richard Seymour-Conway, 4th Marquess of Hertford",
+        "storyId": 4,
+        "location": "Paris",
+        "boldText": "his sale, Paris, 11 December 1854, no. 29; Richard Seymour-Conway, 4th Marquess of Hertford;",
+        "fullText": "his sale, Paris, 11 December 1854, no. 29; Richard Seymour-Conway, 4th Marquess of Hertford;"
+      },
+      {
+        "id": "prov-1897-wallace",
+        "owner": "Wallace Collection",
+        "storyId": 4,
+        "yellowNames": ["Wallace Collection"],
+        "location": "London",
+        "boldText": "Wallace Collection",
+        "fullText": "Wallace Collection."
+      }
+    ],
+    "events": [
+      {
+        "date": "1660",
+        "event": "Painted in Haarlem",
+        "storyId": 0
+      },
+      {
+        "date": "1735",
+        "event": "Comtesse de Verrue (by 1735)",
+        "storyId": 1,
+        "entryId": "prov-1735-verrue"
+      },
+      {
+        "date": "1737",
+        "event": "Comte de Clermont",
+        "storyId": 2,
+        "entryId": "prov-1737-clermont"
+      },
+      {
+        "date": "1762",
+        "event": "L. J. Gaignat (by 1762)",
+        "entryId": "prov-1762-gaignat"
+      },
+      {
+        "date": "1769",
+        "event": "Louis de Noailles",
+        "storyId": 3,
+        "entryId": "prov-1769-noailles"
+      },
+      {
+        "date": "1801",
+        "event": "Seguin or Bell",
+        "entryId": "prov-1801-robit"
+      },
+      {
+        "date": "1820",
+        "event": "Duc de Berry (by 1820)",
+        "storyId": 4,
+        "entryId": "prov-1820-duc-berry"
+      },
+      {
+        "date": "1820",
+        "event": "Duchesse de Berry",
+        "storyId": 4,
+        "entryId": "prov-1820-duchesse-berry"
+      },
+      {
+        "date": "1837",
+        "event": "Baron de Mecklembourg",
+        "storyId": 4,
+        "entryId": "prov-1837-mecklembourg"
+      },
+      {
+        "date": "1854",
+        "event": "4th Marquess of Hertford",
+        "storyId": 4,
+        "entryId": "prov-1854-hertford"
+      },
+      {
+        "date": "1897",
+        "event": "Wallace Collection",
+        "storyId": 4,
+        "entryId": "prov-1897-wallace"
+      }
+    ],
+    "source": {
+      "text": "Wallace Collection",
+      "url": "https://wallacelive.wallacecollection.org/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=64940&viewType=detailView"
+    }
+  }
+}

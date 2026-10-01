@@ -70,5 +70,14 @@
     "museum": "Éditions Gallimard Offices, 26 rue de Condé, Paris",
     "image_url": "assets/audran.jpg",
     "excerpt": "Audran’s decorative style of painting was beloved by members of the French court, including financiers who built fortunes from colonial trade."
+  },
+  {
+    "id": "wouwermans",
+    "artist": "Philips Wouwermans",
+    "title": "The Horse Fair",
+    "date": "late 1660s",
+    "museum": "Wallace Collection",
+    "image_url": "assets/wouwermans.jpg",
+    "excerpt": "This panoramic landscape with a horse fair in the foreground shows off several elements of Wouwermans’ signature style, notably his silvery, atmospheric backgrounds and talent for painting lively equestrian subjects."
   }
 ]
