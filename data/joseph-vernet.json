@@ -121,23 +121,57 @@
   ],
   "socialNetwork": {
     "nodes": [
-      { "id": "Vernet", "type": "person" },
-      { "id": "Duc de Choiseul", "type": "greenperson" },
-      { "id": "Prince de Conti", "type": "greenperson" },
-      { "id": "Duc de Rohan-Chabot", "type": "person" },
-      { "id": "Comte de Castelmore", "type": "person" },
-      { "id": "Simon-Charles Boutin", "type": "greenperson" },
-      { "id": "Revolutionary forces", "type": "institution" },
-      { "id": "Musée du Louvre", "type": "museum" }
+      {
+        "id": "Claude-Joseph Vernet",
+        "type": "greenperson"
+      },
+      {
+        "id": "Duc de Choiseul",
+        "type": "greenperson"
+      },
+      {
+        "id": "Prince de Conti",
+        "type": "greenperson"
+      },
+      {
+        "id": "Duc de Rohan-Chabot",
+        "type": "person"
+      },
+      {
+        "id": "Comte de Castelmore",
+        "type": "person"
+      },
+      {
+        "id": "Simon-Charles Boutin",
+        "type": "greenperson"
+      }
     ],
     "edges": [
-      { "source": "Vernet", "target": "Duc de Choiseul", "relationship": "acquired by" },
-      { "source": "Duc de Choiseul", "target": "Prince de Conti", "relationship": "bought by" },
-      { "source": "Prince de Conti", "target": "Duc de Rohan-Chabot", "relationship": "bought by" },
-      { "source": "Duc de Rohan-Chabot", "target": "Comte de Castelmore", "relationship": "bought by" },
-      { "source": "Comte de Castelmore", "target": "Simon-Charles Boutin", "relationship": "bought by" },
-      { "source": "Simon-Charles Boutin", "target": "Revolutionary forces", "relationship": "seized by" },
-      { "source": "Revolutionary forces", "target": "Musée du Louvre", "relationship": "entered" }
+      {
+        "source": "Claude-Joseph Vernet",
+        "target": "Duc de Choiseul",
+        "relationship": "patron of"
+      },
+      {
+        "source": "Duc de Choiseul",
+        "target": "Prince de Conti",
+        "relationship": "collector network"
+      },
+      {
+        "source": "Prince de Conti",
+        "target": "Duc de Rohan-Chabot",
+        "relationship": "collector network"
+      },
+      {
+        "source": "Duc de Rohan-Chabot",
+        "target": "Comte de Castelmore",
+        "relationship": "collector network"
+      },
+      {
+        "source": "Comte de Castelmore",
+        "target": "Simon-Charles Boutin",
+        "relationship": "collector network"
+      }
     ]
   },
   "provenanceTimeline": {

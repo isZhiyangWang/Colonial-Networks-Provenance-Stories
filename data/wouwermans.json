@@ -125,27 +125,56 @@
   ],
   "socialNetwork": {
     "nodes": [
-      { "id": "Philips Wouwermans", "type": "person" },
-      { "id": "The Horse Fair", "type": "object" },
-      { "id": "Comtesse de Verrue", "type": "greenperson" },
-      { "id": "Comte de Clermont", "type": "greenperson" },
-      { "id": "Gaignat", "type": "person" },
-      { "id": "Louis de Noailles", "type": "greenperson" },
-      { "id": "Duc de Berry", "type": "person" },
-      { "id": "Duchesse de Berry", "type": "person" },
-      { "id": "Baron de Mecklembourg", "type": "person" },
-      { "id": "Marquess of Hertford", "type": "person" },
-      { "id": "Wallace Collection", "type": "museum" }
+      {
+        "id": "Comtesse de Verrue",
+        "type": "greenperson"
+      },
+      {
+        "id": "Comte de Clermont",
+        "type": "greenperson"
+      },
+      {
+        "id": "Louis de Noailles",
+        "type": "greenperson"
+      },
+      {
+        "id": "Duchesse de Berry",
+        "type": "person"
+      },
+      {
+        "id": "Duc de Berry",
+        "type": "person"
+      },
+      {
+        "id": "Baron de Mecklembourg",
+        "type": "person"
+      },
+      {
+        "id": "Marquess of Hertford",
+        "type": "person"
+      }
     ],
     "edges": [
-      { "source": "Philips Wouwermans", "target": "The Horse Fair", "relationship": "painted" },
-      { "source": "The Horse Fair", "target": "Comtesse de Verrue", "relationship": "acquired by" },
-      { "source": "Comtesse de Verrue", "target": "Comte de Clermont", "relationship": "purchased by" },
-      { "source": "Gaignat", "target": "Louis de Noailles", "relationship": "purchased by" },
-      { "source": "Duc de Berry", "target": "Duchesse de Berry", "relationship": "inherited by" },
-      { "source": "Duchesse de Berry", "target": "Baron de Mecklembourg", "relationship": "purchased by" },
-      { "source": "Baron de Mecklembourg", "target": "Marquess of Hertford", "relationship": "purchased by" },
-      { "source": "Marquess of Hertford", "target": "Wallace Collection", "relationship": "accessioned by" }
+      {
+        "source": "Comtesse de Verrue",
+        "target": "Comte de Clermont",
+        "relationship": "collector network"
+      },
+      {
+        "source": "Comte de Clermont",
+        "target": "Louis de Noailles",
+        "relationship": "collector network"
+      },
+      {
+        "source": "Duchesse de Berry",
+        "target": "Duc de Berry",
+        "relationship": "married"
+      },
+      {
+        "source": "Baron de Mecklembourg",
+        "target": "Marquess of Hertford",
+        "relationship": "collector network"
+      }
     ]
   },
   "provenanceTimeline": {

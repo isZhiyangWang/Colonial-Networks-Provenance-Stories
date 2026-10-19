@@ -225,10 +225,7 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
     .attr("stroke-opacity", 0.65)
     .attr("stroke-width", 1.5);
 
-  const nodeLabel = zoomContainer
-    .selectAll(".node-label-group")
-    .data(nodes)
-    .enter()
+  const nodeLabel = node
     .append("text")
     .attr("class", "social-node-label")
     .text((d) => d.id)
@@ -243,19 +240,19 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
     })
     .attr("dominant-baseline", "middle")
     .attr("x", (d, i) => {
-      if (compact) return d.x;
+      if (compact) return 0;
       const angle = i * angleStep;
       const offset = d.radius + 8;
-      return d.x + offset * Math.cos(angle);
+      return offset * Math.cos(angle);
     })
     .attr("y", (d, i) => {
       if (compact) {
         const isUnpairedLastNode = nodes.length % 2 === 1 && i === nodes.length - 1;
-        return d.y + (isUnpairedLastNode ? 24 : -18);
+        return isUnpairedLastNode ? 24 : -18;
       }
       const angle = i * angleStep;
       const offset = d.radius + 8;
-      return d.y + offset * Math.sin(angle);
+      return offset * Math.sin(angle);
     });
 
   if (compact) {
@@ -264,7 +261,7 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
       const label = d3.select(this).text(null);
       lines.forEach((line, index) => {
         label.append("tspan")
-          .attr("x", d.x)
+          .attr("x", 0)
           .attr("dy", index === 0 ? -((lines.length - 1) * 11) : 11)
           .text(line);
       });
@@ -278,6 +275,44 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
   }
 
   const nodeGroups = zoomContainer.selectAll(".social-node-group");
+
+  function updatePositions() {
+    nodeGroups.attr("transform", (d) => `translate(${d.x},${d.y})`);
+
+    link
+      .attr("x1", (d) => d.source.x)
+      .attr("y1", (d) => d.source.y)
+      .attr("x2", (d) => d.target.x)
+      .attr("y2", (d) => d.target.y);
+
+    linkLabel
+      .attr("x", (d) => {
+        const position = getEdgeLabelPosition(d.source, d.target, d.labelOffset);
+        d.labelX = position.x;
+        d.labelY = position.y;
+        return position.x;
+      })
+      .attr("y", (d) => d.labelY);
+  }
+
+  nodeGroups
+    .style("cursor", "grab")
+    .call(
+      d3.drag()
+        .on("start", function () {
+          d3.select(this).style("cursor", "grabbing");
+        })
+        .on("drag", function (event, d) {
+          d.x = clamp(event.x, d.radius + 8, w - d.radius - 8);
+          d.y = clamp(event.y, d.radius + 8, h - d.radius - 8);
+          updatePositions();
+        })
+        .on("end", function () {
+          d3.select(this).style("cursor", "grab");
+          resetLabelPositions(linkLabel);
+          requestAnimationFrame(() => resolveLabelCollisions(linkLabel.nodes(), w, h));
+        })
+    );
 
   nodeGroups
     .on("mouseover", function (event, d) {

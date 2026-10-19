@@ -103,24 +103,67 @@
   ],
   "socialNetwork": {
     "nodes": [
-      { "id": "Portrait of Hubert Robert", "type": "person" },
-      { "id": "Vigée Le Brun", "type": "greenperson" },
-      { "id": "Jean-Joseph de Laborde", "type": "greenperson" },
-      { "id": "Revolutionary state", "type": "institution" },
-      { "id": "Rosalie de Nettine de Laborde", "type": "greenperson" },
-      { "id": "Nathalie de Laborde", "type": "person" },
-      { "id": "Eugénie Tripier Le Franc", "type": "person" },
-      { "id": "Musée du Louvre", "type": "museum" }
+      {
+        "id": "Hubert Robert",
+        "type": "person"
+      },
+      {
+        "id": "Vigée Le Brun",
+        "type": "greenperson"
+      },
+      {
+        "id": "Jean-Joseph de Laborde",
+        "type": "greenperson"
+      },
+      {
+        "id": "Rosalie de Nettine de Laborde",
+        "type": "greenperson"
+      },
+      {
+        "id": "Nathalie de Laborde",
+        "type": "person"
+      },
+      {
+        "id": "Eugénie Tripier Le Franc",
+        "type": "person"
+      }
     ],
     "edges": [
-      { "source": "Portrait of Hubert Robert", "target": "Vigée Le Brun", "relationship": "painted by" },
-      { "source": "Vigée Le Brun", "target": "Jean-Joseph de Laborde", "relationship": "bought by" },
-      { "source": "Jean-Joseph de Laborde", "target": "Revolutionary state", "relationship": "taken by" },
-      { "source": "Revolutionary state", "target": "Rosalie de Nettine de Laborde", "relationship": "returned to" },
-      { "source": "Rosalie de Nettine de Laborde", "target": "Nathalie de Laborde", "relationship": "by usufruct to" },
-      { "source": "Nathalie de Laborde", "target": "Vigée Le Brun", "relationship": "returned to" },
-      { "source": "Vigée Le Brun", "target": "Eugénie Tripier Le Franc", "relationship": "bequeathed to" },
-      { "source": "Eugénie Tripier Le Franc", "target": "Musée du Louvre", "relationship": "donated to" }
+      {
+        "source": "Hubert Robert",
+        "target": "Vigée Le Brun",
+        "relationship": "artist network"
+      },
+      {
+        "source": "Vigée Le Brun",
+        "target": "Jean-Joseph de Laborde",
+        "relationship": "patron of"
+      },
+      {
+        "source": "Jean-Joseph de Laborde",
+        "target": "Hubert Robert",
+        "relationship": "patron of"
+      },
+      {
+        "source": "Jean-Joseph de Laborde",
+        "target": "Rosalie de Nettine de Laborde",
+        "relationship": "relatives"
+      },
+      {
+        "source": "Rosalie de Nettine de Laborde",
+        "target": "Nathalie de Laborde",
+        "relationship": "relatives"
+      },
+      {
+        "source": "Nathalie de Laborde",
+        "target": "Jean-Joseph de Laborde",
+        "relationship": "relatives"
+      },
+      {
+        "source": "Vigée Le Brun",
+        "target": "Eugénie Tripier Le Franc",
+        "relationship": "relatives"
+      }
     ]
   },
   "provenanceTimeline": {

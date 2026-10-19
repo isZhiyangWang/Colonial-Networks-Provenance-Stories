@@ -215,14 +215,14 @@
   "socialNetwork": {
     "nodes": [
       {
-        "id": "Jean-Antoine Watteau",
-        "type": "greenperson",
-        "bio": "A French painter whose elegant fête galantes and theatrical scenes won him the patronage and high esteem of Parisian collectors, nobles, and amateurs, including the wealthy financier Pierre Crozat. Many of his paintings feature Black, probably enslaved, attendants, suggesting his awareness of their growing presence in the French capital alongside the expansion of colonial commerce."
-      },
-      {
         "id": "Pierre Crozat",
         "type": "greenperson",
         "bio": "A wealthy French banker and preeminent art collector whose extensive patronage supported leading artists of his time, including Watteau (who lived at one point in his Parisian mansion) and Charles de La Fosse. His brother and business partner, Antoine Crozat (c. 1655-1783), built an immense fortune from colonial investments, including slave trading, and was the first proprietary owner of French Louisiana (from 1712-1717)."
+      },
+      {
+        "id": "Jean-Antoine Watteau",
+        "type": "greenperson",
+        "bio": "A French painter whose elegant fête galantes and theatrical scenes won him the patronage and high esteem of Parisian collectors, nobles, and amateurs, including the wealthy financier Pierre Crozat. Many of his paintings feature Black, probably enslaved, attendants, suggesting his awareness of their growing presence in the French capital alongside the expansion of colonial commerce."
       },
       {
         "id": "Claude Glucq",
@@ -230,7 +230,7 @@
         "bio": "Glucq’s father, Jean, was a master dyer whose factory supplied brilliant colors (made with colonial materials like cochineal) to the Gobelins royal tapestry manufactory. He passed that business along with his fortune gained through colonial commerce and slave trading to his son Claude, who became a major art collector known for his patronage of Watteau. At one point Claude owned Watteau’s Shopsign of Gersaint and many other works by modern French artists."
       },
       {
-        "id": "Jean de Jullienne",
+        "id": "Jean de Julienne",
         "type": "greenperson",
         "bio": "A cousin of Claude Glucq, Jean de Jullienne was an esteemed art collector, amateur, and close friend of Watteau who led a project to reproduce the artist’s work (the Receuil Julienne). He followed his family in colonial investments, specifically trading in indigo produced with enslaved labor, and he eventually took over managing the Gobelins manufactory, where he built a house to display his extensive art collection."
       },
@@ -243,29 +243,60 @@
         "id": "Jean-Baptiste-Pierre Le Brun",
         "type": "greenperson",
         "bio": "A painter, engraver, and collector of art, Le Brun is best known for his activities as an art dealer and for his marriage to the celebrated painter Élisabeth Vigée-Le Brun (1755-1842). He bought art and organized sales for most of the planter collectors in this colonial network, and during the French Revolution he helped the new government seize these same artworks from the collectors’ homes and bring them to the Louvre."
+      },
+      {
+        "id": "Noël Desenfans",
+        "type": "greenperson"
+      },
+      {
+        "id": "Margaret Desenfans",
+        "type": "greenperson"
+      },
+      {
+        "id": "Francis Bourgeois",
+        "type": "greenperson"
       }
     ],
     "edges": [
       {
         "source": "Pierre Crozat",
         "target": "Jean-Antoine Watteau",
-        "relationship": "patron of",
-        "labelOffset": 30
+        "relationship": "patron of"
       },
       {
-        "source": "Claude Glucq",
-        "target": "Jean-Antoine Watteau",
+        "source": "Jean-Antoine Watteau",
+        "target": "Claude Glucq",
         "relationship": "collector of"
       },
       {
         "source": "Claude Glucq",
-        "target": "Jean de Jullienne",
-        "relationship": "connected in collector circle"
+        "target": "Jean de Julienne",
+        "relationship": "business associates"
       },
       {
         "source": "Comte de Vaudreuil",
         "target": "Jean-Baptiste-Pierre Le Brun",
-        "relationship": "dealer"
+        "relationship": "collector/dealer"
+      },
+      {
+        "source": "Jean-Baptiste-Pierre Le Brun",
+        "target": "Noël Desenfans",
+        "relationship": "business associates"
+      },
+      {
+        "source": "Noël Desenfans",
+        "target": "Margaret Desenfans",
+        "relationship": "married"
+      },
+      {
+        "source": "Margaret Desenfans",
+        "target": "Francis Bourgeois",
+        "relationship": "business associates"
+      },
+      {
+        "source": "Francis Bourgeois",
+        "target": "Noël Desenfans",
+        "relationship": "business associates"
       }
     ]
   },

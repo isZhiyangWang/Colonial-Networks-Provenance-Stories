@@ -162,6 +162,10 @@
         "bio": "Hailing from a powerful family with deep ties to Haiti/Saint-Domingue, Choiseul was an important government administrator under Louis XV as well as an influential courtier and art collector. As minister of the navy, war, and foreign affairs, Choiseul oversaw colonial and maritime policy after the Seven Years War, including the administration of the Caribbean colonies of Saint-Domingue, Martinique, and Guadeloupe. He also led a disastrous failed mission to French Guiana."
       },
       {
+        "id": "Antoine Crozat",
+        "type": "person"
+      },
+      {
         "id": "Comte de Vaudreuil",
         "type": "greenperson",
         "bio": "Born in Saint-Domingue, where his father served as colonial governor, Vaudreuil moved to Paris and later became one of the capital’s most voracious art collectors. His family owned several sugar plantations worked by enslaved laborers in Saint-Domingue, and he used the profits from these plantations to buy art and to commission new works by celebrated painters like Elisabeth Vigée Le Brun, who may have been his lover."
@@ -170,29 +174,23 @@
         "id": "Louis XVI",
         "type": "person",
         "bio": "The last king of France before the Revolution, whose reign was marked by significant social and economic upheavals."
-      },
-      {
-        "id": "Gabrielle de Polignac",
-        "type": "person",
-        "bio": "An influential courtier and close confidante of Marie Antoinette. Although her official role was that of a governess to the royal children, she was also known for her significant social clout and the longstanding, albeit controversial, rumors linking her romantically to Comte de Vaudreuil."
       }
     ],
     "edges": [
       {
         "source": "Marquis d’Argenson",
         "target": "Duc de Choiseul",
-        "relationship": "political ally"
+        "relationship": "political allies"
+      },
+      {
+        "source": "Duc de Choiseul",
+        "target": "Antoine Crozat",
+        "relationship": "relatives"
       },
       {
         "source": "Comte de Vaudreuil",
         "target": "Louis XVI",
-        "relationship": "courtier",
-        "labelOffset": -20
-      },
-      {
-        "source": "Comte de Vaudreuil",
-        "target": "Gabrielle de Polignac",
-        "relationship": "rumored lover"
+        "relationship": "courtier"
       }
     ]
   },

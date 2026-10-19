@@ -113,31 +113,38 @@
   ],
   "socialNetwork": {
     "nodes": [
-      { "id": "Claude", "type": "person" },
-      { "id": "Angelo Giori", "type": "person" },
-      { "id": "Marquis de Lassay", "type": "person" },
-      { "id": "Comte de Lassay", "type": "greenperson" },
-      { "id": "Louis-Jean Gaignat", "type": "person" },
-      { "id": "Duc de Praslin", "type": "greenperson" },
-      { "id": "Duc de Choiseul-Praslin", "type": "greenperson" },
-      { "id": "Herries", "type": "person" },
-      { "id": "French State", "type": "institution" },
-      { "id": "Delahante", "type": "person" },
-      { "id": "Philippe Panné", "type": "person" },
-      { "id": "John Julius Angerstein", "type": "greenperson" },
-      { "id": "National Gallery, London", "type": "museum" }
+      {
+        "id": "Marquis de Lassay",
+        "type": "person"
+      },
+      {
+        "id": "Comte de Lassay",
+        "type": "greenperson"
+      },
+      {
+        "id": "Duc de Praslin",
+        "type": "greenperson"
+      },
+      {
+        "id": "Duc de Choiseul-Praslin",
+        "type": "greenperson"
+      },
+      {
+        "id": "John Julius Angerstein",
+        "type": "greenperson"
+      }
     ],
     "edges": [
-      { "source": "Claude", "target": "Angelo Giori", "relationship": "commissioned by" },
-      { "source": "Angelo Giori", "target": "Marquis de Lassay", "relationship": "acquired by" },
-      { "source": "Marquis de Lassay", "target": "Comte de Lassay", "relationship": "acquired by" },
-      { "source": "Louis-Jean Gaignat", "target": "Duc de Praslin", "relationship": "acquired by" },
-      { "source": "Duc de Praslin", "target": "Duc de Choiseul-Praslin", "relationship": "inherited by" },
-      { "source": "Herries", "target": "French State", "relationship": "seized by" },
-      { "source": "French State", "target": "Delahante", "relationship": "imported by" },
-      { "source": "Delahante", "target": "Philippe Panné", "relationship": "acquired by" },
-      { "source": "Philippe Panné", "target": "John Julius Angerstein", "relationship": "bought by" },
-      { "source": "John Julius Angerstein", "target": "National Gallery, London", "relationship": "accessioned by" }
+      {
+        "source": "Marquis de Lassay",
+        "target": "Comte de Lassay",
+        "relationship": "relatives"
+      },
+      {
+        "source": "Duc de Praslin",
+        "target": "Duc de Choiseul-Praslin",
+        "relationship": "relatives"
+      }
     ]
   },
   "provenanceTimeline": {

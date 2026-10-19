@@ -250,42 +250,17 @@
   "socialNetwork": {
     "nodes": [
       {
-        "id": "King Philip II",
-        "type": "person",
-        "bio": "King of Spain (1527–1598). A major patron of Titian's works during the so-called 'Golden Age' of Spanish art and imperial expansion."
-      },
-      {
-        "id": "Leone Leoni",
-        "type": "person",
-        "bio": "Italian sculptor, famously a galley slave, and one of the potential owners of Titian’s Perseus and Andromeda. Based in Milan."
-      },
-      {
-        "id": "Anthony Van Dyck",
-        "type": "person",
-        "bio": "Flemish painter who acquired the painting in 1623. Also based in Milan around that time."
-      },
-      {
-        "id": "Louis Phélypeaux",
-        "type": "person",
-        "bio": "Seigneur de La Vrillière (1598–1681), who purchased the painting around 1655 and displayed it in his 'Galerie Dorée' in Paris."
-      },
-      {
-        "id": "Comte de Toulouse",
-        "type": "person",
-        "bio": "A French noble and collector. The painting later became part of the Orléans Collection after passing through various hands."
-      },
-      {
         "id": "Philippe II, duc d’Orléans",
         "type": "person",
         "bio": "Regent of France (1715–23). Assembled the Orléans Collection, noted for large-scale art patronage and colonial speculation."
       },
       {
-        "id": "Philippe Egalité",
+        "id": "Philippe Égalité",
         "type": "greenperson",
         "bio": "A French prince renowned as one of Europe’s greatest art collectors through his inheritance of the legendary Orléans collection. That collection had been partly financed by colonial investment during the Regency (1715-23), and Louis-Philippe continued that tradition by buying a Saint-Domingue sugar plantation from his friend Vaudreuil. In 1792, he renounced his noble titles to become ‘Philippe Égalité’, aligning himself with French Revolutionary ideals of liberty, even as he continued to own slaves."
       },
       {
-        "id": "Édouard de Walckiers",
+        "id": "Édouard Walckiers",
         "type": "greenperson",
         "bio": "A Brussels-based financier and art collector who inherited the family banking business run by his grandmother Barbe de Nettine, a Saint-Domingue plantation owner. He was best known for acquiring the Orléans collection in 1792 and, with his cousin François Laborde de Méréville, orchestrating its sale in Britain. His activities place him at the intersection of finance and the international art market during the revolutionary era."
       },
@@ -308,28 +283,28 @@
         "id": "3rd Marquess of Hertford",
         "type": "person",
         "bio": "Acquired Titian's painting for £362.10. His collection later became part of the Wallace Collection in London."
-      },
-      {
-        "id": "Wallace Collection",
-        "type": "museum",
-        "bio": "A major art museum in London, opened in 1897. Houses the Hertford family's art collections, including Titian’s Perseus and Andromeda."
       }
     ],
     "edges": [
       {
         "source": "Philippe II, duc d’Orléans",
-        "target": "Philippe Egalité",
-        "relationship": "great-grandfather → great-grandson"
+        "target": "Philippe Égalité",
+        "relationship": "relatives"
       },
       {
-        "source": "Édouard de Walckiers",
+        "source": "Édouard Walckiers",
         "target": "François Laborde de Méréville",
-        "relationship": "cousins"
+        "relationship": "relatives"
+      },
+      {
+        "source": "François Laborde de Méréville",
+        "target": "Michael Bryan",
+        "relationship": "business associates"
       },
       {
         "source": "Michael Bryan",
         "target": "Jeremiah Harman",
-        "relationship": "formed a syndicate"
+        "relationship": "business associates"
       }
     ]
   },

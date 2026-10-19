@@ -194,6 +194,11 @@
   "socialNetwork": {
     "nodes": [
       {
+        "id": "Horace Vernet",
+        "type": "greenperson",
+        "bio": "A French artist known for his battle paintings and Orientalist scenes, notably those tied to France’s invasion and colonization of Algeria, which he visited several times under government protection. He later became director of the French Academy in Rome and created an exotic “Moorish” cabinet there inspired by his North African travels. Horace was the son of painter Carle Vernet (1758-1836)."
+      },
+      {
         "id": "Carle Vernet",
         "type": "greenperson",
         "bio": "The son of marine painter Claude-Joseph Vernet (1714-1789) and the father of Horace Vernet, Carle was a French artist known for his equestrian and military scenes whose career spanned the Ancien Régime, Revolution, First Empire and Bourbon Restoration. His ambitious Salon debut, The Triumph of Aemilius Paulus (1789), depicted an ancient Rome procession of enslaved captives and was bought by Jean-Joseph de Laborde."
@@ -204,24 +209,9 @@
         "bio": "A powerful French financier, slave trader, tax farmer, and art patron famous for his art and architectural commissions, most notably his estate of Méréville. His wealth, which underwrote his art buying, was partly derived from colonial commerce and plantation investments in Saint-Domingue, where he was one of the largest landowners. He trafficked more than 10,000 enslaved Africans to the colony on ships that he owned."
       },
       {
-        "id": "François Laborde de Méréville",
-        "type": "greenperson",
-        "bio": "A French financier and art patron who famously acquired the Orléans collection during the French Revolution and brought it to London to be sold. As a member of the revolutionary government (who appears in David’s Oath of the Tennis Court), he fought hard to maintain slavery in France’s colonies, where he had lived during the 1780s while managing one of his family’s extensive sugar plantations in Saint-Domingue."
-      },
-      {
-        "id": "Paris Revolutionary Forces",
-        "type": "institution",
-        "bio": "Confiscated the painting in 1794, during the temporary abolition of slavery in Revolutionary France."
-      },
-      {
         "id": "Rosalie de Nettine de Laborde",
         "type": "greenperson",
         "bio": "Rosalie’s mother was an influential court banker in the Austrian Netherlands, the counterpart to Jean-Joseph de Laborde in Paris. She contributed a massive dowry to her daughter’s 1760 marriage to Laborde, who named a slave ship after his wife and immortalized her as the ideal “well-loved mother” in a painting by Greuze. Two of her sons drowned off the coast of Alaska during the La Pérouse expedition."
-      },
-      {
-        "id": "Horace Vernet",
-        "type": "greenperson",
-        "bio": "A French artist known for his battle paintings and Orientalist scenes, notably those tied to France’s invasion and colonization of Algeria, which he visited several times under government protection. He later became director of the French Academy in Rome and created an exotic “Moorish” cabinet there inspired by his North African travels. Horace was the son of painter Carle Vernet (1758-1836)."
       },
       {
         "id": "Heber R. Bishop",
@@ -232,33 +222,28 @@
         "id": "Darius Ogden Mills",
         "type": "person",
         "bio": "Brother-in-law of Heber R. Bishop. Acquired Triumph of Aemilius Paulus after Bishop's death and donated it to the Met."
-      },
-      {
-        "id": "Metropolitan Museum of Art",
-        "type": "museum",
-        "bio": "Major American art museum in New York City, recipient of Vernet’s painting in 1906."
       }
     ],
     "edges": [
       {
-        "source": "Jean-Joseph de Laborde",
-        "target": "François Laborde de Méréville",
-        "relationship": "father → son"
+        "source": "Horace Vernet",
+        "target": "Carle Vernet",
+        "relationship": "relatives"
+      },
+      {
+        "source": "Carle Vernet",
+        "target": "Jean-Joseph de Laborde",
+        "relationship": "patron of"
       },
       {
         "source": "Jean-Joseph de Laborde",
         "target": "Rosalie de Nettine de Laborde",
-        "relationship": "spouses"
-      },
-      {
-        "source": "Carle Vernet",
-        "target": "Horace Vernet",
-        "relationship": "father → son"
+        "relationship": "married"
       },
       {
         "source": "Heber R. Bishop",
         "target": "Darius Ogden Mills",
-        "relationship": "passed to in-law"
+        "relationship": "relatives"
       }
     ]
   },

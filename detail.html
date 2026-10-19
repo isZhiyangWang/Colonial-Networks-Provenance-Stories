@@ -22,7 +22,7 @@
     />
 
     <!-- Shared CSS -->
-    <link rel="stylesheet" href="style.css?v=20260824-mobile-6" />
+    <link rel="stylesheet" href="style.css?v=20261014-social-networks-1" />
   </head>
 
 
@@ -92,7 +92,13 @@
    
 
        </div>
-                <div class="overlay-nav">
+       <div class="network-legend story-network-legend" aria-label="Story diagram colour key">
+         <span class="network-legend-title">Key:</span>
+         <span class="network-legend-item"><span class="legend-swatch legend-swatch--key"></span>Key Figure</span>
+         <span class="network-legend-item"><span class="legend-swatch legend-swatch--museum"></span>Museum</span>
+         <span class="network-legend-item"><span class="legend-swatch legend-swatch--other"></span>Other</span>
+       </div>
+       <div class="overlay-nav">
     <button id="prev-event">
         <span class="arrow">&#8592;</span>
         <span class="nav-text">Previous Event</span>
@@ -109,11 +115,10 @@
       <div id="social-network-container" class="column">
         <h2>Social Network Diagram</h2>
         <div class="placeholder-content"></div>
-        <p class="network-footer">This diagram shows all the people involved in the episodes from this object’s Provenance Story.</p>
+        <p class="network-footer">This diagram shows the social connections between the people in this object’s Provenance Story.</p>
         <div class="network-legend" aria-label="Network diagram colour code">
           <span class="network-legend-title">Key:</span>
           <span class="network-legend-item"><span class="legend-swatch legend-swatch--key"></span>Key Figure</span>
-          <span class="network-legend-item"><span class="legend-swatch legend-swatch--museum"></span>Museum</span>
           <span class="network-legend-item"><span class="legend-swatch legend-swatch--other"></span>Other</span>
         </div>
 
@@ -219,6 +224,6 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <!-- <script src="detail.js"></script> -->
   <script type="module" src="./js/nav.js?v=20260824"></script>
-   <script type="module" src="./js/init.js?v=20260930-carto-key-1"></script>
+   <script type="module" src="./js/init.js?v=20261014-social-networks-1"></script>
 </body>
 </html>

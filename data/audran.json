@@ -116,22 +116,34 @@
   ],
   "socialNetwork": {
     "nodes": [
-      { "id": "Audran", "type": "person" },
-      { "id": "Hôtel Ceiling", "type": "object" },
-      { "id": "Legendre d’Armény", "type": "greenperson" },
-      { "id": "La Motte d’Aulnoy", "type": "person" },
-      { "id": "François Chevalier", "type": "person" },
-      { "id": "Beaumarchais", "type": "person" },
-      { "id": "Faure Family", "type": "person" },
-      { "id": "Mercure de France", "type": "institution" }
+      {
+        "id": "Claude Audran III",
+        "type": "person"
+      },
+      {
+        "id": "Legendre d’Armény",
+        "type": "greenperson"
+      },
+      {
+        "id": "La Motte d’Aulnoy",
+        "type": "person"
+      },
+      {
+        "id": "Beaumarchais",
+        "type": "greenperson"
+      }
     ],
     "edges": [
-      { "source": "Audran", "target": "Hôtel Ceiling", "relationship": "painted" },
-      { "source": "Audran", "target": "Legendre d’Armény", "relationship": "commissioned by" },
-      { "source": "Legendre d’Armény", "target": "La Motte d’Aulnoy", "relationship": "by usufruct to" },
-      { "source": "François Chevalier", "target": "Beaumarchais", "relationship": "acquired by" },
-      { "source": "Beaumarchais", "target": "Faure Family", "relationship": "acquired by" },
-      { "source": "Faure Family", "target": "Mercure de France", "relationship": "acquired by" }
+      {
+        "source": "Claude Audran III",
+        "target": "Legendre d’Armény",
+        "relationship": "patron of"
+      },
+      {
+        "source": "Legendre d’Armény",
+        "target": "La Motte d’Aulnoy",
+        "relationship": "associate"
+      }
     ]
   },
   "provenanceTimeline": {

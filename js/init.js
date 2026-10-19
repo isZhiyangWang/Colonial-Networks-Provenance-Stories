@@ -3,7 +3,7 @@ import { openImageLightbox, closeImageLightbox } from "./lightbox.js";
 import { installHighlightSelection } from "./selection.js";
 import { buildMap, processProvenanceOnMap, plotPlaces } from "./map.js?v=20260930-carto-key-1";
 import { drawNetworkForEvent, openEnlargedEventNetwork } from "./localNetwork.js?v=20260826-desktop-8";
-import { drawSocialNetwork } from "./socialNetwork.js?v=20260824-mobile-5";
+import { drawSocialNetwork } from "./socialNetwork.js?v=20261014-social-networks-1";
 import { renderInteractiveProvenanceD3 } from "./provenanceRenderer.js?v=20260827-vigee-1";
 
 installHighlightSelection();
