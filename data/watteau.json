@@ -100,6 +100,10 @@
       "text": "<p>An early owner of Pleasures of the Ball was Claude Glucq (1676-1742), a celebrated Watteau collector who also briefly owned The Shopsign of Gersaint. Claude’s father Jean had made his fortune as a master thread dyer (he specialized in scarlet textiles made with cochineal) and was one of the largest shareholders in the Mississippi Company, which took over the monopoly on France’s North American and West Indian colonies from Antoine Crozat. <br><br>In 1715, Jean acquired a massive property along Paris’s Quai Voltaire for his family, and Claude may have displayed Pleasures there, although he himself also bought a château in Massy near Paris that he named “Virginie.” However, Claude’s own colonial speculations bankrupted him before he could embellish the property, and he ended up having to sell most of his art collection.</p>",
       "participants": [
         {
+          "name": "Jean-Antoine Watteau",
+          "type": "greenperson"
+        },
+        {
           "name": "Claude Glucq",
           "type": "greenperson"
         },
@@ -131,6 +135,10 @@
       "eventType": "bought by",
       "text": "<p>Pleasures of the Ball was later owned by Glucq’s cousin Jean de Jullienne (1686-1766), another fervent Watteau patron. His uncle had partnered with Glucq’s father to establish a business that later became the Gobelins textile manufactory. Jullienne, who followed his family’s tradition in investing in colonial trade (specifically, <a href='https://histoire.ens.psl.eu/charlotte-guichard-colonial-watteau-empire-commerce-and-galanterie-in-regency.html' target='_blank' rel='noopener noreferrer'>as Charlotte Guichard points out</a>, in indigo to dye textiles), took over managing the Gobelins in 1729, and he built a residence onsite that housed his extensive art collection. Another cousin named Montullé to whom Julienne bequeathed the collection oversaw the creation of a beautiful album depicting rooms in which these artwokrs were displayed, although it doesn’t specify where Pleasures was hung.<br><br>In 1783, the comte de Vaudreuil bought Watteau’s painting at Montullé’s posthumous sale, but he flipped it a few years later. Soon after it passed through the hands of the dealer Jean-Baptiste-Pierre Le Brun, who bought and sold scores of artworks for colonial clients, many of whom were portrayed by his wife Elisabeth Vigée Le Brun.</p>",
       "participants": [
+        {
+          "name": "Claude Glucq",
+          "type": "greenperson"
+        },
         {
           "name": "Jean de Jullienne",
           "type": "greenperson"

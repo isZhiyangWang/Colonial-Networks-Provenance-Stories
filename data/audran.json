@@ -84,7 +84,7 @@
       "text": "<p>In 1763, the hôtel was acquired by the writer Pierre-Augustin Caron de Beaumarchais (1732-99), who resided there along with his father and two younger sisters. Although best known for his Figaro plays—one of which, <em>The Barber of Seville</em> (1773), was written onsite—Beaumarchais also worked as a watchmaker, musician, diplomat, spy, and arms dealer, supplying weapons to rebel forces before and during the American Revolution that were funneled through Saint-Domingue. Through court contacts he met the financier Joseph Pâris Duverney, who reorganized the French East India Company in the wake of the Law scandal. In 1764, a year after he purchased the hôtel, Beaumarchais traveled to Spain on Duverney’s behalf to obtain the rights to trade slaves in Spain’s American colonies.</p><p>In 1766, a formerly enslaved man born in Martinique named Ambroise Lucas joined the rue de Condé household as a domestic servant. Beaumarchais described him as “<a href=\"https://slavesinparis.org/\" target=\"_blank\" rel=\"noopener noreferrer\">the lackey who opens my door for me</a>.” That year, Lucas’s former enslaver had him arrested and sent to Saint-Domingue, where he was re-enslaved before returning to Paris and obtaining his freedom in 1770. Beaumarchais fought the arrest, although his main objection seems to have been that Lucas was seized while wearing Beaumarchais’s livery, thus drawing attention to him. Lucas would certainly have encountered the Audran ceiling during his time at the hôtel.</p>",
       "participants": [
         { "name": "François Chevalier", "type": "person" },
-        { "name": "Beaumarchais", "type": "person" }
+        { "name": "Beaumarchais", "type": "greenperson" }
       ],
       "networkPairs": [
         { "source": "François Chevalier", "target": "Beaumarchais", "label": "acquired by" }
@@ -101,7 +101,7 @@
       "eventType": "acquired by",
       "text": "<p>After Beaumarchais, the property passed into the hands of the Faure family, who occupied it for most of the nineteenth century. Around 1890, it became the headquarters of the <em>Mercure de France</em>, a Symbolist journal founded by Arthur Vallette and a group of writers that included his wife, Marguerite Vallette-Eymery (1860-1953), who went by the pen name Rachilde. She lived there for many years.</p><p>Rachilde’s father had been a solider stationed in French Algeria, and she became a prominent author and cultural figure during the height of France’s Second Colonial Empire. Many of her novels explored colonial themes, among them <em>The Juggler</em> (1900), whose female protagonist, Eliante, identifies as French Créole and has a Black Martinican servant named Ninaude. Eliante’s Parisian bedroom is filled with animal skins, ebony furniture, and Indian textiles taken from a ship that her husband commanded during one of his transoceanic voyages, and she displays a marked preference for exotic experiences and things.</p><p>Rachilde fashioned a colonial fantasy in this fictional room that enabled her protagonist to transport herself beyond Paris. Much like the real cabinet with Audran’s decorative ceiling, both these rooms created spaces for immersive reverie embedded in France’s colonial imaginings, despite the two centuries of history between them.</p>",
       "participants": [
-        { "name": "Beaumarchais", "type": "person" },
+        { "name": "Beaumarchais", "type": "greenperson" },
         { "name": "Faure Family", "type": "person" },
         { "name": "Mercure de France", "type": "institution" }
       ],
