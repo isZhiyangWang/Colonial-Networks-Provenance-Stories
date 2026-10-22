@@ -27,6 +27,21 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
+function getNodeDragBounds(nodeElement, width, height, padding = 6) {
+  const bounds = nodeElement.getBBox();
+  const minX = padding - bounds.x;
+  const maxX = width - padding - (bounds.x + bounds.width);
+  const minY = padding - bounds.y;
+  const maxY = height - padding - (bounds.y + bounds.height);
+
+  return {
+    minX: Math.min(minX, maxX),
+    maxX: Math.max(minX, maxX),
+    minY: Math.min(minY, maxY),
+    maxY: Math.max(minY, maxY),
+  };
+}
+
 function wrapSocialLabel(text, maxChars = 18) {
   const words = String(text || "").trim().split(/\s+/).filter(Boolean);
   const lines = [];
@@ -341,16 +356,19 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
     .style("cursor", "grab")
     .call(
       d3.drag()
-        .on("start", function () {
+        .on("start", function (event, d) {
           d3.select(this).style("cursor", "grabbing");
+          d.dragBounds = getNodeDragBounds(this, w, h);
         })
         .on("drag", function (event, d) {
-          d.x = clamp(event.x, d.radius + 8, w - d.radius - 8);
-          d.y = clamp(event.y, d.radius + 8, h - d.radius - 8);
+          const bounds = d.dragBounds || getNodeDragBounds(this, w, h);
+          d.x = clamp(event.x, bounds.minX, bounds.maxX);
+          d.y = clamp(event.y, bounds.minY, bounds.maxY);
           updatePositions();
         })
-        .on("end", function () {
+        .on("end", function (event, d) {
           d3.select(this).style("cursor", "grab");
+          delete d.dragBounds;
           resetLabelPositions(linkLabel);
           requestAnimationFrame(() => resolveLabelCollisions(linkLabel.nodes(), w, h));
         })
@@ -424,16 +442,4 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
       linkLabel.raise();
     });
 
-  const zoom = d3
-    .zoom()
-    .scaleExtent([0.3, 10])
-    .on("zoom", (event) => {
-      zoomContainer.attr("transform", event.transform);
-    });
-
-  svg.call(zoom);
-
-  d3.select("#reset-zoom-btn").on("click", () => {
-    svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity);
-  });
 }
