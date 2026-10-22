@@ -74,6 +74,19 @@ The array order is the Gallery order. `excerpt` is retained in the data for cons
 - Replace an image while keeping its file name, or update the corresponding path.
 - When adding or removing an episode, also update its image number and any matching `storyId` references in the timeline and provenance.
 
+For a Social Network Diagram that needs a specific arrangement, add these optional fields to a node in `socialNetwork.nodes`:
+
+```json
+{
+  "id": "Example Person",
+  "type": "greenperson",
+  "position": [0.5, 0.25],
+  "labelPosition": "top"
+}
+```
+
+`position` uses relative horizontal and vertical coordinates from `0` to `1`, so it adapts to desktop and mobile widths. `labelPosition` can be `top`, `right`, `bottom`, or `left`. Omit both fields to use the standard automatic layout. Diagram nodes remain draggable in either layout.
+
 ### Hide or Remove an Artwork
 
 To hide an artwork but keep its research and direct URL, remove only its object from `data/gallery.json`.

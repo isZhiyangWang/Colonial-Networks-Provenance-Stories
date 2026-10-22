@@ -105,27 +105,39 @@
     "nodes": [
       {
         "id": "Hubert Robert",
-        "type": "person"
+        "type": "person",
+        "position": [0.12, 0.12],
+        "labelPosition": "top"
       },
       {
         "id": "Vigée Le Brun",
-        "type": "greenperson"
+        "type": "greenperson",
+        "position": [0.57, 0.12],
+        "labelPosition": "top"
       },
       {
         "id": "Jean-Joseph de Laborde",
-        "type": "greenperson"
+        "type": "greenperson",
+        "position": [0.39, 0.47],
+        "labelPosition": "left"
       },
       {
         "id": "Rosalie de Nettine de Laborde",
-        "type": "greenperson"
+        "type": "greenperson",
+        "position": [0.16, 0.84],
+        "labelPosition": "bottom"
       },
       {
         "id": "Nathalie de Laborde",
-        "type": "person"
+        "type": "person",
+        "position": [0.62, 0.84],
+        "labelPosition": "bottom"
       },
       {
         "id": "Eugénie Tripier Le Franc",
-        "type": "person"
+        "type": "person",
+        "position": [0.91, 0.34],
+        "labelPosition": "bottom"
       }
     ],
     "edges": [
@@ -152,7 +164,8 @@
       {
         "source": "Rosalie de Nettine de Laborde",
         "target": "Nathalie de Laborde",
-        "relationship": "relatives"
+        "relationship": "relatives",
+        "labelOffset": -14
       },
       {
         "source": "Nathalie de Laborde",

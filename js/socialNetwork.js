@@ -46,6 +46,52 @@ function wrapSocialLabel(text, maxChars = 18) {
   return lines.length ? lines : [""];
 }
 
+function getConfiguredNodePosition(node, width, height, compact) {
+  if (!Array.isArray(node.position) || node.position.length !== 2) return null;
+
+  const normalizedX = Number(node.position[0]);
+  const normalizedY = Number(node.position[1]);
+  if (!Number.isFinite(normalizedX) || !Number.isFinite(normalizedY)) return null;
+
+  const horizontalPadding = compact ? 44 : 56;
+  const verticalPadding = compact ? 54 : 46;
+
+  return {
+    x: horizontalPadding + clamp(normalizedX, 0, 1) * (width - horizontalPadding * 2),
+    y: verticalPadding + clamp(normalizedY, 0, 1) * (height - verticalPadding * 2),
+  };
+}
+
+function getNodeLabelPlacement(node, index, compact, angleStep, nodeCount) {
+  const offset = node.radius + 8;
+  const configuredPosition = String(node.labelPosition || "").toLowerCase();
+
+  switch (configuredPosition) {
+    case "top":
+      return { anchor: "middle", x: 0, y: -offset };
+    case "right":
+      return { anchor: "start", x: offset, y: 0 };
+    case "bottom":
+      return { anchor: "middle", x: 0, y: offset };
+    case "left":
+      return { anchor: "end", x: -offset, y: 0 };
+    default:
+      break;
+  }
+
+  if (compact) {
+    const isUnpairedLastNode = nodeCount % 2 === 1 && index === nodeCount - 1;
+    return { anchor: "middle", x: 0, y: isUnpairedLastNode ? 24 : -18 };
+  }
+
+  const angle = index * angleStep;
+  return {
+    anchor: angle > Math.PI / 2 && angle < Math.PI * 1.5 ? "end" : "start",
+    x: offset * Math.cos(angle),
+    y: offset * Math.sin(angle),
+  };
+}
+
 function resetLabelPositions(labelSelection) {
   labelSelection
     .attr("x", (d) => d.labelX)
@@ -144,6 +190,13 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
   const compactRows = Math.ceil(nodes.length / 2);
 
   nodes.forEach((node, i) => {
+    const configuredPosition = getConfiguredNodePosition(node, w, h, compact);
+    if (configuredPosition) {
+      node.x = configuredPosition.x;
+      node.y = configuredPosition.y;
+      return;
+    }
+
     if (compact) {
       node.x = w * (i % 2 === 0 ? 0.25 : 0.75);
       node.y = ((Math.floor(i / 2) + 1) * h) / (compactRows + 1);
@@ -233,36 +286,25 @@ export function drawSocialNetwork(container, w, h, socialNetworkData) {
     .style("font-weight", "500")
     .style("fill", "#333")
     .style("pointer-events", "none")
-    .attr("text-anchor", (d, i) => {
-      if (compact) return "middle";
-      const angle = i * angleStep;
-      return angle > Math.PI / 2 && angle < Math.PI * 1.5 ? "end" : "start";
-    })
+    .attr("text-anchor", (d, i) => getNodeLabelPlacement(d, i, compact, angleStep, nodes.length).anchor)
     .attr("dominant-baseline", "middle")
-    .attr("x", (d, i) => {
-      if (compact) return 0;
-      const angle = i * angleStep;
-      const offset = d.radius + 8;
-      return offset * Math.cos(angle);
-    })
-    .attr("y", (d, i) => {
-      if (compact) {
-        const isUnpairedLastNode = nodes.length % 2 === 1 && i === nodes.length - 1;
-        return isUnpairedLastNode ? 24 : -18;
-      }
-      const angle = i * angleStep;
-      const offset = d.radius + 8;
-      return offset * Math.sin(angle);
-    });
+    .attr("x", (d, i) => getNodeLabelPlacement(d, i, compact, angleStep, nodes.length).x)
+    .attr("y", (d, i) => getNodeLabelPlacement(d, i, compact, angleStep, nodes.length).y);
 
   if (compact) {
     nodeLabel.each(function (d) {
       const lines = wrapSocialLabel(d.id);
       const label = d3.select(this).text(null);
+      const labelPosition = String(d.labelPosition || "").toLowerCase();
+      const firstLineDy = labelPosition === "bottom"
+        ? 0
+        : labelPosition === "left" || labelPosition === "right"
+          ? -((lines.length - 1) * 5.5)
+          : -((lines.length - 1) * 11);
       lines.forEach((line, index) => {
         label.append("tspan")
           .attr("x", 0)
-          .attr("dy", index === 0 ? -((lines.length - 1) * 11) : 11)
+          .attr("dy", index === 0 ? firstLineDy : 11)
           .text(line);
       });
     });
