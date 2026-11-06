@@ -163,14 +163,16 @@ function renderLocalNetwork(svg, w, h, ev) {
     .attr("refX", 22).attr("refY", 3).attr("orient", "auto")
     .append("path").attr("d", "M0,0 L0,6 L9,3 z").attr("fill", "#999");
 
-  if (!ev.networkPairs?.length) {
+  const pairs = ev.networkPairs || [];
+  if (!pairs.length && !ev.participants?.length) {
     svg.append("text").attr("x", 20).attr("y", 20)
       .text("No movement or no networkPairs.").style("font-size", "14px");
     return;
   }
 
   const nodeNames = new Set();
-  ev.networkPairs.forEach((pair) => { nodeNames.add(pair.source); nodeNames.add(pair.target); });
+  pairs.forEach((pair) => { nodeNames.add(pair.source); nodeNames.add(pair.target); });
+  if (!pairs.length) ev.participants?.forEach((pt) => nodeNames.add(pt.name));
 
   const nodes = Array.from(nodeNames).map((name, layoutIndex) => {
     const found = ev.participants?.find((pt) => pt.name === name);
@@ -178,7 +180,7 @@ function renderLocalNetwork(svg, w, h, ev) {
     return { id: name, type: t, layoutIndex };
   });
 
-  const links = ev.networkPairs.map((pair) => ({ source: pair.source, target: pair.target, label: pair.label || "" }));
+  const links = pairs.map((pair) => ({ source: pair.source, target: pair.target, label: pair.label || "" }));
 
   const sim = d3.forceSimulation(nodes)
     .force("charge", d3.forceManyBody().strength(-140))
@@ -284,15 +286,17 @@ export function openEnlargedEventNetwork(ev) {
     .attr("refX", 24).attr("refY", 3).attr("orient", "auto")
     .append("path").attr("d", "M0,0 L0,6 L9,3 z").attr("fill", "#888");
 
-  if (!ev.networkPairs?.length) return;
+  const pairs = ev.networkPairs || [];
+  if (!pairs.length && !ev.participants?.length) return;
 
   const nodeNames = new Set();
-  ev.networkPairs.forEach((pair) => { nodeNames.add(pair.source); nodeNames.add(pair.target); });
+  pairs.forEach((pair) => { nodeNames.add(pair.source); nodeNames.add(pair.target); });
+  if (!pairs.length) ev.participants?.forEach((pt) => nodeNames.add(pt.name));
   const nodes = Array.from(nodeNames).map((name, layoutIndex) => {
     const found = ev.participants?.find((pt) => pt.name === name);
     return { id: name, type: found ? found.type : "person", layoutIndex };
   });
-  const links = ev.networkPairs.map((pair) => ({ source: pair.source, target: pair.target, label: pair.label || "" }));
+  const links = pairs.map((pair) => ({ source: pair.source, target: pair.target, label: pair.label || "" }));
 
   const sim = d3.forceSimulation(nodes)
     .force("charge", d3.forceManyBody().strength(-180))

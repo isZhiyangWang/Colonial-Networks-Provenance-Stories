@@ -5,3 +5,7 @@
 all.cjs
 FULL_CODE_CONTEXT.md
 legacy/
+
+# Local handover documents, screenshots and PDF exports.
+/handover/
+/output/pdf/
