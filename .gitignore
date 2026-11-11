@@ -9,3 +9,4 @@ legacy/
 # Local handover documents, screenshots and PDF exports.
 /handover/
 /output/pdf/
+output/.DS_Store
